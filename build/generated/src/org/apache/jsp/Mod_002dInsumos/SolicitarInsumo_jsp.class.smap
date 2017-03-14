@@ -1,0 +1,18 @@
+SMAP
+SolicitarInsumo_jsp.java
+JSP
+*S JSP
+*F
++ 0 SolicitarInsumo.jsp
+Mod-Insumos/SolicitarInsumo.jsp
++ 1 headerModulos.jspf
+Mod-Insumos/../headerModulos.jspf
++ 2 footer.jspf
+Mod-Insumos/../footer.jspf
+*L
+5,14:50
+1#1,95:64
+18#0,70:158
+1#2,14:228
+87#0,5:241
+*E

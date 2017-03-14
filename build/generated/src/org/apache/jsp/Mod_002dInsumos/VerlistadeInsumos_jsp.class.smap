@@ -1,0 +1,18 @@
+SMAP
+VerlistadeInsumos_jsp.java
+JSP
+*S JSP
+*F
++ 0 VerlistadeInsumos.jsp
+Mod-Insumos/VerlistadeInsumos.jsp
++ 1 headerModulos.jspf
+Mod-Insumos/../headerModulos.jspf
++ 2 footer.jspf
+Mod-Insumos/../footer.jspf
+*L
+5,14:50
+1#1,95:64
+18#0,67:158
+1#2,14:225
+84#0,4:238
+*E

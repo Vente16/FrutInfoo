@@ -1,0 +1,101 @@
+body{
+	
+   
+}
+
+.navbar-default .navbar-brand {
+    color: #F0F111;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: #F0F111;
+}
+
+.navbar-default{
+	background: green;
+}
+
+
+.navbar-nav > li:hover {
+    background: #F0F111;
+    
+}
+
+
+
+.login{
+	float: right;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #F0F111;
+}
+
+
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 0px;
+    border: 1px solid transparent;
+}
+
+.pie{
+	background: #454545;
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+}
+
+.pie > div > div > p{
+	color: #fff;
+	margin: 5px;
+}
+
+.thumbnail:hover{
+	border: 1px solid #ddd;
+	box-shadow: 10px 10px 20px #11320C;
+}
+
+
+.dropdown-menu > li > a:hover {
+       
+    
+    background: #F0F111;
+    
+}
+
+  .dropdown-menu > li{
+    
+      background: green;
+   
+  }  
+
+  
+  
+  
+  
+  
+
+.dropdown:focus{
+    
+     background: green;
+}
+
+
+.dropdown-menu > li > a {
+       
+    
+    background: transparent;
+    color:white;
+    
+}
+
+navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    color: #F0F111;
+    background-color: green;
+}
+
+.fa{
+    
+    display: none;
+}

@@ -1,0 +1,18 @@
+SMAP
+IndexInsumo_jsp.java
+JSP
+*S JSP
+*F
++ 0 IndexInsumo.jsp
+Mod-Insumos/IndexInsumo.jsp
++ 1 headerModulos.jspf
+Mod-Insumos/../headerModulos.jspf
++ 2 footer.jspf
+Mod-Insumos/../footer.jspf
+*L
+5,27:50
+1#1,95:77
+31#0,13:171
+1#2,14:184
+43#0,7:197
+*E
