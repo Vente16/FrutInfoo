@@ -5,17 +5,19 @@
  */
 package Controlador;
 
-import Modelo.Conexion;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+
+import Modelo.Conexion;
 
 /**
  *
@@ -42,19 +44,19 @@ public class Login extends HttpServlet {
             Connection con = c.Conectar();
             
             String usuario = request.getParameter("Usuario");
-            String contraseña = request.getParameter("Contra");
+            String Contrase�a = request.getParameter("Contra");
             
             PreparedStatement st = con.prepareStatement("SELECT *FROM usuarios WHERE Usuario=? AND Contraseña=?");
             st.setString(1, usuario);
-            st.setString(2, contraseña);
-            
+            st.setString(2, Contrase�a);
+           
             ResultSet rs = st.executeQuery();
             
             if(rs.absolute(1)){
             
              HttpSession sesion = request.getSession(true);
              sesion.setAttribute("Usuario", usuario);
-             sesion.setAttribute("Contraseña", contraseña);
+             sesion.setAttribute("Contrase�a", Contrase�a);
              
              response.sendRedirect("index2.jsp");
             
@@ -111,7 +113,6 @@ public class Login extends HttpServlet {
      *
      * @return a String containing servlet description
      */
-    @Override
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
