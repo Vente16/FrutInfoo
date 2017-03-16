@@ -18,7 +18,6 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import Modelo.Conexion;
-import static org.apache.coyote.http11.Constants.a;
 
 /**
  *
@@ -45,11 +44,11 @@ public class Login extends HttpServlet {
             Connection con = c.Conectar();
             
             String usuario = request.getParameter("Usuario");
-            String Contrase�a = request.getParameter("Contra");
+            String Contraseña = request.getParameter("Contra");
             
             PreparedStatement st = con.prepareStatement("SELECT *FROM usuarios WHERE Usuario=? AND Contraseña=?");
             st.setString(1, usuario);
-            st.setString(2, Contrase�a);
+            st.setString(2, Contraseña);
            
             ResultSet rs = st.executeQuery();
             
@@ -57,7 +56,7 @@ public class Login extends HttpServlet {
             
              HttpSession sesion = request.getSession(true);
              sesion.setAttribute("Usuario", usuario);
-             sesion.setAttribute("Contrase�a", Contrase�a);
+             sesion.setAttribute("Contraseña", Contraseña);
              
              response.sendRedirect("index2.jsp");
             

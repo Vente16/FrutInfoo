@@ -48,6 +48,7 @@
 			    
 			      <!-- Cabecera del modal, tiene el logo de la jugosa-->
 			      <center>
+                                  <form action="Login">
 				      <div class="modal-content">
 				        <div class="modal-header">
 				          <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -55,24 +56,30 @@
 				        </div>
 				        
 				        <!-- Cuerpo  del modal, tiene dos input's, y dos h3 (Usuario y contraseña)-->
-                                        <form action="servle">
+                                        <form action="Login">
                                             
 				        <div class="modal-body">
 				            <h3>Usuario</h3>
 				            <input type="text" placeholder="Ingrese su usuario" class="form-control" name="Usuario">
 				            <h3>Contraseña</h3>
 				            <input type="password" placeholder="Ingrese su contraseña" name="Contra" class="form-control">
+				            <br>
+				            <a href="#" class="pull-left">Restaurar contraseña</a>
+				            <br>
+				            <a href="#" class="pull-left">Registrar usuario</a>
+				            <br>
 				         </div>
 				
 				          <!-- Footer del modal, dos botones, cerrrar y Acceder-->
 				        <div class="modal-footer">
 				            <center>
-				             <buttton type="submit" class="btn btn-success">Acceder</buttton>
+                                                <input type="submit" class="btn btn-success" value="acceder">
 				               <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
-                                               </form>
+                                               
 				            </center>
 				        </div>
 				      </div>
+                                      </form>
 			      </center>
 			    </div>
 			  </div>
@@ -219,6 +226,7 @@
 	        </a>
 	      	<div class="caption">
 	      		<h3>Ensaladas</h3>
+	      		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi aliq.</p>
 	      	<div id="myModal" class="modal fade" role="dialog">
 						  <div class="modal-dialog">
 
@@ -240,7 +248,8 @@
 						</div>
 	      </div>
 	    </div>
-	    <div class="col-xs-12 col-sm-6 col-md-3">
+	   </div>
+	   <div class="col-xs-12 col-sm-6 col-md-3">
 	      <div class="thumbnail">
 	        <a href="#myModal" data-toggle="modal" target="_blank">
 	          <img src="img/jugo.jpg" alt="Cinque Terre" style="width:100%">
@@ -270,7 +279,6 @@
 						</div>
 	      </div>
 	    </div>
-	  </div>
 	</div>
 </section>
 
