@@ -18,9 +18,9 @@
    
     <body>
         <%@include file="headerModulos.jspf"%>
-        
+        <div class="container">
         <h1>BIENVENIDO AL SISTEMA</h1>
-        
+        </div>
         <%@include file="footer.jspf" %>
         
     </body>

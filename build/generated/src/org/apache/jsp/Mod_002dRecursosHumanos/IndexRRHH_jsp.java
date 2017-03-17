@@ -1,10 +1,10 @@
-package org.apache.jsp.Mod_002dInsumos;
+package org.apache.jsp.Mod_002dRecursosHumanos;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class IndexInsumo_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class IndexRRHH_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -13,8 +13,8 @@ public final class IndexInsumo_jsp extends org.apache.jasper.runtime.HttpJspBase
 
   static {
     _jspx_dependants = new java.util.ArrayList<String>(2);
-    _jspx_dependants.add("/Mod-Insumos/../headerModulos.jspf");
-    _jspx_dependants.add("/Mod-Insumos/../footer.jspf");
+    _jspx_dependants.add("/Mod-RecursosHumanos/../headerModulos.jspf");
+    _jspx_dependants.add("/Mod-RecursosHumanos/../footer.jspf");
   }
 
   private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
@@ -49,32 +49,18 @@ public final class IndexInsumo_jsp extends org.apache.jasper.runtime.HttpJspBase
 
       out.write("\r\n");
       out.write("\r\n");
-      out.write("\r\n");
       out.write("<!DOCTYPE html>\r\n");
       out.write("<html>\r\n");
       out.write("    <head>\r\n");
       out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
-      out.write("        <title>JSP Page</title>\r\n");
-      out.write("         <link rel=\"stylesheet\" href=\"../css/bootstrap.css\">\r\n");
+      out.write("        <title>Recursos humanos</title>\r\n");
+      out.write("        <link rel=\"stylesheet\" href=\"../css/bootstrap.css\">\r\n");
       out.write("        <link rel=\"stylesheet\" href=\"../css/estilos2.css\">\r\n");
       out.write("        <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js\"></script>\r\n");
       out.write("        <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script>\r\n");
-      out.write("        <style>\r\n");
-      out.write("            \r\n");
-      out.write("            body{\r\n");
-      out.write("                \r\n");
-      out.write("                background-image: url(img/imagenprincipal.jpg);\r\n");
-      out.write("               \r\n");
-      out.write("            }\r\n");
-      out.write("            \r\n");
-      out.write("        </style>\r\n");
-      out.write("   \r\n");
       out.write("    </head>\r\n");
       out.write("    <body>\r\n");
-      out.write("        \r\n");
-      out.write("        <body>\r\n");
-      out.write("            \r\n");
-      out.write("        ");
+      out.write("         ");
       out.write("\r\n");
       out.write("\r\n");
       out.write("\r\n");
@@ -171,15 +157,15 @@ public final class IndexInsumo_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\r\n");
       out.write("\r\n");
       out.write("        \r\n");
-      out.write("        <div class=\"jumbotron  \" style=\"background: rgba(255,0,0,0);\">\r\n");
+      out.write("         <div class=\"jumbotron\">\r\n");
       out.write("        <div class=\"container\">\r\n");
-      out.write("            <h1 class=\"\" style=\"color:white\">¡Bienvenido(a) al área de insumos!</h1>\r\n");
-      out.write("            <a style=\"color:white\" > Aquí podrás ver toda la información, hacer registros sobre los insumos de la empresa, ver solicitudes de insumos, etc.. </a>\r\n");
-      out.write("            <br>\r\n");
-      out.write("            <br>\r\n");
+      out.write("          <h1 class=\"animated fadeInDown\">¡Bienvenido(a) al área de recursos humanos!</h1>\r\n");
+      out.write("          <p>Aquí podrás ver toda la información sobre los empleados, hacer registros de ellos, ver registro de los recursos humanos, etc..</p>\r\n");
       out.write("          <p><a class=\"btn btn-primary btn-lg\" role=\"button\">Leer más</a></p>\r\n");
       out.write("        </div>\r\n");
       out.write("      </div>\r\n");
+      out.write("         \r\n");
+      out.write("\r\n");
       out.write("        \r\n");
       out.write("        ");
       out.write("\r\n");
@@ -198,9 +184,6 @@ public final class IndexInsumo_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    </div>\r\n");
       out.write("</footer>\r\n");
       out.write("\r\n");
-      out.write("         \r\n");
-      out.write("    </body>\r\n");
-      out.write("      \r\n");
       out.write("    </body>\r\n");
       out.write("</html>\r\n");
     } catch (Throwable t) {

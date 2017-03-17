@@ -41,6 +41,7 @@ body{
 
 .pie{
 	background: #454545;
+        position: relative;
 }
 
 .pie > div > div > p{

@@ -20,7 +20,7 @@
     <body>
        
          <%@include file="../headerModulos.jspf" %>
-         
+         <div class="container">
            <div class="jumbotron">
         <div class="container">
           <h1 class="animated fadeInDown">¡Bienvenido(a) al área de ventas!</h1>
@@ -28,7 +28,7 @@
           <p><a class="btn btn-primary btn-lg" role="button">Leer más</a></p>
         </div>
       </div>
-         
+         </div>
       <%@include file="../footer.jspf" %>
     </body>
 </html>
