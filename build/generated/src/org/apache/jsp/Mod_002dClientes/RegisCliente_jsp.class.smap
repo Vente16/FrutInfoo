@@ -1,0 +1,18 @@
+SMAP
+RegisCliente_jsp.java
+JSP
+*S JSP
+*F
++ 0 RegisCliente.jsp
+Mod-Clientes/RegisCliente.jsp
++ 1 headerModulos.jspf
+Mod-Clientes/../headerModulos.jspf
++ 2 footer.jspf
+Mod-Clientes/../footer.jspf
+*L
+5,15:50
+1#1,95:65
+19#0,76:159
+1#2,16:235
+94#0,5:250
+*E

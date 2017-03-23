@@ -97,3 +97,9 @@ navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:
     
     display: none;
 }
+
+.listaimg{
+    list-style: none;
+    display: inline-block;
+    margin-left: 1px;
+}
