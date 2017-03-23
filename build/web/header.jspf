@@ -30,7 +30,7 @@
 			    
 			
 			  <!-- Botón de Iniciar sesión -->
-			  <a data-toggle="modal" href="#Login"><img src="img/user-verde.png" class="img-circle" width="50" alt="Iniciar sesión"></a>
+                          <a data-toggle="modal" href="#Login"><img src="img/user-verde.png" class="img-circle" width="50" alt="Iniciar sesión"></a>
 			
 			  <!-- Modal -->
 			  <div class="modal fade" id="Login" role="dialog">
