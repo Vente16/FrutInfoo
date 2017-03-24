@@ -55,6 +55,10 @@ public final class Insumos_005fadmin_jsp extends org.apache.jasper.runtime.HttpJ
       out.write("    <head>\n");
       out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
       out.write("        <title>JSP Page</title>\n");
+      out.write("        <link rel=\"stylesheet\" href=\"../css/bootstrap.min.css\"/>\n");
+      out.write("        <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js\"></script>\n");
+      out.write("        <link rel=\"stylesheet\" href=\"../css/estilos2.css\"/>\n");
+      out.write("        <script src=\"../js/bootstrap.min.js\"></script>\n");
       out.write("    </head>\n");
       out.write("    <body>\n");
       out.write("        ");
@@ -153,9 +157,10 @@ public final class Insumos_005fadmin_jsp extends org.apache.jasper.runtime.HttpJ
       out.write("\r\n");
       out.write("\r\n");
       out.write("\n");
-      out.write("        \n");
-      out.write("        <section class=\"main container-fluid\">\n");
-      out.write("            <div class=\"container-fluid\">\n");
+      out.write("        <br>\n");
+      out.write("        <br>\n");
+      out.write("        <section class=\"main container\">\n");
+      out.write("            <div>\n");
       out.write("                <select name=\"ver_info_ventas\" id=\"info_ventas\">\n");
       out.write("                    <option value=\"\">por sede</option>\n");
       out.write("                    <option value=\"\">al dia</option>\n");
