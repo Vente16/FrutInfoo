@@ -18,6 +18,7 @@
     <body>
         <%@include file="../headerModulos.jspf" %>
         <br>
+         <div class="container">
         <section class="main container-fluid">
         <div class="container-fluid">
         <select name="ver_info_ventas" id="info_ventas">
@@ -154,6 +155,7 @@
   
 
      </section>
+         </div>
          
 
          <%@include file="../footer.jspf" %>

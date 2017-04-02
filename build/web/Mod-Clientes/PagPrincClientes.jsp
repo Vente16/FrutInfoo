@@ -19,7 +19,7 @@
     <body>
         <%@include file="../headerModulos.jspf" %>
          
-        
+        <div class="container">
          <section class="main container-fluid">
         <form class="navbar-left" role="search">
    <li><br><br><br><img src="../img/serdo.jpg" width="200px"></li>
@@ -30,7 +30,7 @@
   </div>
   <form><br><br>
   
-                <div class="container">
+                
                                     <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Nombre</span></label><br>
                                     <input type="text" class="form-control" name="name"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese su nnombre completo"><br>
 

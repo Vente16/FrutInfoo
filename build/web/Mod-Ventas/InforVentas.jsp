@@ -17,7 +17,7 @@
     </head>
     <body>
          <%@include file="../headerModulos.jspf" %>
-        
+        <div class="container">
           <section class="main container-fluid">
         <form class="navbar-left" role="search">
     <p>Fecha de Inicio</p>
@@ -120,20 +120,14 @@
         <td></td>
         <td></td>
       </tr>
-       <tr>
-        <td>Belen</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr> 
+    
     </tbody>
   </table>
   <button type="submit" class="btn btn-primary">VOLVER</button>
   </div>
 
      </section>
+        </div>
        
          
 

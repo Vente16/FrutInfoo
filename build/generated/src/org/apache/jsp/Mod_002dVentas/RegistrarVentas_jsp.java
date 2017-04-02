@@ -1,10 +1,10 @@
-package org.apache.jsp;
+package org.apache.jsp.Mod_002dVentas;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class index2_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class RegistrarVentas_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -13,8 +13,8 @@ public final class index2_jsp extends org.apache.jasper.runtime.HttpJspBase
 
   static {
     _jspx_dependants = new java.util.ArrayList<String>(2);
-    _jspx_dependants.add("/headerModulos.jspf");
-    _jspx_dependants.add("/footer.jspf");
+    _jspx_dependants.add("/Mod-Ventas/../headerModulos.jspf");
+    _jspx_dependants.add("/Mod-Ventas/../footer.jspf");
   }
 
   private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
@@ -54,15 +54,14 @@ public final class index2_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<html>\r\n");
       out.write("    <head>\r\n");
       out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
-      out.write("        <title>JSP Page</title>\r\n");
-      out.write("         <link rel=\"stylesheet\" href=\"css/bootstrap.css\">\r\n");
-      out.write("        <link rel=\"stylesheet\" href=\"css/estilos2.css\">\r\n");
+      out.write("        <title>Registrar venta</title>\r\n");
+      out.write("          <link rel=\"stylesheet\" href=\"../css/bootstrap.css\">\r\n");
+      out.write("        <link rel=\"stylesheet\" href=\"../css/estilos2.css\">\r\n");
       out.write("        <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js\"></script>\r\n");
       out.write("        <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script>\r\n");
       out.write("    </head>\r\n");
-      out.write("   \r\n");
-      out.write("    <body>\r\n");
-      out.write("        ");
+      out.write("    \r\n");
+      out.write("         ");
       out.write("\r\n");
       out.write("\r\n");
       out.write("\r\n");
@@ -79,7 +78,7 @@ public final class index2_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                    <span class=\"icon-bar\"></span>\r\n");
       out.write("                    <span class=\"icon-bar\"></span>\r\n");
       out.write("                </button>\r\n");
-      out.write("                <img src=\"img/logolj.png\" width=\"50px\" style=\"vertical-align: middle; float: left;\" alt=\"\">\r\n");
+      out.write("                <img src=\"../img/logolj.png\" width=\"50px\" style=\"vertical-align: middle; float: left;\" alt=\"\">\r\n");
       out.write("                <a class=\"navbar-brand\" href=\"#\">LA JUGOSA</a>\r\n");
       out.write("            </div>\r\n");
       out.write("\r\n");
@@ -158,10 +157,114 @@ public final class index2_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\r\n");
       out.write("\r\n");
       out.write("\r\n");
-      out.write("        <div class=\"container\">\r\n");
-      out.write("        <h1>BIENVENIDO AL SISTEMA</h1>\r\n");
-      out.write("        </div>\r\n");
-      out.write("        ");
+      out.write("         \r\n");
+      out.write("\r\n");
+      out.write(" <br><br>\r\n");
+      out.write("   <div>\r\n");
+      out.write("       <form class=\"navbar-left\" role=\"search\">\r\n");
+      out.write("\r\n");
+      out.write("    <input type=\"number\" class=\"form-control\" placeholder=\"Codigo del Producto\" value=\"\">\r\n");
+      out.write("    <br>\r\n");
+      out.write("     <input type=\"number\" class=\"form-control\" placeholder=\"Cantidad del Producto\" value=\"\">\r\n");
+      out.write("    <br>\r\n");
+      out.write("  \r\n");
+      out.write("    <button type=\"submit\" class=\"btn btn-success\">AGREGAR</button>\r\n");
+      out.write("    </form>\r\n");
+      out.write("    </div><br>\r\n");
+      out.write("    <br>\r\n");
+      out.write("    <br><br>\r\n");
+      out.write("            \r\n");
+      out.write("\r\n");
+      out.write("  \r\n");
+      out.write("  <div style=\"margin-top: 100px\">\r\n");
+      out.write("    <h2 style=\"text-align: center;\">Estos son los Productos Seleccionados</h2><br>\r\n");
+      out.write("  <p style=\"text-align: left;\">a continuación verá toda la información de los productos agragados </p>\r\n");
+      out.write("  </div>\r\n");
+      out.write("  <table class=\"table table-bordered table-hover\">\r\n");
+      out.write("    <thead>\r\n");
+      out.write("      <tr>\r\n");
+      out.write("        <th>Codigo del Producto</th>\r\n");
+      out.write("        <th>Nombre del Producto</th>\r\n");
+      out.write("        <th>Cantidad del Producto</th>\r\n");
+      out.write("        <th>Precio Unitario</th>\r\n");
+      out.write("        <th>Total</th>\r\n");
+      out.write("        <th>Iva</th>\r\n");
+      out.write("        <th>Total a Pagar</th>\r\n");
+      out.write("      </tr> \r\n");
+      out.write("    </thead>\r\n");
+      out.write("    <tbody>\r\n");
+      out.write("      <tr>\r\n");
+      out.write("        <td></td>\r\n");
+      out.write("        <td></td>\r\n");
+      out.write("        <td></td>\r\n");
+      out.write("        <td></td>\r\n");
+      out.write("        <td></td>\r\n");
+      out.write("        <td></td>\r\n");
+      out.write("        <td></td>\r\n");
+      out.write("      </tr>\r\n");
+      out.write("      \r\n");
+      out.write("    \r\n");
+      out.write("    \r\n");
+      out.write("      <tr>\r\n");
+      out.write("        <td></td>\r\n");
+      out.write("        <td></td>\r\n");
+      out.write("        <td></td>\r\n");
+      out.write("        <td></td>\r\n");
+      out.write("        <td></td>\r\n");
+      out.write("        <td></td>\r\n");
+      out.write("        <td></td>\r\n");
+      out.write("      </tr>\r\n");
+      out.write("    \r\n");
+      out.write("    \r\n");
+      out.write("      <tr>\r\n");
+      out.write("        <td></td>\r\n");
+      out.write("        <td></td>\r\n");
+      out.write("        <td></td>\r\n");
+      out.write("        <td></td>\r\n");
+      out.write("        <td></td>\r\n");
+      out.write("        <td></td>\r\n");
+      out.write("        <td></td>\r\n");
+      out.write("      </tr>\r\n");
+      out.write("    \r\n");
+      out.write("    \r\n");
+      out.write("      <tr>\r\n");
+      out.write("        <td></td>\r\n");
+      out.write("        <td></td>\r\n");
+      out.write("        <td></td>\r\n");
+      out.write("        <td></td>\r\n");
+      out.write("        <td></td>\r\n");
+      out.write("        <td></td>\r\n");
+      out.write("        <td></td>\r\n");
+      out.write("      </tr>\r\n");
+      out.write("    \r\n");
+      out.write("    \r\n");
+      out.write("      <tr>\r\n");
+      out.write("        <td></td>\r\n");
+      out.write("        <td></td>\r\n");
+      out.write("        <td></td>\r\n");
+      out.write("        <td></td>\r\n");
+      out.write("        <td></td>\r\n");
+      out.write("        <td></td>\r\n");
+      out.write("        <td></td>\r\n");
+      out.write("      </tr>\r\n");
+      out.write("        <tr>\r\n");
+      out.write("        <td></td>\r\n");
+      out.write("        <td></td>\r\n");
+      out.write("        <td></td>\r\n");
+      out.write("        <td></td>\r\n");
+      out.write("        <td></td>\r\n");
+      out.write("        <td></td>\r\n");
+      out.write("        <td></td>\r\n");
+      out.write("      </tr>\r\n");
+      out.write("    </tbody>\r\n");
+      out.write("  </table>\r\n");
+      out.write("   <button type=\"submit\" class=\"btn btn-success\">MODIFICAR</button>\r\n");
+      out.write("  </div>\r\n");
+      out.write("  <button type=\"submit\" class=\"btn btn-primary\">VOLVER</button>\r\n");
+      out.write("  </div>\r\n");
+      out.write("\r\n");
+      out.write("     </section>\r\n");
+      out.write("         ");
       out.write("\r\n");
       out.write("\r\n");
       out.write("\r\n");
@@ -178,8 +281,7 @@ public final class index2_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    </div>\r\n");
       out.write("</footer>\r\n");
       out.write("\r\n");
-      out.write("        \r\n");
-      out.write("    </body>\r\n");
+      out.write("    \r\n");
       out.write("</html>\r\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
