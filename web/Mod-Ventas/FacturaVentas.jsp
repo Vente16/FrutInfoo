@@ -16,71 +16,119 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     <body>
-      <%@include file="../headerModulos.jspf" %>
-          
-      <div>
-          <form class="navbar-left" role="search"><br>
-    <p>Digite el número de la Factura</p>
-    <input type="number" class="form-control" placeholder="" value="">
-    <br>
-  
-    <button type="submit" class="btn btn-succes">GENERAR</button>
-    </form>
+        <%@include file="../headerModulos.jspf" %><br>
+        <div class="container">   
+            <div>
+                <form class="navbar-left" role="search"><br>
+                    <p>Digite el número de la Factura</p>
+                    <input type="number" class="form-control" placeholder="" value="">
+                    <br>
+
+                    <button type="submit" class="btn btn-succes">GENERAR</button>
+                </form>
+            </div>
+
+
+
+            <div style="margin-top: 100px">
+                <h2 style="text-align: center;">Generar Factura De venta</h2>
+            </div>
+            <br>
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>Descripción</th>
+                        <th>Cantidad</th>
+                        <th>Valor.Unt</th>
+                        <th>Iva</th>
+                        <th>Valor.Total</th>
+                    </tr> 
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+                 <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+                 <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+                 <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+                 <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+                 <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+                 <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+               
+             
+            </table>
+            <button type="submit" class="btn btn-success">IMPRIMIR</button>
+
+            <button type="submit" class="btn btn-primary">VOLVER</button>
+
+
+        </section>
     </div>
-            
 
-  
-  <div style="margin-top: 100px">
-    <h2 style="text-align: center;">Generar Factura De venta</h2>
- </div>
-  <br>
-  <table class="table table-bordered table-hover">
-    <thead>
-      <tr>
-        <th>Descripción</th>
-        <th>Cantidad</th>
-        <th>Valor.Unt</th>
-        <th>Iva</th>
-        <th>Valor.Total</th>
-      </tr> 
-    </thead>
-    <tbody>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-    </tbody>
-    <tbody>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-    </tbody>
-    <tbody>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-   <button type="submit" class="btn btn-success">IMPRIMIR</button>
-  </div>
-  <button type="submit" class="btn btn-primary">VOLVER</button>
-  </div>
+    <br><br><br><br>
 
-     </section>
-
-<br><br><br><br>
-
-         <%@include file="../footer.jspf" %>
-         </body>
+    <%@include file="../footer.jspf" %>
+</body>
 </html>

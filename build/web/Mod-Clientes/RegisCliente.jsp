@@ -16,8 +16,8 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     <body>
-           <%@include file="../headerModulos.jspf" %>
-
+        <%@include file="../headerModulos.jspf" %><br>
+        <div class="container">
         <section class="main container-fluid">
             <form class="navbar-left" role="search">
                 <p>Ingresar Numero de Documento</p>
@@ -31,10 +31,11 @@
                 <h2 style="text-align: center;">Registro del Cliente</h2><br><br>
             </div>
             <form>
-                <div class="container">
+                
                     <label class="form-control-label" for="index-form-4-4name">
                         <span class="titulo">Seleccione el tipo de documento</span></label>
                     <select class="form-control">
+                    
                         <option>Cédula de Ciudadanía</option>
                         <option>Tarjeta de Identidad</option>
                         <option>Registro Civil </option>
@@ -42,7 +43,7 @@
                         <option>Otros</option>
                     </select><br>
 
-                    <div class="container">
+                    
                         <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Número de documento</span></label><br>
                         <input type="option" class="form-control" name="name"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese su número de documento"><br>
 
