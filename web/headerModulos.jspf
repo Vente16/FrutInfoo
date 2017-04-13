@@ -24,17 +24,10 @@
               <ul class="nav navbar-nav navbar-right">
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-briefcase"></span>Administrativo<span class="caret"></span></a>
         <ul class="dropdown-menu">
-<<<<<<< HEAD
-            <li><a href="Mod-Administrativo/Autorizaciones_admin.jsp">Autorizaciones</a></li>
-          <li><a href="../Mod-Administrativo/Ventas_admin.jsp">Informe de ventas</a></li>
-          <li><a href="../Mod-Administrativo/Insumos_admin.jsp">Informe de Insumos</a></li>
-          <li><a href="../Mod-Administrativo/">Informe de empleados</a></li>
-=======
           <li><a href="../Mod-Administrativo/Autorizaciones_admin.jsp">Autorizaciones</a></li>
           <li><a href="../Mod-Administrativo/Ventas_admin.jsp">Informe de ventas</a></li>
           <li><a href="../Mod-Administrativo/Insumos_admin.jsp">Informe de Insumos</a></li>
-          <li><a href="MOD-ADMINISTRATIVO/Administatrivo_InformeEmpleados.html">Informe de empleados</a></li>
->>>>>>> origin/master
+          <li><a href="../Mod-Administrativo/InformeEmpleados_admin.jsp">Informe de empleados</a></li>
         </ul>
       </li>
 

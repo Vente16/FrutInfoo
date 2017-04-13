@@ -1,0 +1,18 @@
+SMAP
+InformeEmplados_005fadmin_jsp.java
+JSP
+*S JSP
+*F
++ 0 InformeEmplados_admin.jsp
+Mod-Administrativo/InformeEmplados_admin.jsp
++ 1 headerModulos.jspf
+Mod-Administrativo/../headerModulos.jspf
++ 2 footerModulos.jspf
+Mod-Administrativo/../footerModulos.jspf
+*L
+5,15:50
+1#1,95:65
+19#0,183:159
+1#2,14:342
+201#0,4:355
+*E

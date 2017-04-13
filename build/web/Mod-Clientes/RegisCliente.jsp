@@ -18,7 +18,7 @@
     <body>
         <%@include file="../headerModulos.jspf" %><br>
         <div class="container">
-        <section class="main container-fluid">
+            <section class="container-fluid" id="main">
             <form class="navbar-left" role="search">
                 <p>Ingresar Numero de Documento</p>
                 <input type="number" class="form-control" value="">
