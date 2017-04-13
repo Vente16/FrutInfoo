@@ -96,8 +96,7 @@
             </table>
         </div>
     </div>
-
-    <div class="modal fade" id="detalle1" role="dialog">
+     <div class="modal fade" id="detalle1" role="dialog">
         <div class="modal-dialog">
             <!-- Cabecera del modal-->
             <div class="modal-content">
@@ -105,97 +104,103 @@
                     <h3>Descripción detallada de la novedad</h3>
                 </div>
                 <!-- Cuerpo  del modal, tiene dos input's, y dos h3 (Usuario y contraseña)-->
-                <div class="modal-body">
-                    <h4><b>Número de novedad:</b> 0015<h4>
-                            <h4><b>Tipo de novedad:</b> Incapacidad<h4>
-                                    <h4><b>Empleado involucrado:</b> Jhon Jairo Campillo Londoño<h4>
-                                            <h4><b>Documento de identificación:</b> 1021147942<br></h4>
-                                            <h4><b>Fecha de la incapacidad:</b> 06/07/2016 7:00 AM<br></h4>
-                                            <h4><b>Sede en la que labora:</b> Sabaneta<br></h4>
-                                            <h4><b>Descripción detallada:</b> El empleado tenía una fractura en brazo izquierdo por lo cual fue incapacitado 3 semanas<br></h4>
-                                            </div>
-                                            <!-- Footer del modal, dos botones, cerrrar y Acceder-->
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
-                                            </div>
-                                            </div>
-                                            </div>
-                                            </div>
-                                            <div class="modal fade" id="detalle2" role="dialog">
-                                                <div class="modal-dialog">
-                                                    <!-- Cabecera del modal-->
-                                                    <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <h3>Descripción detallada de la novedad</h3>
-                                                        </div>
-                                                        <!-- Cuerpo  del modal, tiene dos input's, y dos h3 (Usuario y contraseña)-->
-                                                        <div class="modal-body">
-                                                            <h4><b>Número de novedad:</b> 0016<h4>
-                                                                    <h4><b>Tipo de novedad:</b> Renuncia<h4>
-                                                                            <h4><b>Empleado involucrado:</b> Edwin Arturo Saénz Barón <h4>
-                                                                                    <h4><b>Documento de identificación:</b> 7488558442<br></h4>
-                                                                                    <h4><b>Fecha de la incapacidad:</b> 06/05/2016 7:00 AM<br></h4>
-                                                                                    <h4><b>Sede en la que labora:</b> Belén<br></h4>
-                                                                                    <h4><b>Descripción detallada:</b> El empleado renuncia por cuestiones de estudio<br></h4>
-                                                                                    </div>
-                                                                                    <!-- Footer del modal, dos botones, cerrrar y Acceder-->
-                                                                                    <div class="modal-footer">
-                                                                                        <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
-                                                                                    </div>
-                                                                                    </div>
-                                                                                    </div>
-                                                                                    </div>
+         <div class="modal-body">
+             <h4><b>Número de novedad:</b> 0015<h4>
+               <h4><b>Tipo de novedad:</b> Incapacidad<h4>
+                    <h4><b>Empleado involucrado:</b> Jhon Jairo Campillo Londoño<h4>
+                            <h4><b>Documento de identificación:</b> 1021147942<br></h4>
+                            <h4><b>Fecha de la incapacidad:</b> 06/07/2016 7:00 AM<br></h4>
+                            <h4><b>Sede en la que labora:</b> Sabaneta<br></h4>
+                            <h4><b>Descripción detallada:</b> El empleado tenía una fractura en brazo izquierdo por lo cual fue incapacitado 3 semanas<br></h4>
+                            </div>
+                            <!-- Footer del modal, dos botones, cerrrar y Acceder-->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                            </div>
+                            </div>
+                            </div>
+                            </div>
+    
+<div class="modal fade" id="detalle2" role="dialog">
+    <div class="modal-dialog">
+        <!-- Cabecera del modal-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Descripción detallada de la novedad</h3>
+            </div>
+            <!-- Cuerpo  del modal, tiene dos input's, y dos h3 (Usuario y contraseña)-->
+    <div class="modal-body">
+    <h4><b>Número de novedad:</b> 0016<h4>
+            <h4><b>Tipo de novedad:</b> Renuncia<h4>
+                    <h4><b>Empleado involucrado:</b> Edwin Arturo Saénz Barón <h4>
+                            <h4><b>Documento de identificación:</b> 7488558442<br></h4>
+                            <h4><b>Fecha de la incapacidad:</b> 06/05/2016 7:00 AM<br></h4>
+                            <h4><b>Sede en la que labora:</b> Belén<br></h4>
+                            <h4><b>Descripción detallada:</b> El empleado renuncia por cuestiones de estudio<br></h4>
+                            </div>
+                            <!-- Footer del modal, dos botones, cerrrar y Acceder-->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                            </div>
+                            </div>
+                            </div>
+                            </div>
 
-                                                                                    <div class="modal fade" id="detalle3" role="dialog">
-                                                                                        <div class="modal-dialog">
-                                                                                            <!-- Cabecera del modal-->
-                                                                                            <div class="modal-content">
-                                                                                                <div class="modal-header">
-                                                                                                    <h3>Descripción detallada de la novedad</h3>
-                                                                                                </div>
-                                                                                                <!-- Cuerpo  del modal, tiene dos input's, y dos h3 (Usuario y contraseña)-->
-                                                                                                <div class="modal-body">
-                                                                                                    <h4><b>Número de novedad:</b> 0017<h4>
-                                                                                                            <h4><b>Tipo de novedad:</b> Permiso<h4>
-                                                                                                                    <h4><b>Empleado involucrado:</b> Jhon Wilmar Venté Riascos<h4>
-                                                                                                                            <h4><b>Documento de identificación:</b> 822114125<br></h4>
-                                                                                                                            <h4><b>Fecha de la incapacidad:</b> 06/08/2016 7:00 AM<br></h4>
-                                                                                                                            <h4><b>Sede en la que labora:</b> Sabaneta<br></h4>
-                                                                                                                            <h4><b>Descripción detallada:</b> El empleado requeria de permiso para una cita médica<br></h4>
-                                                                                                                            </div>
-                                                                                                                            <!-- Footer del modal, dos botones, cerrrar y Acceder-->
-                                                                                                                            <div class="modal-footer">
-                                                                                                                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
-                                                                                                                            </div>
-                                                                                                                            </div>
-                                                                                                                            </div>
-                                                                                                                            </div>
-                                                                                                                            <div class="modal fade" id="detalle4" role="dialog">
-                                                                                                                                <div class="modal-dialog">
-                                                                                                                                    <!-- Cabecera del modal-->
-                                                                                                                                    <div class="modal-content">
-                                                                                                                                        <div class="modal-header">
-                                                                                                                                            <h3>Descripción detallada de la novedad</h3>
-                                                                                                                                        </div>
-                                                                                                                                        <!-- Cuerpo  del modal, tiene dos input's, y dos h3 (Usuario y contraseña)-->
-                                                                                                                                        <div class="modal-body">
-                                                                                                                                            <h4><b>Número de novedad:</b> 0018<h4>
-                                                                                                                                                    <h4><b>Tipo de novedad:</b> Incapacidad<h4>
-                                                                                                                                                            <h4><b>Empleado involucrado:</b> Oscar<h4>
-                                                                                                                                                                    <h4><b>Documento de identificación:</b> 1021147942<br></h4>
-                                                                                                                                                                    <h4><b>Fecha de la incapacidad:</b> 06/07/2016 7:00 AM<br></h4>
-                                                                                                                                                                    <h4><b>Sede en la que labora:</b> Sabaneta<br></h4>
-                                                                                                                                                                    <h4><b>Descripción detallada:</b> El empleado tenía una fractura en brazo izquierdo por lo cual fue incapacitado 3 semanas<br></h4>
-                                                                                                                                                                    </div>
-                                                                                                                                                                    <!-- Footer del modal, dos botones, cerrrar y Acceder-->
-                                                                                                                                                                    <div class="modal-footer">
-                                                                                                                                                                        <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
-                                                                                                                                                                    </div>
-                                                                                                                                                                    </div>
-                                                                                                                                                                    </div>
+        <div class="modal fade" id="detalle3" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Cabecera del modal-->
+                        <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3>Descripción detallada de la novedad</h3>
+                                </div>
+                                <!-- Cuerpo  del modal, tiene dos input's, y dos h3 (Usuario y contraseña)-->
+                            <div class="modal-body">
+                                <h4><b>Número de novedad:</b> 0017<h4>
+                                <h4><b>Tipo de novedad:</b> Permiso<h4>
+                                <h4><b>Empleado involucrado:</b> Jhon Wilmar Venté Riascos<h4>
+                                <h4><b>Documento de identificación:</b> 822114125<br></h4>
+                                <h4><b>Fecha de la incapacidad:</b> 06/08/2016 7:00 AM<br></h4>
+                                <h4><b>Sede en la que labora:</b> Sabaneta<br></h4>
+                                <h4><b>Descripción detallada:</b> El empleado requeria de permiso para una cita médica<br></h4>
+                            </div>
+                                                                                            <!-- Footer del modal, dos botones, cerrrar y Acceder-->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                            </div>
+                      </div>
+                 </div>
+         </div>
+    
+ <div class="modal fade" id="detalle4" role="dialog">
+     <div class="modal-dialog">
+         <!-- Cabecera del modal-->
+          <div class="modal-content">
+             <div class="modal-header">
+                <h3>Descripción detallada de la novedad</h3>
+             </div>
+              <!-- Cuerpo  del modal, tiene dos input's, y dos h3 (Usuario y contraseña)-->
+                       <div class="modal-body">
+                           <h4><b>Número de novedad:</b> 0018<h4>
+                           <h4><b>Tipo de novedad:</b> Incapacidad<h4>
+                           <h4><b>Empleado involucrado:</b> Oscar<h4>
+                           <h4><b>Documento de identificación:</b> 1021147942<br></h4>
+                           <h4><b>Fecha de la incapacidad:</b> 06/07/2016 7:00 AM<br></h4>
+                           <h4><b>Sede en la que labora:</b> Sabaneta<br></h4>
+                        
+                           <h4><b>Descripción detallada:</b> El empleado tenía una fractura en brazo izquierdo por lo cual fue incapacitado 3 semanas<br></h4>
+                      </div>                               
+                    <!-- Footer del modal, dos botones, cerrrar y Acceder-->
+                  <div class="modal-footer">
+                   <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+               </div>
+            </div>
 
+      </div>
+  </div>
+  
+      
+  <%@include file="../footerModulos.jspf" %>
 
-
-                                                                                                                                                                  <%@include file="../footer.jspf" %>
-                                                                                                                                                                    </body>
-                                                                                                                                                                    </html>
+ 
+</body>
+</html>

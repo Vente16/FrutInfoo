@@ -2,7 +2,7 @@
 <%@ page pageEncoding="UTF-8" %>
 
 <header>
-    <div class="container">
+   
         <nav class="navbar navbar-default" role="navigation">
             <!-- El logotipo y el icono que despliega el menú se agrupan
                  para mostrarlos mejor en los dispositivos móviles -->
@@ -14,7 +14,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <img src="../img/logolj.png" width="50px" style="vertical-align: middle; float: left;" alt="">
+                <img src="../img/logo.png" width="50px" style="vertical-align: middle; float: left;" alt="">
                 <a class="navbar-brand" href="#">LA JUGOSA</a>
             </div>
 
@@ -24,10 +24,17 @@
               <ul class="nav navbar-nav navbar-right">
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-briefcase"></span>Administrativo<span class="caret"></span></a>
         <ul class="dropdown-menu">
+<<<<<<< HEAD
             <li><a href="Mod-Administrativo/Autorizaciones_admin.jsp">Autorizaciones</a></li>
           <li><a href="../Mod-Administrativo/Ventas_admin.jsp">Informe de ventas</a></li>
           <li><a href="../Mod-Administrativo/Insumos_admin.jsp">Informe de Insumos</a></li>
           <li><a href="../Mod-Administrativo/">Informe de empleados</a></li>
+=======
+          <li><a href="../Mod-Administrativo/Autorizaciones_admin.jsp">Autorizaciones</a></li>
+          <li><a href="../Mod-Administrativo/Ventas_admin.jsp">Informe de ventas</a></li>
+          <li><a href="../Mod-Administrativo/Insumos_admin.jsp">Informe de Insumos</a></li>
+          <li><a href="MOD-ADMINISTRATIVO/Administatrivo_InformeEmpleados.html">Informe de empleados</a></li>
+>>>>>>> origin/master
         </ul>
       </li>
 
@@ -82,7 +89,7 @@
 
             </div>
         </nav>
-    </div>
+ 
 </header>
 
 

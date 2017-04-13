@@ -5,14 +5,10 @@ JSP
 *F
 + 0 index2.jsp
 index2.jsp
-+ 1 headerModulos.jspf
-headerModulos.jspf
-+ 2 footer.jspf
++ 1 footer.jspf
 footer.jspf
 *L
-5,16:50
-1#1,95:66
-20#0,5:160
-1#2,16:165
-24#0,5:180
+5,104:49
+1#1,16:153
+108#0,5:168
 *E

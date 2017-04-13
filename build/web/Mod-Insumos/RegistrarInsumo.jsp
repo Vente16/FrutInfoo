@@ -76,9 +76,13 @@
 
 </form>
 </section>
+<<<<<<< HEAD
         </div>
         <div class="abajo"></div>
         
          <%@include file="../footer.jspf" %>
+=======
+         <%@include file="../footerModulos.jspf"%> 
+>>>>>>> origin/master
     </body>
 </html>
