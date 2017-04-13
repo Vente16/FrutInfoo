@@ -1,0 +1,13 @@
+<%-- any content can be specified here e.g.: --%>
+<footer>
+    <div class="navbar-fixed-bottom">
+        <div class=" text-center pie">
+            <div class="row">
+                <div class="col-xs-12">
+                    <p>La Jugosa &copy; </p>
+                    <p>Todos los derechos reservados</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

@@ -27,7 +27,7 @@
     </head>
     <body>
         
-        <body>
+       
             
         <%@include file="../headerModulos.jspf"%>
         
@@ -41,9 +41,6 @@
         </div>
       </div>
         
-        <%@include file="../footer.jspf" %>
-         
-    </body>
-      
+         <%@include file="../footerModulos.jspf"%> 
     </body>
 </html>
