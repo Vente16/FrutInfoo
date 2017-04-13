@@ -61,7 +61,7 @@ public final class RegisCliente_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("        <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script>\r\n");
       out.write("    </head>\r\n");
       out.write("    <body>\r\n");
-      out.write("           ");
+      out.write("        ");
       out.write("\r\n");
       out.write("\r\n");
       out.write("\r\n");
@@ -78,7 +78,7 @@ public final class RegisCliente_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("                    <span class=\"icon-bar\"></span>\r\n");
       out.write("                    <span class=\"icon-bar\"></span>\r\n");
       out.write("                </button>\r\n");
-      out.write("                <img src=\"img/logolj.png\" width=\"50px\" style=\"vertical-align: middle; float: left;\" alt=\"\">\r\n");
+      out.write("                <img src=\"../img/logolj.png\" width=\"50px\" style=\"vertical-align: middle; float: left;\" alt=\"\">\r\n");
       out.write("                <a class=\"navbar-brand\" href=\"#\">LA JUGOSA</a>\r\n");
       out.write("            </div>\r\n");
       out.write("\r\n");
@@ -88,10 +88,10 @@ public final class RegisCliente_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("              <ul class=\"nav navbar-nav navbar-right\">\r\n");
       out.write("      <li class=\"dropdown\"><a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\"><span class=\"glyphicon glyphicon-briefcase\"></span>Administrativo<span class=\"caret\"></span></a>\r\n");
       out.write("        <ul class=\"dropdown-menu\">\r\n");
-      out.write("          <li><a href=\"MOD-ADMINISTRATIVO/Administrativo_Autorizaciones.html\">Autorizaciones</a></li>\r\n");
-      out.write("          <li><a href=\"MOD-ADMINISTRATIVO/Administrativo_Ventas.html\">Informe de ventas</a></li>\r\n");
-      out.write("          <li><a href=\"MOD-ADMINISTRATIVO/Administrativo_Insumos.html\">Informe de Insumos</a></li>\r\n");
-      out.write("          <li><a href=\"MOD-ADMINISTRATIVO/Administatrivo_InformeEmpleados.html\">Informe de empleados</a></li>\r\n");
+      out.write("            <li><a href=\"Mod-Administrativo/Autorizaciones_admin.jsp\">Autorizaciones</a></li>\r\n");
+      out.write("          <li><a href=\"../Mod-Administrativo/Ventas_admin.jsp\">Informe de ventas</a></li>\r\n");
+      out.write("          <li><a href=\"../Mod-Administrativo/Insumos_admin.jsp\">Informe de Insumos</a></li>\r\n");
+      out.write("          <li><a href=\"../Mod-Administrativo/\">Informe de empleados</a></li>\r\n");
       out.write("        </ul>\r\n");
       out.write("      </li>\r\n");
       out.write("\r\n");
@@ -127,7 +127,7 @@ public final class RegisCliente_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("      \r\n");
       out.write("         <li class=\"dropdown\"><a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\">Clientes<span class=\"caret\"></span></a>\r\n");
       out.write("        <ul class=\"dropdown-menu\">\r\n");
-      out.write("          <li><a href=\"#\">Registrar clientes</a></li>\r\n");
+      out.write("            <li><a href=\"../Mod-Clientes/RegisCliente.jsp\">Registrar clientes</a></li>\r\n");
       out.write("          <li><a href=\"#\">Listar clientes</a></li>\r\n");
       out.write("          <li><a href=\"#\">Solicitar domicilio</a></li>\r\n");
       out.write("        </ul>\r\n");
@@ -156,8 +156,8 @@ public final class RegisCliente_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("\r\n");
       out.write("\r\n");
       out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
+      out.write("<br>\r\n");
+      out.write("        <div class=\"container\">\r\n");
       out.write("        <section class=\"main container-fluid\">\r\n");
       out.write("            <form class=\"navbar-left\" role=\"search\">\r\n");
       out.write("                <p>Ingresar Numero de Documento</p>\r\n");
@@ -171,10 +171,11 @@ public final class RegisCliente_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("                <h2 style=\"text-align: center;\">Registro del Cliente</h2><br><br>\r\n");
       out.write("            </div>\r\n");
       out.write("            <form>\r\n");
-      out.write("                <div class=\"container\">\r\n");
+      out.write("                \r\n");
       out.write("                    <label class=\"form-control-label\" for=\"index-form-4-4name\">\r\n");
       out.write("                        <span class=\"titulo\">Seleccione el tipo de documento</span></label>\r\n");
       out.write("                    <select class=\"form-control\">\r\n");
+      out.write("                    \r\n");
       out.write("                        <option>Cédula de Ciudadanía</option>\r\n");
       out.write("                        <option>Tarjeta de Identidad</option>\r\n");
       out.write("                        <option>Registro Civil </option>\r\n");
@@ -182,7 +183,7 @@ public final class RegisCliente_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("                        <option>Otros</option>\r\n");
       out.write("                    </select><br>\r\n");
       out.write("\r\n");
-      out.write("                    <div class=\"container\">\r\n");
+      out.write("                    \r\n");
       out.write("                        <label class=\"form-control-label\" for=\"index-form1-1-name\"><span class=\"titulo\">Número de documento</span></label><br>\r\n");
       out.write("                        <input type=\"option\" class=\"form-control\" name=\"name\"required=\"\" data-form-field=\"Name\" id=\"index-form1-1-name\" placeholder=\"Ingrese su número de documento\"><br>\r\n");
       out.write("\r\n");

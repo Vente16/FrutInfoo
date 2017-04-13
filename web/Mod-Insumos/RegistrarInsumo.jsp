@@ -17,7 +17,8 @@
     </head>
      <%@include file="../headerModulos.jspf"%>
     <body>
-       <section class="main container-fluid">
+        <div style="padding-bottom: 40px">
+            <section class="main container">
         <div class="container-fluid"></div>
 
         <h2 style="text-align: center;">REGISTRAR INSUMOS</h2>
@@ -75,6 +76,9 @@
 
 </form>
 </section>
+        </div>
+        <div class="abajo"></div>
+        
          <%@include file="../footer.jspf" %>
     </body>
 </html>
