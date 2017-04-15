@@ -2,7 +2,7 @@
 <%@ page pageEncoding="UTF-8" %>
 
 <footer>
-    <div class="container navbar-fixed-bottom">
+    <div class=" navbar-fixed-bottom">
         <div class=" text-center pie">
             <div class="row">
                 <div class="col-xs-12">

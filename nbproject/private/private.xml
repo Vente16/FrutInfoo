@@ -3,11 +3,26 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/Users/Home/Documents/NetBeansProjects/proyecto/web/Mod-Clientes/RegisCliente.jsp</file>
             <file>file:/C:/Users/Home/Documents/NetBeansProjects/proyecto/src/Controlador/RegCliente.java</file>
             <file>file:/C:/Users/Home/Documents/NetBeansProjects/proyecto/web/Mod-RecursosHumanos/RegistrarNovedad.jsp</file>
             <file>file:/C:/Users/Home/Documents/NetBeansProjects/proyecto/web/Mod-Insumos/RegistrarInsumo.jsp</file>
             <file>file:/C:/Users/Home/Documents/NetBeansProjects/proyecto/src/Controlador/Novedades.java</file>
+=======
+            <file>file:/C:/Users/oscar/Desktop/carpetas/FrutInfoo/web/Mod-Insumos/RegistrarInsumo.jsp</file>
+            <file>file:/C:/Users/oscar/Desktop/carpetas/FrutInfoo/web/css/bootstrap.css</file>
+            <file>file:/C:/Users/oscar/Desktop/carpetas/FrutInfoo/web/footer.jspf</file>
+            <file>file:/C:/Users/oscar/Desktop/carpetas/FrutInfoo/web/Mod-RecursosHumanos/ListarEmpleados.jsp</file>
+            <file>file:/C:/Users/oscar/Desktop/carpetas/FrutInfoo/web/Mod-Clientes/RegisCliente.jsp</file>
+            <file>file:/C:/Users/oscar/Desktop/carpetas/FrutInfoo/web/css/estilos2.css</file>
+            <file>file:/C:/Users/oscar/Desktop/carpetas/FrutInfoo/web/headerModulos.jspf</file>
+            <file>file:/C:/Users/oscar/Desktop/carpetas/FrutInfoo/web/Mod-Insumos/IndexInsumo.jsp</file>
+            <file>file:/C:/Users/oscar/Desktop/carpetas/FrutInfoo/web/Mod-Administrativo/Ventas_admin.jsp</file>
+            <file>file:/C:/Users/oscar/Desktop/carpetas/FrutInfoo/web/footerModulos.jspf</file>
+            <file>file:/C:/Users/oscar/Desktop/carpetas/FrutInfoo/web/Mod-Administrativo/Insumos_admin.jsp</file>
+            <file>file:/C:/Users/oscar/Desktop/carpetas/FrutInfoo/web/Mod-Administrativo/InformeEmplados_admin.jsp</file>
+>>>>>>> origin/master
         </group>
     </open-files>
 </project-private>

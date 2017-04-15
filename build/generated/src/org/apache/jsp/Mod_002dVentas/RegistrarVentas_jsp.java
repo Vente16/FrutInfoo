@@ -88,10 +88,10 @@ public final class RegistrarVentas_jsp extends org.apache.jasper.runtime.HttpJsp
       out.write("              <ul class=\"nav navbar-nav navbar-right\">\r\n");
       out.write("      <li class=\"dropdown\"><a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\"><span class=\"glyphicon glyphicon-briefcase\"></span>Administrativo<span class=\"caret\"></span></a>\r\n");
       out.write("        <ul class=\"dropdown-menu\">\r\n");
-      out.write("          <li><a href=\"MOD-ADMINISTRATIVO/Administrativo_Autorizaciones.html\">Autorizaciones</a></li>\r\n");
-      out.write("          <li><a href=\"MOD-ADMINISTRATIVO/Administrativo_Ventas.html\">Informe de ventas</a></li>\r\n");
-      out.write("          <li><a href=\"MOD-ADMINISTRATIVO/Administrativo_Insumos.html\">Informe de Insumos</a></li>\r\n");
-      out.write("          <li><a href=\"MOD-ADMINISTRATIVO/Administatrivo_InformeEmpleados.html\">Informe de empleados</a></li>\r\n");
+      out.write("            <li><a href=\"Mod-Administrativo/Autorizaciones_admin.jsp\">Autorizaciones</a></li>\r\n");
+      out.write("          <li><a href=\"../Mod-Administrativo/Ventas_admin.jsp\">Informe de ventas</a></li>\r\n");
+      out.write("          <li><a href=\"../Mod-Administrativo/Insumos_admin.jsp\">Informe de Insumos</a></li>\r\n");
+      out.write("          <li><a href=\"../Mod-Administrativo/\">Informe de empleados</a></li>\r\n");
       out.write("        </ul>\r\n");
       out.write("      </li>\r\n");
       out.write("\r\n");
@@ -127,7 +127,7 @@ public final class RegistrarVentas_jsp extends org.apache.jasper.runtime.HttpJsp
       out.write("      \r\n");
       out.write("         <li class=\"dropdown\"><a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\">Clientes<span class=\"caret\"></span></a>\r\n");
       out.write("        <ul class=\"dropdown-menu\">\r\n");
-      out.write("          <li><a href=\"#\">Registrar clientes</a></li>\r\n");
+      out.write("            <li><a href=\"../Mod-Clientes/RegisCliente.jsp\">Registrar clientes</a></li>\r\n");
       out.write("          <li><a href=\"#\">Listar clientes</a></li>\r\n");
       out.write("          <li><a href=\"#\">Solicitar domicilio</a></li>\r\n");
       out.write("        </ul>\r\n");
@@ -191,8 +191,11 @@ public final class RegistrarVentas_jsp extends org.apache.jasper.runtime.HttpJsp
       out.write("                    <th>Total</th>\r\n");
       out.write("                    <th>Iva</th>\r\n");
       out.write("                    <th>Total a Pagar</th>\r\n");
+<<<<<<< HEAD
       out.write("                    <th>modificar</th>\r\n");
       out.write("                    \r\n");
+=======
+>>>>>>> origin/master
       out.write("                </tr> \r\n");
       out.write("            </thead>\r\n");
       out.write("            <tbody>\r\n");
@@ -204,7 +207,10 @@ public final class RegistrarVentas_jsp extends org.apache.jasper.runtime.HttpJsp
       out.write("                    <td></td>\r\n");
       out.write("                    <td></td>\r\n");
       out.write("                    <td></td>\r\n");
+<<<<<<< HEAD
       out.write("                    <td><button class=\"btn btn-primary glyphicon glyphicon-edit\"></button></td>\r\n");
+=======
+>>>>>>> origin/master
       out.write("                </tr>\r\n");
       out.write("\r\n");
       out.write("\r\n");

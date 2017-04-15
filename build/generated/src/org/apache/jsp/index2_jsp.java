@@ -12,8 +12,7 @@ public final class index2_jsp extends org.apache.jasper.runtime.HttpJspBase
   private static java.util.List<String> _jspx_dependants;
 
   static {
-    _jspx_dependants = new java.util.ArrayList<String>(2);
-    _jspx_dependants.add("/headerModulos.jspf");
+    _jspx_dependants = new java.util.ArrayList<String>(1);
     _jspx_dependants.add("/footer.jspf");
   }
 
@@ -62,11 +61,8 @@ public final class index2_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    </head>\r\n");
       out.write("   \r\n");
       out.write("    <body>\r\n");
-      out.write("        ");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("<header>\r\n");
+      out.write("     \r\n");
+      out.write("        <header>\r\n");
       out.write("    <div class=\"container\">\r\n");
       out.write("        <nav class=\"navbar navbar-default\" role=\"navigation\">\r\n");
       out.write("            <!-- El logotipo y el icono que despliega el menú se agrupan\r\n");
@@ -79,7 +75,7 @@ public final class index2_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                    <span class=\"icon-bar\"></span>\r\n");
       out.write("                    <span class=\"icon-bar\"></span>\r\n");
       out.write("                </button>\r\n");
-      out.write("                <img src=\"img/logolj.png\" width=\"50px\" style=\"vertical-align: middle; float: left;\" alt=\"\">\r\n");
+      out.write("                <img src=\"../img/logolj.png\" width=\"50px\" style=\"vertical-align: middle; float: left;\" alt=\"\">\r\n");
       out.write("                <a class=\"navbar-brand\" href=\"#\">LA JUGOSA</a>\r\n");
       out.write("            </div>\r\n");
       out.write("\r\n");
@@ -89,37 +85,44 @@ public final class index2_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("              <ul class=\"nav navbar-nav navbar-right\">\r\n");
       out.write("      <li class=\"dropdown\"><a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\"><span class=\"glyphicon glyphicon-briefcase\"></span>Administrativo<span class=\"caret\"></span></a>\r\n");
       out.write("        <ul class=\"dropdown-menu\">\r\n");
-      out.write("          <li><a href=\"MOD-ADMINISTRATIVO/Administrativo_Autorizaciones.html\">Autorizaciones</a></li>\r\n");
-      out.write("          <li><a href=\"MOD-ADMINISTRATIVO/Administrativo_Ventas.html\">Informe de ventas</a></li>\r\n");
-      out.write("          <li><a href=\"MOD-ADMINISTRATIVO/Administrativo_Insumos.html\">Informe de Insumos</a></li>\r\n");
-      out.write("          <li><a href=\"MOD-ADMINISTRATIVO/Administatrivo_InformeEmpleados.html\">Informe de empleados</a></li>\r\n");
+<<<<<<< HEAD
+      out.write("          <li><a href=\"Mod-Administrativo/Autorizaciones_admin.jsp\">Autorizaciones</a></li>\r\n");
+      out.write("          <li><a href=\"../Mod-Administrativo/Ventas_admin.jsp\">Informe de ventas</a></li>\r\n");
+      out.write("          <li><a href=\"../Mod-Administrativo/Insumos_admin.jsp\">Informe de Insumos</a></li>\r\n");
+      out.write("          <li><a href=\"../Mod-Administrativo/\">Informe de empleados</a></li>\r\n");
+=======
+      out.write("          <li><a href=\"Mod-Administrativo/Administrativo_admin.jsp\">Autorizaciones</a></li>\r\n");
+      out.write("          <li><a href=\"Mod-Administrativo/Ventas_admin.jsp\">Informe de ventas</a></li>\r\n");
+      out.write("          <li><a href=\"Mod-Administrativo/Insumos_admin.jsp\">Informe de Insumos</a></li>\r\n");
+      out.write("          <li><a href=\"Mod-Administrativo/Administatrivo_InformeEmpleados.html\">Informe de empleados</a></li>\r\n");
+>>>>>>> origin/master
       out.write("        </ul>\r\n");
       out.write("      </li>\r\n");
       out.write("\r\n");
       out.write("      <li class=\"dropdown\"><a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\"><span class=\"glyphicon glyphicon-apple\">Insumos<span class=\"caret\"></span></a>\r\n");
       out.write("        <ul class=\"dropdown-menu\">\r\n");
-      out.write("          <li><a href=\"../Mod-Insumos/VerlistadeInsumos.jsp\">Ver lista de insumos</a></li>\r\n");
-      out.write("          <li><a href=\"../Mod-Insumos/SolicitarInsumo.jsp\">Solicitar Insumo</a></li>\r\n");
-      out.write("          <li><a href=\"../Mod-Insumos/RegistrarInsumo.jsp\">Registrar insumos</a></li>\r\n");
+      out.write("          <li><a href=\"Mod-Insumos/VerlistadeInsumos.jsp\">Ver lista de insumos</a></li>\r\n");
+      out.write("          <li><a href=\"Mod-Insumos/SolicitarInsumo.jsp\">Solicitar Insumo</a></li>\r\n");
+      out.write("          <li><a href=\"Mod-Insumos/RegistrarInsumo.jsp\">Registrar insumos</a></li>\r\n");
       out.write("          <li><a href=\"#\">Inicio</a></li>\r\n");
       out.write("        </ul>\r\n");
       out.write("      </li>\r\n");
       out.write("      \r\n");
       out.write("      <li class=\"dropdown\"><a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\"><span class=\"glyphicon glyphicon-shopping-cart\">Ventas<span class=\"caret\"></span></a>\r\n");
       out.write("        <ul class=\"dropdown-menu\">\r\n");
-      out.write("          <li><a href=\"../Mod-Ventas/RegistrarVentas.jsp\">Registrar ventas</a></li>\r\n");
-      out.write("          <li><a href=\"../Mod-Ventas/ListarVentas.jsp\">Listar ventas</a></li>\r\n");
-      out.write("          <li><a href=\"../Mod-Ventas/InforVentas.jsp\">Realizar infrome de ventas</a></li>\r\n");
-      out.write("          <li><a href=\"../Mod-Ventas/FacturaVentas.jsp\">Generar factura de ventas</a></li>\r\n");
+      out.write("          <li><a href=\"Mod-Ventas/RegistrarVentas.jsp\">Registrar ventas</a></li>\r\n");
+      out.write("          <li><a href=\"Mod-Ventas/ListarVentas.jsp\">Listar ventas</a></li>\r\n");
+      out.write("          <li><a href=\"Mod-Ventas/InforVentas.jsp\">Realizar infrome de ventas</a></li>\r\n");
+      out.write("          <li><a href=\"Mod-Ventas/FacturaVentas.jsp\">Generar factura de ventas</a></li>\r\n");
       out.write("         \r\n");
       out.write("        </ul>\r\n");
       out.write("      </li>\r\n");
       out.write("     \r\n");
       out.write("      <li class=\"dropdown\"><a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\">Recursos humanos<span class=\"caret\"></span></a>\r\n");
       out.write("        <ul class=\"dropdown-menu\">\r\n");
-      out.write("          <li><a href=\"../Mod-RecursosHumanos/RegistrarEmpleados.jsp\">Registrar empleados</a></li>\r\n");
-      out.write("          <li><a href=\"../Mod-RecursosHumanos/ListarEmpleados.jsp\">Listar empleados</a></li>\r\n");
-      out.write("          <li><a href=\"../Mod-RecursosHumanos/Novedades.jsp\">Novedades</a></li>\r\n");
+      out.write("          <li><a href=\"Mod-RecursosHumanos/RegistrarEmpleados.jsp\">Registrar empleados</a></li>\r\n");
+      out.write("          <li><a href=\"Mod-RecursosHumanos/ListarEmpleados.jsp\">Listar empleados</a></li>\r\n");
+      out.write("          <li><a href=\"Mod-RecursosHumanos/Novedades.jsp\">Novedades</a></li>\r\n");
       out.write("        </ul>\r\n");
       out.write("      </li>\r\n");
       out.write("      \r\n");
@@ -148,16 +151,8 @@ public final class index2_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            </div>\r\n");
       out.write("        </nav>\r\n");
       out.write("    </div>\r\n");
-      out.write("</header>\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
+      out.write("        </head>\r\n");
+      out.write("        \r\n");
       out.write("        <div class=\"container\">\r\n");
       out.write("        <h1>BIENVENIDO AL SISTEMA</h1>\r\n");
       out.write("        </div>\r\n");

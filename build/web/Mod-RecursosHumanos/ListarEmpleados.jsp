@@ -7,10 +7,16 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
+    <head>
       <link rel="stylesheet" href="../css/bootstrap.css">
         <link rel="stylesheet" href="../css/estilos2.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <title>Lista de empleados</title>
+        
+    </head>
+    
+    
     <%@include file="../headerModulos.jspf" %> 
     
       <div class="container">
@@ -247,6 +253,6 @@
       <br>
       <br>     
     
-    <%@include file="../footer.jspf" %> 
+    <%@include file="../footerModulos.jspf"%> 
     
 </html>
