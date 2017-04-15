@@ -1,7 +1,7 @@
 <%-- 
     Document   : Mod-Clientes
     Created on : 28/02/2017, 06:01:14 PM
-    Author     : Home
+    Author     : John Jairo
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

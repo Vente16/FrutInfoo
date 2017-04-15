@@ -16,6 +16,54 @@
         <servlet-name>Login</servlet-name>
         <servlet-class>Controlador.Login</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ADM_insumos</servlet-name>
+        <servlet-class>Controlador.insumos</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CONEXIONdb</servlet-name>
+        <servlet-class>Modelo.CONEXIONdb</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Cargos</servlet-name>
+        <servlet-class>Controlador.Cargos</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Clientes</servlet-name>
+        <servlet-class>Controlador.Clientes</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Elaboracion_productos</servlet-name>
+        <servlet-class>Controlador.Elaboracion_productos</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Empleados</servlet-name>
+        <servlet-class>Controlador.Empleados</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Estado</servlet-name>
+        <servlet-class>Controlador.Estados</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Facturas_ventas</servlet-name>
+        <servlet-class>Controlador.Facturas_ventas</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Novedades</servlet-name>
+        <servlet-class>Controlador.Novedades</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Pedidos</servlet-name>
+        <servlet-class>Controlador.Pedidos</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Prueba</servlet-name>
+        <servlet-class>Controlador.Prueba</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RegCliente</servlet-name>
+        <servlet-class>Controlador.RegCliente</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Validar</servlet-name>
         <url-pattern>/Validar</url-pattern>
@@ -31,6 +79,54 @@
     <servlet-mapping>
         <servlet-name>Login</servlet-name>
         <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ADM_insumos</servlet-name>
+        <url-pattern>/ADM_insumos</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CONEXIONdb</servlet-name>
+        <url-pattern>/CONEXIONdb</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Cargos</servlet-name>
+        <url-pattern>/Cargos</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Clientes</servlet-name>
+        <url-pattern>/Clientes</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Elaboracion_productos</servlet-name>
+        <url-pattern>/Elaboracion_productos</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Empleados</servlet-name>
+        <url-pattern>/Empleados</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Estado</servlet-name>
+        <url-pattern>/Estado</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Facturas_ventas</servlet-name>
+        <url-pattern>/Facturas_ventas</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Novedades</servlet-name>
+        <url-pattern>/Novedades</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Pedidos</servlet-name>
+        <url-pattern>/Pedidos</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Prueba</servlet-name>
+        <url-pattern>/Prueba</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegCliente</servlet-name>
+        <url-pattern>/RegCliente</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

@@ -16,7 +16,7 @@ import java.sql.Connection;
 public class Conexion {
     
     private Connection Conexion; 
-   private String BD = "login";
+   private String BD = "la jugosa DB";
    private String User = "root";
    private String pass = "";
    private String url = "jdbc:mysql://localhost:3306/"+BD;
@@ -68,14 +68,24 @@ public class Conexion {
        try {
            Class.forName("com.mysql.jdbc.Driver");
            Conexion =  (Connection) DriverManager.getConnection(url, User, pass);
-           
+        //   System.out.println("Se establecio la conexion");
        } catch (Exception e) {
-           System.out.println("No se pudo conectar" + e);
+       //    System.out.println("No se pudo conectar" + e);
        } 
 
        return Conexion;
          
-   }  
+   } 
+   /*public static void main(String[]args){
+   
+   
+   Conexion C = new Conexion();
+   C.Conectar();
+   
+   
+   
+   
+   }*/
     
 
    

@@ -1,7 +1,7 @@
 <%-- 
     Document   : RegistrarVentas
     Created on : 26/02/2017, 11:13:13 AM
-    Author     : Home
+    Author     : John jairo
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -51,6 +51,8 @@
                     <th>Total</th>
                     <th>Iva</th>
                     <th>Total a Pagar</th>
+                    <th>modificar</th>
+                    
                 </tr> 
             </thead>
             <tbody>
@@ -62,6 +64,7 @@
                     <td></td>
                     <td></td>
                     <td></td>
+                    <td><button class="btn btn-primary glyphicon glyphicon-edit"></button></td>
                 </tr>
 
 

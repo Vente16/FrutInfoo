@@ -22,20 +22,20 @@
 
        
               
-               <form>
+       <form action="../Novedades" method="post">
                 <div class="container">
                                     <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Nombres</span></label><br>
-                                    <input type="text" class="form-control" name="name"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese los nombres del empleado"><br>
+                                    <input type="text" class="form-control" name="nombre" required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese los nombres del empleado"><br>
 
                                      <labe2 class="form-control-label" for="index-form2-2-name"><span class="titulo"><b>Apellidos</b></span></labe2><br>
-                                    <input type="text" class="form-control" name="name"required="" data-form-field="Name" id="index-form2-2-name" placeholder="Ingrese los apellidos del empleado"><br>
+                                    <input type="text" class="form-control" name="apellido" required="" data-form-field="Name" id="index-form2-2-name" placeholder="Ingrese los apellidos del empleado"><br>
 
                                     <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Documento de identificación</span></label><br>
-                                        <input type="text" class="form-control" name="name"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el número de documento de identificación"><br>
+                                        <input type="text" class="form-control" name="documento" required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el número de documento de identificación"><br>
 
                                     <div class="form-group">
                                       <label class="form-control-label" for="index-form-4-4name"><span class="titulo">Seleccione el tipo de documento</span></label>
-                                         <select class="form-control">
+                                         <select class="form-control" name="tipos">
                                             <option>Cédula de Ciudadanía(CC)</option>
                                             <option>Tarjeta de Identidad (TI)</option>
                                             <option>Registro Civil (RC)</option>
@@ -44,11 +44,11 @@
                                       </select>
                                       </div>
                                       <label class="form-control">Descripción detallada de la novedad</label>
-                                     <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Escriba la descripcion detallada de la novedad"></textarea>
+                                     <textarea name="descripcion" id="" cols="30" rows="10" class="form-control" placeholder="Escriba la descripcion detallada de la novedad"></textarea>
 
                                     <div class="form-group">
                                       <label class="form-control-label" for="index-form-4-4name"><span class="titulo">Seleccione la sede del empleado</span></label>
-                                       <select class="form-control">
+                                       <select class="form-control" name="sede">
                                             <option>Envigado </option>
                                             <option>Itagüí</option>
                                             <option>Sabaneta</option>
@@ -62,8 +62,9 @@
                                       </select>
                                     </div>
                                   <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Cargo</span></label>
-                                    <input type="text" class="form-control" name="name"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el cargo del empleado"><br> 
-                                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#registrar">Registrar Novedad</button>             
+                                    <input type="text" class="form-control" name="cargo" required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el cargo del empleado"><br> 
+                                    <button type="submit" class="btn btn-success">Registrar Novedad</button> 
+                                    
               </form>
             </div><br><br><br><br>
               <div class="modal fade" id="registrar" role="dialog">

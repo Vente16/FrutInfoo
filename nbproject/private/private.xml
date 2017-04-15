@@ -3,9 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Home/Documents/NetBeansProjects/proyecto/web/headerModulos.jspf</file>
-            <file>file:/C:/Users/Home/Documents/NetBeansProjects/proyecto/web/Mod-Clientes/PagPrincClientes.jsp</file>
-            <file>file:/C:/Users/Home/Documents/NetBeansProjects/proyecto/web/IndexPrincipal.html</file>
+            <file>file:/C:/Users/Home/Documents/NetBeansProjects/proyecto/web/Mod-Clientes/RegisCliente.jsp</file>
+            <file>file:/C:/Users/Home/Documents/NetBeansProjects/proyecto/src/Controlador/RegCliente.java</file>
+            <file>file:/C:/Users/Home/Documents/NetBeansProjects/proyecto/web/Mod-RecursosHumanos/RegistrarNovedad.jsp</file>
+            <file>file:/C:/Users/Home/Documents/NetBeansProjects/proyecto/web/Mod-Insumos/RegistrarInsumo.jsp</file>
+            <file>file:/C:/Users/Home/Documents/NetBeansProjects/proyecto/src/Controlador/Novedades.java</file>
         </group>
     </open-files>
 </project-private>

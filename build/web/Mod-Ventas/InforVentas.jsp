@@ -1,7 +1,7 @@
 <%-- 
     Document   : InforVentas
     Created on : 27/02/2017, 09:33:56 PM
-    Author     : Home
+    Author     : John Jairo
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
