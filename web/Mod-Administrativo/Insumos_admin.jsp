@@ -52,6 +52,7 @@
                             <th>Fecha de salida</th>
                             <th>Cantidad de salida</th>
                             <th>Prioridad</th>
+                            <th>habilitado</th>
                         </tr>
                     </thead>
                     <tbody>

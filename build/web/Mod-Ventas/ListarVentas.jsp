@@ -1,7 +1,7 @@
 <%-- 
     Document   : ListarVentas
     Created on : 27/02/2017, 09:11:53 PM
-    Author     : Home
+    Author     : John Jairo
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

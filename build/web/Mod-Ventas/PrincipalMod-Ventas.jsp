@@ -1,7 +1,7 @@
 <%-- 
     Document   : PrincipalVentas
     Created on : 27/02/2017, 09:27:25 PM
-    Author     : Home
+    Author     : John Jairo
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

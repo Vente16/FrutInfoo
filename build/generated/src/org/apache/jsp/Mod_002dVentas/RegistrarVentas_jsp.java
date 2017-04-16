@@ -191,6 +191,11 @@ public final class RegistrarVentas_jsp extends org.apache.jasper.runtime.HttpJsp
       out.write("                    <th>Total</th>\r\n");
       out.write("                    <th>Iva</th>\r\n");
       out.write("                    <th>Total a Pagar</th>\r\n");
+<<<<<<< HEAD
+      out.write("                    <th>modificar</th>\r\n");
+      out.write("                    \r\n");
+=======
+>>>>>>> origin/master
       out.write("                </tr> \r\n");
       out.write("            </thead>\r\n");
       out.write("            <tbody>\r\n");
@@ -202,6 +207,10 @@ public final class RegistrarVentas_jsp extends org.apache.jasper.runtime.HttpJsp
       out.write("                    <td></td>\r\n");
       out.write("                    <td></td>\r\n");
       out.write("                    <td></td>\r\n");
+<<<<<<< HEAD
+      out.write("                    <td><button class=\"btn btn-primary glyphicon glyphicon-edit\"></button></td>\r\n");
+=======
+>>>>>>> origin/master
       out.write("                </tr>\r\n");
       out.write("\r\n");
       out.write("\r\n");

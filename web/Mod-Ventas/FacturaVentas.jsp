@@ -1,7 +1,7 @@
 <%-- 
     Document   : FacturaVentas
     Created on : 27/02/2017, 09:42:13 PM
-    Author     : Home
+    Author     : Jhon Jairo
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
