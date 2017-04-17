@@ -17,7 +17,7 @@ public class Conexion {
     
     private Connection Conexion; 
 
-   private String BD = "la jugosa DB";
+   private String BD = "lajugosaDB";
 
    private String User = "root";
    private String pass = "";
@@ -72,13 +72,13 @@ public class Conexion {
            Conexion =  DriverManager.getConnection(url, User, pass);
         //   System.out.println("Se establecio la conexion");
        } catch (Exception e) {
-       //    System.out.println("No se pudo conectar" + e);
+        //   System.out.println("No se pudo conectar" + e);
        } 
 
        return Conexion;
          
    } 
-   /*public static void main(String[]args){
+  /* public static void main(String[]args){
    
    
    Conexion C = new Conexion();
