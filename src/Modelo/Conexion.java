@@ -69,7 +69,7 @@ public class Conexion {
    
        try {
            Class.forName("com.mysql.jdbc.Driver");
-           Conexion =  (Connection) DriverManager.getConnection(url, User, pass);
+           Conexion =  DriverManager.getConnection(url, User, pass);
         //   System.out.println("Se establecio la conexion");
        } catch (Exception e) {
        //    System.out.println("No se pudo conectar" + e);

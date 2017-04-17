@@ -46,7 +46,7 @@ public class Login extends HttpServlet {
             String usuario = request.getParameter("Usuario");
             String Contraseña = request.getParameter("Contra");
             
-            PreparedStatement st = con.prepareStatement("SELECT * FROM usuario WHERE usuario=? AND contraseña=?");
+            PreparedStatement st = con.prepareStatement("SELECT * FROM logins WHERE Usuario=? AND Contrasena=?");
             st.setString(1, usuario);
             st.setString(2, Contraseña);
            
@@ -59,19 +59,16 @@ public class Login extends HttpServlet {
              sesion.setAttribute("Contraseña", Contraseña);
              
              response.sendRedirect("index2.jsp");
+            }
             
             
-            
-            }else{
-            
-            response.sendRedirect("Error.jsp");
                
             
-            }
+            
     
             
         }catch(Exception e){
-          
+          response.sendRedirect("Error.jsp");
             System.out.println(""+e);
             
         } finally {
