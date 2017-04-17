@@ -18,7 +18,7 @@
     <body>
         <%@include file="../headerModulos.jspf" %><br>
         <div class="container">
-<<<<<<< HEAD
+
             <section class="main container-fluid">
                 <form class="navbar-left" role="search">
                     <p>Ingresar Numero de Documento</p>
@@ -32,23 +32,6 @@
                     <h2 style="text-align: center;">Registro del Cliente</h2><br><br>
                 </div>
                 <form action="../RegCliente" method="post">
-
-=======
-            <section class="container-fluid" id="main">
-            <form class="navbar-left" role="search">
-                <p>Ingresar Numero de Documento</p>
-                <input type="number" class="form-control" value="">
-                <br>
-                <button type="submit" class="btn btn-success">REGISTRAR</button>
-                <button type="submit" class="btn btn-info">CONSULTAR</button>
-            </form>
-
-            <div style="margin-top: 100px">
-                <h2 style="text-align: center;">Registro del Cliente</h2><br><br>
-            </div>
-            <form>
-                
->>>>>>> origin/master
                     <label class="form-control-label" for="index-form-4-4name">
                         <span class="titulo">Seleccione el tipo de documento</span></label>
                     <select class="form-control" name="tipo">

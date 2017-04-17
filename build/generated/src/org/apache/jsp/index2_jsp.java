@@ -13,7 +13,7 @@ public final class index2_jsp extends org.apache.jasper.runtime.HttpJspBase
 
   static {
     _jspx_dependants = new java.util.ArrayList<String>(1);
-    _jspx_dependants.add("/footer.jspf");
+    _jspx_dependants.add("/footerModulos.jspf");
   }
 
   private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
@@ -53,7 +53,7 @@ public final class index2_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<html>\r\n");
       out.write("    <head>\r\n");
       out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
-      out.write("        <title>JSP Page</title>\r\n");
+      out.write("        <title>Inicio</title>\r\n");
       out.write("         <link rel=\"stylesheet\" href=\"css/bootstrap.css\">\r\n");
       out.write("        <link rel=\"stylesheet\" href=\"css/estilos2.css\">\r\n");
       out.write("        <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js\"></script>\r\n");
@@ -63,7 +63,7 @@ public final class index2_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    <body>\r\n");
       out.write("     \r\n");
       out.write("        <header>\r\n");
-      out.write("    <div class=\"container\">\r\n");
+      out.write("   \r\n");
       out.write("        <nav class=\"navbar navbar-default\" role=\"navigation\">\r\n");
       out.write("            <!-- El logotipo y el icono que despliega el menú se agrupan\r\n");
       out.write("                 para mostrarlos mejor en los dispositivos móviles -->\r\n");
@@ -75,7 +75,7 @@ public final class index2_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                    <span class=\"icon-bar\"></span>\r\n");
       out.write("                    <span class=\"icon-bar\"></span>\r\n");
       out.write("                </button>\r\n");
-      out.write("                <img src=\"../img/logolj.png\" width=\"50px\" style=\"vertical-align: middle; float: left;\" alt=\"\">\r\n");
+      out.write("                <img src=\"img/logolj.png\" width=\"50px\" style=\"vertical-align: middle; float: left;\" alt=\"\">\r\n");
       out.write("                <a class=\"navbar-brand\" href=\"#\">LA JUGOSA</a>\r\n");
       out.write("            </div>\r\n");
       out.write("\r\n");
@@ -85,17 +85,10 @@ public final class index2_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("              <ul class=\"nav navbar-nav navbar-right\">\r\n");
       out.write("      <li class=\"dropdown\"><a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\"><span class=\"glyphicon glyphicon-briefcase\"></span>Administrativo<span class=\"caret\"></span></a>\r\n");
       out.write("        <ul class=\"dropdown-menu\">\r\n");
-<<<<<<< HEAD
-      out.write("          <li><a href=\"Mod-Administrativo/Autorizaciones_admin.jsp\">Autorizaciones</a></li>\r\n");
-      out.write("          <li><a href=\"../Mod-Administrativo/Ventas_admin.jsp\">Informe de ventas</a></li>\r\n");
-      out.write("          <li><a href=\"../Mod-Administrativo/Insumos_admin.jsp\">Informe de Insumos</a></li>\r\n");
-      out.write("          <li><a href=\"../Mod-Administrativo/\">Informe de empleados</a></li>\r\n");
-=======
       out.write("          <li><a href=\"Mod-Administrativo/Administrativo_admin.jsp\">Autorizaciones</a></li>\r\n");
       out.write("          <li><a href=\"Mod-Administrativo/Ventas_admin.jsp\">Informe de ventas</a></li>\r\n");
       out.write("          <li><a href=\"Mod-Administrativo/Insumos_admin.jsp\">Informe de Insumos</a></li>\r\n");
       out.write("          <li><a href=\"Mod-Administrativo/Administatrivo_InformeEmpleados.html\">Informe de empleados</a></li>\r\n");
->>>>>>> origin/master
       out.write("        </ul>\r\n");
       out.write("      </li>\r\n");
       out.write("\r\n");
@@ -150,7 +143,6 @@ public final class index2_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\r\n");
       out.write("            </div>\r\n");
       out.write("        </nav>\r\n");
-      out.write("    </div>\r\n");
       out.write("        </head>\r\n");
       out.write("        \r\n");
       out.write("        <div class=\"container\">\r\n");
@@ -158,10 +150,8 @@ public final class index2_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        </div>\r\n");
       out.write("        ");
       out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
       out.write("<footer>\r\n");
-      out.write("    <div class=\"container navbar-fixed-bottom\">\r\n");
+      out.write("    <div class=\"navbar-fixed-bottom\">\r\n");
       out.write("        <div class=\" text-center pie\">\r\n");
       out.write("            <div class=\"row\">\r\n");
       out.write("                <div class=\"col-xs-12\">\r\n");
