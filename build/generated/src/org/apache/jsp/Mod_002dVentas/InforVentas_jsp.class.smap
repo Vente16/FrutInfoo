@@ -7,12 +7,12 @@ JSP
 Mod-Ventas/InforVentas.jsp
 + 1 headerModulos.jspf
 Mod-Ventas/../headerModulos.jspf
-+ 2 footer.jspf
-Mod-Ventas/../footer.jspf
++ 2 footerModulos.jspf
+Mod-Ventas/../footerModulos.jspf
 *L
 5,15:50
 1#1,95:65
 19#0,116:159
-1#2,16:275
-134#0,4:290
+1#2,14:275
+134#0,4:288
 *E

@@ -7,12 +7,12 @@ JSP
 Mod-Administrativo/Insumos_admin.jsp
 + 1 headerModulos.jspf
 Mod-Administrativo/../headerModulos.jspf
-+ 2 footer.jspf
-Mod-Administrativo/../footer.jspf
++ 2 footerModulos.jspf
+Mod-Administrativo/../footerModulos.jspf
 *L
 5,15:50
 1#1,95:65
-19#0,146:159
-1#2,16:305
-164#0,4:320
+19#0,147:159
+1#2,14:306
+165#0,4:319
 *E

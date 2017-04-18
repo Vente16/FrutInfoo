@@ -7,12 +7,12 @@ JSP
 Mod-Administrativo/Autorizaciones_admin.jsp
 + 1 headerModulos.jspf
 Mod-Administrativo/../headerModulos.jspf
-+ 2 footer.jspf
-Mod-Administrativo/../footer.jspf
++ 2 footerModulos.jspf
+Mod-Administrativo/../footerModulos.jspf
 *L
 5,15:50
 1#1,95:65
 19#0,95:159
-1#2,16:254
-113#0,4:269
+1#2,14:254
+113#0,4:267
 *E

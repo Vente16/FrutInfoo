@@ -70,7 +70,7 @@ public class RegCliente extends HttpServlet {
         Conexion c = new Conexion();
         Connection con = c.Conectar();
         
-        PreparedStatement Ps = con.prepareStatement("INSERT INTO Novedades (Nombre_empleado, Apellidos, Documento, Tipo_documento, Descripcion, Sede_empleado, Cargo) VALUES(?,?,?,?,?,?,?)");
+        PreparedStatement Ps = con.prepareStatement("INSERT INTO clientes (Nombre_empleado, Apellidos, Documento, Tipo_documento, Descripcion, Sede_empleado, Cargo) VALUES(?,?,?,?,?,?,?)");
         Ps.setString(1, Nom);
         Ps.setString(2, Ape);
         Ps.setString(3, Tel);

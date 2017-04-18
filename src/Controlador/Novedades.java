@@ -6,7 +6,6 @@
 package Controlador;
 
 import Modelo.Conexion;
-import com.mysql.jdbc.Statement;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;

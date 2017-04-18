@@ -16,11 +16,8 @@ import java.sql.Connection;
 public class Conexion {
     
     private Connection Conexion; 
-<<<<<<< HEAD
-   private String BD = "la jugosa DB";
-=======
-   private String BD = "vcmaterial";
->>>>>>> origin/master
+
+   private String BD = "la jugosa db";
    private String User = "root";
    private String pass = "";
    private String url = "jdbc:mysql://localhost:3306/"+BD;

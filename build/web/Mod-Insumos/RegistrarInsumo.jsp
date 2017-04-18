@@ -33,7 +33,7 @@
     </div>
     <br>
     <div class="form-group has-success">
-      <label for="Datalle" >Detalle: </label>
+      <label for="Nombre" Nombre: </label>
       <input type="text" class="form-control" id="documento" placeholder="">
     </div>
     <br>
@@ -65,6 +65,18 @@
   <br>
     <div class="form-group has-success">
     <label for="Peso">Peso: </label>
+    <input type="text" class="form-control" id="Celular" placeholder="">
+  </div>
+  <br>
+  <br>
+    <div class="form-group has-success">
+    <label for="Valor">Valor: </label>
+    <input type="text" class="form-control" id="Celular" placeholder="">
+  </div>
+  <br>
+  <br>
+    <div class="form-group has-success">
+    <label for="Prioridad">Prioridad: </label>
     <input type="text" class="form-control" id="Celular" placeholder="">
   </div>
   <br>

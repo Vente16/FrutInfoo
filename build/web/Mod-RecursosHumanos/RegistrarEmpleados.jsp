@@ -37,7 +37,9 @@
 
                     <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Documento de identificación</span></label><br>
                     <input type="text" class="form-control" name="name"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el número de documento de identificación"><br>
-
+                    
+                    <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Email</span></label>
+                    <input type="text" class="form-control" name="name"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el cargo del empleado"><br> 
                     <div class="form-group">
                         <label class="form-control-label" for="index-form-4-4name"><span class="titulo">Seleccione el tipo de documento</span></label>
                         <select class="form-control">
@@ -76,6 +78,20 @@
                     </div>
                     <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Cargo</span></label>
                     <input type="text" class="form-control" name="name"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el cargo del empleado"><br> 
+                    <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Disponibilidad</span></label>
+                    <input type="text" class="form-control" name="name"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el cargo del empleado"><br> 
+                    <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Hora de inicio</span></label>
+                    <input type="text" class="form-control" name="name"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el cargo del empleado"><br> 
+                    <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Hora de salida</span></label>
+                    <input type="text" class="form-control" name="name"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el cargo del empleado"><br> 
+                    <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Inicio contrato</span></label>
+                    <input type="text" class="form-control" name="name"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el cargo del empleado"><br> 
+                    <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Fin contrato</span></label>
+                    <input type="text" class="form-control" name="name"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el cargo del empleado"><br> 
+                    <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Fecha de nacimiento</span></label>
+                    <input type="text" class="form-control" name="name"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el cargo del empleado"><br> 
+                    
+                    
                     <button type="button" class="btn btn-success" data-toggle="modal" data-target="#Confirmar">Registrar</button>
 
             </form>
