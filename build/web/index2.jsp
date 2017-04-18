@@ -41,10 +41,10 @@
               <ul class="nav navbar-nav navbar-right">
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-briefcase"></span>Administrativo<span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="Mod-Administrativo/Administrativo_admin.jsp">Autorizaciones</a></li>
+          <li><a href="Mod-Administrativo/Autorizaciones_admin.jsp">Autorizaciones</a></li>
           <li><a href="Mod-Administrativo/Ventas_admin.jsp">Informe de ventas</a></li>
           <li><a href="Mod-Administrativo/Insumos_admin.jsp">Informe de Insumos</a></li>
-          <li><a href="Mod-Administrativo/Administatrivo_InformeEmpleados.html">Informe de empleados</a></li>
+          <li><a href="Mod-Administrativo/InformeEmpleados_admin.jsp">Informe de empleados</a></li>
         </ul>
       </li>
 
@@ -53,7 +53,7 @@
           <li><a href="Mod-Insumos/VerlistadeInsumos.jsp">Ver lista de insumos</a></li>
           <li><a href="Mod-Insumos/SolicitarInsumo.jsp">Solicitar Insumo</a></li>
           <li><a href="Mod-Insumos/RegistrarInsumo.jsp">Registrar insumos</a></li>
-          <li><a href="#">Inicio</a></li>
+          <li><a href="Mod-Insumos/IndexInsumo.jsp">Inicio</a></li>
         </ul>
       </li>
       
@@ -80,7 +80,7 @@
       
          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Clientes<span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="#">Registrar clientes</a></li>
+            <li><a href="Mod-Clientes/RegisCliente.jsp">Registrar clientes</a></li>
           <li><a href="#">Listar clientes</a></li>
           <li><a href="#">Solicitar domicilio</a></li>
         </ul>
