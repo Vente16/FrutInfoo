@@ -17,12 +17,10 @@ public class Conexion {
     
     private Connection Conexion; 
 
-<<<<<<< HEAD
-   private String BD = "la jugosa db";
-=======
+
    private String BD = "lajugosaDB";
 
->>>>>>> origin/master
+
    private String User = "root";
    private String pass = "";
    private String url = "jdbc:mysql://localhost:3306/"+BD;
