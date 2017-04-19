@@ -19,12 +19,7 @@ public class Conexion {
 
 
    private String BD = "lajugosaDB";
-<<<<<<< HEAD
->>>>>>> origin/master
-=======
 
-
->>>>>>> origin/master
    private String User = "root";
    private String pass = "";
    private String url = "jdbc:mysql://localhost:3306/"+BD;
