@@ -27,43 +27,37 @@
 
 
 
-            <form>
+            <form action="../RegEmpleado" method="post">
                 <div class="container">
                     <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Nombres</span></label><br>
-                    <input type="text" class="form-control" name="name"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese los nombres del empleado"><br>
+                    <input type="text" class="form-control" name="nombres"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese los nombres del empleado"><br>
 
                     <labe2 class="form-control-label" for="index-form2-2-name"><span class="titulo"><b>Apellidos</b></span></labe2><br>
-                    <input type="text" class="form-control" name="name"required="" data-form-field="Name" id="index-form2-2-name" placeholder="Ingrese los apellidos del empleado"><br>
-
-                    <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Documento de identificación</span></label><br>
-                    <input type="text" class="form-control" name="name"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el número de documento de identificación"><br>
-                    
-                    <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Email</span></label>
-                    <input type="text" class="form-control" name="name"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el cargo del empleado"><br> 
-                    <div class="form-group">
-                        <label class="form-control-label" for="index-form-4-4name"><span class="titulo">Seleccione el tipo de documento</span></label>
-                        <select class="form-control">
-                            <option>Cédula de Ciudadanía(CC)</option>
-                            <option>Tarjeta de Identidad (TI)</option>
-                            <option>Registro Civil (RC)</option>
-                            <option>Cédula de Extranjería (CE)</option>
-                            <option>Otros</option>
-                        </select>
-                    </div>
-
-
-                    <label class="form-control-label" for="index-form3-3-name"><span class="titulo">Dirección</span></label>
-                    <input type="text" class="form-control" name="name"required="" data-form-field="Name" id="index-form3-3-name" placeholder="Ingrese la dirección del empleado"><br>
+                    <input type="text" class="form-control" name="apellidos"required="" data-form-field="Name" id="index-form2-2-name" placeholder="Ingrese los apellidos del empleado"><br>
 
                     <label class="form-control-label" for="index-form-4-4name"><span class="titulo">Teléfono</span></label>
-                    <input type="tel" class="form-control" name="name"required="" data-form-field="Name" id="index-form4-4-name" placeholder="Ingrese el número de teléfono del empleado"><br>
+                    <input type="tel" class="form-control" name="telefono"required="" data-form-field="Name" id="index-form4-4-name" placeholder="Ingrese el número de teléfono del empleado"><br>
 
                     <label class="form-control-label" for="index-form-4-4name"><span class="titulo">Celular</span></label>
-                    <input type="tel" class="form-control" name="name"required="" data-form-field="Name" id="index-form4-4-name" placeholder="Ingrese el número celular del empleado"><br>
+                    <input type="tel" class="form-control" name="celular"required="" data-form-field="Name" id="index-form4-4-name" placeholder="Ingrese el número celular del empleado"><br>
+
+                    <label class="form-control-label" for="index-form3-3-name"><span class="titulo">Dirección</span></label>
+                    <input type="text" class="form-control" name="direccion"required="" data-form-field="Name" id="index-form3-3-name" placeholder="Ingrese la dirección del empleado"><br>
+
+                    <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Disponibilidad</span></label>
+                    <input type="text" class="form-control" name="disponibilidad"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el cargo del empleado"><br>
+                    <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Inicio contrato</span></label>
+                    <input type="text" class="form-control" name="inicio"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el cargo del empleado"><br> 
+                    <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Fin contrato</span></label>
+                    <input type="text" class="form-control" name="fin"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el cargo del empleado"><br> 
+                    <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Hora de inicio</span></label>
+                    <input type="text" class="form-control" name="hora inicio"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el cargo del empleado"><br> 
+                    <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Hora de salida</span></label>
+                    <input type="text" class="form-control" name="hora salida"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el cargo del empleado"><br> 
 
                     <div class="form-group">
                         <label class="form-control-label" for="index-form-4-4name"><span class="titulo">Seleccione la sede del empleado</span></label>
-                        <select class="form-control">
+                        <select class="form-control" name="sede">
                             <option>Envigado </option>
                             <option>Itagüí</option>
                             <option>Sabaneta</option>
@@ -77,22 +71,29 @@
                         </select>
                     </div>
                     <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Cargo</span></label>
-                    <input type="text" class="form-control" name="name"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el cargo del empleado"><br> 
-                    <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Disponibilidad</span></label>
-                    <input type="text" class="form-control" name="name"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el cargo del empleado"><br> 
-                    <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Hora de inicio</span></label>
-                    <input type="text" class="form-control" name="name"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el cargo del empleado"><br> 
-                    <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Hora de salida</span></label>
-                    <input type="text" class="form-control" name="name"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el cargo del empleado"><br> 
-                    <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Inicio contrato</span></label>
-                    <input type="text" class="form-control" name="name"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el cargo del empleado"><br> 
-                    <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Fin contrato</span></label>
-                    <input type="text" class="form-control" name="name"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el cargo del empleado"><br> 
+                    <input type="text" class="form-control" name="cargo"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el cargo del empleado"><br> 
+
+                    <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Documento de identificación</span></label><br>
+                    <input type="text" class="form-control" name="documento"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el número de documento de identificación"><br>
+                    <div class="form-group">
+                        <label class="form-control-label" for="index-form-4-4name"><span class="titulo">Seleccione el tipo de documento</span></label>
+                        <select class="form-control" name="tipo">
+                            <option>Cédula de Ciudadanía(CC)</option>
+                            <option>Tarjeta de Identidad (TI)</option>
+                            <option>Registro Civil (RC)</option>
+                            <option>Cédula de Extranjería (CE)</option>
+                            <option>Otros</option>
+                        </select>
+                    </div>
+
                     <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Fecha de nacimiento</span></label>
-                    <input type="text" class="form-control" name="name"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el cargo del empleado"><br> 
-                    
-                    
-                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#Confirmar">Registrar</button>
+                    <input type="text" class="form-control" name="fecha"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el cargo del empleado"><br> 
+
+                    <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Email</span></label>
+                    <input type="text" class="form-control" name="email"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el cargo del empleado"><br> 
+
+
+                    <button type="button" class="btn btn-success">Registrar</button>
 
             </form>
         </div><br><br><br><br>
@@ -149,7 +150,7 @@
     </div>
 
 
- <%@include file="../footerModulos.jspf" %>
+    <%@include file="../footerModulos.jspf" %>
 
 
 </body>

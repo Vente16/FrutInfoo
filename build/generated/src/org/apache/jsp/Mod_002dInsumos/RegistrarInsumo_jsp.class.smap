@@ -7,18 +7,12 @@ JSP
 Mod-Insumos/RegistrarInsumo.jsp
 + 1 headerModulos.jspf
 Mod-Insumos/../headerModulos.jspf
-+ 2 footer.jspf
-Mod-Insumos/../footer.jspf
++ 2 footerModulos.jspf
+Mod-Insumos/../footerModulos.jspf
 *L
 5,14:50
 1#1,95:64
-<<<<<<< HEAD
-18#0,61:158
-1#2,16:219
-78#0,4:234
-=======
-18#0,63:158
-1#2,16:221
-80#0,4:236
->>>>>>> origin/master
+18#0,74:158
+1#2,14:232
+91#0,4:245
 *E

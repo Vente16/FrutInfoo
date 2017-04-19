@@ -14,15 +14,12 @@ import java.sql.Connection;
  * @author User
  */
 public class Conexion {
-    
-    private Connection Conexion; 
 
-
-   private String BD = "lajugosaDB";
-
-   private String User = "root";
-   private String pass = "";
-   private String url = "jdbc:mysql://localhost:3306/"+BD;
+    private Connection Conexion;
+    private String BD = "lajugosaDB";
+    private String User = "root";
+    private String pass = "";
+    private String url = "jdbc:mysql://localhost:3306/" + BD;
 
     public Connection getConexion() {
         return Conexion;
@@ -64,22 +61,20 @@ public class Conexion {
         this.url = url;
     }
 
-   
-    
-   public Connection Conectar(){
-   
-       try {
-           Class.forName("com.mysql.jdbc.Driver");
-           Conexion =  DriverManager.getConnection(url, User, pass);
-        //   System.out.println("Se establecio la conexion");
-       } catch (Exception e) {
-        //   System.out.println("No se pudo conectar" + e);
-       } 
+    public Connection Conectar() {
 
-       return Conexion;
-         
-   } 
-  /* public static void main(String[]args){
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            Conexion = DriverManager.getConnection(url, User, pass);
+            //   System.out.println("Se establecio la conexion");
+        } catch (Exception e) {
+            //   System.out.println("No se pudo conectar" + e);
+        }
+
+        return Conexion;
+
+    }
+    /* public static void main(String[]args){
    
    
    Conexion C = new Conexion();
@@ -89,11 +84,5 @@ public class Conexion {
    
    
    }*/
-    
 
-   
-   
-   
-   
-   
 }

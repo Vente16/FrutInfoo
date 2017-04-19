@@ -7,12 +7,12 @@ JSP
 Mod-Administrativo/Ventas_admin.jsp
 + 1 headerModulos.jspf
 Mod-Administrativo/../headerModulos.jspf
-+ 2 footer.jspf
-Mod-Administrativo/../footer.jspf
++ 2 footerModulos.jspf
+Mod-Administrativo/../footerModulos.jspf
 *L
 5,15:50
 1#1,95:65
 19#0,98:159
-1#2,16:257
-116#0,4:272
+1#2,14:257
+116#0,4:270
 *E

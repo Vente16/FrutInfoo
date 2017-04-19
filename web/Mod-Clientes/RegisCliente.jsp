@@ -19,13 +19,7 @@
         <%@include file="../headerModulos.jspf" %><br>
         <div class="container">
 
-            <section class="main container-fluid">
-                <form class="navbar-left" role="search">
-                    <p>Ingresar Numero de Documento</p>
-                    <input type="number" class="form-control" value="">
-                    <br>
-
-                    <button type="submit" class="btn btn-info">CONSULTAR</button>
+            
                 </form>
 
                 <div style="margin-top: 100px">
@@ -34,7 +28,7 @@
                 <form action="../RegCliente" method="post">
                     <label class="form-control-label" for="index-form-4-4name">
                         <span class="titulo">Seleccione el tipo de documento</span></label>
-                    <select class="form-control" name="tipo">
+                    <select class="form-control" name="tipo_documento">
 
                         <option>Cédula de Ciudadanía</option>
                         <option>Tarjeta de Identidad</option>
@@ -45,32 +39,27 @@
 
 
                     <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Número de documento</span></label><br>
-                    <input type="option" class="form-control" name="numero"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese su número de documento"><br>
+                    <input type="option" class="form-control" name="documento"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese su número de documento"><br>
 
                     <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Nombres</span></label><br>
-                    <input type="text" class="form-control" name="nombre"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese los nombres del empleado"><br>
+                    <input type="text" class="form-control" name="nombres"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese los nombres del empleado"><br>
 
                     <labe2 class="form-control-label" for="index-form2-2-name"><span class="titulo"><b>Apellidos</b></span></labe2><br>
                     <input type="text" class="form-control" name="apellidos"required="" data-form-field="Name" id="index-form2-2-name" placeholder="Ingrese los apellidos del empleado"><br>
 
                     <labe2 class="form-control-label" for="index-form2-2-name"><span class="titulo"><b>Fecha de Nacimiento</b></span></labe2><br>
-                    <input type="date" class="form-control" name="fecha"required="" data-form-field="Name" id="index-form2-2-name" placeholder="Ingrese los apellidos del empleado"><br>
+                    <input type="date" class="form-control" name="FechaNac"required="" data-form-field="Name" id="index-form2-2-name" placeholder="Ingrese los apellidos del empleado"><br>
 
-                    <label class="form-control-label" for="index-form-4-4name">
-                        <span class="titulo">Sexo</span></label>
-                    <select class="form-control"name="sexo">
-                        <option>Masculino</option>
-                        <option>Femenino</option>
-                    </select><br>
+
 
                     <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Municipio</span></label><br>
-                    <input type="text" class="form-control" name="municipio"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el Municipio donde actualmente vive"><br>
+                    <input type="text" class="form-control" name="Municipio"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el Municipio donde actualmente vive"><br>
 
                     <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Dirección</span></label><br>
                     <input type="text" class="form-control" name="direccion"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese su Dirección completa"><br>
 
                     <label class="form-control-label" for="index-form3-3-name"><span class="titulo">Barrio</span></label>
-                    <input type="text" class="form-control" name="barrio"required="" data-form-field="Name" id="index-form3-3-name" placeholder="Ingrese el barrio donde vive"><br>
+                    <input type="text" class="form-control" name="Barrio"required="" data-form-field="Name" id="index-form3-3-name" placeholder="Ingrese el barrio donde vive"><br>
 
                     <labe2 class="form-control-label" for="index-form2-2-name"><span class="titulo"><b>Teléfono</b></span></labe2><br>
                     <input type="text" class="form-control" name="telefono"required="" data-form-field="Name" id="index-form2-2-name" placeholder="Ingrese su teléfono"><br>
@@ -82,7 +71,7 @@
                     <input type="tel" class="form-control" name="celular"required="" data-form-field="Name" id="index-form4-4-name" placeholder="Ingrese su número"><br>
 
                     <label class="form-control-label" for="index-form-4-4name"><span class="titulo">Email</span></label>
-                    <input type="tel" class="form-control" name="email"required="" data-form-field="Name" id="index-form4-4-name" placeholder="Ingrese su cuenta de correo electrónico"><br><br><br>
+                    <input type="tel" class="form-control" name="Email"required="" data-form-field="Name" id="index-form4-4-name" placeholder="Ingrese su cuenta de correo electrónico"><br><br><br>
                     <button type="submit" class="btn btn-success">REGISTRAR</button>
                 </form>
 

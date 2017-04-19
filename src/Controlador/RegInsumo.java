@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Home
  */
-public class RegCliente extends HttpServlet {
+public class RegInsumo extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -32,8 +32,7 @@ public class RegCliente extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-     
-      
+
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -49,55 +48,46 @@ public class RegCliente extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
-        
-         try{
-            String Tip = request.getParameter("tipo_documento");
-            String Doc = request.getParameter("documento");
-            String Nom = request.getParameter("nombres");
-            String Ape = request.getParameter("apellidos");
-            String Fec = request.getParameter("FechaNac");
-            String Mun = request.getParameter("Municipio");
-            String Dir = request.getParameter("direccion");
-            String Bar = request.getParameter("Barrio");
-            String Tel = request.getParameter("telefono");
-            String Cel = request.getParameter("celular");
-            String Em = request.getParameter("Email");
-        
-        
-        Conexion c = new Conexion();
-        Connection con = c.Conectar();
-        
-        PreparedStatement Ps = con.prepareStatement("INSERT INTO clientes (Tipo_documento, Numero_documento, Nombres, Apellidos, Fecha_nacimiento, Municipio,Direccion, Barrio, Telefono, Celular, Email) VALUES(?,?,?,?,?,?,?,?,?,?,?)");
-        Ps.setString(1, Tip);
-        Ps.setString(2, Doc);
-        Ps.setString(3, Nom);
-        Ps.setString(4, Ape);
-        Ps.setString(5, Fec);
-        Ps.setString(6, Mun);
-        Ps.setString(7, Dir);
-        Ps.setString(8, Bar);
-        Ps.setString(9, Tel);
-        Ps.setString(10, Cel);
-        Ps.setString(11, Em);
-        
-        Ps.executeUpdate();
-        
-        response.sendRedirect("Exito.jsp");
-        
-        Ps.close();
-        con.close();
-        
-        
-        
-        
-        
-        
-        }catch(Exception e){
-        
-          response.sendRedirect("Error.jsp");
+
+        try {
+            String Cod = request.getParameter("codigo");
+            String Pro = request.getParameter("provedor");
+            String Tip = request.getParameter("tipo");
+            String Pes = request.getParameter("peso");
+            String Nom = request.getParameter("nombre");
+            String Can = request.getParameter("cantidad");
+            String Val = request.getParameter("valor");
+            String FI = request.getParameter("fecha ingreso");
+            String FV = request.getParameter("fecha vencimiento");
+            String Pri = request.getParameter("prioridad");
+
+            Conexion c = new Conexion();
+            Connection con = c.Conectar();
+
+            PreparedStatement Ps = con.prepareStatement("INSERT INTO insumos(Codigo, Provedor, Tipo, Peso, Nombre, Cantidad, Valor, Fecha_ingreso, Fecha_vencimiento,Prioridad)VALUES(?,?,?,?,?,?,?,?,?,?)");
+            Ps.setString(1, Cod);
+            Ps.setString(2, Pro);
+            Ps.setString(3, Tip);
+            Ps.setString(4, Pes);
+            Ps.setString(5, Nom);
+            Ps.setString(6, Can);
+            Ps.setString(7, Val);
+            Ps.setString(8, FI);
+            Ps.setString(9, FV);
+            Ps.setString(10, Pri);
+
+            Ps.executeUpdate();
+            response.sendRedirect("Exito.jsp");
+            Ps.close();
+            con.close();
+
+        } catch (Exception e) {
+
+            response.sendRedirect("Error.jsp");
             System.out.println(e);
+
         }
-        
+
     }
 
     /**

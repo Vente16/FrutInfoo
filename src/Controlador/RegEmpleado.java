@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Home
  */
-public class RegCliente extends HttpServlet {
+public class RegEmpleado extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -32,8 +32,7 @@ public class RegCliente extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-     
-      
+
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -49,55 +48,54 @@ public class RegCliente extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
-        
-         try{
-            String Tip = request.getParameter("tipo_documento");
-            String Doc = request.getParameter("documento");
-            String Nom = request.getParameter("nombres");
-            String Ape = request.getParameter("apellidos");
-            String Fec = request.getParameter("FechaNac");
-            String Mun = request.getParameter("Municipio");
-            String Dir = request.getParameter("direccion");
-            String Bar = request.getParameter("Barrio");
-            String Tel = request.getParameter("telefono");
-            String Cel = request.getParameter("celular");
-            String Em = request.getParameter("Email");
-        
-        
-        Conexion c = new Conexion();
-        Connection con = c.Conectar();
-        
-        PreparedStatement Ps = con.prepareStatement("INSERT INTO clientes (Tipo_documento, Numero_documento, Nombres, Apellidos, Fecha_nacimiento, Municipio,Direccion, Barrio, Telefono, Celular, Email) VALUES(?,?,?,?,?,?,?,?,?,?,?)");
-        Ps.setString(1, Tip);
-        Ps.setString(2, Doc);
-        Ps.setString(3, Nom);
-        Ps.setString(4, Ape);
-        Ps.setString(5, Fec);
-        Ps.setString(6, Mun);
-        Ps.setString(7, Dir);
-        Ps.setString(8, Bar);
-        Ps.setString(9, Tel);
-        Ps.setString(10, Cel);
-        Ps.setString(11, Em);
-        
-        Ps.executeUpdate();
-        
-        response.sendRedirect("Exito.jsp");
-        
-        Ps.close();
-        con.close();
-        
-        
-        
-        
-        
-        
-        }catch(Exception e){
-        
-          response.sendRedirect("Error.jsp");
+        try {
+            String Nombre = request.getParameter("nombre");
+            String Apellido = request.getParameter("apellido");
+            String Telefono = request.getParameter("telefono");
+            String Celular = request.getParameter("celular");
+            String Direccion = request.getParameter("direccion");
+            String Disponibilidad = request.getParameter("disponibilidad");
+            String InicioC = request.getParameter("inicio contrato");
+            String FinC = request.getParameter("fin contrato");
+            String HoraI = request.getParameter("hora inicio");
+            String HoraS = request.getParameter("hora salida");
+            String Documento = request.getParameter("documento");
+            String TipoD = request.getParameter("tipo docmento");
+            String FechaN = request.getParameter("fecha nacimiento");
+            String Correo = request.getParameter("correo");
+
+            Conexion c = new Conexion();
+            Connection con = c.Conectar();
+
+            PreparedStatement Ps = con.prepareStatement("INSERT INTO Novedades (Nombre_empleado, Apellidos, telefono, celular, direccion, disponibilidad, inicio_con, fin_cont, hora_ini, hora_sal, Documento, Tipo_documento, fecha_nac, correo) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+            Ps.setString(1, Nombre);
+            Ps.setString(2, Apellido);
+            Ps.setString(3, Telefono);
+            Ps.setString(4, Celular);
+            Ps.setString(5, Direccion);
+            Ps.setString(6, Disponibilidad);
+            Ps.setString(7, InicioC);
+            Ps.setString(8, FinC);
+            Ps.setString(9, HoraI);
+            Ps.setString(10, HoraS);
+            Ps.setString(11, Documento);
+            Ps.setString(12, TipoD);
+            Ps.setString(13, FechaN);
+            Ps.setString(14, Correo);
+
+            Ps.executeUpdate();
+
+            response.sendRedirect("Exito.jsp");
+
+            Ps.close();
+            con.close();
+
+        } catch (Exception e) {
+
+            response.sendRedirect("Error.jsp");
             System.out.println(e);
         }
-        
+
     }
 
     /**

@@ -64,6 +64,14 @@
         <servlet-name>RegCliente</servlet-name>
         <servlet-class>Controlador.RegCliente</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>RegInsumo</servlet-name>
+        <servlet-class>Controlador.RegInsumo</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RegEmpleado</servlet-name>
+        <servlet-class>Controlador.RegEmpleado</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Validar</servlet-name>
         <url-pattern>/Validar</url-pattern>
@@ -127,6 +135,14 @@
     <servlet-mapping>
         <servlet-name>RegCliente</servlet-name>
         <url-pattern>/RegCliente</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegInsumo</servlet-name>
+        <url-pattern>/RegInsumo</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegEmpleado</servlet-name>
+        <url-pattern>/RegEmpleado</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

@@ -14,7 +14,7 @@ public final class SolicitarInsumo_jsp extends org.apache.jasper.runtime.HttpJsp
   static {
     _jspx_dependants = new java.util.ArrayList<String>(2);
     _jspx_dependants.add("/Mod-Insumos/../headerModulos.jspf");
-    _jspx_dependants.add("/Mod-Insumos/../footer.jspf");
+    _jspx_dependants.add("/Mod-Insumos/../footerModulos.jspf");
   }
 
   private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
@@ -65,7 +65,7 @@ public final class SolicitarInsumo_jsp extends org.apache.jasper.runtime.HttpJsp
       out.write("\r\n");
       out.write("\r\n");
       out.write("<header>\r\n");
-      out.write("    <div class=\"container\">\r\n");
+      out.write("   \r\n");
       out.write("        <nav class=\"navbar navbar-default\" role=\"navigation\">\r\n");
       out.write("            <!-- El logotipo y el icono que despliega el menú se agrupan\r\n");
       out.write("                 para mostrarlos mejor en los dispositivos móviles -->\r\n");
@@ -77,7 +77,7 @@ public final class SolicitarInsumo_jsp extends org.apache.jasper.runtime.HttpJsp
       out.write("                    <span class=\"icon-bar\"></span>\r\n");
       out.write("                    <span class=\"icon-bar\"></span>\r\n");
       out.write("                </button>\r\n");
-      out.write("                <img src=\"../img/logolj.png\" width=\"50px\" style=\"vertical-align: middle; float: left;\" alt=\"\">\r\n");
+      out.write("                <img src=\"../img/logo.png\" width=\"50px\" style=\"vertical-align: middle; float: left;\" alt=\"\">\r\n");
       out.write("                <a class=\"navbar-brand\" href=\"#\">LA JUGOSA</a>\r\n");
       out.write("            </div>\r\n");
       out.write("\r\n");
@@ -87,10 +87,10 @@ public final class SolicitarInsumo_jsp extends org.apache.jasper.runtime.HttpJsp
       out.write("              <ul class=\"nav navbar-nav navbar-right\">\r\n");
       out.write("      <li class=\"dropdown\"><a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\"><span class=\"glyphicon glyphicon-briefcase\"></span>Administrativo<span class=\"caret\"></span></a>\r\n");
       out.write("        <ul class=\"dropdown-menu\">\r\n");
-      out.write("          <li><a href=\"MOD-ADMINISTRATIVO/Administrativo_Autorizaciones.html\">Autorizaciones</a></li>\r\n");
-      out.write("          <li><a href=\"MOD-ADMINISTRATIVO/Administrativo_Ventas.html\">Informe de ventas</a></li>\r\n");
-      out.write("          <li><a href=\"MOD-ADMINISTRATIVO/Administrativo_Insumos.html\">Informe de Insumos</a></li>\r\n");
-      out.write("          <li><a href=\"MOD-ADMINISTRATIVO/Administatrivo_InformeEmpleados.html\">Informe de empleados</a></li>\r\n");
+      out.write("          <li><a href=\"../Mod-Administrativo/Autorizaciones_admin.jsp\">Autorizaciones</a></li>\r\n");
+      out.write("          <li><a href=\"../Mod-Administrativo/Ventas_admin.jsp\">Informe de ventas</a></li>\r\n");
+      out.write("          <li><a href=\"../Mod-Administrativo/Insumos_admin.jsp\">Informe de Insumos</a></li>\r\n");
+      out.write("          <li><a href=\"../Mod-Administrativo/InformeEmpleados_admin.jsp\">Informe de empleados</a></li>\r\n");
       out.write("        </ul>\r\n");
       out.write("      </li>\r\n");
       out.write("\r\n");
@@ -126,7 +126,7 @@ public final class SolicitarInsumo_jsp extends org.apache.jasper.runtime.HttpJsp
       out.write("      \r\n");
       out.write("         <li class=\"dropdown\"><a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\">Clientes<span class=\"caret\"></span></a>\r\n");
       out.write("        <ul class=\"dropdown-menu\">\r\n");
-      out.write("          <li><a href=\"#\">Registrar clientes</a></li>\r\n");
+      out.write("            <li><a href=\"../Mod-Clientes/RegisCliente.jsp\">Registrar clientes</a></li>\r\n");
       out.write("          <li><a href=\"#\">Listar clientes</a></li>\r\n");
       out.write("          <li><a href=\"#\">Solicitar domicilio</a></li>\r\n");
       out.write("        </ul>\r\n");
@@ -145,7 +145,7 @@ public final class SolicitarInsumo_jsp extends org.apache.jasper.runtime.HttpJsp
       out.write("\r\n");
       out.write("            </div>\r\n");
       out.write("        </nav>\r\n");
-      out.write("    </div>\r\n");
+      out.write(" \r\n");
       out.write("</header>\r\n");
       out.write("\r\n");
       out.write("\r\n");
@@ -224,12 +224,10 @@ public final class SolicitarInsumo_jsp extends org.apache.jasper.runtime.HttpJsp
       out.write("            </form> \r\n");
       out.write("  </section>\r\n");
       out.write("        \r\n");
-      out.write("      ");
-      out.write("\r\n");
-      out.write("\r\n");
+      out.write("    ");
       out.write("\r\n");
       out.write("<footer>\r\n");
-      out.write("    <div class=\"container navbar-fixed-bottom\">\r\n");
+      out.write("    <div class=\"navbar-fixed-bottom\">\r\n");
       out.write("        <div class=\" text-center pie\">\r\n");
       out.write("            <div class=\"row\">\r\n");
       out.write("                <div class=\"col-xs-12\">\r\n");
@@ -240,7 +238,7 @@ public final class SolicitarInsumo_jsp extends org.apache.jasper.runtime.HttpJsp
       out.write("        </div>\r\n");
       out.write("    </div>\r\n");
       out.write("</footer>\r\n");
-      out.write("   \r\n");
+      out.write("  \r\n");
       out.write("        \r\n");
       out.write("    </body>\r\n");
       out.write("</html>\r\n");

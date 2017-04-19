@@ -7,12 +7,12 @@ JSP
 Mod-Insumos/SolicitarInsumo.jsp
 + 1 headerModulos.jspf
 Mod-Insumos/../headerModulos.jspf
-+ 2 footer.jspf
-Mod-Insumos/../footer.jspf
++ 2 footerModulos.jspf
+Mod-Insumos/../footerModulos.jspf
 *L
 5,14:50
 1#1,95:64
 18#0,70:158
-1#2,16:228
-87#0,5:243
+1#2,14:228
+87#0,5:241
 *E
