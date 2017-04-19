@@ -7,12 +7,12 @@ JSP
 Mod-RecursosHumanos/RegistrarEmpleados.jsp
 + 1 headerModulos.jspf
 Mod-RecursosHumanos/../headerModulos.jspf
-+ 2 footer.jspf
-Mod-RecursosHumanos/../footer.jspf
++ 2 footerModulos.jspf
+Mod-RecursosHumanos/../footerModulos.jspf
 *L
 5,17:50
 1#1,95:67
-21#0,116:161
-1#2,16:277
-136#0,7:292
+21#0,132:161
+1#2,14:293
+152#0,7:306
 *E
