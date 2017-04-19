@@ -17,10 +17,13 @@ public class Conexion {
     
     private Connection Conexion; 
 
-<<<<<<< HEAD
-   private String BD = "la jugosa db";
-=======
+
    private String BD = "lajugosaDB";
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
+
+
 >>>>>>> origin/master
    private String User = "root";
    private String pass = "";
