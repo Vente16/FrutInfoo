@@ -1,29 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
-    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-<<<<<<< HEAD
-            <file>file:/C:/Users/Home/Documents/NetBeansProjects/proyecto/src/Controlador/RegCliente.java</file>
-            <file>file:/C:/Users/Home/Documents/NetBeansProjects/proyecto/web/Mod-Insumos/SolicitarInsumo.jsp</file>
-            <file>file:/C:/Users/Home/Documents/NetBeansProjects/proyecto/web/Mod-Insumos/RegistrarInsumo.jsp</file>
-            <file>file:/C:/Users/Home/Documents/NetBeansProjects/proyecto/web/Mod-Insumos/VerlistadeInsumos.jsp</file>
-            <file>file:/C:/Users/Home/Documents/NetBeansProjects/proyecto/web/Mod-RecursosHumanos/RegistrarEmpleados.jsp</file>
-            <file>file:/C:/Users/Home/Documents/NetBeansProjects/proyecto/web/Mod-Ventas/ListarVentas.jsp</file>
-            <file>file:/C:/Users/Home/Documents/NetBeansProjects/proyecto/web/Mod-Ventas/InforVentas.jsp</file>
-            <file>file:/C:/Users/Home/Documents/NetBeansProjects/proyecto/web/Mod-Administrativo/Autorizaciones_admin.jsp</file>
-=======
-            <file>file:/C:/Users/oscar/Desktop/carpetas/FrutInfoo/src/Modelo/Conexion.java</file>
-            <file>file:/C:/Users/oscar/Desktop/carpetas/FrutInfoo/build/generated/src/org/apache/jsp/Mod_002dInsumos/RegistrarInsumo_jsp.java</file>
-            <file>file:/C:/Users/oscar/Desktop/carpetas/FrutInfoo/build/generated/src/org/apache/jsp/Mod_002dAdministrativo/Autorizaciones_005fadmin_jsp.java</file>
-            <file>file:/C:/Users/oscar/Desktop/carpetas/FrutInfoo/build/generated/src/org/apache/jsp/Mod_002dVentas/RegistrarVentas_jsp.java</file>
-            <file>file:/C:/Users/oscar/Desktop/carpetas/FrutInfoo/build/generated/src/org/apache/jsp/Mod_002dClientes/RegisCliente_jsp.java</file>
-            <file>file:/C:/Users/oscar/Desktop/carpetas/FrutInfoo/web/index2.jsp</file>
-            <file>file:/C:/Users/oscar/Desktop/carpetas/FrutInfoo/web/Mod-Clientes/RegisCliente.jsp</file>
-            <file>file:/C:/Users/oscar/Desktop/carpetas/FrutInfoo/web/headerModulos.jspf</file>
-            <file>file:/C:/Users/oscar/Desktop/carpetas/FrutInfoo/src/Controlador/RegCliente.java</file>
-            <file>file:/C:/Users/oscar/Desktop/carpetas/FrutInfoo/nbproject/build-impl.xml</file>
->>>>>>> origin/master
-        </group>
-    </open-files>
 </project-private>

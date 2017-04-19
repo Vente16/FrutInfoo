@@ -6,8 +6,8 @@
 package Modelo;
 
 import java.sql.DriverManager;
-
 import java.sql.Connection;
+
 
 /**
  *
@@ -21,7 +21,6 @@ public class Conexion {
    private String BD = "la jugosa db";
 =======
    private String BD = "lajugosaDB";
-
 >>>>>>> origin/master
    private String User = "root";
    private String pass = "";
