@@ -53,25 +53,7 @@
                     <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Hora de inicio</span></label>
                     <input type="text" class="form-control" name="hora inicio"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el cargo del empleado"><br> 
                     <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Hora de salida</span></label>
-                    <input type="text" class="form-control" name="hora salida"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el cargo del empleado"><br> 
-
-                    <div class="form-group">
-                        <label class="form-control-label" for="index-form-4-4name"><span class="titulo">Seleccione la sede del empleado</span></label>
-                        <select class="form-control" name="sede">
-                            <option>Envigado </option>
-                            <option>Itagüí</option>
-                            <option>Sabaneta</option>
-                            <option>Poblado</option>
-                            <option>Carrera 80</option>
-                            <option>Los Sauces</option>
-                            <option>Laureles</option>
-                            <option>Avenida Oriental</option>
-                            <option>Bello</option>
-                            <option>Belén</option>
-                        </select>
-                    </div>
-                    <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Cargo</span></label>
-                    <input type="text" class="form-control" name="cargo"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el cargo del empleado"><br> 
+                    <input type="text" class="form-control" name="hora salida"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el cargo del empleado"><br>
 
                     <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Documento de identificación</span></label><br>
                     <input type="text" class="form-control" name="documento"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el número de documento de identificación"><br>
@@ -93,10 +75,10 @@
                     <input type="text" class="form-control" name="email"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el cargo del empleado"><br> 
 
 
-                    <button type="button" class="btn btn-success">Registrar</button>
-
+                    <button type="submit" class="btn btn-success">Registrar</button>
+                </div>
             </form>
-        </div><br><br><br><br>
+        <br><br><br><br>
         <div class="modal fade" id="Confirmar" role="dialog">
             <div class="modal-dialog">
 

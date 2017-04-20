@@ -81,7 +81,7 @@
                     <br>
                     <div class="form-group has">
 
-                        <button type="button" class="btn btn-success">REGISTRAR</button>
+                        <button type="submit" class="btn btn-success">REGISTRAR</button>
                         <button type="button" class="btn btn-primary">VOLVER</button>
                     </div>
 

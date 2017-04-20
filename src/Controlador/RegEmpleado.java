@@ -47,27 +47,42 @@ public class RegEmpleado extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+      
+        
+
+    }
+
+    /**
+     * Handles the HTTP <code>POST</code> method.
+     *
+     * @param request servlet request
+     * @param response servlet response
+     * @throws ServletException if a servlet-specific error occurs
+     * @throws IOException if an I/O error occurs
+     */
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
         try {
-            String Nombre = request.getParameter("nombre");
-            String Apellido = request.getParameter("apellido");
+            String Nombre = request.getParameter("nombres");
+            String Apellido = request.getParameter("apellidos");
             String Telefono = request.getParameter("telefono");
             String Celular = request.getParameter("celular");
             String Direccion = request.getParameter("direccion");
             String Disponibilidad = request.getParameter("disponibilidad");
-            String InicioC = request.getParameter("inicio contrato");
-            String FinC = request.getParameter("fin contrato");
+            String InicioC = request.getParameter("inicio");
+            String FinC = request.getParameter("fin");
             String HoraI = request.getParameter("hora inicio");
             String HoraS = request.getParameter("hora salida");
             String Documento = request.getParameter("documento");
-            String TipoD = request.getParameter("tipo docmento");
-            String FechaN = request.getParameter("fecha nacimiento");
-            String Correo = request.getParameter("correo");
+            String TipoD = request.getParameter("tipo");
+            String FechaN = request.getParameter("fecha");
+            String Correo = request.getParameter("email");
 
             Conexion c = new Conexion();
             Connection con = c.Conectar();
 
-            PreparedStatement Ps = con.prepareStatement("INSERT INTO Novedades (Nombre_empleado, Apellidos, telefono, celular, direccion, disponibilidad, inicio_con, fin_cont, hora_ini, hora_sal, Documento, Tipo_documento, fecha_nac, correo) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+            PreparedStatement Ps = con.prepareStatement("INSERT INTO empleados (Nombre, Apellido, Telefono, celular, Direccion, Disponibilidad, inicio_contrato, Fin_contrato, Hora_inicio, Hora_salida, Documento, Tipo_documento, Fecha_nacimiento, correo, Habilitado) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,1)");
             Ps.setString(1, Nombre);
             Ps.setString(2, Apellido);
             Ps.setString(3, Telefono);
@@ -95,21 +110,6 @@ public class RegEmpleado extends HttpServlet {
             response.sendRedirect("Error.jsp");
             System.out.println(e);
         }
-
-    }
-
-    /**
-     * Handles the HTTP <code>POST</code> method.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
-    @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        processRequest(request, response);
     }
 
     /**

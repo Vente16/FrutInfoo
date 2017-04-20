@@ -19,7 +19,7 @@
         <%@include file="../headerModulos.jspf" %> <br><br>
 
         <div class="container">
-
+                
             <select class="form-control">
                 <option>Filtrar novedad</option>
                 <option>Incapacidades</option>

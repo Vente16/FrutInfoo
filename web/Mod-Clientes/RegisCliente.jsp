@@ -72,6 +72,14 @@
 
                     <label class="form-control-label" for="index-form-4-4name"><span class="titulo">Email</span></label>
                     <input type="tel" class="form-control" name="Email"required="" data-form-field="Name" id="index-form4-4-name" placeholder="Ingrese su cuenta de correo electrónico"><br><br><br>
+                    <label class="form-control-label" for="index-form-4-4name">
+                        <span class="titulo">Membresia</span></label>
+                    <select class="form-control" name="membrecia">
+
+                        <option>si</option>
+                        <option>no</option>
+                    </select><br>
+                    
                     <button type="submit" class="btn btn-success">REGISTRAR</button>
                 </form>
 

@@ -47,8 +47,23 @@ public class RegInsumo extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+       
 
+        
+
+    }
+
+    /**
+     * Handles the HTTP <code>POST</code> method.
+     *
+     * @param request servlet request
+     * @param response servlet response
+     * @throws ServletException if a servlet-specific error occurs
+     * @throws IOException if an I/O error occurs
+     */
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
         try {
             String Cod = request.getParameter("codigo");
             String Pro = request.getParameter("provedor");
@@ -64,7 +79,7 @@ public class RegInsumo extends HttpServlet {
             Conexion c = new Conexion();
             Connection con = c.Conectar();
 
-            PreparedStatement Ps = con.prepareStatement("INSERT INTO insumos(Codigo, Provedor, Tipo, Peso, Nombre, Cantidad, Valor, Fecha_ingreso, Fecha_vencimiento,Prioridad)VALUES(?,?,?,?,?,?,?,?,?,?)");
+            PreparedStatement Ps = con.prepareStatement("INSERT INTO insumos(Codigo, ID_Proveedor, Tipo, peso, Nombre_insumo, Cantidad_insumo, Valor_insumo, Fecha_ingreso, Fecha_vencimiento,Prioridad, Habilitado)VALUES(?,?,?,?,?,?,?,?,?,?,1)");
             Ps.setString(1, Cod);
             Ps.setString(2, Pro);
             Ps.setString(3, Tip);
@@ -87,21 +102,6 @@ public class RegInsumo extends HttpServlet {
             System.out.println(e);
 
         }
-
-    }
-
-    /**
-     * Handles the HTTP <code>POST</code> method.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
-    @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        processRequest(request, response);
     }
 
     /**

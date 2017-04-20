@@ -48,9 +48,22 @@ public class RegCliente extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+      
         
-         try{
+    }
+
+    /**
+     * Handles the HTTP <code>POST</code> method.
+     *
+     * @param request servlet request
+     * @param response servlet response
+     * @throws ServletException if a servlet-specific error occurs
+     * @throws IOException if an I/O error occurs
+     */
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        try{
             String Tip = request.getParameter("tipo_documento");
             String Doc = request.getParameter("documento");
             String Nom = request.getParameter("nombres");
@@ -62,12 +75,12 @@ public class RegCliente extends HttpServlet {
             String Tel = request.getParameter("telefono");
             String Cel = request.getParameter("celular");
             String Em = request.getParameter("Email");
-        
+            String Mem = request.getParameter("membrecia");
         
         Conexion c = new Conexion();
         Connection con = c.Conectar();
         
-        PreparedStatement Ps = con.prepareStatement("INSERT INTO clientes (Tipo_documento, Numero_documento, Nombres, Apellidos, Fecha_nacimiento, Municipio,Direccion, Barrio, Telefono, Celular, Email) VALUES(?,?,?,?,?,?,?,?,?,?,?)");
+        PreparedStatement Ps = con.prepareStatement("INSERT INTO clientes (Tipo_documento, Documento, Nombre, Apellido, `Fecha de nacimiento`, Municipio, Direccion, Barrio, Telefono, Celular, Email, Membrecia, Habilitado) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,1)");
         Ps.setString(1, Tip);
         Ps.setString(2, Doc);
         Ps.setString(3, Nom);
@@ -79,6 +92,7 @@ public class RegCliente extends HttpServlet {
         Ps.setString(9, Tel);
         Ps.setString(10, Cel);
         Ps.setString(11, Em);
+        Ps.setString(12, Mem);
         
         Ps.executeUpdate();
         
@@ -97,21 +111,6 @@ public class RegCliente extends HttpServlet {
           response.sendRedirect("Error.jsp");
             System.out.println(e);
         }
-        
-    }
-
-    /**
-     * Handles the HTTP <code>POST</code> method.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
-    @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        processRequest(request, response);
     }
 
     /**

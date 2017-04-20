@@ -3,10 +3,19 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Home/Documents/NetBeansProjects/proyecto/src/Controlador/RegCliente.java</file>
-            <file>file:/C:/Users/Home/Documents/NetBeansProjects/proyecto/web/Mod-Insumos/RegistrarInsumo.jsp</file>
-            <file>file:/C:/Users/Home/Documents/NetBeansProjects/proyecto/web/Mod-RecursosHumanos/RegistrarEmpleados.jsp</file>
-            <file>file:/C:/Users/Home/Documents/NetBeansProjects/proyecto/src/Controlador/RegEmpleado.java</file>
+            <file>file:/C:/Users/oscar/Desktop/carpetas/FrutInfoo/src/Controlador/Novedades.java</file>
+            <file>file:/C:/Users/oscar/Desktop/carpetas/FrutInfoo/src/Modelo/Conexion.java</file>
+            <file>file:/C:/Users/oscar/Desktop/carpetas/FrutInfoo/web/index2.jsp</file>
+            <file>file:/C:/Users/oscar/Desktop/carpetas/FrutInfoo/build/generated/src/org/apache/jsp/Mod_002dClientes/RegisCliente_jsp.java</file>
+            <file>file:/C:/Users/oscar/Desktop/carpetas/FrutInfoo/web/IndexPrincipal.html</file>
+            <file>file:/C:/Users/oscar/Desktop/carpetas/FrutInfoo/src/Controlador/RegInsumo.java</file>
+            <file>file:/C:/Users/oscar/Desktop/carpetas/FrutInfoo/web/Mod-RecursosHumanos/RegistrarEmpleados.jsp</file>
+            <file>file:/C:/Users/oscar/Desktop/carpetas/FrutInfoo/web/Mod-Insumos/RegistrarInsumo.jsp</file>
+            <file>file:/C:/Users/oscar/Desktop/carpetas/FrutInfoo/src/Controlador/RegEmpleado.java</file>
+            <file>file:/C:/Users/oscar/Desktop/carpetas/FrutInfoo/src/Controlador/Login.java</file>
+            <file>file:/C:/Users/oscar/Desktop/carpetas/FrutInfoo/web/Mod-Clientes/RegisCliente.jsp</file>
+            <file>file:/C:/Users/oscar/Desktop/carpetas/FrutInfoo/src/Controlador/RegCliente.java</file>
+            <file>file:/C:/Users/oscar/Desktop/carpetas/FrutInfoo/web/WEB-INF/web.xml</file>
         </group>
     </open-files>
 </project-private>

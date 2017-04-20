@@ -22,8 +22,9 @@
 
        
               
-       <form action="../Novedades" method="post">
+       
                 <div class="container">
+                    <form action="../Novedades" method="post">
                                     <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Nombres</span></label><br>
                                     <input type="text" class="form-control" name="nombre" required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese los nombres del empleado"><br>
 
