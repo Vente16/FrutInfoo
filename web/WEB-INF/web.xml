@@ -72,6 +72,10 @@
         <servlet-name>RegEmpleado</servlet-name>
         <servlet-class>Controlador.RegEmpleado</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Listados</servlet-name>
+        <servlet-class>Controlador.Listados</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Validar</servlet-name>
         <url-pattern>/Validar</url-pattern>
@@ -143,6 +147,10 @@
     <servlet-mapping>
         <servlet-name>RegEmpleado</servlet-name>
         <url-pattern>/RegEmpleado</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Listados</servlet-name>
+        <url-pattern>/Listados</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

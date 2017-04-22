@@ -64,7 +64,7 @@
          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Clientes<span class="caret"></span></a>
         <ul class="dropdown-menu">
             <li><a href="../Mod-Clientes/RegisCliente.jsp">Registrar clientes</a></li>
-          <li><a href="#">Listar clientes</a></li>
+            <li><a href="../Listados">Listar clientes</a></li>
           <li><a href="#">Solicitar domicilio</a></li>
         </ul>
       </li>
