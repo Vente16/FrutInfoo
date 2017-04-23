@@ -31,19 +31,22 @@
                     </thead>
                     <tbody>
                         <% 
-                            ResultSet re = request.getAttribute("listarC");
+                            ResultSet re = (ResultSet) request.getAttribute("listarC");
+                            while(re.next()){
                         %>
                         <tr>
-                            <td class="hidden"></td>
-                            <td></td>
-                            <td></td>
+                            <td class="hidden"><%= re.getInt(1) %></td>
+                            <td><%= re.getString(2) %></td>
+                            <td><%= re.getString(3) %></td>
                             <td>
                                 <a href="Modal.jsp" data-target="#myModal" onclick="document.getElementsByName('myModal')" data-toggle="modal" class="btn btn-success"><span class="glyphicon glyphicon-eye-open"></span></a>
                                 <a class="btn btn-primary"><span class="glyphicon glyphicon-edit"></span></a>
                                 <a class="btn btn-danger"><span class="glyphicon glyphicon-remove-sign"></span></a>
                             </td>
                         </tr>
-                        
+                        <%
+                        }
+                        %>
                     </tbody>
                 </table>
             </div>
