@@ -5,8 +5,11 @@
  */
 package Controlador;
 
+import Modelo.Conexion;
 import java.io.IOException;
-import java.io.PrintWriter;
+import java.sql.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -14,7 +17,7 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author oscar
+ * @author Home
  */
 public class Listar extends HttpServlet {
 
@@ -28,22 +31,25 @@ public class Listar extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
+            throws ServletException, IOException, SQLException {
         response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet Listar</title>");            
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet Listar at " + request.getContextPath() + "</h1>");
-            out.println("</body>");
-            out.println("</html>");
-        }
+        try{
+           Conexion con =new Conexion();
+            Connection c=con.Conectar();
+            
+             String sqlC="SELECT * FROM clientes";
+             String sqlE="SELECT * FROM empleados";
+             
+             Statement stm =c.createStatement();
+             ResultSet rsC=stm.executeQuery(sqlC);
+             
+             request.setAttribute("listarC", rsC);
+             
+            response.sendRedirect("../Mod-Clientes/ListarCliente.jsp");
+    }catch(Exception e){
+        e.printStackTrace();
     }
-
+    }
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.
@@ -56,7 +62,11 @@ public class Listar extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        try {
+            processRequest(request, response);
+        } catch (SQLException ex) {
+            Logger.getLogger(Listar.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     /**
@@ -70,7 +80,11 @@ public class Listar extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        try {
+            processRequest(request, response);
+        } catch (SQLException ex) {
+            Logger.getLogger(Listar.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     /**
@@ -81,6 +95,7 @@ public class Listar extends HttpServlet {
     @Override
     public String getServletInfo() {
         return "Short description";
-    }// </editor-fold>
+    }
+    }
 
-}
+

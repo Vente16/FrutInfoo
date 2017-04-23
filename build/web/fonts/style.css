@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'iconos';
+  src:  url('iconos.eot?8s8o4h');
+  src:  url('iconos.eot?8s8o4h#iefix') format('embedded-opentype'),
+    url('iconos.ttf?8s8o4h') format('truetype'),
+    url('iconos.woff?8s8o4h') format('woff'),
+    url('iconos.svg?8s8o4h#iconos') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'iconos' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-group:before {
+  content: "\e900";
+}
+
