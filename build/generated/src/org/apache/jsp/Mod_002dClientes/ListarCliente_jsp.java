@@ -3,6 +3,7 @@ package org.apache.jsp.Mod_002dClientes;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
+import java.sql.ResultSet;
 
 public final class ListarCliente_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
@@ -128,7 +129,7 @@ public final class ListarCliente_jsp extends org.apache.jasper.runtime.HttpJspBa
       out.write("         <li class=\"dropdown\"><a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\">Clientes<span class=\"caret\"></span></a>\r\n");
       out.write("        <ul class=\"dropdown-menu\">\r\n");
       out.write("            <li><a href=\"../Mod-Clientes/RegisCliente.jsp\">Registrar clientes</a></li>\r\n");
-      out.write("            <li><a href=\"../Listados\">Listar clientes</a></li>\r\n");
+      out.write("            <li><a href=\"../Listar\">Listar clientes</a></li>\r\n");
       out.write("          <li><a href=\"#\">Solicitar domicilio</a></li>\r\n");
       out.write("        </ul>\r\n");
       out.write("      </li>\r\n");
@@ -158,8 +159,38 @@ public final class ListarCliente_jsp extends org.apache.jasper.runtime.HttpJspBa
       out.write("\r\n");
       out.write("\n");
       out.write("        \n");
-      out.write("        \n");
-      out.write("        <h1>Hello World!</h1>\n");
+      out.write("       <div class=\"container\">\n");
+      out.write("            <div class=\"jumbotron\">\n");
+      out.write("                <table class=\"table table-hover\">\n");
+      out.write("                    <thead>\n");
+      out.write("                        <tr>\n");
+      out.write("                            <th class=\"hidden\">Id</th>\n");
+      out.write("                            <th>Nombre</th>\n");
+      out.write("                            <th>Genero</th>\n");
+      out.write("                            <th>Opciones</th>\n");
+      out.write("                        </tr>\n");
+      out.write("                    </thead>\n");
+      out.write("                    <tbody>\n");
+      out.write("                        ");
+ 
+                            ResultSet re = request.getAttribute("listarC");
+                        
+      out.write("\n");
+      out.write("                        <tr>\n");
+      out.write("                            <td class=\"hidden\"></td>\n");
+      out.write("                            <td></td>\n");
+      out.write("                            <td></td>\n");
+      out.write("                            <td>\n");
+      out.write("                                <a href=\"Modal.jsp\" data-target=\"#myModal\" onclick=\"document.getElementsByName('myModal')\" data-toggle=\"modal\" class=\"btn btn-success\"><span class=\"glyphicon glyphicon-eye-open\"></span></a>\n");
+      out.write("                                <a class=\"btn btn-primary\"><span class=\"glyphicon glyphicon-edit\"></span></a>\n");
+      out.write("                                <a class=\"btn btn-danger\"><span class=\"glyphicon glyphicon-remove-sign\"></span></a>\n");
+      out.write("                            </td>\n");
+      out.write("                        </tr>\n");
+      out.write("                        \n");
+      out.write("                    </tbody>\n");
+      out.write("                </table>\n");
+      out.write("            </div>\n");
+      out.write("        </div>\n");
       out.write("        \n");
       out.write("        ");
       out.write("\r\n");
