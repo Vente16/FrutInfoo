@@ -145,10 +145,8 @@
         <url-pattern>/RegEmpleado</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-
         <servlet-name>Listar</servlet-name>
         <url-pattern>/Listar</url-pattern>
-
     </servlet-mapping>
     <session-config>
         <session-timeout>
