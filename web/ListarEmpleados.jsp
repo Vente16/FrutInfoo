@@ -39,9 +39,9 @@
                         <table class="table table-hover table-striped">
                             <thead>
                                 <tr>
-                                    <th>id</th>
-                                    <th>nombre</th>
-                                    <th>apellido</th>
+                                    <th>Id</th>
+                                    <th>Nombre</th>
+                                    <th>Apellido</th>
                                     <th>Detalles</th>
 
                                 </tr>

@@ -26,9 +26,9 @@
                 <table class="table table-hover" id="paginacion">
                     <thead>
                         <tr>
-                            <th class="hidden">Id</th>
+                            <th class="">Id</th>
                             <th>Nombre</th>
-                            <th>Genero</th>
+                            <th>Apellido</th>
                             <th>Opciones</th>
                         </tr>
                     </thead>

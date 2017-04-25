@@ -21,7 +21,7 @@
     <body>
      
        
-        <%@include file="headerModulos.jspf" %> %>
+        <%@include file="headerModulos.jspf" %> 
         
         <div class="container">
         <h1>BIENVENIDO AL SISTEMA</h1>
