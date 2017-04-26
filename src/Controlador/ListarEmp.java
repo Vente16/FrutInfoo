@@ -6,7 +6,6 @@
 package Controlador;
 
 import Modelo.Conexion;
-import com.sun.javafx.font.directwrite.RECT;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
@@ -20,9 +19,9 @@ import javax.servlet.http.HttpSession;
 
 /**
  *
- * @author adsi
+ * @author oscar
  */
-public class Listar extends HttpServlet {
+public class ListarEmp extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -36,28 +35,28 @@ public class Listar extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        ResultSet rsC;
+        ResultSet rsE;
         ResultSet rst;
           try{
            Conexion con =new Conexion();
             Connection c=con.Conectar();
             HttpSession session = request.getSession(true);
             int pagina=Integer.parseInt(request.getParameter("pag"));
-             String sqlC="SELECT * FROM clientes LIMIT 5 OFFSET "+(pagina)*5+";";
-             String sql="SELECT count(*) as Id FROM clientes";
+             String sqlC="SELECT * FROM empleados LIMIT 5 OFFSET "+(pagina)*5+";";
+             String sql="SELECT count(*) as Id_empleado FROM empleados";
              
              Statement stm =c.createStatement();
              Statement stm1=c.createStatement();
-              rsC=stm.executeQuery(sqlC);
+              rsE=stm.executeQuery(sqlC);
               rst=stm1.executeQuery(sql);
             
-             session.setAttribute("listarC", rsC);
+             session.setAttribute("listarE", rsE);
              session.setAttribute("pag", pagina);
            session.setAttribute("tamaño", rst);
              
-            request.getRequestDispatcher("ListarCliente.jsp").forward(request, response);
+            request.getRequestDispatcher("ListarEmpleados.jsp").forward(request, response);
             
-              rsC.close();
+              rsE.close();
               c.close();
     }catch(Exception e){
         e.printStackTrace();

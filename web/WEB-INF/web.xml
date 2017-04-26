@@ -76,13 +76,13 @@
         <servlet-name>Listar</servlet-name>
         <servlet-class>Controlador.Listar</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ListarEmp</servlet-name>
+        <servlet-class>Controlador.ListarEmp</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Validar</servlet-name>
         <url-pattern>/Validar</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>NewServlet</servlet-name>
-        <url-pattern>/NewServlet</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>servle</servlet-name>
@@ -151,6 +151,10 @@
     <servlet-mapping>
         <servlet-name>Listar</servlet-name>
         <url-pattern>/Listar</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ListarEmp</servlet-name>
+        <url-pattern>/ListarEmp</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
