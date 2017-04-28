@@ -33,7 +33,7 @@
 
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-apple">Insumos<span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="VerlistadeInsumos.jsp">Ver lista de insumos</a></li>
+          <li><a href="ListarInsumo?pag=0">Ver lista de insumos</a></li>
           <li><a href="SolicitarInsumo.jsp">Solicitar Insumo</a></li>
           <li><a href="RegistrarInsumo.jsp">Registrar insumos</a></li>
         </ul>
@@ -42,7 +42,7 @@
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-shopping-cart">Ventas<span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="RegistrarVentas.jsp">Registrar ventas</a></li>
-          <li><a href="ListarVentas.jsp">Listar ventas</a></li>
+          <li><a href="ListarVentas?pag=0">Listar ventas</a></li>
           <li><a href="InforVentas.jsp">Realizar infrome de ventas</a></li>
           <li><a href="FacturaVentas.jsp">Generar factura de ventas</a></li>
          

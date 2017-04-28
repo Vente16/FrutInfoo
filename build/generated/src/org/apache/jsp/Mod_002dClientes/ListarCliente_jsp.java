@@ -173,7 +173,7 @@ public final class ListarCliente_jsp extends org.apache.jasper.runtime.HttpJspBa
       out.write("                    <tbody>\n");
       out.write("                        ");
  
-                            ResultSet re = request.getAttribute("listarC");
+                            ResultSet re = (ResultSet)request.getAttribute("listarC");
                         
       out.write("\n");
       out.write("                        <tr>\n");

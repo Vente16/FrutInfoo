@@ -9,17 +9,22 @@ import Modelo.Conexion;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
-import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
- * @author Home
+ * @author oscar
  */
-public class RegCliente extends HttpServlet {
+public class ListarInsumo extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -31,9 +36,32 @@ public class RegCliente extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-     
-      
+            throws ServletException, IOException, SQLException {
+        response.setContentType("text/html;charset=UTF-8");
+        ResultSet rsI;
+        ResultSet rst;
+        try (PrintWriter out = response.getWriter()) {
+            Conexion con = new Conexion();
+            Connection c = con.Conectar();
+            HttpSession session = request.getSession(true);
+            int pagina = Integer.parseInt(request.getParameter("pag"));
+            String sqlI = "SELECT * FROM insumos LIMIT 5 OFFSET " + (pagina) * 5 + ";";
+            String sql = "SELECT count(*) as Id_Insumo FROM insumos";
+            Statement stm = c.createStatement();
+            Statement stm1 = c.createStatement();
+            rsI = stm.executeQuery(sqlI);
+            rst = stm1.executeQuery(sql);
+            session.setAttribute("listarI", rsI);
+            session.setAttribute("pag", pagina);
+            session.setAttribute("tamaño", rst);
+
+            request.getRequestDispatcher("VerlistadeInsumos.jsp").forward(request, response);
+
+            rsI.close();
+            c.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -48,8 +76,11 @@ public class RegCliente extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-      
-        
+        try {
+            processRequest(request, response);
+        } catch (SQLException ex) {
+            Logger.getLogger(ListarInsumo.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     /**
@@ -63,53 +94,10 @@ public class RegCliente extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        try{
-            String Tip = request.getParameter("tipo_documento");
-            String Doc = request.getParameter("documento");
-            String Nom = request.getParameter("nombres");
-            String Ape = request.getParameter("apellidos");
-            String Fec = request.getParameter("FechaNac");
-            String Mun = request.getParameter("Municipio");
-            String Dir = request.getParameter("direccion");
-            String Bar = request.getParameter("Barrio");
-            String Tel = request.getParameter("telefono");
-            String Cel = request.getParameter("celular");
-            String Em = request.getParameter("Email");
-            String Mem = request.getParameter("membrecia");
-        
-        Conexion c = new Conexion();
-        Connection con = c.Conectar();
-        
-        PreparedStatement Ps = con.prepareStatement("INSERT INTO clientes (Tipo_documento, Documento, Nombre, Apellido, `Fecha de nacimiento`, Municipio, Direccion, Barrio, Telefono, Celular, Email, Membrecia, Habilitado) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,1)");
-        Ps.setString(1, Tip);
-        Ps.setString(2, Doc);
-        Ps.setString(3, Nom);
-        Ps.setString(4, Ape);
-        Ps.setString(5, Fec);
-        Ps.setString(6, Mun);
-        Ps.setString(7, Dir);
-        Ps.setString(8, Bar);
-        Ps.setString(9, Tel);
-        Ps.setString(10, Cel);
-        Ps.setString(11, Em);
-        Ps.setString(12, Mem);
-        
-        Ps.executeUpdate();
-        
-        response.sendRedirect("DefUsuario.jsp");
-        
-        Ps.close();
-        con.close();
-        
-        
-        
-        
-        
-        
-        }catch(Exception e){
-        
-          response.sendRedirect("Error.jsp");
-            System.out.println(e);
+        try {
+            processRequest(request, response);
+        } catch (SQLException ex) {
+            Logger.getLogger(ListarInsumo.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
