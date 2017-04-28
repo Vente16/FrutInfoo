@@ -1,11 +1,11 @@
 <%-- 
-    Document   : DefUsuario
-    Created on : 27/04/2017, 11:31:50 PM
+    Document   : DefUsarioInt
+    Created on : 28/04/2017, 01:14:44 AM
     Author     : oscar
 --%>
 
-<%@page import="java.sql.Statement"%>
 <%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.Statement"%>
 <%@page import="java.sql.Connection"%>
 <%@page import="Modelo.Conexion"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -25,12 +25,12 @@
             Connection con = c.Conectar();
 
             Statement stm = con.createStatement();
-            ResultSet rs = stm.executeQuery("SELECT * FROM clientes;");
+            ResultSet rs = stm.executeQuery("SELECT * FROM empleados;");
             String nombre = "";
             String correo = "";
             if (rs.last()) {
                 nombre = rs.getString(2);
-                correo = rs.getString(12);
+                correo = rs.getString(17);
             }
         %>
         <section>
@@ -38,7 +38,7 @@
                 <div class="jumbotron">
                     <h1>Registro de usuario</h1>
                     <p>has acabado de registrar a un cliente por favor crea un usuario</p>
-                    <form action="RegUsuario" class="form-group-sm">
+                    <form action="RegUsuarioInt" class="form-group-sm">
                         <div class="form-group">
                             <label for="#nomre">Nombre</label>
                             <input type="text" class="form-control" id="nombre" value="<%= nombre%>" name="nombre" >
@@ -55,6 +55,14 @@
                             <label for="#contra">contraseña</label>
                             <input type="text" class="form-control" id="contra" name="contra" >
                         </div>
+                        <div class="form-group">
+                            <select class="form-control" name="rol">
+                                <option>Administrativo</option>
+                                <option>Ventas</option>
+                                <option>Insumos</option>
+                                <option>Recursos humanos</option>
+                            </select>
+                        </div>
                        
                         <button type="submit" class="btn btn-primary">enviar</button>
                     </form>
@@ -64,6 +72,5 @@
         </section>
 
         <%@include file="footerModulos.jspf" %>
-
     </body>
 </html>

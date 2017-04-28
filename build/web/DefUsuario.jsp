@@ -37,6 +37,7 @@
             <div class="container">
                 <div class="jumbotron">
                     <h1>Registro de usuario</h1>
+                    <p>has acabado de registrar a un cliente por favor crea un usuario</p>
                     <form action="RegUsuario" class="form-group-sm">
                         <div class="form-group">
                             <label for="#nomre">Nombre</label>
@@ -54,16 +55,7 @@
                             <label for="#contra">contraseña</label>
                             <input type="text" class="form-control" id="contra" name="contra" >
                         </div>
-                        <div class="form-group">
-                            <select class="form-control" name="rol">
-                            <option>Administrativo</option>
-                            <option>Ventas</option>
-                            <option>Insumos</option>
-                            <option>Recursos humanos</option>
-                            <option>Cliente</option>
-                        </select>
-                        </div>  
-                        
+                       
                         <button type="submit" class="btn btn-primary">enviar</button>
                     </form>
                 </div>

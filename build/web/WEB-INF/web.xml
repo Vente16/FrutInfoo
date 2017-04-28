@@ -92,6 +92,10 @@
         <servlet-name>RegUsuario</servlet-name>
         <servlet-class>Controlador.RegUsuario</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>RegUsuarioInt</servlet-name>
+        <servlet-class>Controlador.RegUsuarioInt</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Validar</servlet-name>
         <url-pattern>/Validar</url-pattern>
@@ -179,6 +183,10 @@
     <servlet-mapping>
         <servlet-name>RegUsuario</servlet-name>
         <url-pattern>/RegUsuario</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegUsuarioInt</servlet-name>
+        <url-pattern>/RegUsuarioInt</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
