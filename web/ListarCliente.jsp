@@ -9,14 +9,14 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Lista de clientes</title>
         <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
         <link rel="stylesheet" href="css/estilos2.css">
-        <script src="js/funciones.js"></script>
-        <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="js/FuncionesClientes.js"></script>
+        <script  src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
     </head>
     <body>
         <%@include file="headerModulos.jspf" %>
@@ -26,10 +26,12 @@
                 <table class="table table-hover" id="paginacion">
                     <thead>
                         <tr>
-                            <th class="">Id</th>
+                            <th>Documento</th>
                             <th>Nombre</th>
                             <th>Apellido</th>
-                            <th>Opciones</th>
+                            <th>Detalle</th>
+                            <th>Actualizar</th>
+                            <th>Eliminar</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -51,15 +53,15 @@
 <%
                             while (re.next()) {
                         %>
-                        <tr>
-                            <td class=""><%= re.getInt(1)%></td>
-                            <td><%= re.getString(2)%></td>
-                            <td><%= re.getString(3)%></td>
-                            <td>
-                                <a href="Modal.jsp" data-target="#myModal" onclick="document.getElementsByName('myModal')" data-toggle="modal" class="btn btn-success"><span class="glyphicon glyphicon-eye-open"></span></a>
-                                <a class="btn btn-primary"><span class="glyphicon glyphicon-edit"></span></a>
-                                <a class="btn btn-danger"><span class="glyphicon glyphicon-remove-sign"></span></a>
-                            </td>
+                        <tr class="<%= re.getString("Id")%>">
+                            
+                            <td class="Documento"><%= re.getString("Documento")%></td>
+                            <td class="Nombre"><%= re.getString("Nombre")%></td>
+                            <td class="Apellido"><%= re.getString("Apellido")%></td>
+                            <td><a href="#Detalle"  data-toggle="modal"><button class="btn btn-primary  glyphicon glyphicon-eye-open Detalle"></button></a></td>
+                            <td><a href="#Actualizar"  data-toggle="modal"><button class="btn btn-success glyphicon glyphicon-edit Actualizar"></button></a></td>
+                            <td><button class="btn btn-danger glyphicon glyphicon-trash Eliminar"></button></td>
+                           
                         </tr>
                         <%
                             }
@@ -91,7 +93,9 @@
                 </nav>
             </div>
         </div>
-
+                    
+                 
+        <%@include file="ModalClientes.jsp" %>
         <%@include file="footerModulos.jspf" %>
     </body>
 </html>

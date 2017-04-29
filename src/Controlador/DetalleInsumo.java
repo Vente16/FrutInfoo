@@ -6,23 +6,21 @@
 package Controlador;
 
 import Modelo.Conexion;
-import com.sun.javafx.font.directwrite.RECT;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.Statement;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 /**
  *
- * @author adsi
+ * @author User
  */
-public class Listar extends HttpServlet {
+public class DetalleInsumo extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -36,32 +34,43 @@ public class Listar extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        ResultSet rsC;
-        ResultSet rst;
-          try{
-           Conexion con =new Conexion();
-            Connection c=con.Conectar();
-            HttpSession session = request.getSession(true);
-            int pagina=Integer.parseInt(request.getParameter("pag"));
-             String sqlC="SELECT * FROM clientes WHERE Habilitado=1 LIMIT 5 OFFSET "+(pagina)*5+";";
-             String sql="SELECT count(*) as Id FROM clientes";
+        try (PrintWriter out = response.getWriter()) {
+          
              
-             Statement stm =c.createStatement();
-             Statement stm1=c.createStatement();
-              rsC=stm.executeQuery(sqlC);
-              rst=stm1.executeQuery(sql);
+            String Id = request.getParameter("Id");
             
-             session.setAttribute("listarC", rsC);
-             session.setAttribute("pag", pagina);
-           session.setAttribute("tamaño", rst);
-             
-            request.getRequestDispatcher("ListarCliente.jsp").forward(request, response);
+            Conexion c = new Conexion();
+            Connection co = c.Conectar();
             
-              rsC.close();
-              c.close();
-    }catch(Exception e){
-        e.printStackTrace();
-    }
+            PreparedStatement st = co.prepareStatement("SELECT *FROM Insumos WHERE Id=?");
+            st.setString(1, Id);
+            
+            ResultSet rs = st.executeQuery();
+            
+            while(rs.next()){
+          
+            out.println("<h4>Documento:  " +  rs.getString("Codigo") + "   -- Tipo de insumo: "+rs.getString("Tipo")+"</h4>");
+            out.println("<h4>Nombre del insumo:  " + rs.getString("Nombre_insumo") + "</h4>");
+            out.println("<h4>Cantidad insumo: " + rs.getString("Cantidad_insumo")+ "</h4>");
+            out.println("<h4>Valor insumo: " + rs.getString("Valor_insumo") + "</h4>");
+            out.println("<h4>Fecha de ingreso: " + rs.getString("Municipio") + "</h4>");
+            out.println("<h4>Fecha de vencimiento: " + rs.getString("Fecha_ingreso") + "</h4>");
+            out.println("<h4>Dirección: " + rs.getString("Fecha_vencimiento") + "</h4>");
+            out.println("<h4>Peso: " + rs.getString("peso") + "</h4>");
+            out.println("<h4>Fecha de nacimiento: " + rs.getString("Fecha de nacimiento") + "</h4>");
+            out.println("<h4>Correo: " + rs.getString("Email") + "</h4>");  
+            out.println("<h4>Membrecia: " + rs.getString("Membrecia") + "</h4>");
+            
+            }
+            
+            
+            
+            
+            
+        } catch(Exception e){
+            System.out.println(e);
+        
+        }
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

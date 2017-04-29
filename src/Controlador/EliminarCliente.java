@@ -6,23 +6,20 @@
 package Controlador;
 
 import Modelo.Conexion;
-import com.sun.javafx.font.directwrite.RECT;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.PreparedStatement;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 /**
  *
- * @author adsi
+ * @author User
  */
-public class Listar extends HttpServlet {
+public class EliminarCliente extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -36,32 +33,29 @@ public class Listar extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        ResultSet rsC;
-        ResultSet rst;
-          try{
-           Conexion con =new Conexion();
-            Connection c=con.Conectar();
-            HttpSession session = request.getSession(true);
-            int pagina=Integer.parseInt(request.getParameter("pag"));
-             String sqlC="SELECT * FROM clientes WHERE Habilitado=1 LIMIT 5 OFFSET "+(pagina)*5+";";
-             String sql="SELECT count(*) as Id FROM clientes";
-             
-             Statement stm =c.createStatement();
-             Statement stm1=c.createStatement();
-              rsC=stm.executeQuery(sqlC);
-              rst=stm1.executeQuery(sql);
+        try (PrintWriter out = response.getWriter()) {
             
-             session.setAttribute("listarC", rsC);
-             session.setAttribute("pag", pagina);
-           session.setAttribute("tamaño", rst);
-             
-            request.getRequestDispatcher("ListarCliente.jsp").forward(request, response);
+  
+             String Id = request.getParameter("Id");
+             String Deshabilitar = "0";
             
-              rsC.close();
-              c.close();
-    }catch(Exception e){
-        e.printStackTrace();
-    }
+             Conexion c = new Conexion();
+             Connection co = c.Conectar();
+            
+             PreparedStatement st = co.prepareStatement("UPDATE Clientes SET Habilitado=? WHERE Id=?");
+             st.setString(1,Deshabilitar );
+             st.setString(2,Id);
+             st.execute();
+             
+             out.println("<h3>Eliminó correctamente</h3>");
+            
+            
+            
+            
+        }catch(Exception e){
+        
+            System.out.println(e);
+        }
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
