@@ -34,7 +34,7 @@
                                     <br>
                                     <select class="form-control">
                                     <option>Envigado</option>
-                                    <option >Sabaneta</option>ss
+                                    <option >Sabaneta</option>
                                     <option >Itagui</option>
                                     <option >poblado</option>
                                     <option >Carrera 80</option>
@@ -75,7 +75,7 @@
                                </table>
                           
                                 <button type="submit" class="btn btn-success">Guardar</button>
-                                <button type="button" class="btn btn-primary">VOLVER</button>
+                                
                                 
                             </form>
                             </div>

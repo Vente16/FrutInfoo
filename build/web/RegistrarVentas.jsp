@@ -24,9 +24,9 @@
         <div>
             <form class="navbar-left" role="search">
 
-                <input type="number" class="form-control" placeholder="Codigo del Producto" value="">
+                <input type="text" class="form-control" placeholder="Codigo del Producto" value="">
                 <br>
-                <input type="number" class="form-control" placeholder="Cantidad del Producto" value="">
+                <input type="text" class="form-control" placeholder="Cantidad del Producto" value="">
                 <br>
 
                 <button type="submit" class="btn btn-success">AGREGAR</button>
@@ -39,7 +39,7 @@
 
         <div style="margin-top: 100px">
             <h2 style="text-align: center;">Estos son los Productos Seleccionados</h2><br>
-            <p style="text-align: left;">a continuación verá toda la información de los productos agragados </p>
+            <p style="text-align: left;">A continuación verá toda la información de los productos agragados </p>
         </div>
         <table class="table table-bordered table-hover">
             <thead>
@@ -77,16 +77,6 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                </tr>
-
-
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td></td>
                 </tr>
 
@@ -99,6 +89,7 @@
                     <td></td>
                     <td></td>
                     <td></td>
+                    <td></td>
                 </tr>
 
 
@@ -110,8 +101,22 @@
                     <td></td>
                     <td></td>
                     <td></td>
+                    <td></td>
+                </tr>
+
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                 </tr>
                 <tr>
+                    <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -122,9 +127,9 @@
                 </tr>
             </tbody>
         </table>
-        <button type="submit" class="btn btn-success">MODIFICAR</button>
+        <button type="submit" class="btn btn-success">GUARDAR</button>
 
-        <button type="submit" class="btn btn-primary">VOLVER</button>
+        
 
 
     </section>

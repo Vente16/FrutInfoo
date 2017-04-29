@@ -24,7 +24,7 @@
                     <tr>
                         <th>Id de solicitud</th>
                         <th>Sede</th>
-                        <th>Descricion de la solicitud</th>
+                        <th>Descripción de la solicitud</th>
                         <th>Detalle</th>
                         <th>Autorizar</th>
                         <th>Desautorizar</th>

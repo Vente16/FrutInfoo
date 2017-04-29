@@ -1,0 +1,18 @@
+SMAP
+FacturaVentas_jsp.java
+JSP
+*S JSP
+*F
++ 0 FacturaVentas.jsp
+FacturaVentas.jsp
++ 1 headerModulos.jspf
+headerModulos.jspf
++ 2 footerModulos.jspf
+footerModulos.jspf
+*L
+5,15:50
+1#1,94:65
+19#0,114:158
+1#2,14:272
+132#0,4:285
+*E

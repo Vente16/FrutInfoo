@@ -47,13 +47,13 @@
                     <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Disponibilidad</span></label>
                     <input type="text" class="form-control" name="disponibilidad"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el cargo del empleado"><br>
                     <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Inicio contrato</span></label>
-                    <input type="text" class="form-control" name="inicio"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el cargo del empleado"><br> 
+                    <input type="text" class="form-control" name="inicio"required="" data-form-field="Name" id="index-form1-1-name" placeholder="dd/mm/aa"><br> 
                     <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Fin contrato</span></label>
-                    <input type="text" class="form-control" name="fin"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el cargo del empleado"><br> 
+                    <input type="text" class="form-control" name="fin"required="" data-form-field="Name" id="index-form1-1-name" placeholder="dd/mm/aa"><br> 
                     <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Hora de inicio</span></label>
-                    <input type="text" class="form-control" name="hora inicio"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el cargo del empleado"><br> 
+                    <input type="text" class="form-control" name="hora inicio"required="" data-form-field="Name" id="index-form1-1-name"><br> 
                     <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Hora de salida</span></label>
-                    <input type="text" class="form-control" name="hora salida"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el cargo del empleado"><br>
+                    <input type="text" class="form-control" name="hora salida"required="" data-form-field="Name" id="index-form1-1-name"><br>
 
                     <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Documento de identificación</span></label><br>
                     <input type="text" class="form-control" name="documento"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el número de documento de identificación"><br>
@@ -69,10 +69,10 @@
                     </div>
 
                     <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Fecha de nacimiento</span></label>
-                    <input type="text" class="form-control" name="fecha"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el cargo del empleado"><br> 
+                    <input type="text" class="form-control" name="fecha"required="" data-form-field="Name" id="index-form1-1-name" placeholder="dd/mm/aa"><br> 
 
                     <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Email</span></label>
-                    <input type="text" class="form-control" name="email"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el cargo del empleado"><br> 
+                    <input type="text" class="form-control" name="email"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Correo electronico"><br> 
 
 
                     <button type="submit" class="btn btn-success">Registrar</button>

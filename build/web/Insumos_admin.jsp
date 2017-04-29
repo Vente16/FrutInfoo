@@ -35,7 +35,8 @@
     fecha_vencimiento     
     fecha_salida      
     cantidad_salida_insumos    
-    prioridad -->
+    prioridad
+    Habilitado-->
 
 
                 <h2 style="text-align: center;">Informe de Insumos</h2>
@@ -52,7 +53,7 @@
                             <th>Fecha de salida</th>
                             <th>Cantidad de salida</th>
                             <th>Prioridad</th>
-                            <th>habilitado</th>
+                            <th>Habilitado</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -66,6 +67,7 @@
                             <td>13/10/2016</td>
                             <td>5</td>
                             <td>media</td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td>0002</td>
@@ -77,6 +79,7 @@
                             <td>13/10/2016</td>
                             <td>5</td>
                             <td>media</td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td>0003</td>
@@ -88,6 +91,7 @@
                             <td>13/10/2016</td>
                             <td>5</td>
                             <td>media</td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td>0004</td>
@@ -99,6 +103,7 @@
                             <td>13/10/2016</td>
                             <td>5</td>
                             <td>media</td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td>0005</td>
@@ -110,6 +115,7 @@
                             <td>13/10/2016</td>
                             <td>5</td>
                             <td>media</td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td>0006</td>
@@ -121,6 +127,7 @@
                             <td>13/10/2016</td>
                             <td>5</td>
                             <td>media</td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td>0007</td>
@@ -132,6 +139,7 @@
                             <td>13/10/2016</td>
                             <td>5</td>
                             <td>media</td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td>0008</td>
@@ -154,10 +162,11 @@
                             <td>13/10/2016</td>
                             <td>5</td>
                             <td>media</td>
+                            <td></td>
                         </tr>
                     </tbody>
                 </table>
-                <button type="submit" class="btn btn-primary">VOLVER</button>
+              
             </div>
 
         </section>

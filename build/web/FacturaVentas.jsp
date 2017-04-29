@@ -21,10 +21,10 @@
             <div>
                 <form class="navbar-left" role="search"><br>
                     <p>Digite el número de la Factura</p>
-                    <input type="number" class="form-control" placeholder="" value="">
+                    <input type="text" class="form-control" placeholder="" value="">
                     <br>
 
-                    <button type="submit" class="btn btn-succes">GENERAR</button>
+                    <button type="submit" class="btn btn-success">GENERAR</button>
                 </form>
             </div>
 
@@ -119,9 +119,9 @@
                
              
             </table>
-            <button type="submit" class="btn btn-success">IMPRIMIR</button>
+           
 
-            <button type="submit" class="btn btn-primary">VOLVER</button>
+           
 
 
         </section>

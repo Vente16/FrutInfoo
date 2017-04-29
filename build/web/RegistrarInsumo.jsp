@@ -28,7 +28,7 @@
 
                     <br>
                     <div class="form-group  has-success">
-                        <label class= "control-label" for="Codigo">Codigo:</label>
+                        <label for="Codigo">Codigo:</label>
                         <input type="text" class="form-control" name="codigo" id="Tipo_de_documento" >
                     </div>
                     <br>
@@ -82,7 +82,7 @@
                     <div class="form-group has">
 
                         <button type="submit" class="btn btn-success">REGISTRAR</button>
-                        <button type="button" class="btn btn-primary">VOLVER</button>
+                       
                     </div>
 
                 </form>
