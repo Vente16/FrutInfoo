@@ -6,23 +6,20 @@
 package Controlador;
 
 import Modelo.Conexion;
-import com.sun.javafx.font.directwrite.RECT;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.PreparedStatement;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 /**
  *
- * @author adsi
+ * @author User
  */
-public class Listar extends HttpServlet {
+public class ActualizarCliente extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -35,33 +32,7 @@ public class Listar extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
-        ResultSet rsC;
-        ResultSet rst;
-          try{
-           Conexion con =new Conexion();
-            Connection c=con.Conectar();
-            HttpSession session = request.getSession(true);
-            int pagina=Integer.parseInt(request.getParameter("pag"));
-             String sqlC="SELECT * FROM clientes WHERE Habilitado=1 LIMIT 5 OFFSET "+(pagina)*5+";";
-             String sql="SELECT count(*) as Id FROM clientes";
-             
-             Statement stm =c.createStatement();
-             Statement stm1=c.createStatement();
-              rsC=stm.executeQuery(sqlC);
-              rst=stm1.executeQuery(sql);
-            
-             session.setAttribute("listarC", rsC);
-             session.setAttribute("pag", pagina);
-           session.setAttribute("tamaño", rst);
-             
-            request.getRequestDispatcher("ListarCliente.jsp").forward(request, response);
-            
-              rsC.close();
-              c.close();
-    }catch(Exception e){
-        e.printStackTrace();
-    }
+      
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -91,6 +62,53 @@ public class Listar extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
+          response.setContentType("text/html;charset=UTF-8");
+        try (PrintWriter out = response.getWriter()) {
+           
+            String Id = request.getParameter("Id");
+            String Nombre = request.getParameter("Nombre");
+            String Apellido = request.getParameter("Apellido");
+            String Telefono = request.getParameter("Telefono");
+            String Municipio = request.getParameter("Municipio");
+            String Barrio = request.getParameter("Barrio");
+            String Direccion = request.getParameter("Direccion");
+            String Celular = request.getParameter("Celular");
+            String TipoD = request.getParameter("TipoD");
+            String FechaN = request.getParameter("FechaN");
+            String Correo = request.getParameter("Correo");
+            String Membrecia = request.getParameter("Membrecia");
+            
+            
+            Conexion c = new Conexion();
+            Connection co = c.Conectar();
+            
+            PreparedStatement st = co.prepareStatement("UPDATE Clientes SET Nombre='?', Apellido='?', Telefono='?', Municipio='?', Barrio='?', Direccion='?', Celular='?', Tipo_Documento='?', Fecha de nacimiento='?', Email='?',Membrecia='?' WHERE Id='?'");
+            st.setString(1, Nombre);
+            st.setString(2, Apellido);
+            st.setString(3, Telefono);
+            st.setString(4, Municipio);
+            st.setString(5, Barrio);
+            st.setString(6, Direccion);
+            st.setString(7, Celular);
+            st.setString(8, TipoD);
+            st.setString(9, FechaN);
+            st.setString(10, Correo);
+            st.setString(11, Membrecia);
+            st.setString(12, Id);
+            st.executeUpdate();
+           
+            out.println("<h3>Actualizó los datos correctamente!</h3>");
+            
+            
+            
+            
+            
+            
+            
+            
+        }catch(Exception e){
+            System.out.println(e);
+        }
     }
 
     /**

@@ -12,9 +12,12 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Listar insumos</title>
         <link rel="stylesheet" href="css/bootstrap.css">
+         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
         <link rel="stylesheet" href="css/estilos2.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="js/FuncionesInsumos.js"></script>
+        <script  src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
     </head>
     <%@include file="headerModulos.jspf"%>
     <body>
@@ -35,7 +38,7 @@
                         <br>
                         <select class="form-control">
                             <option>Envigado</option>
-                            <option >Sabaneta</option>ss
+                            <option >Sabaneta</option>
                             <option >Itagui</option>
                             <option >poblado</option>
                             <option >Carrera 80</option>
@@ -57,8 +60,8 @@
                                 <th>Codigo</th>
                                 <th>Nombre</th>
                                 <th>Cantidad</th>
-                                <th>Editar</th>
-                                <th>Modificar</th>
+                                <th>Detalle</th>
+                                <th>Actualizar</th>
                                 <th>Eliminar</th>
                             </tr>
                         </thead>
@@ -79,13 +82,13 @@
                             while (reI.next()) {
                         %>
                         <tbody>
-                            <tr>
+                            <tr class="<%= reI.getString("Id_Insumo")%>">
                                 <td><%= reI.getString(2)%></td>
                                 <td><%= reI.getString(6)%></td>
                                 <td><%= reI.getString(7)%></td>
-                                <td><img src="img/detalle.svg" height=30px></td>
-                                <td> <button class="btn-link btn-xs" ><img src="img/aceptari.png" alt="aceptar" style="width:20px; height:20px; align:center;"></button></td>
-                                <td> <button class="btn-link btn-xs" ><img src="img/cancelar.png" alt="aceptar" style="width:20px; height:20px; align:center;"></button></td>
+                                <td><a href="#Detalle"  data-toggle="modal"><button class="btn btn-primary  glyphicon glyphicon-eye-open Detalle"></button></a></td>
+                                <td><a href="#Actualizar"  data-toggle="modal"><button class="btn btn-success glyphicon glyphicon-edit Actualizar"></button></a> </td>
+                                <td><button class="btn btn-danger glyphicon glyphicon-trash Eliminar"></button></td>
                             </tr>
                             <%}%>
                         </tbody>
@@ -119,7 +122,7 @@
                 </form>
             </div>
         </section>
-
+           <%@include file="ModalInsumos.jsp" %>
         <%@include file="footerModulos.jspf"%>     
     </body>
 </html>

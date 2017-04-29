@@ -96,6 +96,26 @@
         <servlet-name>RegUsuarioInt</servlet-name>
         <servlet-class>Controlador.RegUsuarioInt</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>DetalleCliente</servlet-name>
+        <servlet-class>Controlador.DetalleCliente</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>FormActualizarCliente</servlet-name>
+        <servlet-class>Controlador.FormActualizarCliente</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ActualizarCliente</servlet-name>
+        <servlet-class>Controlador.ActualizarCliente</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EliminarCliente</servlet-name>
+        <servlet-class>Controlador.EliminarCliente</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DetalleInsumo</servlet-name>
+        <servlet-class>Controlador.DetalleInsumo</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Validar</servlet-name>
         <url-pattern>/Validar</url-pattern>
@@ -187,6 +207,26 @@
     <servlet-mapping>
         <servlet-name>RegUsuarioInt</servlet-name>
         <url-pattern>/RegUsuarioInt</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DetalleCliente</servlet-name>
+        <url-pattern>/DetalleCliente</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FormActualizarCliente</servlet-name>
+        <url-pattern>/FormActualizarCliente</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ActualizarCliente</servlet-name>
+        <url-pattern>/ActualizarCliente</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EliminarCliente</servlet-name>
+        <url-pattern>/EliminarCliente</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DetalleInsumo</servlet-name>
+        <url-pattern>/DetalleInsumo</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
