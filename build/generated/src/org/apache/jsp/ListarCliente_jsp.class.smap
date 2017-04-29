@@ -1,0 +1,37 @@
+SMAP
+ListarCliente_jsp.java
+JSP
+*S JSP
+*F
++ 0 ListarCliente.jsp
+ListarCliente.jsp
++ 1 headerModulos.jspf
+headerModulos.jspf
++ 2 footerModulos.jspf
+footerModulos.jspf
+*L
+5,18:51
+1#1,94:69
+22#0,15:162
+37,13:178
+49,5:191
+53,2:196
+55,3:198,3
+58,7:207
+65,2:215
+66,6:217
+72,8:224
+79:232
+80:233,3
+81:236
+82,3:238
+84:241
+85:242,6
+86:248
+87,2:250
+88:252
+89:253,3
+90,6:256
+1#2,14:262
+95#0,4:275
+*E

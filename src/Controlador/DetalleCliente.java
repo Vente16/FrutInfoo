@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -17,9 +18,9 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author Home
+ * @author User
  */
-public class RegCliente extends HttpServlet {
+public class DetalleCliente extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -32,8 +33,40 @@ public class RegCliente extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-     
-      
+        response.setContentType("text/html;charset=UTF-8");
+        try (PrintWriter out = response.getWriter()) {
+            
+            String Id = request.getParameter("Id");
+            
+            Conexion c = new Conexion();
+            Connection co = c.Conectar();
+            
+            PreparedStatement st = co.prepareStatement("SELECT *FROM Clientes WHERE Id=?");
+            st.setString(1, Id);
+            
+            ResultSet rs = st.executeQuery();
+            
+            while(rs.next()){
+          
+            out.println("<h4>Documento:  " +  rs.getString("Documento") + "   -- Tipo de documento: "+rs.getString("Tipo_documento")+"</h4>");
+            out.println("<h4>Nombre:  " + rs.getString("Nombre") + "</h4>");
+            out.println("<h4>Apellido: " + rs.getString("Apellido")+ "</h4>");
+            out.println("<h4>Telefóno: " + rs.getString("Telefono") + "</h4>");
+            out.println("<h4>Municipio: " + rs.getString("Municipio") + "</h4>");
+            out.println("<h4>Barrio: " + rs.getString("Barrio") + "</h4>");
+            out.println("<h4>Dirección: " + rs.getString("Direccion") + "</h4>");
+            out.println("<h4Celular: " + rs.getString("Celular") + "</h4>");
+            out.println("<h4>Fecha de nacimiento: " + rs.getString("Fecha de nacimiento") + "</h4>");
+            out.println("<h4>Correo: " + rs.getString("Email") + "</h4>");  
+            out.println("<h4>Membrecia: " + rs.getString("Membrecia") + "</h4>");
+            
+            }
+            
+        }catch(Exception e){
+           
+            System.out.println(e);
+        
+        }
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -48,8 +81,7 @@ public class RegCliente extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-      
-        
+        processRequest(request, response);
     }
 
     /**
@@ -63,54 +95,7 @@ public class RegCliente extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        try{
-            String Tip = request.getParameter("tipo_documento");
-            String Doc = request.getParameter("documento");
-            String Nom = request.getParameter("nombres");
-            String Ape = request.getParameter("apellidos");
-            String Fec = request.getParameter("FechaNac");
-            String Mun = request.getParameter("Municipio");
-            String Dir = request.getParameter("direccion");
-            String Bar = request.getParameter("Barrio");
-            String Tel = request.getParameter("telefono");
-            String Cel = request.getParameter("celular");
-            String Em = request.getParameter("Email");
-            String Mem = request.getParameter("membrecia");
-        
-        Conexion c = new Conexion();
-        Connection con = c.Conectar();
-        
-        PreparedStatement Ps = con.prepareStatement("INSERT INTO clientes (Tipo_documento, Documento, Nombre, Apellido, `Fecha de nacimiento`, Municipio, Direccion, Barrio, Telefono, Celular, Email, Membrecia, Habilitado) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,1)");
-        Ps.setString(1, Tip);
-        Ps.setString(2, Doc);
-        Ps.setString(3, Nom);
-        Ps.setString(4, Ape);
-        Ps.setString(5, Fec);
-        Ps.setString(6, Mun);
-        Ps.setString(7, Dir);
-        Ps.setString(8, Bar);
-        Ps.setString(9, Tel);
-        Ps.setString(10, Cel);
-        Ps.setString(11, Em);
-        Ps.setString(12, Mem);
-        
-        Ps.executeUpdate();
-        
-        response.sendRedirect("DefUsuario.jsp");
-        
-        Ps.close();
-        con.close();
-        
-        
-        
-        
-        
-        
-        }catch(Exception e){
-        
-          response.sendRedirect("Error.jsp");
-            System.out.println(e);
-        }
+        processRequest(request, response);
     }
 
     /**

@@ -100,7 +100,7 @@ public class RegEmpleado extends HttpServlet {
 
             Ps.executeUpdate();
 
-            response.sendRedirect("Exito.jsp");
+            response.sendRedirect("DefUsuarioInt.jsp");
 
             Ps.close();
             con.close();

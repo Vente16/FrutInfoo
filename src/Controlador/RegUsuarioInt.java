@@ -17,9 +17,9 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author Home
+ * @author oscar
  */
-public class RegCliente extends HttpServlet {
+public class RegUsuarioInt extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -32,8 +32,35 @@ public class RegCliente extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-     
-      
+        response.setContentType("text/html;charset=UTF-8");
+       try {
+            
+            Conexion c = new Conexion();
+            Connection con = c.Conectar();
+            
+            String nombre = request.getParameter("nombre");
+            String correo = request.getParameter("correo");
+            String usuario = request.getParameter("usuario");
+            String Contraseña = request.getParameter("contra");
+            String rol = request.getParameter("rol");
+            
+            PreparedStatement st = con.prepareStatement("INSERT INTO logins(Usuario, Contrasena, Nombre_usuario, Correo, Rol, Habilitado) VALUES (?,?,?,?,?,1);");
+            st.setString(1, usuario);
+            st.setString(2, Contraseña);
+            st.setString(3, nombre);
+            st.setString(4, correo);
+            st.setString(5, rol);
+           
+            st.executeUpdate();
+            
+            
+             
+             response.sendRedirect("Exito.jsp");
+            
+        }catch(Exception e){
+          response.sendRedirect("Error.jsp");
+            System.out.println(""+e);
+        }
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -48,8 +75,7 @@ public class RegCliente extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-      
-        
+        processRequest(request, response);
     }
 
     /**
@@ -63,54 +89,7 @@ public class RegCliente extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        try{
-            String Tip = request.getParameter("tipo_documento");
-            String Doc = request.getParameter("documento");
-            String Nom = request.getParameter("nombres");
-            String Ape = request.getParameter("apellidos");
-            String Fec = request.getParameter("FechaNac");
-            String Mun = request.getParameter("Municipio");
-            String Dir = request.getParameter("direccion");
-            String Bar = request.getParameter("Barrio");
-            String Tel = request.getParameter("telefono");
-            String Cel = request.getParameter("celular");
-            String Em = request.getParameter("Email");
-            String Mem = request.getParameter("membrecia");
-        
-        Conexion c = new Conexion();
-        Connection con = c.Conectar();
-        
-        PreparedStatement Ps = con.prepareStatement("INSERT INTO clientes (Tipo_documento, Documento, Nombre, Apellido, `Fecha de nacimiento`, Municipio, Direccion, Barrio, Telefono, Celular, Email, Membrecia, Habilitado) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,1)");
-        Ps.setString(1, Tip);
-        Ps.setString(2, Doc);
-        Ps.setString(3, Nom);
-        Ps.setString(4, Ape);
-        Ps.setString(5, Fec);
-        Ps.setString(6, Mun);
-        Ps.setString(7, Dir);
-        Ps.setString(8, Bar);
-        Ps.setString(9, Tel);
-        Ps.setString(10, Cel);
-        Ps.setString(11, Em);
-        Ps.setString(12, Mem);
-        
-        Ps.executeUpdate();
-        
-        response.sendRedirect("DefUsuario.jsp");
-        
-        Ps.close();
-        con.close();
-        
-        
-        
-        
-        
-        
-        }catch(Exception e){
-        
-          response.sendRedirect("Error.jsp");
-            System.out.println(e);
-        }
+        processRequest(request, response);
     }
 
     /**

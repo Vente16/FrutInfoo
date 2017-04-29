@@ -17,9 +17,9 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author Home
+ * @author User
  */
-public class RegCliente extends HttpServlet {
+public class ActualizarCliente extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -32,7 +32,6 @@ public class RegCliente extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-     
       
     }
 
@@ -48,8 +47,7 @@ public class RegCliente extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-      
-        
+        processRequest(request, response);
     }
 
     /**
@@ -63,52 +61,52 @@ public class RegCliente extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        try{
-            String Tip = request.getParameter("tipo_documento");
-            String Doc = request.getParameter("documento");
-            String Nom = request.getParameter("nombres");
-            String Ape = request.getParameter("apellidos");
-            String Fec = request.getParameter("FechaNac");
-            String Mun = request.getParameter("Municipio");
-            String Dir = request.getParameter("direccion");
-            String Bar = request.getParameter("Barrio");
-            String Tel = request.getParameter("telefono");
-            String Cel = request.getParameter("celular");
-            String Em = request.getParameter("Email");
-            String Mem = request.getParameter("membrecia");
-        
-        Conexion c = new Conexion();
-        Connection con = c.Conectar();
-        
-        PreparedStatement Ps = con.prepareStatement("INSERT INTO clientes (Tipo_documento, Documento, Nombre, Apellido, `Fecha de nacimiento`, Municipio, Direccion, Barrio, Telefono, Celular, Email, Membrecia, Habilitado) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,1)");
-        Ps.setString(1, Tip);
-        Ps.setString(2, Doc);
-        Ps.setString(3, Nom);
-        Ps.setString(4, Ape);
-        Ps.setString(5, Fec);
-        Ps.setString(6, Mun);
-        Ps.setString(7, Dir);
-        Ps.setString(8, Bar);
-        Ps.setString(9, Tel);
-        Ps.setString(10, Cel);
-        Ps.setString(11, Em);
-        Ps.setString(12, Mem);
-        
-        Ps.executeUpdate();
-        
-        response.sendRedirect("DefUsuario.jsp");
-        
-        Ps.close();
-        con.close();
-        
-        
-        
-        
-        
-        
+        processRequest(request, response);
+          response.setContentType("text/html;charset=UTF-8");
+        try (PrintWriter out = response.getWriter()) {
+           
+            String Id = request.getParameter("Id");
+            String Nombre = request.getParameter("Nombre");
+            String Apellido = request.getParameter("Apellido");
+            String Telefono = request.getParameter("Telefono");
+            String Municipio = request.getParameter("Municipio");
+            String Barrio = request.getParameter("Barrio");
+            String Direccion = request.getParameter("Direccion");
+            String Celular = request.getParameter("Celular");
+            String TipoD = request.getParameter("TipoD");
+            String FechaN = request.getParameter("FechaN");
+            String Correo = request.getParameter("Correo");
+            String Membrecia = request.getParameter("Membrecia");
+            
+            
+            Conexion c = new Conexion();
+            Connection co = c.Conectar();
+            
+            PreparedStatement st = co.prepareStatement("UPDATE Clientes SET Nombre='?', Apellido='?', Telefono='?', Municipio='?', Barrio='?', Direccion='?', Celular='?', Tipo_Documento='?', Fecha de nacimiento='?', Email='?',Membrecia='?' WHERE Id='?'");
+            st.setString(1, Nombre);
+            st.setString(2, Apellido);
+            st.setString(3, Telefono);
+            st.setString(4, Municipio);
+            st.setString(5, Barrio);
+            st.setString(6, Direccion);
+            st.setString(7, Celular);
+            st.setString(8, TipoD);
+            st.setString(9, FechaN);
+            st.setString(10, Correo);
+            st.setString(11, Membrecia);
+            st.setString(12, Id);
+            st.executeUpdate();
+           
+            out.println("<h3>Actualizó los datos correctamente!</h3>");
+            
+            
+            
+            
+            
+            
+            
+            
         }catch(Exception e){
-        
-          response.sendRedirect("Error.jsp");
             System.out.println(e);
         }
     }
