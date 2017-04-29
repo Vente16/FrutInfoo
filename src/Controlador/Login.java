@@ -46,9 +46,10 @@ public class Login extends HttpServlet {
             String Contraseña = request.getParameter("Contra");
             String sql="SELECT Rol FROM logins";
             
-            PreparedStatement st = con.prepareStatement("SELECT * FROM logins WHERE Usuario=? AND Contrasena=? ");            st.setString(1, usuario);
+            PreparedStatement st = con.prepareStatement("SELECT * FROM logins WHERE Usuario=? AND Contrasena=? ");     
+            st.setString(1, usuario);
             st.setString(2, Contraseña);
-            Statement stm=con.createStatement();            
+                        
            
             ResultSet rs = st.executeQuery();
             
@@ -56,7 +57,7 @@ public class Login extends HttpServlet {
             
              HttpSession sesion = request.getSession(true);
              sesion.setAttribute("Usuario", usuario);
-             sesion.setAttribute("rol", st);
+             sesion.setAttribute("rol", rs.getString(6));
              
              response.sendRedirect("index2.jsp");
             }

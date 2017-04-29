@@ -51,7 +51,7 @@ public class RegUsuario extends HttpServlet {
             st.setString(2, Contraseña);
             st.setString(3, nombre);
             st.setString(4, correo);
-            st.setString(5, rol);
+            
            
             st.executeUpdate();
             

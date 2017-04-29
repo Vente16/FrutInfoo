@@ -3,11 +3,17 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/User/Documents/NetBeansProjects/FrutInfo/web/Novedades.jsp</file>
-            <file>file:/C:/Users/User/Documents/NetBeansProjects/FrutInfo/web/headerModulos.jspf</file>
-            <file>file:/C:/Users/User/Documents/NetBeansProjects/FrutInfo/src/Modelo/Conexion.java</file>
-            <file>file:/C:/Users/User/Documents/NetBeansProjects/FrutInfo/web/index2.jsp</file>
-            <file>file:/C:/Users/User/Documents/NetBeansProjects/FrutInfo/src/Controlador/Login.java</file>
+            <file>file:/C:/Users/oscar/Desktop/carpetas/FrutInfoo/nbproject/build-impl.xml~</file>
+            <file>file:/C:/Users/oscar/Desktop/carpetas/FrutInfoo/web/DefUsuarioInt.jsp</file>
+            <file>file:/C:/Users/oscar/Desktop/carpetas/FrutInfoo/web/Autorizaciones_admin.jsp</file>
+            <file>file:/C:/Users/oscar/Desktop/carpetas/FrutInfoo/web/index2.jsp</file>
+            <file>file:/C:/Users/oscar/Desktop/carpetas/FrutInfoo/web/ListarCliente.jsp</file>
+            <file>file:/C:/Users/oscar/Desktop/carpetas/FrutInfoo/src/Controlador/Login.java</file>
+            <file>file:/C:/Users/oscar/Desktop/carpetas/FrutInfoo/src/Controlador/Listar.java</file>
+            <file>file:/C:/Users/oscar/Desktop/carpetas/FrutInfoo/web/IndexPrincipal.html</file>
+            <file>file:/C:/Users/oscar/Desktop/carpetas/FrutInfoo/web/headerModulos.jspf</file>
+            <file>file:/C:/Users/oscar/Desktop/carpetas/FrutInfoo/nbproject/build-impl.xml</file>
+            <file>file:/C:/Users/oscar/Desktop/carpetas/FrutInfoo/web/DefUsuario.jsp</file>
         </group>
     </open-files>
 </project-private>
