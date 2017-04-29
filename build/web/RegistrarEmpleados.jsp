@@ -67,6 +67,36 @@
                             <option>Otros</option>
                         </select>
                     </div>
+                    
+                     <div class="form-group">
+                        <label class="form-control-label" for="index-form-4-4name"><span class="titulo">Punto de Venta</span></label>
+                        <select class="form-control" name="tipo">
+                            <option value="1">Envigado</option>
+                            <option value="2">Itagui</option>
+                            <option value="3">Sabaneta</option>
+                            <option value="4">Poblado</option>
+                            <option value="5">Carrera 80</option>
+                            <option value="6">Los Sauces</option>
+                            <option value="7">Laureles</option>
+                            <option value="8">Avenida Oriental</option>
+                            <option value="9">Bello</option>
+                            <option value="10">Belén</option>
+                        </select>
+                    </div>
+                    
+                       <div class="form-group">
+                        <label class="form-control-label" for="index-form-4-4name"><span class="titulo">Cargo</span></label>
+                        <select class="form-control" name="tipo">
+                            <option value="1">Administrador</option>
+                            <option value="2">Mesero</option>
+                            <option value="3">Cajero</option>
+                            <option value="4">Mensajero</option>
+                            <option value="5">Secretaria</option>
+                            <option value="6">Director RRHH</option>
+                        </select>
+                    </div>
+                    
+                    
 
                     <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Fecha de nacimiento</span></label>
                     <input type="text" class="form-control" name="fecha"required="" data-form-field="Name" id="index-form1-1-name" placeholder="dd/mm/aa"><br> 
