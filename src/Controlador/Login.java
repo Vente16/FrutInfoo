@@ -11,6 +11,7 @@ import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.Statement;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -44,9 +45,12 @@ public class Login extends HttpServlet {
             String usuario = request.getParameter("Usuario");
             String Contraseña = request.getParameter("Contra");
             
-            PreparedStatement st = con.prepareStatement("SELECT * FROM logins WHERE Usuario=? AND Contrasena=?");
+            
+            PreparedStatement st = con.prepareStatement("SELECT Rol FROM logins WHERE Usuario=? AND Contrasena=?");
             st.setString(1, usuario);
             st.setString(2, Contraseña);
+            
+            Statement stm=con.createStatement();            
            
             ResultSet rs = st.executeQuery();
             
@@ -54,7 +58,7 @@ public class Login extends HttpServlet {
             
              HttpSession sesion = request.getSession(true);
              sesion.setAttribute("Usuario", usuario);
-             sesion.setAttribute("Contraseña", Contraseña);
+             sesion.setAttribute("rol", st);
              
              response.sendRedirect("index2.jsp");
             }

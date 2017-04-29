@@ -58,6 +58,7 @@
                         <div class="form-group">
                             <select class="form-control" name="rol">
                                 <option>Administrativo</option>
+                                <option>Asistente Administrativo</option>
                                 <option>Ventas</option>
                                 <option>Insumos</option>
                                 <option>Recursos humanos</option>
