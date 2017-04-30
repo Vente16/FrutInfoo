@@ -50,20 +50,32 @@
                                     <div class="form-group">
                                       <label class="form-control-label" for="index-form-4-4name"><span class="titulo">Seleccione la sede del empleado</span></label>
                                        <select class="form-control" name="sede">
-                                            <option>Envigado </option>
-                                            <option>Itagüí</option>
-                                            <option>Sabaneta</option>
-                                            <option>Poblado</option>
-                                            <option>Carrera 80</option>
-                                            <option>Los Sauces</option>
-                                            <option>Laureles</option>
-                                            <option>Avenida Oriental</option>
-                                            <option>Bello</option>
-                                            <option>Belén</option>
+                                            <option value="1">Envigado </option>
+                                            <option value="2">Itagüí</option>
+                                            <option value="3">Sabaneta</option>
+                                            <option value="4">Poblado</option>
+                                            <option value="5">Carrera 80</option>
+                                            <option value="6">Los Sauces</option>
+                                            <option value="7">Laureles</option>
+                                            <option value="8">Avenida Oriental</option>
+                                            <option value="9">Bello</option>
+                                            <option value="10">Belén</option>
                                       </select>
                                     </div>
-                                  <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Cargo</span></label>
-                                    <input type="text" class="form-control" name="cargo" required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el cargo del empleado"><br> 
+                                  
+                                   <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Cargo</span></label>
+                                       <div class="form-group">
+                                      <label class="form-control-label" for="index-form-4-4name"><span class="titulo">Seleccione la sede del empleado</span></label>
+                                        <select class="form-control" name="cargo">
+                                           <option value="1">Administrador</option>
+                                           <option value="2">Mesero</option>
+                                           <option value="3">Cajero</option>
+                                           <option value="4">Mensajero</option>
+                                          <option value="5">Secretaria</option>
+                                          <option value="6">Director de recursos humanos</option>
+                                      </select>
+                                    </div>
+                                   <br> 
                                     <button type="submit" class="btn btn-success">Registrar Novedad</button> 
                                     
               </form>

@@ -5,21 +5,19 @@
  */
 package Controlador;
 
-import Modelo.Conexion;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
- * @author Home
+ * @author User
  */
-public class RegInsumo extends HttpServlet {
+public class CerrarSesion extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -32,6 +30,14 @@ public class RegInsumo extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        try{
+        HttpSession Sesion = request.getSession(true);
+        Sesion.removeAttribute("Usuario");
+        Sesion.removeAttribute("Rol");
+        response.sendRedirect("IndexPrincipal.html");
+        }catch(Exception e){
+            System.out.println(e);
+        } 
 
     }
 
@@ -47,10 +53,7 @@ public class RegInsumo extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-       
-
-        
-
+        processRequest(request, response);
     }
 
     /**
@@ -64,44 +67,7 @@ public class RegInsumo extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        try {
-            String Cod = request.getParameter("codigo");
-            String Pro = request.getParameter("proveedor");
-            String Tip = request.getParameter("tipo");
-            String Pes = request.getParameter("peso");
-            String Nom = request.getParameter("nombre");
-            String Can = request.getParameter("cantidad");
-            String Val = request.getParameter("valor");
-            String FI = request.getParameter("fecha ingreso");
-            String FV = request.getParameter("fecha vencimiento");
-            String Pri = request.getParameter("prioridad");
-
-            Conexion c = new Conexion();
-            Connection con = c.Conectar();
-
-            PreparedStatement Ps = con.prepareStatement("INSERT INTO insumos(Codigo, Id_Proveedor, Tipo, peso, Nombre_insumo, Cantidad_insumo, Valor_insumo, Fecha_ingreso, Fecha_vencimiento,Prioridad, Habilitado)VALUES(?,?,?,?,?,?,?,?,?,?,1)");
-            Ps.setString(1, Cod);
-            Ps.setString(2, Pro);
-            Ps.setString(3, Tip);
-            Ps.setString(4, Pes);
-            Ps.setString(5, Nom);
-            Ps.setString(6, Can);
-            Ps.setString(7, Val);
-            Ps.setString(8, FI);
-            Ps.setString(9, FV);
-            Ps.setString(10, Pri);
-
-            Ps.executeUpdate();
-            response.sendRedirect("Exito.jsp");
-            Ps.close();
-            con.close();
-
-        } catch (Exception e) {
-
-            response.sendRedirect("Error.jsp");
-            System.out.println(e);
-
-        }
+        processRequest(request, response);
     }
 
     /**

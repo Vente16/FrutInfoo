@@ -13,20 +13,22 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Registrar usuario</title>
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/estilos2.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <%@include file="header.jspf" %>
-        <%Conexion c = new Conexion();
+        <%@include file="headerModulos.jspf"%>
+        
+        <%  
+            Conexion c = new Conexion();
             Connection con = c.Conectar();
 
             Statement stm = con.createStatement();
             ResultSet rs = stm.executeQuery("SELECT * FROM empleados;");
-            String nombre = "";
+            String nombree = "";
             String correo = "";
             if (rs.last()) {
                 nombre = rs.getString(2);
@@ -41,7 +43,7 @@
                     <form action="RegUsuarioInt" class="form-group-sm">
                         <div class="form-group">
                             <label for="#nomre">Nombre</label>
-                            <input type="text" class="form-control" id="nombre" value="<%= nombre%>" name="nombre" >
+                            <input type="text" class="form-control" id="nombre" value="<%= nombree%>" name="nombre" >
                         </div>
                         <div class="form-group">
                             <label for="#correo">coreo</label>

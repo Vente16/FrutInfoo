@@ -2,13 +2,44 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
-        <title>la jugosa</title>
+        <title>LA JUGOSA</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/estilos2.css">
-        <script src="//code.jquery.com/jquery-1.12.4.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script>
+           
+              $(document).ready(function(){
+                
+               $('#Enviar').click(function(){
+                   
+                  var Correo = $('#Correo').val();
+                  
+                    $.get('OlvidoContraseña',{"correo":Correo},function(envio){
+                        
+                        $('#Respuesta').html(envio);
+                        console.log(envio);
+                        
+                    });
+                  
+                  
+                  
+                 
+                   
+               });
+                
+              
+        
+        
+                
+                
+                
+            });
+        
+            
+            
+        </script>
     </head>
     <body>
         <header>
@@ -64,10 +95,15 @@
                                                             <h3>Contraseña</h3>
                                                             <input type="password" placeholder="Ingrese su contraseña" name="Contra" class="form-control">
                                                             <br>
-                                                            <a href="#" class="pull-left">Restaurar contraseña</a>
+                                                            <a href="#" data-toggle="collapse" data-target="#demo" class="pull-left">Restaurar contraseña</a>
                                                             <br>
                                                             <a href="#" class="pull-left">Registrar usuario</a>
                                                             <br>
+                                                            <div id="demo" class="collapse">
+                                                                
+                                                                <p class="alert alert-danger">Ingresa aquí tu correo electrónico &nbsp;<input class="form-control" type="text" id="Correo"><br/><button type="button" class="btn btn-info" id="Enviar">Enviar</button></p>
+                                                                <div id="Respuesta"></div>
+                                                                    </div>
                                                         </div>
 
                                                         <!-- Footer del modal, dos botones, cerrrar y Acceder-->
