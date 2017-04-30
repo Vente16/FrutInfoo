@@ -14,8 +14,6 @@
         <link rel="stylesheet" href="css/estilos2.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-         <script src="js/funciones.js"></script>
-        <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
     </head>
    
     <body>
@@ -23,9 +21,13 @@
        
         <%@include file="headerModulos.jspf" %> 
         
-        <div class="container">
-        <h1>BIENVENIDO AL SISTEMA</h1>
-        </div>
+           
+      <div class="container Cont">
+          <div class="jumbotron alert alert-success">
+              <h1>Bienvenido al Sistema!</h1>
+              
+          </div>
+      </div>
         <%@include file="footerModulos.jspf" %>
         
     </body>
