@@ -46,7 +46,7 @@ public class RegUsuario extends HttpServlet {
             String Contraseña = request.getParameter("contra");
             String rol = request.getParameter("rol");
             
-            PreparedStatement st = con.prepareStatement("INSERT INTO logins(Usuario, Contrasena, Nombre_usuario, Correo, Rol, Habilitado) VALUES (?,?,?,?,'Cliente',1);");
+            PreparedStatement st = con.prepareStatement("INSERT INTO login(Usuario, Contraseña, Nombre_usuario, Correo, Rol, Habilitado) VALUES (?,?,?,?,'Cliente',1);");
             st.setString(1, usuario);
             st.setString(2, Contraseña);
             st.setString(3, nombre);
