@@ -9,11 +9,27 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Error</title>
+         <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/estilos2.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <h1>Usuario o contraseña inválido</h1>
+         <%@include file="headerModulos.jspf"%>
         
-        <a href="IndexP.jsp"><h3>Volver</h3></a>
+        
+      <div class="container Cont">
+          <div class="jumbotron alert alert-danger">
+              <h1>Error</h1>
+              <p>Ha ocurrido una falla en la ejecución de las operaciones</p>
+          </div>
+      </div>
+
+        
+ 
+        
+        
+      <%@include file="footerModulos.jspf"%>  
     </body>
 </html>

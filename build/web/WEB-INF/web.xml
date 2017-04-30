@@ -116,6 +116,14 @@
         <servlet-name>DetalleInsumo</servlet-name>
         <servlet-class>Controlador.DetalleInsumo</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>CerrarSesion</servlet-name>
+        <servlet-class>Controlador.CerrarSesion</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>OlvidoContraseña</servlet-name>
+        <servlet-class>Controlador.OlvidoContraseña</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Validar</servlet-name>
         <url-pattern>/Validar</url-pattern>
@@ -227,6 +235,14 @@
     <servlet-mapping>
         <servlet-name>DetalleInsumo</servlet-name>
         <url-pattern>/DetalleInsumo</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CerrarSesion</servlet-name>
+        <url-pattern>/CerrarSesion</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>OlvidoContraseña</servlet-name>
+        <url-pattern>/OlvidoContrase_a</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

@@ -1,0 +1,32 @@
+SMAP
+RegistrarEmpleados_jsp.java
+JSP
+*S JSP
+*F
++ 0 RegistrarEmpleados.jsp
+RegistrarEmpleados.jsp
++ 1 headerModulos.jspf
+headerModulos.jspf
++ 2 footerModulos.jspf
+footerModulos.jspf
+*L
+5,17:51
+1#1,6:68
+7,6:75
+12,80:81
+92:161,3
+93,68:164
+161:232,3
+162,61:235
+223:296,3
+224,46:299
+270:345,3
+271,44:348
+315:392,3
+316,45:395
+361:440,3
+362,10:443
+21#0,152:452
+1#2,14:604
+172#0,7:617
+*E

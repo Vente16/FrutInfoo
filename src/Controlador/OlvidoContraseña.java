@@ -6,11 +6,13 @@
 package Controlador;
 
 import Modelo.Conexion;
+import Modelo.Controlador;
+import Modelo.Correo;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.sql.ResultSet;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -18,9 +20,9 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author Home
+ * @author User
  */
-public class Novedades extends HttpServlet {
+public class OlvidoContraseña extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -33,9 +35,54 @@ public class Novedades extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-       /* response.setContentType("text/html;charset=UTF-8");
-        PrintWriter out = response.getWriter();*/
-                
+        response.setContentType("text/html;charset=UTF-8");
+        try (PrintWriter out = response.getWriter()) {
+           
+             String Correo = request.getParameter("correo");
+               
+             Conexion c = new Conexion();
+             Connection co = c.Conectar();
+             
+             PreparedStatement st = co.prepareStatement("SELECT *FROM Login WHERE Correo=?");
+             st.setString(1, Correo);
+             ResultSet rs = st.executeQuery();
+             String contra = "";
+             
+              while(rs.next()){
+                         contra = rs.getString("Contraseña");
+                      }
+             
+             if(rs.absolute(1)){
+               
+              String mensaje = "Hola! has olvidado tu contraseña \n tu contraseña es la siguente:  "+contra;           
+              Correo cor = new Correo();
+              cor.setContraseña("bfziujixtbohtsjt");
+              cor.setCorreo("jvente18@gmail.com");
+              cor.setDestino(Correo);
+              cor.setAsunto("Recuperacion de contraseña");
+              cor.setMensaje(mensaje);
+              Controlador cot = new Controlador();
+              
+              if(cot.EnviarCorreo(cor)){
+              
+               out.println("<p class='alert alert-success'>Se ha enviado el correo correctamente</p>");
+              }
+              
+             }
+             
+             else {
+             
+               out.println("<p>No existe un correo electrónico con esa dirección</p>");
+             
+             }
+            
+            
+            
+            
+        }catch(Exception e){
+        
+            System.out.println(e);
+        }
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -50,7 +97,7 @@ public class Novedades extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-       
+        processRequest(request, response);
     }
 
     /**
@@ -64,46 +111,7 @@ public class Novedades extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        try{
-            
-        String Nombre = request.getParameter("nombre");
-        String Apellido = request.getParameter("apellido");
-        String Documento = request.getParameter("documento");
-        String Tipo = request.getParameter("tipos");
-        String Descripcion = request.getParameter("descripcion");
-        String Sede = request.getParameter("sede");
-        String Cargo = request.getParameter("cargo");
-        
-        Conexion c = new Conexion();
-        Connection con = c.Conectar();
-        
-        PreparedStatement Ps = con.prepareStatement("INSERT INTO Novedades (Nombre_empleado, Apellidos, Documento, Tipo_documento, Descripcion, Id_punto_venta, Id_Cargo) VALUES(?,?,?,?,?,?,?)");
-        Ps.setString(1, Nombre);
-        Ps.setString(2, Apellido);
-        Ps.setString(3, Documento);
-        Ps.setString(4, Tipo);
-        Ps.setString(5, Descripcion);
-        Ps.setString(6, Sede);
-        Ps.setString(7, Cargo);
-        
-        Ps.executeUpdate();
-        
-        response.sendRedirect("Exito.jsp");
-        
-        Ps.close();
-        con.close();
-        
-        
-        
-        
-        
-        
-        }catch(Exception e){
-        
-          response.sendRedirect("Error.jsp");
-            System.out.println(e);
-        }
-            
+        processRequest(request, response);
     }
 
     /**

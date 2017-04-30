@@ -10,10 +10,11 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Registrar venta</title>
-        <link rel="stylesheet" href="css/bootstrap.css">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/estilos2.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="js/Funciones_1.js"></script> 
     </head>
 
     <%@include file="headerModulos.jspf" %>
@@ -22,20 +23,17 @@
     <br><br>
     <div class="container">
         <div>
-            <form class="navbar-left" role="search">
+      
+            <input type="text" placeholder="Codigo del Producto" class="campos" id="codigo" > 
+            <br><br>
+                <input type="number" placeholder="Cantidad del Producto" class="campos" id="cantidad">
+                <div id="Validar"></div>
+                <br><br>
 
-                <input type="number" class="form-control" placeholder="Codigo del Producto" value="">
-                <br>
-                <input type="number" class="form-control" placeholder="Cantidad del Producto" value="">
-                <br>
-
-                <button type="submit" class="btn btn-success">AGREGAR</button>
-            </form>
-        </div><br>
-        <br>
-        <br><br>
-
-
+                <button type="button" class="btn btn-success Agregar">AGREGAR</button>
+            
+        </div>
+      
 
         <div style="margin-top: 100px">
             <h2 style="text-align: center;">Estos son los Productos Seleccionados</h2><br>
@@ -50,85 +48,29 @@
                     <th>Precio Unitario</th>
                     <th>Total</th>
                     <th>Iva</th>
-                    <th>Total a Pagar</th>
-                    <th>modificar</th>
+                    <th>Costo</th>
+                    <th>Eliminar</th>
                     
                 </tr> 
             </thead>
-            <tbody>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><button class="btn btn-primary glyphicon glyphicon-edit"></button></td>
-                </tr>
-
-
-
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-
-
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-
-
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-
-
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
+            <tbody class="tabla">
+              
             </tbody>
+            
+            <tfoot>
+                
+               <tr>
+	         <td colspan="6" style="text-align:right">Total</td>
+	         <td id="Total">0</td>
+	       </tr> 
+                
+            </tfoot>
+            
+            
+            
         </table>
-        <button type="submit" class="btn btn-success">MODIFICAR</button>
+      
 
-        <button type="submit" class="btn btn-primary">VOLVER</button>
-
-
-    </section>
 </div>
 <%@include file="footerModulos.jspf" %>
-
 </html>

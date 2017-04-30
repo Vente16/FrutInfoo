@@ -66,7 +66,7 @@ public class RegInsumo extends HttpServlet {
             throws ServletException, IOException {
         try {
             String Cod = request.getParameter("codigo");
-            String Pro = request.getParameter("provedor");
+            String Pro = request.getParameter("proveedor");
             String Tip = request.getParameter("tipo");
             String Pes = request.getParameter("peso");
             String Nom = request.getParameter("nombre");
@@ -79,7 +79,7 @@ public class RegInsumo extends HttpServlet {
             Conexion c = new Conexion();
             Connection con = c.Conectar();
 
-            PreparedStatement Ps = con.prepareStatement("INSERT INTO insumos(Codigo, ID_Proveedor, Tipo, peso, Nombre_insumo, Cantidad_insumo, Valor_insumo, Fecha_ingreso, Fecha_vencimiento,Prioridad, Habilitado)VALUES(?,?,?,?,?,?,?,?,?,?,1)");
+            PreparedStatement Ps = con.prepareStatement("INSERT INTO insumos(Codigo, Id_Proveedor, Tipo, peso, Nombre_insumo, Cantidad_insumo, Valor_insumo, Fecha_ingreso, Fecha_vencimiento,Prioridad, Habilitado)VALUES(?,?,?,?,?,?,?,?,?,?,1)");
             Ps.setString(1, Cod);
             Ps.setString(2, Pro);
             Ps.setString(3, Tip);
