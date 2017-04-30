@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Informe Ventas</title>
         <link rel="stylesheet" href="css/bootstrap.min.css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <link rel="stylesheet" href="css/estilos2.css"/>
@@ -36,7 +36,7 @@
                             <tr>
                                 <th>Sede</th>
                                 <th>Tipo de informe</th>
-                                <th>Detalle</th>
+                                <th>Generar PDF</th>
                             </tr>
                         </thead>
                         <tbody>
