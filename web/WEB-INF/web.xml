@@ -124,6 +124,26 @@
         <servlet-name>OlvidoContraseña</servlet-name>
         <servlet-class>Controlador.OlvidoContraseña</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>InfVentas</servlet-name>
+        <servlet-class>Controlador.InfVentas</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>InforVentas</servlet-name>
+        <servlet-class>Controlador.InforVentas</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>InfoInsumos</servlet-name>
+        <servlet-class>Controlador.InfoInsumos</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>InforEmpleados</servlet-name>
+        <servlet-class>Controlador.InforEmpleados</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>FacturaVenta</servlet-name>
+        <servlet-class>Controlador.FacturaVenta</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Validar</servlet-name>
         <url-pattern>/Validar</url-pattern>
@@ -243,6 +263,26 @@
     <servlet-mapping>
         <servlet-name>OlvidoContraseña</servlet-name>
         <url-pattern>/OlvidoContrase_a</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>InfVentas</servlet-name>
+        <url-pattern>/InfVentas</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>InforVentas</servlet-name>
+        <url-pattern>/InforVentas</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>InfoInsumos</servlet-name>
+        <url-pattern>/InfoInsumos</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>InforEmpleados</servlet-name>
+        <url-pattern>/InforEmpleados</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FacturaVenta</servlet-name>
+        <url-pattern>/FacturaVenta</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
