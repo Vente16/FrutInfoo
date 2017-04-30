@@ -26,9 +26,7 @@
                     <br>
                     <br>
                     <button type="submit" class="btn btn-success">GENERAR</button>
-                    <button type="submit" class="btn btn-success">EDITAR</button>
-                    <button type="submit" class="btn btn-primary">VOLVER</button>
-
+                   
                 </div>
 
                 <h2 style="text-align: center;">Lista de Ventas</h2><br><br>

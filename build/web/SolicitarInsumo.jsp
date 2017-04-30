@@ -78,7 +78,7 @@
                                </table>
                       
                                  <button type="submit" class="btn btn-success">Solicitar</button>
-                                  <button type="button" class="btn btn-primary">VOLVER</button>
+                                
 
 </div>
             </form> 

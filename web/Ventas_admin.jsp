@@ -88,7 +88,7 @@
                             </tr>
                         </tbody>
                     </table>
-                    <button type="submit" class="btn btn-primary">VOLVER</button>
+                    
                 </div>
 
             </section>

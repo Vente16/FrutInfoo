@@ -27,8 +27,7 @@
      <input type="date" class="form-control" placeholder="dd/mm/aa" value="">
      <br>
     <button type="submit" class="btn btn-success">GENERAR</button>
-    <button type="submit" class="btn btn-danger">BORRAR</button>
-    <button type="submit" class="btn btn-primary">VOLVER</button>
+    
     <br><br>
     </form>
             </select><br><br><br><br>
