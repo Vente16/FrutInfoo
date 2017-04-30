@@ -1,12 +1,14 @@
 
-$(document).ready(function () {
-
-
-    $('.Detalle').click(function () {
+$(document).ready(function(){
+    
+    
+    
+     $('.Detalle').click(function () {
 
         var Id = $(this).parents('tr').attr('class');
+        
 
-        $.get('DetalleCliente', {"Id": Id}, function (detalle) {
+        $.get('DetalleEmpleado', {"Id": Id}, function (detalle) {
 
             $('.InfoDetalle').html(detalle);
 
@@ -24,7 +26,7 @@ $(document).ready(function () {
 
         var Id = $(this).parents('tr').attr('class');
 
-        $.post('FormActualizarClientes', {"Id": Id}, function (formulario) {
+        $.get('ActualizarEmpleadoForm', {"Id": Id}, function (formulario) {
 
             $('.FormAcutalizar').html(formulario);
 
@@ -79,11 +81,11 @@ $(document).ready(function () {
 
         var Id = $(this).parents('tr').attr('class');
 
-        var confirmar = confirm("¿De verdad desea eliminar este cliente?");
+        var confirmar = confirm("¿De verdad desea eliminar a este empleado?");
 
         if (confirmar) {
 
-            $.get('EliminarCliente', {"Id": Id}, function (Eliminar) {
+            $.get('EliminarEmpleado', {"Id": Id}, function (Eliminar) {
 
                 toastr.info(Eliminar);
 
@@ -96,14 +98,11 @@ $(document).ready(function () {
          }
 
     });
-
-
-
-
-
+    
+    
+    
+    
 });
-
-
 
 
 

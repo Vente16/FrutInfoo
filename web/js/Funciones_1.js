@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-  alert("Hola");
+  
 
     $('.Agregar').click(function () {
 

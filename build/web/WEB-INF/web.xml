@@ -144,6 +144,26 @@
         <servlet-name>FacturaVenta</servlet-name>
         <servlet-class>Controlador.FacturaVenta</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>DetalleEmpleado</servlet-name>
+        <servlet-class>Controlador.DetalleEmpleado</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ActualizarClienteForm</servlet-name>
+        <servlet-class>Controlador.ActualizarClienteForm</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ActualizarEmpleadoForm</servlet-name>
+        <servlet-class>Controlador.ActualizarEmpleadoForm</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>FormActualizarClientes</servlet-name>
+        <servlet-class>Controlador.FormActualizarClientes</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EliminarEmpleado</servlet-name>
+        <servlet-class>Controlador.EliminarEmpleado</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Validar</servlet-name>
         <url-pattern>/Validar</url-pattern>
@@ -283,6 +303,26 @@
     <servlet-mapping>
         <servlet-name>FacturaVenta</servlet-name>
         <url-pattern>/FacturaVenta</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DetalleEmpleado</servlet-name>
+        <url-pattern>/DetalleEmpleado</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ActualizarClienteForm</servlet-name>
+        <url-pattern>/ActualizarClienteForm</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ActualizarEmpleadoForm</servlet-name>
+        <url-pattern>/ActualizarEmpleadoForm</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FormActualizarClientes</servlet-name>
+        <url-pattern>/FormActualizarClientes</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EliminarEmpleado</servlet-name>
+        <url-pattern>/EliminarEmpleado</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

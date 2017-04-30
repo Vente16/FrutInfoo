@@ -9,19 +9,18 @@ import Modelo.Conexion;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.Statement;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 /**
  *
- * @author oscar
+ * @author User
  */
-public class ListarEmp extends HttpServlet {
+public class DetalleEmpleado extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -35,32 +34,43 @@ public class ListarEmp extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        ResultSet rsE;
-        ResultSet rst;
-          try{
-           Conexion con =new Conexion();
-            Connection c=con.Conectar();
-            HttpSession session = request.getSession(true);
-            int pagina=Integer.parseInt(request.getParameter("pag"));
-             String sqlC="SELECT * FROM empleados   INNER JOIN Cargos ON empleados.id_cargo = Cargos.id_cargo LIMIT 5 OFFSET "+(pagina)*5+";";
-             String sql="SELECT count(*) as Id_empleado FROM empleados";
-             
-             Statement stm =c.createStatement();
-             Statement stm1=c.createStatement();
-              rsE=stm.executeQuery(sqlC);
-              rst=stm1.executeQuery(sql);
+        try (PrintWriter out = response.getWriter()) {
             
-             session.setAttribute("listarE", rsE);
-             session.setAttribute("pag", pagina);
-           session.setAttribute("tamaño", rst);
-             
-            request.getRequestDispatcher("ListarEmpleados.jsp").forward(request, response);
+           String Id = request.getParameter("Id");
             
-              rsE.close();
-              c.close();
-    }catch(Exception e){
-        e.printStackTrace();
-    }
+            Conexion c = new Conexion();
+            Connection co = c.Conectar();
+           
+            
+           PreparedStatement st = co.prepareStatement("SELECT * FROM empleados INNER JOIN cargos ON empleados.id_cargo = cargos.id_cargo WHERE id_empleado=?");
+            st.setString(1, Id);
+            
+            ResultSet rs = st.executeQuery();
+            
+            while(rs.next()){
+          
+            out.println("<h4>Documento:  " +  rs.getString("Documento") + "   -- Tipo de documento: "+rs.getString("Tipo_documento")+"</h4>");
+            out.println("<h4>Nombre:  " + rs.getString("Nombre") + "</h4>");
+            out.println("<h4>Apellido: " + rs.getString("Apellido")+ "</h4>");
+            out.println("<h4>Telefóno: " + rs.getString("Telefono") + "</h4>");
+            out.println("<h4>Celular: " + rs.getString("Celular") + "</h4>");
+            out.println("<h4>Disponibilidad: " + rs.getString("Disponibilidad") + "</h4>");
+            out.println("<h4>Inicio de contraton: " + rs.getString("Inicio_contrato") + "</h4>");
+            out.println("<h4Fin de contrato: " + rs.getString("Fin_contrato") + "</h4>");
+            out.println("<h4>Hora inicio: " + rs.getString("Hora_inicio") + "</h4>");
+            out.println("<h4>Hora salida: " + rs.getString("Hora_salida") + "</h4>");  
+            out.println("<h4>Cargo: " + rs.getString("Nombre_cargo") + "</h4>");
+            out.println("<h4>Fecha de nacimiento: " + rs.getString("Fecha_nacimiento") + "</h4>");
+            out.println("<h4>Correo: " + rs.getString("Correo") + "</h4>");
+            }
+            
+            
+        }catch(Exception e){
+        
+            System.out.println(e);
+        
+        
+        }
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

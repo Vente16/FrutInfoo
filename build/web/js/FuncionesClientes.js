@@ -24,7 +24,7 @@ $(document).ready(function () {
 
         var Id = $(this).parents('tr').attr('class');
 
-        $.post('FormActualizarCliente', {"Id": Id}, function (formulario) {
+        $.post('FormActualizarClientes', {"Id": Id}, function (formulario) {
 
             $('.FormAcutalizar').html(formulario);
 
