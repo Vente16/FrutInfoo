@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Registrar Clientes</title>
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/estilos2.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -48,7 +48,7 @@
                     <input type="text" class="form-control" name="apellidos"required="" data-form-field="Name" id="index-form2-2-name" placeholder="Ingrese los apellidos del empleado"><br>
 
                     <labe2 class="form-control-label" for="index-form2-2-name"><span class="titulo"><b>Fecha de Nacimiento</b></span></labe2><br>
-                    <input type="date" class="form-control" name="FechaNac"required="" data-form-field="Name" id="index-form2-2-name" placeholder="Ingrese los apellidos del empleado"><br>
+                    <input type="date" class="form-control" name="FechaNac"required="" data-form-field="Name" id="index-form2-2-name" placeholder="dd/mm/aa"><br>
 
 
 
@@ -71,7 +71,7 @@
                     <input type="tel" class="form-control" name="celular"required="" data-form-field="Name" id="index-form4-4-name" placeholder="Ingrese su número"><br>
 
                     <label class="form-control-label" for="index-form-4-4name"><span class="titulo">Email</span></label>
-                    <input type="tel" class="form-control" name="Email"required="" data-form-field="Name" id="index-form4-4-name" placeholder="Ingrese su cuenta de correo electrónico"><br><br><br>
+                    <input type="tel" class="form-control" name="Email"required="" data-form-field="Name" id="index-form4-4-name" placeholder="Ingrese su cuenta de correo electrónico"><br>
                     <label class="form-control-label" for="index-form-4-4name">
                         <span class="titulo">Membresia</span></label>
                     <select class="form-control" name="membrecia">

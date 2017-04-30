@@ -23,6 +23,7 @@
     <br><br>
     <div class="container">
         <div>
+<<<<<<< HEAD
       
             <input type="text" placeholder="Codigo del Producto" class="campos" id="codigo" > 
             <br><br>
@@ -34,10 +35,26 @@
             
         </div>
       
+=======
+            <form class="navbar-left" role="search">
+
+                <input type="text" class="form-control" placeholder="Codigo del Producto" value="">
+                <br>
+                <input type="text" class="form-control" placeholder="Cantidad del Producto" value="">
+                <br>
+
+                <button type="submit" class="btn btn-success">AGREGAR</button>
+            </form>
+        </div><br>
+        <br>
+        <br><br>
+
+
+>>>>>>> origin
 
         <div style="margin-top: 100px">
             <h2 style="text-align: center;">Estos son los Productos Seleccionados</h2><br>
-            <p style="text-align: left;">a continuación verá toda la información de los productos agragados </p>
+            <p style="text-align: left;">A continuación verá toda la información de los productos agragados </p>
         </div>
         <table class="table table-bordered table-hover">
             <thead>
@@ -53,8 +70,81 @@
                     
                 </tr> 
             </thead>
+<<<<<<< HEAD
             <tbody class="tabla">
               
+=======
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><button class="btn btn-primary glyphicon glyphicon-edit"></button></td>
+                </tr>
+
+
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+>>>>>>> origin
             </tbody>
             
             <tfoot>
@@ -69,7 +159,13 @@
             
             
         </table>
+<<<<<<< HEAD
       
+=======
+        <button type="submit" class="btn btn-success">GUARDAR</button>
+
+        
+>>>>>>> origin
 
 </div>
 <%@include file="footerModulos.jspf" %>

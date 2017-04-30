@@ -11,6 +11,7 @@
                     <path-in-war>WEB-INF/lib</path-in-war>
                 </library>
                 <library dirs="200">
+<<<<<<< HEAD
                     <file>${file.reference.servlet-api.jar}</file>
                     <path-in-war>WEB-INF/lib</path-in-war>
                 </library>
@@ -20,6 +21,17 @@
                 </library>
                 <library dirs="200">
                     <file>${file.reference.iText-5.0.5.jar}</file>
+=======
+                    <file>${file.reference.mail.jar}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
+                <library dirs="200">
+                    <file>${file.reference.servlet-api.jar}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
+                <library dirs="200">
+                    <file>${file.reference.itextpdf-5.5.9.jar}</file>
+>>>>>>> origin/pruebas
                     <path-in-war>WEB-INF/lib</path-in-war>
                 </library>
             </web-module-libraries>

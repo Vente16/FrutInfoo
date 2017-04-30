@@ -41,6 +41,7 @@ public class DetalleCliente extends HttpServlet {
             Conexion c = new Conexion();
             Connection co = c.Conectar();
             
+             
             PreparedStatement st = co.prepareStatement("SELECT *FROM Clientes WHERE Id=?");
             st.setString(1, Id);
             

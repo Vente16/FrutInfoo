@@ -1,6 +1,10 @@
 $(document).ready(function () {
 
-  alert("Hola");
+<<<<<<< HEAD
+  
+=======
+
+>>>>>>> origin/pruebas
 
     $('.Agregar').click(function () {
 

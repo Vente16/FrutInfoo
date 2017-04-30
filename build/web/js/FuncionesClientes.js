@@ -24,7 +24,7 @@ $(document).ready(function () {
 
         var Id = $(this).parents('tr').attr('class');
 
-        $.post('FormActualizarCliente', {"Id": Id}, function (formulario) {
+        $.post('FormActualizarClientes', {"Id": Id}, function (formulario) {
 
             $('.FormAcutalizar').html(formulario);
 
@@ -64,7 +64,7 @@ $(document).ready(function () {
                     "FechaN": Fecha,
                     "Correo": Correo,
                     "Membrecia": Membrecia,
-                    "Documneto": Documento
+                  //  "Documneto": Documento
                 }, function (Actualizar) {
 
             toastr.success(Actualizar);

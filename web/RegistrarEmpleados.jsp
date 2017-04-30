@@ -47,6 +47,7 @@
                     <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Disponibilidad</span></label>
                     <input type="text" class="form-control" name="disponibilidad" required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el cargo del empleado"><br>
                     <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Inicio contrato</span></label>
+<<<<<<< HEAD
                     <input type="text" class="form-control" name="inicio" required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el cargo del empleado"><br> 
                     <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Fin contrato</span></label>
                     <input type="text" class="form-control" name="fin" required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el cargo del empleado"><br> 
@@ -54,6 +55,15 @@
                     <input type="text" class="form-control" name="hora inicio" required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el cargo del empleado"><br> 
                     <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Hora de salida</span></label>
                     <input type="text" class="form-control" name="hora salida" required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el cargo del empleado"><br>
+=======
+                    <input type="text" class="form-control" name="inicio"required="" data-form-field="Name" id="index-form1-1-name" placeholder="dd/mm/aa"><br> 
+                    <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Fin contrato</span></label>
+                    <input type="text" class="form-control" name="fin"required="" data-form-field="Name" id="index-form1-1-name" placeholder="dd/mm/aa"><br> 
+                    <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Hora de inicio</span></label>
+                    <input type="text" class="form-control" name="hora inicio"required="" data-form-field="Name" id="index-form1-1-name"><br> 
+                    <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Hora de salida</span></label>
+                    <input type="text" class="form-control" name="hora salida"required="" data-form-field="Name" id="index-form1-1-name"><br>
+>>>>>>> origin
 
                     <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Documento de identificación</span></label><br>
                     <input type="text" class="form-control" name="documento" required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el número de documento de identificación"><br>
@@ -69,10 +79,17 @@
                     </div>
                     
                      <div class="form-group">
+<<<<<<< HEAD
                         <label class="form-control-label" for="index-form-4-4name"><span class="titulo">Seleccione el tipo de documento</span></label>
                         <select class="form-control" name="PuntoVenta">
                             <option value="1">Envigado</option>
                             <option value="2">Itagüí</option>
+=======
+                        <label class="form-control-label" for="index-form-4-4name"><span class="titulo">Punto de Venta</span></label>
+                        <select class="form-control" name="tipo">
+                            <option value="1">Envigado</option>
+                            <option value="2">Itagui</option>
+>>>>>>> origin
                             <option value="3">Sabaneta</option>
                             <option value="4">Poblado</option>
                             <option value="5">Carrera 80</option>
@@ -84,21 +101,32 @@
                         </select>
                     </div>
                     
+<<<<<<< HEAD
                                         
                      <div class="form-group">
                         <label class="form-control-label" for="index-form-4-4name"><span class="titulo">Seleccione el tipo de documento</span></label>
                         <select class="form-control" name="Cargo">
+=======
+                       <div class="form-group">
+                        <label class="form-control-label" for="index-form-4-4name"><span class="titulo">Cargo</span></label>
+                        <select class="form-control" name="tipo">
+>>>>>>> origin
                             <option value="1">Administrador</option>
                             <option value="2">Mesero</option>
                             <option value="3">Cajero</option>
                             <option value="4">Mensajero</option>
                             <option value="5">Secretaria</option>
+<<<<<<< HEAD
                             <option value="6">Director de recursos humanos</option>
                           
+=======
+                            <option value="6">Director RRHH</option>
+>>>>>>> origin
                         </select>
                     </div>
                     
                     
+<<<<<<< HEAD
                     
                     
                     
@@ -110,6 +138,14 @@
 
                     <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Email</span></label>
                     <input type="text" class="form-control" name="email" required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el cargo del empleado"><br> 
+=======
+
+                    <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Fecha de nacimiento</span></label>
+                    <input type="text" class="form-control" name="fecha"required="" data-form-field="Name" id="index-form1-1-name" placeholder="dd/mm/aa"><br> 
+
+                    <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Email</span></label>
+                    <input type="text" class="form-control" name="email"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Correo electronico"><br> 
+>>>>>>> origin
 
 
                     <button type="submit" class="btn btn-success">Registrar</button>

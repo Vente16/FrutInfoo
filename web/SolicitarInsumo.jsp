@@ -33,7 +33,7 @@
                               </div>
                                 <div class="navbar-left has-success">
                                    <label for="Cantidad">Cantidad:</label>
-                                    <input type="number" class="form-control" id="pwd" placeholder="Ingrese Cantidad">
+                                    <input type="text" class="form-control" id="pwd" placeholder="Ingrese Cantidad">
                                     <br>
                                     <div class="navbar-left has-success">
                                     <label class="punto_venta">Punto de Venta:</label>
@@ -78,7 +78,11 @@
                                </table>
                       
                                  <button type="submit" class="btn btn-success">Solicitar</button>
-                                  <button type="button" class="btn btn-primary">VOLVER</button>
+<<<<<<< HEAD
+                                 
+=======
+                                
+>>>>>>> origin/pruebas
 
 </div>
             </form> 
