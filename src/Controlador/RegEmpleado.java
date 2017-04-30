@@ -78,6 +78,7 @@ public class RegEmpleado extends HttpServlet {
             String TipoD = request.getParameter("tipo");
             String FechaN = request.getParameter("fecha");
             String Correo = request.getParameter("email");
+<<<<<<< HEAD
             String Punto = request.getParameter("PuntoVenta");
             String Cargo = request.getParameter("Cargo");
          
@@ -85,6 +86,15 @@ public class RegEmpleado extends HttpServlet {
             Connection con = c.Conectar();
 
             PreparedStatement Ps = con.prepareStatement("INSERT INTO empleados (Nombre, Apellido, Telefono, celular, Direccion, Disponibilidad, inicio_contrato, Fin_contrato, Hora_inicio, Hora_salida, Documento, Tipo_documento, Fecha_nacimiento, correo, Habilitado, Id_punto_de_venta, id_cargo) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,1,?,?)");
+=======
+            String Sede = request.getParameter("sede");
+            String Cargo = request.getParameter("cargo");
+            String h = "1";
+            Conexion c = new Conexion();
+            Connection con = c.Conectar();
+
+            PreparedStatement Ps = con.prepareStatement("INSERT INTO empleados (Nombre, Apellido, Telefono, celular, Direccion, Disponibilidad, inicio_contrato, Fin_contrato, Hora_inicio, Hora_salida, Documento, Tipo_documento, Fecha_nacimiento, correo, Habilitado, Id_punto_de_venta, id_cargo ) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+>>>>>>> origin
             Ps.setString(1, Nombre);
             Ps.setString(2, Apellido);
             Ps.setString(3, Telefono);
@@ -99,8 +109,15 @@ public class RegEmpleado extends HttpServlet {
             Ps.setString(12, TipoD);
             Ps.setString(13, FechaN);
             Ps.setString(14, Correo);
+<<<<<<< HEAD
             Ps.setString(15, Punto);
             Ps.setString(16, Cargo);
+=======
+            Ps.setString(15, h);
+            Ps.setString(16, Sede);
+            Ps.setString(17, Cargo);
+
+>>>>>>> origin
             Ps.executeUpdate();
 
             response.sendRedirect("DefUsuarioInt.jsp");

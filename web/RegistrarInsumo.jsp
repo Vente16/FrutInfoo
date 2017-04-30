@@ -27,9 +27,15 @@
                 <form action="RegInsumo" method="post" >
 
                     <br>
+<<<<<<< HEAD
                     <div class="form-group">
                         <label class= "control-label" for="Codigo">Codigo:</label>
                         <input type="text" class="form-control" name="codigo" requerid="" id="Tipo_de_documento" >
+=======
+                    <div class="form-group  has-success">
+                        <label for="Codigo">Codigo:</label>
+                        <input type="text" class="form-control" name="codigo" id="Tipo_de_documento" >
+>>>>>>> origin
                     </div>
                     <br>
                        <div class="form-group ">
@@ -87,7 +93,7 @@
                     <div class="form-group ">
 
                         <button type="submit" class="btn btn-success">REGISTRAR</button>
-                        <button type="button" class="btn btn-primary">VOLVER</button>
+                       
                     </div>
 
                 </form>

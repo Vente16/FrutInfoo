@@ -64,7 +64,7 @@ $(document).ready(function () {
                     "FechaN": Fecha,
                     "Correo": Correo,
                     "Membrecia": Membrecia,
-                    "Documneto": Documento
+                  //  "Documneto": Documento
                 }, function (Actualizar) {
 
             toastr.success(Actualizar);

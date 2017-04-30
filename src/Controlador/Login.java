@@ -44,8 +44,13 @@ public class Login extends HttpServlet {
             
             String usuario = request.getParameter("Usuario");
             String Contraseña = request.getParameter("Contra");
+<<<<<<< HEAD
             String sql="SELECT Rol FROM login";
             
+=======
+            
+            
+>>>>>>> origin
             PreparedStatement st = con.prepareStatement("SELECT * FROM login WHERE Usuario=? AND Contraseña=? ");     
             st.setString(1, usuario);
             st.setString(2, Contraseña);

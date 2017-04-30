@@ -35,7 +35,8 @@
     fecha_vencimiento     
     fecha_salida      
     cantidad_salida_insumos    
-    prioridad -->
+    prioridad
+    Habilitado-->
 
 
                 <h2 style="text-align: center;">Informe de Insumos</h2>
@@ -46,8 +47,18 @@
                             <th>Código</th>
                             <th>Nombre</th>
                             <th>Cantidad</th>
+<<<<<<< HEAD
                             <th>Generar PDF</th>
                            
+=======
+                            <th>Valor</th>
+                            <th>Fecha de ingreso</th>
+                            <th>Fecha de vencimiento</th>
+                            <th>Fecha de salida</th>
+                            <th>Cantidad de salida</th>
+                            <th>Prioridad</th>
+                            <th>Habilitado</th>
+>>>>>>> origin
                         </tr>
                     </thead>
                     <tbody>
@@ -55,49 +66,144 @@
                             <td>0001</td>
                             <td>manzana</td>
                             <td>10 </td>
+<<<<<<< HEAD
                             <td><a href="InfoInsumos" target="_blank"><span class="glyphicon glyphicon-inbox"></span></td>
                            
                            
+=======
+                            <td>1000</td>
+                            <td>10/10/2016</td>
+                            <td>15/01/2017</td>
+                            <td>13/10/2016</td>
+                            <td>5</td>
+                            <td>media</td>
+                            <td></td>
+>>>>>>> origin
                         </tr>
                         <tr>
                             <td>0002</td>
                             <td>pera</td>
                             <td>45</td>
+<<<<<<< HEAD
                             <td> <a href="#" target="_blank"><span class="glyphicon glyphicon-inbox"></span></td>
                           
                             
+=======
+                            <td>1000</td>
+                            <td>10/10/2016</td>
+                            <td>15/01/2017</td>
+                            <td>13/10/2016</td>
+                            <td>5</td>
+                            <td>media</td>
+                            <td></td>
+>>>>>>> origin
                         </tr>
                         <tr>
                             <td>0003</td>
                             <td>guayaba</td>
                             <td>25</td>
+<<<<<<< HEAD
                             <td> <a href="#" target="_blank"><span class="glyphicon glyphicon-inbox"></span></td>
                            
                             
+=======
+                            <td>1000</td>
+                            <td>10/10/2016</td>
+                            <td>15/01/2017</td>
+                            <td>13/10/2016</td>
+                            <td>5</td>
+                            <td>media</td>
+                            <td></td>
+>>>>>>> origin
                         </tr>
                         <tr>
                             <td>0004</td>
                             <td>limon</td>
                             <td>45</td>
+<<<<<<< HEAD
                             <td> <a href="#" target="_blank"><span class="glyphicon glyphicon-inbox"></span></td>
                           
                             
+=======
+                            <td>1000</td>
+                            <td>10/10/2016</td>
+                            <td>15/01/2017</td>
+                            <td>13/10/2016</td>
+                            <td>5</td>
+                            <td>media</td>
+                            <td></td>
+>>>>>>> origin
                         </tr>
                         <tr>
                             <td>0005</td>
                             <td>sandia</td>
                             <td>35</td>
+<<<<<<< HEAD
                             <td> <a href="#" target="_blank"><span class="glyphicon glyphicon-inbox"></span></td>
                             
                             
+=======
+                            <td>1000</td>
+                            <td>10/10/2016</td>
+                            <td>15/01/2017</td>
+                            <td>13/10/2016</td>
+                            <td>5</td>
+                            <td>media</td>
+                            <td></td>
+>>>>>>> origin
                         </tr>
                         <tr>
                             <td>0006</td>
                             <td>banano</td>
                             <td>80</td>
+<<<<<<< HEAD
                             <td> <a href="#" target="_blank"><span class="glyphicon glyphicon-inbox"></span></td>
                            
                             
+=======
+                            <td>1000</td>
+                            <td>10/10/2016</td>
+                            <td>15/01/2017</td>
+                            <td>13/10/2016</td>
+                            <td>5</td>
+                            <td>media</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>0007</td>
+                            <td>naraja</td>
+                            <td>40</td>
+                            <td>1000</td>
+                            <td>10/10/2016</td>
+                            <td>15/01/2017</td>
+                            <td>13/10/2016</td>
+                            <td>5</td>
+                            <td>media</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>0008</td>
+                            <td>mandarina</td>
+                            <td>79</td>
+                            <td>1000</td>
+                            <td>10/10/2016</td>
+                            <td>15/01/2017</td>
+                            <td>13/10/2016</td>
+                            <td>5</td>
+                            <td>media</td>
+                        </tr>
+                        <tr>
+                            <td>0009</td>
+                            <td>piña</td>
+                            <td>46</td>
+                            <td>1000</td>
+                            <td>10/10/2016</td>
+                            <td>15/01/2017</td>
+                            <td>13/10/2016</td>
+                            <td>5</td>
+                            <td>media</td>
+                            <td></td>
+>>>>>>> origin
                         </tr>
                        
                         
@@ -105,7 +211,11 @@
                     
                     </tbody>
                 </table>
+<<<<<<< HEAD
              
+=======
+              
+>>>>>>> origin
             </div>
 
         </section><br/><br/><br/>
