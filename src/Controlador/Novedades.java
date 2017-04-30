@@ -103,15 +103,7 @@ public class Novedades extends HttpServlet {
           response.sendRedirect("Error.jsp");
             System.out.println(e);
         }
-        
-        
-        
-        
-        
-        
-        
-        
-        
+            
     }
 
     /**
