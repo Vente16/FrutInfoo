@@ -9,39 +9,39 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script>
-           
-              $(document).ready(function(){
-                
-               $('#Enviar').click(function(){
-                   
-                  var Correo = $('#Correo').val();
-                  
-                    $.get('OlvidoContraseña',{"correo":Correo},function(envio){
-                        
+
+            $(document).ready(function () {
+
+                $('#Enviar').click(function () {
+
+                    var Correo = $('#Correo').val();
+
+                    $.get('OlvidoContraseña', {"correo": Correo}, function (envio) {
+
                         $('#Respuesta').html(envio);
                         console.log(envio);
-                        
+
                     });
-                  
-                  
-                  
-                 
-                   
-               });
-                
-              
-        
-        
-                
-                
-                
+
+
+
+
+
+                });
+
+
+
+
+
+
+
             });
-        
-            
-            
+
+
+
         </script>
     </head>
-    <body>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
         <header>
             <div class="container">
                 <nav class="navbar navbar-default" role="navigation">
@@ -63,10 +63,10 @@
                          otro elemento que se pueda ocultar al minimizar la barra -->
                     <div class="collapse navbar-collapse navbar-ex1-collapse">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#">Inicio</a></li>
-                            <li><a href="#">Productos</a></li>
-                            <li><a href="#">Quienes somos</a></li>
-                            <li><a href="#">Contáctenos</a></li>
+                            <li><a href="#inicio">Inicio</a></li>
+                            <li><a href="#productos">Productos</a></li>
+                            <li><a href="#quienesSomos">Quienes somos</a></li>
+                            <li><a href="#contactenos">Contáctenos</a></li>
                             <li><div class="login">
 
 
@@ -100,10 +100,10 @@
                                                             <a href="#" class="pull-left">Registrar usuario</a>
                                                             <br>
                                                             <div id="demo" class="collapse">
-                                                                
+
                                                                 <p class="alert alert-danger">Ingresa aquí tu correo electrónico &nbsp;<input class="form-control" type="text" id="Correo"><br/><button type="button" class="btn btn-info" id="Enviar">Enviar</button></p>
                                                                 <div id="Respuesta"></div>
-                                                                    </div>
+                                                            </div>
                                                         </div>
 
                                                         <!-- Footer del modal, dos botones, cerrrar y Acceder-->
@@ -134,7 +134,7 @@
             </div>
         </header>
 
-        <section>
+        <section id="inicio">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
@@ -191,7 +191,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="productos">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-sm-6 col-md-3">
@@ -318,46 +318,46 @@
                 </div>
         </section>
 
-        <section>
-            <div class="container">
+        <section >
+            <div class="container" id="quienesSomos">
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="panel panel-default">
                             <div class="panel-body">
                                 <h1 class="text-center" id="quienes">Quienes somos</h1>
                                 <p>Somos una empresa dedicada a la producción y comercialización de productos a base de frutas naturales, que busca satisfacer las necesidades, gustos y preferencias de nuestros clientes, brindándole al consumidor alimentos de excelente calidad y buen servicio.
-                                  </p>
-                                     <p>Día a Día buscaremos ser una empresa reconocida, por el servicio, la calidad y exquisitez de nuestros productos. Contando con el mayor nivel de cobertura local a todos nuestros clientes y apoyados en un equipo humano capaz de desarrollar sus habilidades en el desempeño de su trabajo.
-                                        </p>
+                                </p>
+                                <p>Día a Día buscaremos ser una empresa reconocida, por el servicio, la calidad y exquisitez de nuestros productos. Contando con el mayor nivel de cobertura local a todos nuestros clientes y apoyados en un equipo humano capaz de desarrollar sus habilidades en el desempeño de su trabajo.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="row" id="contactenos">
                     <div class="col-xs-12">
                         <div class="panel panel-default">
                             <div class="panel-body">
                                 <h1 class="text-center">Contactenos</h1><br>
                                 <ul>
                                     <li class="Lista"><p><b>Envigado</b></p>
-                                <p>carrera 42#36 sur-60</p>
-                                <p>Tel: 2 70 79 88</p></li>
+                                        <p>carrera 42#36 sur-60</p>
+                                        <p>Tel: 2 70 79 88</p></li>
                                     <li class="Lista"><p><b>Itagui</b></p>
-                                <p>carrera 51#51 68</p>
-                                <p>Tel: 3 73 95 72</p></li>
+                                        <p>carrera 51#51 68</p>
+                                        <p>Tel: 3 73 95 72</p></li>
                                     <li class="Lista"> <p><b>Sabaneta</b></p>
-                                <p>carrera 43 C#68  A sur-12 </p>
-                                <p>Tel: 2 88 11 60</p></li><br><br>
+                                        <p>carrera 43 C#68  A sur-12 </p>
+                                        <p>Tel: 2 88 11 60</p></li><br><br>
                                     <li class="Lista"> <p><b>Poblado</b></p>
-                                <p>calle 10 #41-51</p>
-                                <p>Tel: 3 52 59 61</p></li>
+                                        <p>calle 10 #41-51</p>
+                                        <p>Tel: 3 52 59 61</p></li>
                                     <li class="Lista"> <p><b>Bello</b></p>
-                                <p>C.C Puerta del Norte </p>
-                                <p>Tel: 4 82 60 71</p></li>
-                                     <li class="Lista"> <p><b>Laureles</b></p>
-                                <p>carrera 70#4-39 </p>
-                                <p>Tel: 4 12 62 06</p></li>
+                                        <p>C.C Puerta del Norte </p>
+                                        <p>Tel: 4 82 60 71</p></li>
+                                    <li class="Lista"> <p><b>Laureles</b></p>
+                                        <p>carrera 70#4-39 </p>
+                                        <p>Tel: 4 12 62 06</p></li>
                                 </ul>
                             </div>
                         </div>
