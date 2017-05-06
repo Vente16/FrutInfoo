@@ -78,11 +78,7 @@
                                </table>
                       
                                  <button type="submit" class="btn btn-success">Solicitar</button>
-<<<<<<< HEAD
-                                 
-=======
-                                
->>>>>>> origin/pruebas
+
 
 </div>
             </form> 

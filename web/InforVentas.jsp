@@ -27,10 +27,7 @@
      <input type="date" class="form-control" placeholder="dd/mm/aa" value="">
      <br>
     <button type="submit" class="btn btn-success">GENERAR</button>
-<<<<<<< HEAD
-=======
-    
->>>>>>> origin/pruebas
+
     <br><br>
     </form>
             </select><br><br><br><br>

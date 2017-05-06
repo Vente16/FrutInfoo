@@ -54,17 +54,17 @@ $(document).ready(function () {
         $.post('ActualizarCliente',
                 {"Id": Id,
                     "Nombre": Nombre,
-                    "TipoD": TipoD,
+                   "TipoD": TipoD,
                     "Apellido": Apellido,
                     "Telefono": Telefono,
                     "Municipio": Municipio,
                     "Barrio": Barrio,
                     "Direccion": Direccion,
                     "Celular": Celular,
-                    "FechaN": Fecha,
+                  "FechaN": Fecha,
                     "Correo": Correo,
                     "Membrecia": Membrecia,
-                  //  "Documneto": Documento
+                   "Documneto": Documento
                 }, function (Actualizar) {
 
             toastr.success(Actualizar);
