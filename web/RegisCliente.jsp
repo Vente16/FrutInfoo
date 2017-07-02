@@ -9,88 +9,141 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Registrar Clientes</title>
+        <title>Registrar insumo</title>  
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/estilos2.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="js/validacion2.js"></script>
+       
     </head>
     <body>
         <%@include file="headerModulos.jspf" %><br>
-        <div class="container">
+        <main>
+            <div class="container">
+            <div style="margin-top: 100px">
+                <h2 style="text-align: center;">Registro del Cliente</h2><br><br>
+            </div>
+                <div class="continer-propio">
+                    <form data-toggle= "validator" class="form-horizontal" role= "form" action="RegCliente" method="post">
+                 
+                    <div class="form-group">    
+                        <label class="col-sm-2 control-label" for="inputSuccess">
+                            <span class="titulo">tipo de documento</span></label>
+                            <div class="col-sm-12 col-md-4">
+                                <select class="form-control" name="tipo_documento">
+                                    <option>Cédula de Ciudadanía</option>
+                                    <option>Tarjeta de Identidad</option>
+                                    <option>Registro Civil </option>
+                                    <option>Cédula de Extranjería</option>
+                                    <option>Otros</option>
+                                </select>
+                            </div>
+                    </div>
 
-            
-                </form>
-
-                <div style="margin-top: 100px">
-                    <h2 style="text-align: center;">Registro del Cliente</h2><br><br>
-                </div>
-                <form action="RegCliente" method="post">
-                    <label class="form-control-label" for="index-form-4-4name">
-                        <span class="titulo">Seleccione el tipo de documento</span></label>
-                    <select class="form-control" name="tipo_documento">
-
-                        <option>Cédula de Ciudadanía</option>
-                        <option>Tarjeta de Identidad</option>
-                        <option>Registro Civil </option>
-                        <option>Cédula de Extranjería</option>
-                        <option>Otros</option>
-                    </select><br>
-
-
-                    <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Número de documento</span></label><br>
-                    <input type="option" class="form-control" name="documento"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese su número de documento"><br>
-
-                    <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Nombres</span></label><br>
-                    <input type="text" class="form-control" name="nombres"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese los nombres del empleado"><br>
-
-                    <labe2 class="form-control-label" for="index-form2-2-name"><span class="titulo"><b>Apellidos</b></span></labe2><br>
-                    <input type="text" class="form-control" name="apellidos"required="" data-form-field="Name" id="index-form2-2-name" placeholder="Ingrese los apellidos del empleado"><br>
-
-                    <labe2 class="form-control-label" for="index-form2-2-name"><span class="titulo"><b>Fecha de Nacimiento</b></span></labe2><br>
-                    <input type="date" class="form-control" name="FechaNac"required="" data-form-field="Name" id="index-form2-2-name" placeholder="dd/mm/aa"><br>
-
-
-
-                    <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Municipio</span></label><br>
-                    <input type="text" class="form-control" name="Municipio"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el Municipio donde actualmente vive"><br>
-
-                    <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Dirección</span></label><br>
-                    <input type="text" class="form-control" name="direccion"required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese su Dirección completa"><br>
-
-                    <label class="form-control-label" for="index-form3-3-name"><span class="titulo">Barrio</span></label>
-                    <input type="text" class="form-control" name="Barrio"required="" data-form-field="Name" id="index-form3-3-name" placeholder="Ingrese el barrio donde vive"><br>
-
-                    <labe2 class="form-control-label" for="index-form2-2-name"><span class="titulo"><b>Teléfono</b></span></labe2><br>
-                    <input type="text" class="form-control" name="telefono"required="" data-form-field="Name" id="index-form2-2-name" placeholder="Ingrese su teléfono"><br>
-
-
-
-
-                    <label class="form-control-label" for="index-form-4-4name"><span class="titulo">Celular</span></label>
-                    <input type="tel" class="form-control" name="celular"required="" data-form-field="Name" id="index-form4-4-name" placeholder="Ingrese su número"><br>
-
-                    <label class="form-control-label" for="index-form-4-4name"><span class="titulo">Email</span></label>
-                    <input type="tel" class="form-control" name="Email"required="" data-form-field="Name" id="index-form4-4-name" placeholder="Ingrese su cuenta de correo electrónico"><br>
-                    <label class="form-control-label" for="index-form-4-4name">
-                        <span class="titulo">Membresia</span></label>
-                    <select class="form-control" name="membrecia">
-
-                        <option>si</option>
-                        <option>no</option>
-                    </select><br>
+                    <div id="documentov" class="form-group">
+                        <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Número de documento</span></label>
+                        <div class="col-sm-12 col-md-4">
+                            <input id="documento" type="text" class="form-control"  placeholder="Ingrese su número de documento"><br>
+                            <span class="" id="validar"></span>
+                        </div>
+                    </div>
                     
-                    <button type="submit" class="btn btn-success">REGISTRAR</button>
-                </form>
+                    <div  id="nombres" class="form-group">
+                        <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Nombres</span></label>
+                        <div class="col-sm-12 col-md-4">
+                            <input  type="text" class="form-control" id="nombres" name="nombres"  placeholder="Ingrese los nombres del empleado"><br>
+                            <span class="titulo"></span>
+                        </div>
+                    </div>
+                    
+                    <div id="apellidos" class="form-group">
+                        <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo"><b>Apellidos</b></span></label>
+                        <div class="col-sm-12 col-md-4">
+                            <input  name="apellidos" type="text" class="form-control" id="apellidos" placeholder="Ingrese los apellidos del empleado"><br>
+                        </div>
+                    </div>
+                   
+                    <div  id="fecha" class="form-group">
+                        <label  class="col-sm-2 control-label" for="inputSuccess"><span class="titulo"><b>Fecha de Nacimiento</b></span></label>
+                        <div class="col-sm-12 col-md-4">
+                            <input type="date" name="FechaNac" class="form-control" id="fecha"  placeholder="dd/mm/aa"><br>
+                        </div>
+                    </div>
+                        
+                        
+                    <div id="emailv" class="form-group">
+                        <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Email</span></label>
+                        <div class="col-sm-12 col-md-4">
+                            <input type="text" class="form-control" id="email" name="Email" placeholder="Ingrese su cuenta de correo electrónico">
+                        </div>
+                    </div>
+                        
 
-                <button type="submit" class="btn btn-primary">MODIFICAR</button> <button type="submit" class="btn btn-success">ACEPTAR</button>
+                    <div  id="municipio" class="form-group">
+                        <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Municipio</span></label>
+                        <div class="col-sm-12 col-md-4">
+                            <input name="Municipio" type="text" class="form-control" id="municipio"  placeholder="Ingrese el Municipio donde actualmente vive"><br>
+                        </div>
+                    </div>
+                
+                    <div  id="direccion" class="form-group">   
+                        <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Dirección</span></label>
+                        <div class="col-sm-12 col-md-4">
+                            <input  name="direccion" type="text" class="form-control" id="direccion" placeholder="Ingrese su Dirección completa"><br>
+                        </div>
+                    </div>
+                
+                    <div id="barrio" class="form-group">
+                        <label class="col-sm-2 control-label" for="inputSuccess" ><span class="titulo">Barrio</span></label>
+                        <div class="col-sm-12 col-md-4">
+                            <input name="Barrio" type="text" class="form-control" id="barrio"  placeholder="Ingrese el barrio donde vive"><br>
+                        </div>
+                    </div>
+                
+                    <div id="telefono" class="form-group">
+                        <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo"><b>Teléfono</b></span></label>
+                        <div class="col-sm-12 col-md-4">
+                            <input  name="telefono"  type="text" class="form-control" id="telefono"  placeholder="Ingrese su teléfono"><br>
+                        </div>
+                    </div>
+                
+                    <div id="celular" class="form-group">
+                        <label  class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Celular</span></label>
+                        <div class="col-sm-12 col-md-4">
+                        <input name="celular"  type="text" class="form-control" id="celular"  placeholder="Ingrese su número"><br>
+                        </div>
+                    </div>
+                
+                
+                    <div>
+                        <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Membrecía</span></label>
+                    <div class="col-sm-12 col-md-4">
+                        <select class="form-control" name="membrecia">
+                            <option>si</option>
+                            <option>no</option>
+                        </select>
+                    </div>  
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="col-sm-12 col-md-4">
+                            <button type="submit" class="btn btn-success">REGISTRAR</button>
+                        </div>
+                    </div>
+                
+            </form>
+                    </div>
+        </div>
+        </main>
+        <%@include file="footer.jspf" %>           
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"></script>
+        <script src="ValidarRegCli.js"></script> 
+        <script src="js/pruebaValidacion.js"></script> -->
 
-            </section>
-
-
-
-
-            <%@include file="footer.jspf" %>
 
     </body>
 </html>

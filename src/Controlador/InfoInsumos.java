@@ -9,6 +9,7 @@ import Modelo.Conexion;
 import com.itextpdf.text.BaseColor;
 import com.itextpdf.text.Chunk;
 import com.itextpdf.text.Document;
+import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.Element;
 import com.itextpdf.text.Font;
 import com.itextpdf.text.Image;
@@ -18,10 +19,10 @@ import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfWriter;
 import java.io.IOException;
 import java.io.OutputStream;
-import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
@@ -60,7 +61,7 @@ public class InfoInsumos extends HttpServlet {
             
             
               /*Agregar imagen*/
-            Image imagen = Image.getInstance("C:/Users/Home/Documents/NetBeansProjects/generarpdf/logo.png");
+            Image imagen = Image.getInstance("C:/Users/Home/Documents/NetBeansProjects/La Jugosa/logo.png");
             imagen.setAlignment(Element.ALIGN_CENTER);
             imagen.scaleToFit(50, 50);/*Tamaño de la imagen mediante el metodo scale*/
             imagen.setAlignment(Image.ALIGN_TOP | Image.TEXTWRAP);/*Alinear imagen colocandose acomodandose respecto a la tabla*/
@@ -133,7 +134,7 @@ public class InfoInsumos extends HttpServlet {
             
             documento.close();
 
-        } catch (Exception e) {
+        } catch (DocumentException | IOException | SQLException e) {
 
             System.out.println(e);
 

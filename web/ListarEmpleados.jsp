@@ -25,20 +25,15 @@
     <%@include file="headerModulos.jspf" %> 
 
     <div class="container">
-        <form>
-            <br><br>
-            <input type="text" class="form-control" name="name" required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el número de documento del empleado">
-            <br>
-            <button type="button" class="btn btn-success" style="margin-right:auto">Consultar</button>  
-        </form>
+        <div class="jumbotron">
  
         <div style="text-align:center">
             <h2>EMPLEADOS</h2>
-            <h4> Estos son todos los empleados de nuestra compañía <h4>
+            <h4> Estos son todos los empleados de nuestra compañía </h4>
                     <br><br>
-  
-                    </div>
-                    <div class="table-responsive">
+        </div>
+                    
+                   
                         <table class="table table-hover">
                             <thead>
                                 <tr>
@@ -101,8 +96,10 @@
                                 <li class="page-item"><a class="page-link" href="ListarEmp?pag=<%=Integer.parseInt(request.getParameter("pag")) + 1%>">Next</a></li>
                             </ul>
                         </nav>
+                            </div>
                     </div>
-                    </div>
+                    
+                    
                    
        <%@include file="ModalEmpleado.jsp" %>
     <%@include file="footerModulos.jspf"%> 

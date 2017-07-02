@@ -10,6 +10,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Registrar novedad</title>
+        <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css"/>
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/estilos2.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -24,15 +26,15 @@
               
        
                 <div class="container">
-                    <form action="Novedades" method="post">
+                    <form action="Novedades" method="post" >
                                     <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Nombres</span></label><br>
-                                    <input type="text" class="form-control" name="nombre" required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese los nombres del empleado"><br>
+                                    <input type="text" class="form-control" name="nombre"  data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese los nombres del empleado"><br>
 
                                      <labe2 class="form-control-label" for="index-form2-2-name"><span class="titulo"><b>Apellidos</b></span></labe2><br>
-                                    <input type="text" class="form-control" name="apellido" required="" data-form-field="Name" id="index-form2-2-name" placeholder="Ingrese los apellidos del empleado"><br>
+                                    <input type="text" class="form-control" name="apellido" data-form-field="Name" id="index-form2-2-name" placeholder="Ingrese los apellidos del empleado"><br>
 
                                     <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Documento de identificación</span></label><br>
-                                        <input type="text" class="form-control" name="documento" required="" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el número de documento de identificación"><br>
+                                        <input type="text" class="form-control" name="documento" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el número de documento de identificación"><br>
 
                                     <div class="form-group">
                                       <label class="form-control-label" for="index-form-4-4name"><span class="titulo">Seleccione el tipo de documento</span></label>
@@ -100,6 +102,9 @@
         
         
    <%@include file="footerModulos.jspf" %>
-      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"></script>
+      <script src="js/ValidarRegNov.js"></script>       
     </body>
 </html>

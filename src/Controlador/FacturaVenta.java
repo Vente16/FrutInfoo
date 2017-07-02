@@ -61,7 +61,7 @@ public class FacturaVenta extends HttpServlet {
             
             
               /*Agregar imagen*/
-            Image imagen = Image.getInstance("C:/Users/Home/Documents/NetBeansProjects/generarpdf/logo.png");
+            Image imagen = Image.getInstance("C:/Users/Home/Documents/NetBeansProjects/La Jugosa/logo.png");
             imagen.setAlignment(Element.ALIGN_CENTER);
             imagen.scaleToFit(50, 50);/*Tamaño de la imagen mediante el metodo scale*/
             imagen.setAlignment(Image.ALIGN_TOP | Image.TEXTWRAP);/*Alinear imagen colocandose acomodandose respecto a la tabla*/

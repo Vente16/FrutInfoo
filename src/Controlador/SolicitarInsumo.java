@@ -7,9 +7,9 @@ package Controlador;
 
 import Modelo.Conexion;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -17,9 +17,9 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author Home
+ * @authr John Jairo
  */
-public class RegInsumo extends HttpServlet {
+public class SolicitarInsumo extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -32,7 +32,7 @@ public class RegInsumo extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-
+     
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -45,12 +45,11 @@ public class RegInsumo extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     @Override
+    @SuppressWarnings("empty-statement")
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-       
-
         
-
+        
     }
 
     /**
@@ -64,44 +63,41 @@ public class RegInsumo extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        try {
-            String Cod = request.getParameter("codigo");
-            String Pro = request.getParameter("proveedor");
-            String Tip = request.getParameter("tipo");
-            String Pes = request.getParameter("peso");
-            String Nom = request.getParameter("nombre");
-            String Can = request.getParameter("cantidad");
-            String Val = request.getParameter("valor");
-            String FI = request.getParameter("fecha_ingreso");
-            String FV = request.getParameter("fecha_vencimiento");
-            String Pri = request.getParameter("prioridad");
-
-            Conexion c = new Conexion();
-            Connection con = c.Conectar();
-
-            PreparedStatement Ps = con.prepareStatement("INSERT INTO insumos(Codigo, Id_Proveedor, Tipo, peso, Nombre_insumo, Cantidad_insumo, Valor_insumo, Fecha_ingreso, Fecha_vencimiento,Prioridad, Habilitado)VALUES(?,?,?,?,?,?,?,?,?,?,1)");
-            Ps.setString(1, Cod);
-            Ps.setString(2, Pro);
-            Ps.setString(3, Tip);
-            Ps.setString(4, Pes);
-            Ps.setString(5, Nom);
-            Ps.setString(6, Can);
-            Ps.setString(7, Val);
-            Ps.setString(8, FI);
-            Ps.setString(9, FV);
-            Ps.setString(10, Pri);
-
+        processRequest(request, response);
+        
+        try{
+        String Ins = request.getParameter("nombre_insumo");
+        String can = request.getParameter("cantidad");
+        String sed = request.getParameter("tipo_sede");
+        String aut= request.getParameter("autorizar");
+        String FchSoli = request.getParameter("fecha_solicitud");
+        String FecAut = request.getParameter("fecha_aut");
+        
+           
+        Conexion c = new Conexion();
+        Connection con = c.Conectar();
+        
+            PreparedStatement Ps = con.prepareStatement("INSERT INTO solicitud_insumo(nombre_insumo, cantidad, id_punto_venta, autorizar, fecha_solicitud,fecha_autorizacion)VALUES(?,?,?,?,?,?)");
+            Ps.setString(1, Ins);
+            Ps.setString(2, can);
+            Ps.setString(3, sed);
+            Ps.setString(4, aut);
+            Ps.setString(5, FchSoli);
+            Ps.setString(6, FecAut);
+            
             Ps.executeUpdate();
             response.sendRedirect("Exito.jsp");
-            Ps.close();
-            con.close();
-
-        } catch (Exception e) {
-
+            
+    
+        }catch(IOException | SQLException e){
             response.sendRedirect("Error.jsp");
-            System.out.println(e);
-
-        }
+            System.out.println(""+e);
+        
+        
+        };
+        
+        
+        
     }
 
     /**

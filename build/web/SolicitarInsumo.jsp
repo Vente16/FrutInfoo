@@ -6,85 +6,77 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
-     <head>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Solicitar Insumo</title>
-         <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/estilos2.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    </head>
-     <%@include file="../headerModulos.jspf"%>
-    <body>
-        <section class="main container-fluid">
-  <div class="container-fluid">
+            <title>Solicitar Insumo</title>
+            <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+                <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css"/>
+                <link rel="stylesheet" href="css/bootstrap.css">
+                    <link rel="stylesheet" href="css/estilos2.css">
+                        <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+                          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+                        </head>
+                        <%@include file="../headerModulos.jspf"%>
+                        <body>
 
-   <h2 style="text-align: center;">SOLICITAR INSUMO</h2>
-         <p style="text-align: center;">Ingrese aqui los Insumo que desea solicitar.</p>
+                            <div class="container">
 
-        
+                                <h2 style="text-align: center;">SOLICITAR INSUMO</h2>
+                                <p style="text-align: center;">Ingrese aqui los Insumo que desea solicitar.</p>
 
-         <form class="form-group">
-                               
-                              <div class="form-group has-success">
-                               <label for="detalle">Detalle Insumo:</label>
-                                <input type="text" class="form-control" id="email" placeholder="Ingrese Insumo">
-                              </div>
-                                <div class="navbar-left has-success">
-                                   <label for="Cantidad">Cantidad:</label>
-                                    <input type="text" class="form-control" id="pwd" placeholder="Ingrese Cantidad">
-                                    <br>
-                                    <div class="navbar-left has-success">
-                                    <label class="punto_venta">Punto de Venta:</label>
-                                    <br>
-                                    <select class="form-control has-success">
-                                    <option>Envigado</option>
-                                    <option >Sabaneta</option>
-                                    <option >Itagui</option>
-                                    <option >poblado</option>
-                                    <option >Carrera 80</option>
-                                    <option >Los sauces</option>
-                                    <option >Laureles</option>
-                                    <option >Avenida Orientales</option>
-                                    <option >Bello</option>
-                                    <option >Belen</option>
-                                     </select>
-                                     <br>
-                                     <button type="button" class="btn btn-success">Agragar</button>
-                                    <br>
-                                    <br>
+
+
+                                <form action="SolicitarInsumo" method="post" id="SolicitarIns">
+
+                                    <div class="form-group">
+                                        <label for="detalle">Nombre Insumo:</label>
+                                        <input type="text" name="nombre_insumo" class="form-control" placeholder="Ingrese Insumo">
                                     </div>
-                                </div>
-                              
-                            
-                                <table class="table table-bordered"> 
-                                <thead>
-                                   <tr>
-                                     <th>Insumo</th>
-                                     <th>Catidad / unidades</th>
-                                     <th>Punto de venta</th>
-                                   </tr>
-                                 </thead>
+                                    <div class="form-group">
+                                        <label for="Cantidad">Cantidad:</label>
+                                        <input type="text" name="cantidad" class="form-control"  placeholder="Ingrese Cantidad">
+                                    </div>
 
-                                 <tbody>
-                                   <tr>
-                                     <td>Banano</td>
-                                     <td>100</td>
-                                     <td>Itagui</td>
-                                   </tr>
+                                    <div class="form-group">
+                                        <label for="punto venta">Punto Venta:</label>
+                                        <select class="form-control" name="tipo_sede">
+                                            <option value="1">1  Envigado</option>
+                                            <option value="2">2 Itagui</option>
+                                            <option value="3">3 Sabaneta</option>
+                                            <option value="4">4 Poblado</option>
+                                            <option value="5">5 Crr 80</option>
+                                            <option value="6">6 Los Sauces</option>
+                                            <option value="7">7 Laureles</option>
+                                            <option value="8">8 Avenida Oriental</option>
+                                            <option value="9">9 Bello</option>
+                                            <option value="10">10 Belén</option>
+                                        </select>
+                                    </div>
 
-                                 </tbody>
-                               </table>
-                      
-                                 <button type="submit" class="btn btn-success">Solicitar</button>
+                                    <div class="form-group">
+                                        <label for="detalle">Autorizar:</label>
+                                        <input type="text" name="autorizar" class="form-control" placeholder="si/no">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="Cantidad">Fecha Solicitud:</label>
+                                        <input type="date"  name="fecha_solicitud" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="detalle">Fecha Autorización:</label>
+                                        <input type="date" name="fecha_aut" class="form-control" >
+                                    </div>
 
+                                    <button type="submit" class="btn btn-success">Solicitar</button>
 
-</div>
-            </form> 
-  </section>
-        
-    <%@include file="footerModulos.jspf"%>  
-        
-    </body>
-</html>
+                                </form> 
+                            </div>
+
+                            <%@include file="footerModulos.jspf"%>  
+                            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                            <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+                            <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"></script>
+                            <script src="js/ValidarSolIns.js"></script>
+                        </body>
+
+                        </html>

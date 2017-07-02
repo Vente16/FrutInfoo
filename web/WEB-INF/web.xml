@@ -164,6 +164,10 @@
         <servlet-name>EliminarEmpleado</servlet-name>
         <servlet-class>Controlador.EliminarEmpleado</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>SolicitarInsumo</servlet-name>
+        <servlet-class>Controlador.SolicitarInsumo</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Validar</servlet-name>
         <url-pattern>/Validar</url-pattern>
@@ -323,6 +327,10 @@
     <servlet-mapping>
         <servlet-name>EliminarEmpleado</servlet-name>
         <url-pattern>/EliminarEmpleado</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SolicitarInsumo</servlet-name>
+        <url-pattern>/SolicitarInsumo</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

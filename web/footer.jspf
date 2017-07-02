@@ -1,8 +1,8 @@
 <%-- footer oficial --%>
 <%@ page pageEncoding="UTF-8" %>
-
+<br>
 <footer>
-    <div class=" navbar-fixed-bottom">
+    <div>
         <div class=" text-center pie">
             <div class="row">
                 <div class="col-xs-12">

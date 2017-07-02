@@ -72,8 +72,8 @@ public class RegEmpleado extends HttpServlet {
             String Disponibilidad = request.getParameter("disponibilidad");
             String InicioC = request.getParameter("inicio");
             String FinC = request.getParameter("fin");
-            String HoraI = request.getParameter("hora inicio");
-            String HoraS = request.getParameter("hora salida");
+            String HoraI = request.getParameter("hora_inicio");
+            String HoraS = request.getParameter("hora_salida");
             String Documento = request.getParameter("documento");
             String TipoD = request.getParameter("tipo");
             String FechaN = request.getParameter("fecha");
