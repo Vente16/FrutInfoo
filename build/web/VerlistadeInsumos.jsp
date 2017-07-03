@@ -22,13 +22,14 @@
     <%@include file="headerModulos.jspf"%>
     <body>
         <section class="main container-fluid">
+            <div class="jumbotron">
             <div class="container-fluid">
-                <h2 style="text-align: center;">MODIFICAR INSUMO</h2>
-                <p style="text-align: center;">Ingrese aqui el Insumo el cual desea modificar.</p>
+                <h2 style="text-align: center;">LISTA DE INSUMOS</h2>
+                <p style="text-align: center;">En el siguiente informe podras ver la lita de nuestros insumos.</p>
 
 
 
-                <form class="form-group has-success">
+             <!--   <form class="form-group has-success">
                     <div class="form-group has-success ">
                         <label for="detalle">Codigo:</label>
                         <input type="text" class="form-control" id="email" placeholder="Ingrese Insumo">
@@ -53,7 +54,7 @@
                         <button type="button" class="btn btn-success">Consultar</button>
                         <br>
                         <br>
-                    </div>
+                    </div>-->
 
                     <table class="table table-bordered">
                         <thead>
@@ -117,11 +118,12 @@
                             <li class="page-item"><a class="page-link" href="ListarInsumo?pag=<%=Integer.parseInt(request.getParameter("pag")) + 1%>">Next</a></li>
                         </ul>
                     </nav>
-                    <button type="submit" class="btn btn-success">Guardar</button>
-                    <button type="button" class="btn btn-primary">VOLVER</button>
+                   <!-- <button type="submit" class="btn btn-success">Guardar</button>
+                    <button type="button" class="btn btn-primary">VOLVER</button>-->
 
                 </form>
             </div>
+                        </div>
         </section>
            <%@include file="ModalInsumos.jsp" %>
         <%@include file="footerModulos.jspf"%>     

@@ -48,8 +48,8 @@
                     <ul class="dropdown-menu">
                         <li><a href="RegistrarVentas.jsp">Registrar ventas</a></li>
                         <li><a href="ListarVentas?pag=0">Listar ventas</a></li>
-                        <li><a href="InforVentas.jsp">Realizar informe de ventas</a></li>
-                        <li><a href="FacturaVentas.jsp">Generar factura de ventas</a></li>
+                        <li><a href="InforVentas">Realizar informe de ventas</a></li>
+                        <li><a href="FacturaVenta">Generar factura de ventas</a></li>
 
                     </ul>
                 </li>

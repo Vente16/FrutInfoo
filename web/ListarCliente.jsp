@@ -23,6 +23,8 @@
 
         <div class="container">
             <div class="jumbotron">
+                  <h2 style="text-align: center;">LISTA DE CLIENTES</h2><br><br>
+                  <p style="text-align: center;">En el siguiente infórme podras ver nuestros clientes</p><br>
                 <table class="table table-hover" id="paginacion">
                     <thead>
                         <tr>

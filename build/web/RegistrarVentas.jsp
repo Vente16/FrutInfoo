@@ -1,7 +1,7 @@
 <%-- 
-    Document   : RegistrarVentas
-    Created on : 26/02/2017, 11:13:13 AM
-    Author     : John jairo
+    Document   : RegistrarVenta
+    Created on : 3/07/2017, 09:45:51 AM
+    Author     : John Jairo
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -9,91 +9,133 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Registrar venta</title>
+        <title>Registrar Ventas</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/estilos2.css">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="js/Funciones_1.js"></script> 
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/estilos2.css">
     </head>
+    <body>
+        <%@include file="headerModulos.jspf" %><br>
+        <main>
+            <div class="container">
+                <div style="margin-top: 100px">
+                    <h2 style="text-align: center;">Registro de Ventas</h2><br><br>
+                </div>
+                <div class="continer-propio">
+                    <form  class="form-horizontal" role= "form" action="RegVentas" method="post">
 
-    <%@include file="headerModulos.jspf" %>
+                        <div class="form-group">    
+                            <label class="col-sm-2 control-label" for="inputSuccess">
+                                <span class="titulo">Nombre producto</span></label>
+                            <div class="col-sm-12 col-md-4">
+                                <select class="form-control" name="producto">
+                                    <option>Banana Split</option>
+                                    <option>Brevas</option>
+                                    <option>Mr Brownie</option>
+                                    <option>Mr Fresa</option>
+                                    <option>Mr Arequipe</option>
+                                    <option>Jugo</option>
+                                    <option>Mr Mora</option>
+                                    <option>Salpicon</option>
+                                    <option>Ensalada frutas grande</option>
+                                    <option>Ensalada frutas mediana</option>
+                                    <option>Ensalada frutas pequeña</option>
+                                    <option>Concha grande</option>
+                                    <option>Concha mediana</option>
+                                    <option>Concha pequeña</option>
+                                    <option>Encanto</option>
+                                    <option>Pasion</option>
+                                    <option>Capricho</option>
+                                    <option>Banana Jungle</option>  
+                                </select>
+                            </div>
+                        </div>
+
+                            <div id="cantidadv" class="form-group">
+                                <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Cantidad del Producto</span></label>
+                                <div class="col-sm-12 col-md-4">
+                                    <input id="cantidad" type="text" name="cantidad" class="form-control"  placeholder="Ingrese la cantidad del producto "><br>
+                                    <span class="" id="validar"></span>
+                                </div>
+
+                                <div id="preciov" class="form-group">
+                                    <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Precio Unitario</span></label>
+                                    <div class="col-sm-12 col-md-4">
+                                        <input id="precio" type="text" name="precio" class="form-control"  placeholder="Ingrese el precio del producto "><br>
+                                        <span class="" id="validar"></span>
+                                    </div>
+
+                                    <div id="ivav" class="form-group">
+                                        <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Iva</span></label>
+                                        <div class="col-sm-12 col-md-4">
+                                            <input id="iva" type="text" name="iva" class="form-control"  placeholder="Ingrese el precio del producto "><br>
+                                            <span class="" id="validar"></span>
+                                        </div>
+
+                                        <div id="totalv" class="form-group">
+                                            <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Total del Producto</span></label>
+                                            <div class="col-sm-12 col-md-4">
+                                                <input id="total" type="text" name="total" class="form-control"  placeholder="Ingrese el total del producto "><br>
+                                                <span class="" id="validar"></span>
+                                            </div>
+
+                                            <div class="form-group">    
+                                                <label class="col-sm-2 control-label" for="inputSuccess">
+                                                    <span class="titulo">tipo de venta</span></label>
+                                                <div class="col-sm-12 col-md-4">
+                                                    <select class="form-control" name="Tventa">
+                                                        <option>Domicilio</option>
+                                                        <option>Efectivo</option>
+                                                        <option>Punto de venta </option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div  id="fecha" class="form-group">
+                                                <label  class="col-sm-2 control-label" for="inputSuccess"><span class="titulo"><b>Fecha de la Venta</b></span></label>
+                                                <div class="col-sm-12 col-md-4">
+                                                    <input  id="fecha" type="date" name="FechaVen" class="form-control" placeholder="dd/mm/aa"><br>
+                                                    <span class="" id="validar"></span>
+                                                </div>
+                                            </div>
+
+                                            <div  id="hora" class="form-group">
+                                                <label  class="col-sm-2 control-label" for="inputSuccess"><span class="titulo"><b>Hora de la Venta</b></span></label>
+                                                <div class="col-sm-12 col-md-4">
+                                                    <input  id="fecha" type="text" name="hora" class="form-control" placeholder="xx:xx am/pm"><br>
+                                                    <span class="" id="validar"></span>
+                                                </div>
+                                            </div>
 
 
-    <br><br>
-    <div class="container">
-        <div>
+                                            <div id="pedidov" class="form-group">
+                                                <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Id_del pedido</span></label>
+                                                <div class="col-sm-12 col-md-4">
+                                                    <input id="pedido" type="number" name="IdPedido" class="form-control"  placeholder="Ingrese el número del pedido"><br>
+                                                    <span class="" id="validar"></span>
+                                                </div>
+                                            </div>
 
-            <form class="navbar-left" role="search">
+                                            <div  id="clientev" class="form-group">
+                                                <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Id_del cliente</span></label>
+                                                <div class="col-sm-12 col-md-4">
+                                                    <input id="cliente" type="number" class="form-control" name="IdCliente"  placeholder="Ingrese el número del cliente"><br>
+                                                    <span class="titulo" id="validar"></span>
+                                                </div>
+                                            </div>
 
-                <input type="text" class="form-control" placeholder="Codigo del Producto" value="">
-                <br>
-                <input type="text" class="form-control" placeholder="Cantidad del Producto" value="">
-                <br>
+                                            <div class="form-group">
+                                                <div class="col-sm-12 col-md-4">
+                                                    <button type="submit" class="btn btn-success">REGISTRAR</button>
+                                                </div>
+                                            </div>
 
-                <button type="submit" class="btn btn-success">AGREGAR</button>
-            </form>
-        </div><br>
-        <br>
-        <br><br>
-
-
-
-
-        <div style="margin-top: 100px">
-            <h2 style="text-align: center;">Estos son los Productos Seleccionados</h2><br>
-            <p style="text-align: left;">A continuación verá toda la información de los productos agragados </p>
-        </div>
-        <table class="table table-bordered table-hover">
-            <thead>
-                <tr>
-                    <th>Codigo del Producto</th>
-                    <th>Nombre del Producto</th>
-                    <th>Cantidad del Producto</th>
-                    <th>Precio Unitario</th>
-                    <th>Total</th>
-                    <th>Iva</th>
-                    <th>Costo</th>
-                    <th>Eliminar</th>
-                    
-                </tr> 
-            </thead>
-
-            <tbody>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><button class="btn btn-primary glyphicon glyphicon-edit"></button></td>
-                </tr>
-
-
-
-              
-
-            </tbody>
-            
-            <tfoot>
-                
-               <tr>
-	         <td colspan="6" style="text-align:right">Total</td>
-	         <td id="Total">0</td>
-	       </tr> 
-                
-            </tfoot>
-            
-            
-            
-        </table>
-
-        <button type="submit" class="btn btn-success">GUARDAR</button>
-
-
-
-</div>
-<%@include file="footerModulos.jspf" %>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    </main>
+                                    <%@include file="footer.jspf" %>  
+    </body>
 </html>

@@ -41,16 +41,16 @@
                                     <div class="form-group">
                                         <label for="punto venta">Punto Venta:</label>
                                         <select class="form-control" name="tipo_sede">
-                                            <option value="1">1  Envigado</option>
-                                            <option value="2">2 Itagui</option>
-                                            <option value="3">3 Sabaneta</option>
-                                            <option value="4">4 Poblado</option>
-                                            <option value="5">5 Crr 80</option>
-                                            <option value="6">6 Los Sauces</option>
-                                            <option value="7">7 Laureles</option>
-                                            <option value="8">8 Avenida Oriental</option>
-                                            <option value="9">9 Bello</option>
-                                            <option value="10">10 Belén</option>
+                                            <option value="1">Envigado</option>
+                                            <option value="2">Itagui</option>
+                                            <option value="3">Sabaneta</option>
+                                            <option value="4">Poblado</option>
+                                            <option value="5">Crr 80</option>
+                                            <option value="6">Los Sauces</option>
+                                            <option value="7">Laureles</option>
+                                            <option value="8">Avenida Oriental</option>
+                                            <option value="9">Bello</option>
+                                            <option value="10">Belén</option>
                                         </select>
                                     </div>
 

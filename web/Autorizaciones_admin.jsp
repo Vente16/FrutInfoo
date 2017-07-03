@@ -17,7 +17,7 @@
     </head>
     <body>
         <%@include file="headerModulos.jspf" %>
-        
+        <main>
         <div class="container">
             <table class="table table-hover">
                 <thead>
@@ -107,14 +107,14 @@
                         <td> <button class="btn-link btn-xs" ><img src="img/cancelar.png" alt="aceptar" style="width:20px; height:20px; align:center;"></button></td>
                     </tr>
                 </tbody>
-            </table><br><br>
-            <p><b><h2>Con los siguientes Botónes podras generar los  siguientes informes.</h2> </b></p><br>
+            </table>
+            <p><b><h2>Con los siguientes Botónes podras generar los  siguientes informes.</h2> </b></p>
             <a href="InfoInsumos" target="_blank"><button type="submit" class="btn btn-success">Informe Insumos</button></a>&nbsp;&nbsp;
             <a href="InforEmpleados" target="_blank"><button type="submit" class="btn btn-info">Informe Empleados</button></a>&nbsp;&nbsp;
             <a href="InforVentas" target="_blank"><button type="submit" class="btn btn-warning">Informe Ventas</button></a>
-        </div>
+        </div><br><br>
         
-        
+        </main>
       <%@include file="footerModulos.jspf"%> 
     </body>
 </html>

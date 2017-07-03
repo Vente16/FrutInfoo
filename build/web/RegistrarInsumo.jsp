@@ -25,7 +25,7 @@
                 <h2 style="text-align: center;">REGISTRAR INSUMOS</h2>
                 <p style="text-align: center;">Registre aqui el Insumo actual.</p>
 
-                <form action="RegInsumo" method="post" id="FormRegisIns" >
+                <form action="RegI" method="post" id="FormRegisIns" >
 
                     <br>
 

@@ -3,10 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Users/Home/Desktop/nuevo/src/Controlador/ListarInsumo.java</file>
             <file>file:/C:/Users/Home/Desktop/nuevo/web/IndexPrincipal.html</file>
-            <file>file:/C:/Users/Home/Desktop/nuevo/web/js/ValidarRegCli.js</file>
-            <file>file:/C:/Users/Home/Desktop/nuevo/web/RegisCliente.jsp</file>
-            <file>file:/C:/Users/Home/Desktop/nuevo/web/js/pruebaValidacion.js</file>
+            <file>file:/C:/Users/Home/Desktop/nuevo/src/Controlador/ListarEmp.java</file>
+            <file>file:/C:/Users/Home/Desktop/nuevo/web/ListarVentas.jsp</file>
+            <file>file:/C:/Users/Home/Desktop/nuevo/web/ListarCliente.jsp</file>
+            <file>file:/C:/Users/Home/Desktop/nuevo/web/VerlistadeInsumos.jsp</file>
+            <file>file:/C:/Users/Home/Desktop/nuevo/src/Controlador/ListarVentas.java</file>
+            <file>file:/C:/Users/Home/Desktop/nuevo/web/ListarEmpleados.jsp</file>
         </group>
     </open-files>
 </project-private>
