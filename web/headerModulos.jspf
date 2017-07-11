@@ -110,7 +110,7 @@
                 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-briefcase"></span>Administrativo<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="InforVentas" target="_blank">Informe de ventas</a></li>
-                        <li><a href="#">Registrar usuario</a></li>
+                        <li><a href="DefUsuario.jsp">Registrar usuario</a></li>
                         <li><a href="InfoInsumos" target="_blank">Informe de Insumos</a></li>
                         <li><a href="InforEmpleados" target="_blank">Informe de empleados</a></li>
                     </ul>

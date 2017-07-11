@@ -7,7 +7,6 @@ package Controlador;
 
 import Modelo.Conexion;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import javax.servlet.ServletException;
@@ -74,7 +73,7 @@ public class RegistrarDomicilio extends HttpServlet {
             Conexion c = new Conexion();
             Connection con = c.Conectar();
 
-            PreparedStatement Ps = con.prepareStatement("INSERT INTO `domicilio` (producto, cantidad, nombres, apellidos, telefono, celular, municipio, direccion VALUES(?,?,?,?,?,?,?,?");
+            PreparedStatement Ps = con.prepareStatement("INSERT INTO `domicilio` (producto, cantidad, nombres, apellidos, telefono, celular, municipio, direccion) VALUES(?,?,?,?,?,?,?,?");
             Ps.setString(1, Producto);
             Ps.setString(2, Cantidad);
             Ps.setString(3, Nombres);
