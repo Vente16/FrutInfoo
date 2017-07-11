@@ -106,7 +106,7 @@
 
                                 }
                             %>
-                            <li class="page-item"><a class="page-link" href="ListarInsumo?pag=<%=Integer.parseInt(request.getParameter("pag")) - 1%>">Previous</a></li>
+                            <li class="page-item"><a class="page-link" href="ListarInsumo?pag=<%=Integer.parseInt(request.getParameter("pag")) - 1%>">Anterior</a></li>
                                 <%
                                     System.out.println(nRegistros);
                                     for (int j = 0; j < nRegistros / 5; j++) {
@@ -115,7 +115,7 @@
                                 <%
                                     }
                                 %>
-                            <li class="page-item"><a class="page-link" href="ListarInsumo?pag=<%=Integer.parseInt(request.getParameter("pag")) + 1%>">Next</a></li>
+                            <li class="page-item"><a class="page-link" href="ListarInsumo?pag=<%=Integer.parseInt(request.getParameter("pag")) + 1%>">Siguiente</a></li>
                         </ul>
                     </nav>
                    <!-- <button type="submit" class="btn btn-success">Guardar</button>

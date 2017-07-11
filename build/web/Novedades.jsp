@@ -66,21 +66,21 @@
                         <td>0015</td>
                         <td>Incapacidad</td>
                         <td>Jhon Jairo Campillo Londoño</td>
-                        <td><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a data-toggle="modal" href="#detalle1"><img src="../img/detallar.jpg" height="20px"></a></td>
+                        <td><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a data-toggle="modal" href="#detalle1"><button class="btn btn-primary  glyphicon glyphicon-eye-open Detalle"></button></a></td>
 
                     </tr>
                     <tr>
                         <td>0016 </td>
                         <td>Renuncia</td>
                         <td>Edwin Arturo Saénz Barón </td>
-                        <td><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a data-toggle="modal" href="#detalle2"><img src="../img/detallar.jpg" height="20px"></a></td>
+                        <td><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a data-toggle="modal" href="#detalle2"><button class="btn btn-primary  glyphicon glyphicon-eye-open Detalle"></button></a></td>
 
                     </tr>
                     <tr>
                         <td>0017</td>
                         <td>Permiso</td>
                         <td>Jhon Wilmar Venté Riascos</td>
-                        <td><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a data-toggle="modal" href="#detalle3"><img src="../img/detallar.jpg" height="20px"></a></td>
+                        <td><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a data-toggle="modal" href="#detalle3"><button class="btn btn-primary  glyphicon glyphicon-eye-open Detalle"></button></a></td>
 
                     </tr>
 
@@ -88,14 +88,14 @@
                         <td>0018</td>
                         <td>Incapacidad</td>
                         <td>Oscar</td>
-                        <td><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a data-toggle="modal" href="#detalle4"><img src="../img/detallar.jpg" height="20px"></a></td>
+                        <td><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a data-toggle="modal" href="#detalle4"><button class="btn btn-primary  glyphicon glyphicon-eye-open Detalle"></button></a></td>
 
                     </tr>
 
                 </tbody>
             </table>
         </div>
-    </div>
+    </div><br><br>
      <div class="modal fade" id="detalle1" role="dialog">
         <div class="modal-dialog">
             <!-- Cabecera del modal-->

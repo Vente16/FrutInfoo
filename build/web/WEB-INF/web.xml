@@ -172,6 +172,10 @@
         <servlet-name>RegVentas</servlet-name>
         <servlet-class>Controlador.RegVentas</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>RegistrarDomicilio</servlet-name>
+        <servlet-class>Controlador.RegistrarDomicilio</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Validar</servlet-name>
         <url-pattern>/Validar</url-pattern>
@@ -339,6 +343,10 @@
     <servlet-mapping>
         <servlet-name>RegVentas</servlet-name>
         <url-pattern>/RegVentas</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegistrarDomicilio</servlet-name>
+        <url-pattern>/RegistrarDomicilio</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

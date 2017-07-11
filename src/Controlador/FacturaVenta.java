@@ -103,7 +103,7 @@ public class FacturaVenta extends HttpServlet {
 
             /*Crear tabla*/
             PdfPTable tabla = new PdfPTable(6);
-            tabla.addCell("Id Producto");
+            tabla.addCell("Producto");
             tabla.addCell("Cantidad Producto");
             tabla.addCell("Valor");
             tabla.addCell("Iva");
@@ -121,12 +121,15 @@ public class FacturaVenta extends HttpServlet {
 
             while (rs.next()) {
 
+               
+        
                 tabla.addCell(rs.getString(2));
                 tabla.addCell(rs.getString(3));
                 tabla.addCell(rs.getString(4));
                 tabla.addCell(rs.getString(5));
                 tabla.addCell(rs.getString(6));
                 tabla.addCell(rs.getString(7));
+                
               
 
             }

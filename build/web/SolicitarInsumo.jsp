@@ -6,7 +6,7 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
             <title>Solicitar Insumo</title>
@@ -17,7 +17,7 @@
                         <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
                           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
                         </head>
-                        <%@include file="../headerModulos.jspf"%>
+                       <%@include file="headerModulos.jspf"%>
                         <body>
 
                             <div class="container">
@@ -79,4 +79,4 @@
                             <script src="js/ValidarSolIns.js"></script>
                         </body>
 
-                        </html>
+                        

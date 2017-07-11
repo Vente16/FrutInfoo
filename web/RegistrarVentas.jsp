@@ -17,19 +17,25 @@
         <link rel="stylesheet" href="css/estilos2.css">
     </head>
     <body>
-        <%@include file="headerModulos.jspf" %><br>
+        <style>
+             div.container {
+                width: 50%;
+                
+            }
+        </style>
+        <%@include file="headerModulos.jspf" %>
         <main>
             <div class="container">
                 <div style="margin-top: 100px">
                     <h2 style="text-align: center;">Registro de Ventas</h2><br><br>
                 </div>
-                <div class="continer-propio">
+                <div class="continer">
                     <form  class="form-horizontal" role= "form" action="RegVentas" method="post">
 
                         <div class="form-group">    
                             <label class="col-sm-2 control-label" for="inputSuccess">
                                 <span class="titulo">Nombre producto</span></label>
-                            <div class="col-sm-12 col-md-4">
+                            <div class="col-xs-8">
                                 <select class="form-control" name="producto">
                                     <option>Banana Split</option>
                                     <option>Brevas</option>
@@ -54,37 +60,41 @@
                         </div>
 
                             <div id="cantidadv" class="form-group">
-                                <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Cantidad del Producto</span></label>
-                                <div class="col-sm-12 col-md-4">
+                                <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Cantidad Producto</span></label>
+                                <div class="col-xs-8">
                                     <input id="cantidad" type="text" name="cantidad" class="form-control"  placeholder="Ingrese la cantidad del producto "><br>
                                     <span class="" id="validar"></span>
                                 </div>
+                            </div>
 
                                 <div id="preciov" class="form-group">
                                     <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Precio Unitario</span></label>
-                                    <div class="col-sm-12 col-md-4">
+                                    <div class="col-xs-8">
                                         <input id="precio" type="text" name="precio" class="form-control"  placeholder="Ingrese el precio del producto "><br>
                                         <span class="" id="validar"></span>
                                     </div>
+                                </div>
 
                                     <div id="ivav" class="form-group">
                                         <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Iva</span></label>
-                                        <div class="col-sm-12 col-md-4">
+                                        <div class="col-xs-8">
                                             <input id="iva" type="text" name="iva" class="form-control"  placeholder="Ingrese el precio del producto "><br>
                                             <span class="" id="validar"></span>
                                         </div>
+                                    </div>
 
                                         <div id="totalv" class="form-group">
                                             <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Total del Producto</span></label>
-                                            <div class="col-sm-12 col-md-4">
+                                            <div class="col-xs-8">
                                                 <input id="total" type="text" name="total" class="form-control"  placeholder="Ingrese el total del producto "><br>
                                                 <span class="" id="validar"></span>
                                             </div>
+                                        </div>
 
-                                            <div class="form-group">    
+                                            <div class="form-group" >    
                                                 <label class="col-sm-2 control-label" for="inputSuccess">
                                                     <span class="titulo">tipo de venta</span></label>
-                                                <div class="col-sm-12 col-md-4">
+                                                <div class="col-xs-8">
                                                     <select class="form-control" name="Tventa">
                                                         <option>Domicilio</option>
                                                         <option>Efectivo</option>
@@ -95,7 +105,7 @@
 
                                             <div  id="fecha" class="form-group">
                                                 <label  class="col-sm-2 control-label" for="inputSuccess"><span class="titulo"><b>Fecha de la Venta</b></span></label>
-                                                <div class="col-sm-12 col-md-4">
+                                                <div class="col-xs-8">
                                                     <input  id="fecha" type="date" name="FechaVen" class="form-control" placeholder="dd/mm/aa"><br>
                                                     <span class="" id="validar"></span>
                                                 </div>
@@ -103,7 +113,7 @@
 
                                             <div  id="hora" class="form-group">
                                                 <label  class="col-sm-2 control-label" for="inputSuccess"><span class="titulo"><b>Hora de la Venta</b></span></label>
-                                                <div class="col-sm-12 col-md-4">
+                                                <div class="col-xs-8">
                                                     <input  id="fecha" type="text" name="hora" class="form-control" placeholder="xx:xx am/pm"><br>
                                                     <span class="" id="validar"></span>
                                                 </div>
@@ -112,7 +122,7 @@
 
                                             <div id="pedidov" class="form-group">
                                                 <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Id_del pedido</span></label>
-                                                <div class="col-sm-12 col-md-4">
+                                                <div class="col-xs-8">
                                                     <input id="pedido" type="number" name="IdPedido" class="form-control"  placeholder="Ingrese el número del pedido"><br>
                                                     <span class="" id="validar"></span>
                                                 </div>
@@ -120,14 +130,14 @@
 
                                             <div  id="clientev" class="form-group">
                                                 <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Id_del cliente</span></label>
-                                                <div class="col-sm-12 col-md-4">
+                                                <div class="col-xs-8">
                                                     <input id="cliente" type="number" class="form-control" name="IdCliente"  placeholder="Ingrese el número del cliente"><br>
                                                     <span class="titulo" id="validar"></span>
                                                 </div>
                                             </div>
 
                                             <div class="form-group">
-                                                <div class="col-sm-12 col-md-4">
+                                                <div class="col-xs-8">
                                                     <button type="submit" class="btn btn-success">REGISTRAR</button>
                                                 </div>
                                             </div>

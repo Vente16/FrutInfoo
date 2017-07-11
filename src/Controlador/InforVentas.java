@@ -47,28 +47,42 @@ public class InforVentas extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-       response.setContentType("application/pdf");
-       
-        OutputStream out = response.getOutputStream();/**Se abre el flujo de salida del PDF**/
-        
+        response.setContentType("application/pdf");
+
+        OutputStream out = response.getOutputStream();
+        /**
+         * Se abre el flujo de salida del PDF*
+         */
+
         PreparedStatement st;
         ResultSet rs;
 
         try {
 
-            Document documento = new Document();/**Creacion de nuestro documento PDF mediante la clase Document**/
-            PdfWriter.getInstance(documento, out);/**Asociar documento con la salida**/
-            documento.open();/**Apertura del documento**/
-            
-            
-              /*Agregar imagen*/
+            Document documento = new Document();
+            /**
+             * Creacion de nuestro documento PDF mediante la clase Document*
+             */
+            PdfWriter.getInstance(documento, out);
+            /**
+             * Asociar documento con la salida*
+             */
+            documento.open();
+            /**
+             * Apertura del documento*
+             */
+
+
+            /*Agregar imagen*/
             Image imagen = Image.getInstance("C:/Users/Home/Documents/NetBeansProjects/La Jugosa/logo.png");
             imagen.setAlignment(Element.ALIGN_CENTER);
             imagen.scaleToFit(50, 50);/*Tamaño de la imagen mediante el metodo scale*/
             imagen.setAlignment(Image.ALIGN_TOP | Image.TEXTWRAP);/*Alinear imagen colocandose acomodandose respecto a la tabla*/
             documento.add(imagen);
-            
-             /**Titulo del PDF**/  
+
+            /**
+             * Titulo del PDF*
+             */
             Paragraph P = new Paragraph();/*Definir titulo del PDF*/
             Font fontitulo = new Font(Font.FontFamily.HELVETICA, 20, Font.BOLD, BaseColor.RED);/*Tipo de fuente del titulo*/
             P.add(new Phrase("INFORME DE VENTAS", fontitulo));/*Tipo de fuente del Texto*/
@@ -79,18 +93,18 @@ public class InforVentas extends HttpServlet {
             P.add(new Phrase(Chunk.NEWLINE));
             P.add(new Phrase(Chunk.NEWLINE));
             documento.add(P);/*Agregar el texto que se creo con todas sus fuentes al documento*/
-            
-            /*Parrafo del PDF*/  
+
+ /*Parrafo del PDF*/
             Paragraph P1 = new Paragraph();
             Font fondescrip = new Font(Font.FontFamily.TIMES_ROMAN, 16, Font.NORMAL, BaseColor.BLACK);
             P1.add(new Phrase("Este es un informe detallado de ventas", fondescrip));
             P1.setAlignment(Element.ALIGN_JUSTIFIED);
             P1.add(new Phrase(Chunk.NEWLINE));
             P1.add(new Phrase(Chunk.NEWLINE));
-               P1.add(new Phrase(Chunk.NEWLINE));
+            P1.add(new Phrase(Chunk.NEWLINE));
             P1.add(new Phrase(Chunk.NEWLINE));
             documento.add(P1);
-            
+
 
             /*Crear tabla*/
             PdfPTable tabla = new PdfPTable(7);
@@ -102,8 +116,6 @@ public class InforVentas extends HttpServlet {
             tabla.addCell("Tipo venta");
             tabla.addCell("Fecha venta");
             tabla.setWidthPercentage(100);
-            
-            
 
             Conexion c = new Conexion();
             Connection con = c.Conectar();
@@ -113,27 +125,24 @@ public class InforVentas extends HttpServlet {
 
             while (rs.next()) {
 
-               
+                tabla.addCell(rs.getString(2));
                 tabla.addCell(rs.getString(3));
                 tabla.addCell(rs.getString(4));
                 tabla.addCell(rs.getString(5));
                 tabla.addCell(rs.getString(6));
                 tabla.addCell(rs.getString(7));
                 tabla.addCell(rs.getString(8));
-                tabla.addCell(rs.getString(9));
-                
 
             }
-            
-          
+
             documento.add(tabla);
-            
+
             SimpleDateFormat formateador = new SimpleDateFormat("dd 'de' MMMM 'de' yyyy", new Locale("es_ES"));
             Date fechaDate = new Date();
             String fecha = formateador.format(fechaDate);
-            documento.add(new Paragraph(fecha+"\n" ));
-            documento.add(new Paragraph("" ));
-            
+            documento.add(new Paragraph(fecha + "\n"));
+            documento.add(new Paragraph(""));
+
             documento.close();
 
         } catch (Exception e) {
