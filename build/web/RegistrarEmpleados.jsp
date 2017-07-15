@@ -105,7 +105,7 @@
                 <div id="horainiv" class="form-group">
                     <label class="col-sm-2 control-label" for="inputSuccess" ><span class="titulo">Hora inicio</span></label>
                     <div class="col-xs-10">
-                        <input name="horaini" type="text" class="form-control" id="horaini"  placeholder="Ingrese el barrio donde vive"><br>
+                        <input name="horaini" type="time" class="form-control" id="horaini"  placeholder="Ingrese el barrio donde vive"><br>
                         <span class="" id="validarhoraini"></span>
                     </div>
                 </div>
@@ -113,7 +113,7 @@
                 <div id="horasalv" class="form-group">
                     <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo"><b>Hora salida</b></span></label>
                     <div class="col-xs-10">
-                        <input  name="horasal"  type="text" class="form-control" id="horasal"  placeholder="Ingrese su teléfono"><br>
+                        <input  name="horasal"  type="time" class="form-control" id="horasal"  placeholder="Ingrese su teléfono"><br>
                         <span class="" id="validarhorasal"></span>
                     </div>
                 </div>
