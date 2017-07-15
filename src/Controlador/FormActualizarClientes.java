@@ -58,7 +58,7 @@ public class FormActualizarClientes extends HttpServlet {
             out.println("<h4>Barrio <br> <input class='form-control' type='text' id='Barrio' value='" + rs.getString("Barrio") + "'></h4>");
             out.println("<h4>Dirección <br> <input class='form-control' type='text' id='Direccion' value=' " + rs.getString("Direccion") + "'></h4>");
             out.println("<h4>Celular <br> <input class='form-control' type='text' id='Celular' value=' " + rs.getString("Celular") + "'></h4>");
-            out.println("<h4>Fecha de nacimiento <br> <input class='form-control' type='text' id='FechaN' value=' " + rs.getString("Fecha de nacimiento") + "'></h4>");
+            out.println("<h4>Fecha de nacimiento <br> <input class='form-control' type='date' id='FechaN' value=' " + rs.getString("Fecha_nacimiento") + "'></h4>");
             out.println("<h4>Correo <br> <input class='form-control' type='text' id='Correo' value='" + rs.getString("Email") + "'></h4>");  
             out.println("<h4>Membrecia<br><select id='Membrecia' class='form-control'><option> " + rs.getString("Membrecia") + "</option><option>no</option></select></h4>");
           

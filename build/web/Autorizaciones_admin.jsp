@@ -112,7 +112,7 @@
             <a href="InfoInsumos" target="_blank"><button type="submit" class="btn btn-success">Informe Insumos</button></a>&nbsp;&nbsp;
             <a href="InforEmpleados" target="_blank"><button type="submit" class="btn btn-info">Informe Empleados</button></a>&nbsp;&nbsp;
             <a href="InforVentas" target="_blank"><button type="submit" class="btn btn-warning">Informe Ventas</button></a>
-        </div><br><br>
+        </div>
         
         </main>
       <%@include file="footerModulos.jspf"%> 

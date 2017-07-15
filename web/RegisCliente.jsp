@@ -15,7 +15,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/estilos2.css">
-        <script src="js/validacion2.js"></script>
+        <script src="js/validacionFormCliente.js"></script>
        
     </head>
     <body>
@@ -51,30 +51,32 @@
                     <div id="documentov" class="form-group">
                         <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Número documento</span></label>
                         <div class="col-xs-10">
-                            <input id="documento" type="text" class="form-control"  placeholder="Ingrese su número de documento"><br>
+                            <input id="documento" type="text" class="form-control" name="documento"  placeholder="Ingrese su número de documento"><br>
                             <span class="" id="validar"></span>
                         </div>
                     </div>
                     
-                    <div  id="nombres" class="form-group">
+                    <div  id="nombresv" class="form-group">
                         <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Nombres</span></label>
                         <div class="col-xs-10">
                             <input  type="text" class="form-control" id="nombres" name="nombres"  placeholder="Ingrese los nombres del empleado"><br>
-                            <span class="titulo"></span>
+                            <span  id="validarn"></span>
                         </div>
                     </div>
                     
-                    <div id="apellidos" class="form-group">
+                    <div id="apellidosv" class="form-group">
                         <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo"><b>Apellidos</b></span></label>
                         <div class="col-xs-10">
                             <input  name="apellidos" type="text" class="form-control" id="apellidos" placeholder="Ingrese los apellidos del empleado"><br>
+                            <span class="" id="validara"></span>
                         </div>
                     </div>
                    
-                    <div  id="fecha" class="form-group">
+                    <div  id="fechav" class="form-group">
                         <label  class="col-sm-2 control-label" for="inputSuccess"><span class="titulo"><b>Fecha de Nacimiento</b></span></label>
                         <div class="col-xs-10">
                             <input type="date" name="FechaNac" class="form-control" id="fecha"  placeholder="dd/mm/aa"><br>
+                            <span class="" id="validarf"></span>
                         </div>
                     </div>
                         
@@ -83,42 +85,48 @@
                         <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Email</span></label>
                         <div class="col-xs-10">
                             <input type="text" class="form-control" id="email" name="Email" placeholder="Ingrese su cuenta de correo electrónico">
+                            <span class="" id="validare"></span>
                         </div>
                     </div>
                         
 
-                    <div  id="municipio" class="form-group">
+                    <div  id="municipiov" class="form-group">
                         <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Municipio</span></label>
                         <div class="col-xs-10">
                             <input name="Municipio" type="text" class="form-control" id="municipio"  placeholder="Ingrese el Municipio donde actualmente vive"><br>
+                            <span class="" id="validarm"></span>
                         </div>
                     </div>
                 
-                    <div  id="direccion" class="form-group">   
+                    <div  id="direccionv" class="form-group">   
                         <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Dirección</span></label>
                         <div class="col-xs-10">
                             <input  name="direccion" type="text" class="form-control" id="direccion" placeholder="Ingrese su Dirección completa"><br>
+                            <span class="" id="validard"></span>
                         </div>
                     </div>
                 
-                    <div id="barrio" class="form-group">
+                    <div id="barriov" class="form-group">
                         <label class="col-sm-2 control-label" for="inputSuccess" ><span class="titulo">Barrio</span></label>
                         <div class="col-xs-10">
                             <input name="Barrio" type="text" class="form-control" id="barrio"  placeholder="Ingrese el barrio donde vive"><br>
+                            <span class="" id="validarb"></span>
                         </div>
                     </div>
                 
-                    <div id="telefono" class="form-group">
+                    <div id="telefonov" class="form-group">
                         <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo"><b>Teléfono</b></span></label>
                         <div class="col-xs-10">
                             <input  name="telefono"  type="text" class="form-control" id="telefono"  placeholder="Ingrese su teléfono"><br>
+                            <span class="" id="validart"></span>
                         </div>
                     </div>
                 
-                    <div id="celular" class="form-group">
+                    <div id="celularv" class="form-group">
                         <label  class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Celular</span></label>
                         <div class="col-xs-10">
                         <input name="celular"  type="text" class="form-control" id="celular"  placeholder="Ingrese su número"><br>
+                        <span class="" id="validarc"></span>
                         </div>
                     </div>
                 

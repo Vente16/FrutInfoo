@@ -21,13 +21,17 @@
        
         <%@include file="headerModulos.jspf" %> 
         
-           
+        <<main>
+        
+              
       <div class="container Cont">
           <div class="jumbotron alert alert-success">
               <h1>Bienvenido al Sistema!</h1>
               
           </div>
       </div>
+        
+        </main>
         <%@include file="footerModulos.jspf" %>
         
     </body>

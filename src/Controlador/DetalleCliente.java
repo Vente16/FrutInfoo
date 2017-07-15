@@ -57,7 +57,7 @@ public class DetalleCliente extends HttpServlet {
             out.println("<h4>Barrio: " + rs.getString("Barrio") + "</h4>");
             out.println("<h4>Dirección: " + rs.getString("Direccion") + "</h4>");
             out.println("<h4Celular: " + rs.getString("Celular") + "</h4>");
-            out.println("<h4>Fecha de nacimiento: " + rs.getString("Fecha de nacimiento") + "</h4>");
+            out.println("<h4>Fecha de nacimiento: " + rs.getString("Fecha_nacimiento") + "</h4>");
             out.println("<h4>Correo: " + rs.getString("Email") + "</h4>");  
             out.println("<h4>Membrecia: " + rs.getString("Membrecia") + "</h4>");
             

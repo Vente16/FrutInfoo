@@ -56,10 +56,6 @@
                     <input type="text" name="celular" class="form-control" placeholder="Ingrese su número celular">
                 </div>
                  <div class="form-group">
-                    <label><h4>Municipio:</h4></label>
-                    <input type="text" name="municipio" class="form-control" placeholder="Ingrese el municipio en el cual vive">
-                </div>
-                 <div class="form-group">
                     <label><h4>Dirección:</h4></label>
                     <input type="text" name="direccion" class="form-control" placeholder="Ingrese su direccion completa">
                  </div><br>
