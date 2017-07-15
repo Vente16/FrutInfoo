@@ -21,7 +21,7 @@
        
         <%@include file="headerModulos.jspf" %> 
         
-        <<main>
+        <main>
         
               
       <div class="container Cont">
