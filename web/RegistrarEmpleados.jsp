@@ -1,4 +1,4 @@
-<%-- 
+<%--
     Document   : RegistrarEmpleados
     Created on : 26/02/2017, 09:15:36 AM
     Author     : adsi
@@ -22,12 +22,12 @@
         <style>
                      div.container {
                        width: 50%;
-                
+
                    }
         </style>
     <%@include file="headerModulos.jspf"%>
-
-    <div class="container">
+    <main>
+        <div class="container">
         <div style="margin-top: 100px">
             <h2 style="text-align: center;">Registro de empleados</h2><br><br>
         </div>
@@ -35,7 +35,7 @@
         <div class="continer-propio">
             <form class="form-horizontal" role= "form" action="RegEmpleado" method="post">
 
-                <div id="nombrev" class="form-group">    
+                <div id="nombrev" class="form-group">
                     <label class="col-sm-2 control-label" for="inputSuccess">
                     <span class="titulo">Nombre</span></label>
                     <div class="col-xs-10">
@@ -94,7 +94,7 @@
                     </div>
                 </div>
 
-                <div  id="finconv" class="form-group">   
+                <div  id="finconv" class="form-group">
                     <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Fin de contrato</span></label>
                     <div class="col-xs-10">
                         <input  name="fincon" type="date" class="form-control" id="fincon" placeholder="Ingrese su Dirección completa"><br>
@@ -137,7 +137,7 @@
                             <option>Cédula de Extranjería (CE)</option>
                             <option>Otros</option>
                         </select>
-                    </div>  
+                    </div>
                 </div>
 
                 <div class="form-group">
@@ -155,7 +155,7 @@
                             <option value="9">Bello</option>
                             <option value="10">Belén</option>
                         </select>
-                    </div>  
+                    </div>
                 </div>
 
                 <div class="form-group">
@@ -169,10 +169,10 @@
                             <option value="5">Secretaria</option>
                             <option value="6">Director RRHH</option>
                         </select>
-                    </div>  
+                    </div>
                 </div>
 
-                <div  id="fechanacv" class="form-group">   
+                <div  id="fechanacv" class="form-group">
                     <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">fecha de naciemiento</span></label>
                     <div class="col-xs-10">
                         <input  name="fechanac" type="date" class="form-control" id="fechanac" placeholder="Ingrese su Dirección completa"><br>
@@ -197,5 +197,7 @@
             </form>
         </div>
     </div>
+    </main>
+    <%@include file="footer.jspf" %>
     </body>
 </html>
