@@ -32,7 +32,7 @@
                 <h2 style="text-align: center;">Registro del Cliente</h2><br><br>
             </div>
                 <div class="continer-propio">
-                    <form data-toggle= "validator" class="form-horizontal" role= "form" action="RegCliente" method="post">
+                 <form data-toggle= "validator" class="form-horizontal" role= "form" action="RegCliente" method="post">
                  
                     <div class="form-group">    
                         <label class="col-sm-2 control-label" for="inputSuccess">

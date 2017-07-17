@@ -296,6 +296,7 @@
                         <li><a href="RegisCliente.jsp">Registrar clientes</a></li>
                         <li><a href="SolicitarDomicilio.jsp">Solicitar domicilio</a></li>
                         <!-- <li><a href="#">Actualizar Cliente</a></li>-->
+
                     </ul>
                 </li>
 
