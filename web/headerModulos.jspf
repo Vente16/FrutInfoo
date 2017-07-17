@@ -295,8 +295,8 @@
                     <ul class="dropdown-menu">
                         <li><a href="RegisCliente.jsp">Registrar clientes</a></li>
 
-                        <li><a href="#">Solicitar domicilio</a></li>
-                         <li><a href="#">Actualizar Cliente</a></li>
+                        <li><a href="SolicitarDomicilio.jsp">Solicitar domicilio</a></li>
+                         <li><a href="">Actualizar Cliente</a></li>
                     </ul>
                 </li>
 
