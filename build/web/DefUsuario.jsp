@@ -40,7 +40,7 @@
                     <p>has acabado de registrar a un cliente por favor crea un usuario</p>
                     <form action="RegUsuario" class="form-group-sm">
                         <div class="form-group">
-                            <label for="#nomre">Nombre</label>
+                            <label for="#nombre">Nombre</label>
                             <input type="text" class="form-control" id="nombre" value="<%= nombre%>" name="nombre" >
                         </div>
                         <div class="form-group">

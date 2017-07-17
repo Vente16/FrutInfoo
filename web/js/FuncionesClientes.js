@@ -48,23 +48,21 @@ $(document).ready(function () {
         var Fecha = $('#FechaN').val();
         var Correo = $('#Correo').val();
         var Membrecia = $('#Membrecia').val();
-        var Documento = $('#Document').html();
 
 
         $.post('ActualizarCliente',
                 {"Id": Id,
                     "Nombre": Nombre,
-                   "TipoD": TipoD,
                     "Apellido": Apellido,
                     "Telefono": Telefono,
                     "Municipio": Municipio,
                     "Barrio": Barrio,
                     "Direccion": Direccion,
                     "Celular": Celular,
-                  "FechaN": Fecha,
+                    "TipoD": TipoD,
+                    "FechaN": Fecha,
                     "Correo": Correo,
-                    "Membrecia": Membrecia,
-                   "Documneto": Documento
+                    "Membrecia": Membrecia
                 }, function (Actualizar) {
 
             toastr.success(Actualizar);

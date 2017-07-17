@@ -37,12 +37,25 @@
                         <table class="table table-hover">
                             <thead>
                                 <tr>
+                                    <%
+                                        String rol =(String) session.getAttribute("rol");
+                                        if (rol.equals("Asistente Administrativo")) {
+                                            
+                                    %>
+                                    <th>Documento</th>
+                                    <th>Nombre</th>
+                                    <th>Cargo</th>
+                                    <th>Detalle</th>
+                                    <% }else{
+                                    %>
                                     <th>Documento</th>
                                     <th>Nombre</th>
                                     <th>Cargo</th>
                                     <th>Detalle</th>
                                     <th>Actualizar</th>
                                     <th>Eliminar</th>
+                                    <% }
+                                    %>
                                 </tr>
                             </thead>
                             <%
@@ -62,13 +75,25 @@
                                 while (reE.next()) {
                             %>
                             <tbody>
+                                <%
+                                        if (rol.equals("Asistente Administrativo")) {
+                                            
+                                    %>
                                 <tr class="<%= reE.getString("id_empleado")%>">
+                                    <td class="Documento"><%= reE.getString("Documento")%></td>
+                                    <td class=""><%= reE.getString("Nombre")%></td>
+                                    <td><%= reE.getString("Nombre_cargo")%></td>
+                                    <td><a href="#Detalle"  data-toggle="modal"><button class="btn btn-primary  glyphicon glyphicon-eye-open Detalle"></button></a></td>
+                                    <% }else{
+                                    %>
                                     <td class="Documento"><%= reE.getString("Documento")%></td>
                                     <td class=""><%= reE.getString("Nombre")%></td>
                                     <td><%= reE.getString("Nombre_cargo")%></td>
                                     <td><a href="#Detalle"  data-toggle="modal"><button class="btn btn-primary  glyphicon glyphicon-eye-open Detalle"></button></a></td>
                                     <td><a href="#Actualizar"  data-toggle="modal"><button class="btn btn-success glyphicon glyphicon-edit Actualizar"></button></a></td>
                                     <td><button class="btn btn-danger glyphicon glyphicon-trash Eliminar"></button></td>
+                                    <% }
+                                    %>
                                 </tr>
                             </tbody>
                             <%}%>

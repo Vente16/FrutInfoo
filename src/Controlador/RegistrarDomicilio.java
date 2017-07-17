@@ -67,21 +67,19 @@ public class RegistrarDomicilio extends HttpServlet {
             String Apellidos = request.getParameter("apellidos");
             String Telefono = request.getParameter("telefono");
             String Celular = request.getParameter("celular");
-            String Municipio = request.getParameter("municipio");
             String Direccion = request.getParameter("direccion");
 
             Conexion c = new Conexion();
             Connection con = c.Conectar();
 
-            PreparedStatement Ps = con.prepareStatement("INSERT INTO `domicilio` (producto, cantidad, nombres, apellidos, telefono, celular, municipio, direccion) VALUES(?,?,?,?,?,?,?,?");
+            PreparedStatement Ps = con.prepareStatement("INSERT INTO domicilio (producto, cantidad, nombres, apellidos, teléfono, celular, dirección) VALUES (?,?,?,?,?,?,?);");
             Ps.setString(1, Producto);
             Ps.setString(2, Cantidad);
             Ps.setString(3, Nombres);
             Ps.setString(4, Apellidos);
             Ps.setString(5, Telefono);
             Ps.setString(6, Celular);
-            Ps.setString(7, Municipio);
-            Ps.setString(8, Direccion);
+            Ps.setString(7, Direccion);
 
             Ps.executeUpdate();
 

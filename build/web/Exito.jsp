@@ -18,7 +18,7 @@
     <body>
       <%@include file="headerModulos.jspf"%>
         
-        
+      <main> 
       <div class="container Cont">
           <div class="jumbotron alert alert-success">
               <h1>Registró correctamente!</h1>
@@ -26,7 +26,7 @@
           </div>
       </div>
 
-        
+        </main>
  
         
         
