@@ -101,8 +101,8 @@
         <servlet-class>Controlador.DetalleCliente</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>FormActualizarCliente</servlet-name>
-        <servlet-class>Controlador.FormActualizarCliente</servlet-class>
+        <servlet-name>FormActualizarClientes</servlet-name>
+        <servlet-class>Controlador.FormActualizarClientes</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>ActualizarCliente</servlet-name>
@@ -149,16 +149,8 @@
         <servlet-class>Controlador.DetalleEmpleado</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>ActualizarClienteForm</servlet-name>
-        <servlet-class>Controlador.ActualizarClienteForm</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>ActualizarEmpleadoForm</servlet-name>
-        <servlet-class>Controlador.ActualizarEmpleadoForm</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>FormActualizarClientes</servlet-name>
-        <servlet-class>Controlador.FormActualizarClientes</servlet-class>
+        <servlet-name>FormActualizarEmpleados</servlet-name>
+        <servlet-class>Controlador.FormActualizarEmpleados</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>EliminarEmpleado</servlet-name>
@@ -175,6 +167,10 @@
     <servlet>
         <servlet-name>RegistrarDomicilio</servlet-name>
         <servlet-class>Controlador.RegistrarDomicilio</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ActualizarEmpleado</servlet-name>
+        <servlet-class>Controlador.ActualizarEmpleado</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>Validar</servlet-name>
@@ -273,8 +269,8 @@
         <url-pattern>/DetalleCliente</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>FormActualizarCliente</servlet-name>
-        <url-pattern>/FormActualizarCliente</url-pattern>
+        <servlet-name>FormActualizarClientes</servlet-name>
+        <url-pattern>/FormActualizarClientes</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>ActualizarCliente</servlet-name>
@@ -321,16 +317,8 @@
         <url-pattern>/DetalleEmpleado</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>ActualizarClienteForm</servlet-name>
-        <url-pattern>/ActualizarClienteForm</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>ActualizarEmpleadoForm</servlet-name>
-        <url-pattern>/ActualizarEmpleadoForm</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>FormActualizarClientes</servlet-name>
-        <url-pattern>/FormActualizarClientes</url-pattern>
+        <servlet-name>FormActualizarEmpleados</servlet-name>
+        <url-pattern>/FormActualizarEmpleados</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>EliminarEmpleado</servlet-name>
@@ -347,6 +335,10 @@
     <servlet-mapping>
         <servlet-name>RegistrarDomicilio</servlet-name>
         <url-pattern>/RegistrarDomicilio</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ActualizarEmpleado</servlet-name>
+        <url-pattern>/ActualizarEmpleado</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

@@ -49,7 +49,8 @@ public class DetalleEmpleado extends HttpServlet {
             System.out.println(Id);
             while(rs.next()){
           
-            out.println("<h4>Documento:  " +  rs.getString("Documento") + "   -- Tipo de documento: "+rs.getString("Tipo_documento")+"</h4>");
+            out.println("<h4>Tipo de documento:"+rs.getString("Tipo_documento")+"</h4>");
+            out.println("<h4>Documento:  " +  rs.getString("Documento") +"</h4>");
             out.println("<h4>Nombre:  " + rs.getString("Nombre") + "</h4>");
             out.println("<h4>Apellido: " + rs.getString("Apellido")+ "</h4>");
             out.println("<h4>Telefóno: " + rs.getString("Telefono") + "</h4>");

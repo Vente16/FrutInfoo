@@ -82,7 +82,7 @@ public class ActualizarCliente extends HttpServlet {
             Conexion c = new Conexion();
             Connection co = c.Conectar();
             
-            PreparedStatement st = co.prepareStatement("UPDATE Clientes SET Nombre=?, Apellido=?, Telefono=?, Municipio=?, Barrio=?, Direccion=?, Celular=?, Tipo_Documento=?, Fecha_nacimiento=?, Email=?, Membrecia=? WHERE Id=?;");
+            PreparedStatement st = co.prepareStatement("UPDATE clientes SET Nombre=?, Apellido=?, Telefono=?, Municipio=?, Barrio=?, Direccion=?, Celular=?, Tipo_Documento=?, Fecha_nacimiento=?, Email=?, Membrecia=? WHERE Id=?;");
             st.setString(1, Nombre);
             st.setString(2, Apellido);
             st.setString(3, Telefono);
