@@ -16,93 +16,128 @@
         <link rel="stylesheet" href="css/estilos2.css">
        
     </head>
-    <%@include file="headerModulos.jspf"%>
+    
     <body>
-        <div style="padding-bottom: 40px">
-            <section class="container" id="main">
-                <div class="container-fluid"></div>
+        <style>
+              div.container {
+                width: 50%;
+                
+            }
+        </style>
+        <%@include file="headerModulos.jspf"%>
+        <main>
+            <div class="container">
+                <div style="margin-top: 100px">
+                    <h2 style="text-align: center;">Registrar Insumos</h2><br><br>
+                </div>      
+            
+                <div class="continer-propio">
+                <form data-toggle= "validator" class="form-horizontal" role= "form" action="RegInsumo" method="post" id="FormRegisIns" >
 
-                <h2 style="text-align: center;">REGISTRAR INSUMOS</h2>
-                <p style="text-align: center;">Registre aqui el Insumo actual.</p>
-
-                <form action="RegInsumo" method="post" id="FormRegisIns" >
-
-                    <br>
-
-                    <div class="form-group">
-                        <label class= "control-label" for="Codigo">Codigo:</label>
-                        <input type="text" class="form-control" name="codigo" >
-
+                   <div class="form-group">
+                        <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Codigo</span></label>
+                        <div class="col-xs-10">
+                            <input id="codigo" type="text" class="form-control" name="codigo"  placeholder="Digite el Codigo del insumo"><br>
+                            <span class="" id="validar"></span>
+                        </div>
                     </div>
-                    <br>
+
+                    
+                 
                        <div class="form-group ">
-                        <label for="Prioridad">Proveedor: </label>
+                      <label class="col-sm-2 control-label" for="inputSuccess">
+                            <span class="titulo">Proveedor</span></label>
+                            <div class="col-xs-10">
                          <select class="form-control" name="proveedor">
                             <option value="1">Helados S.A</option>
                             <option value="2">Desechables S.A</option>
                             <option value="3">Minorista</option>
                         </select>
+                            </div>          
                     </div>
-                    <br>
+                    
                     <div class="form-group">
-                        <label for="Tipo">Tipo: </label>
-                        <input type="text" class="form-control" name="tipo">
+                        <<label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Tipo</span></label>
+                        <div class="col-xs-10">
+                            <input id="tipo" type="text" class="form-control" name="tipo"  placeholder="Digite el tipo de insumo"><br>
+                            <span class="" id="validar"></span>
+                        </div>
                     </div>
 
-
-                    <br>
-                    <div class="form-group">
-                        <label for="Peso">Peso: </label>
-                        <input type="text" class="form-control" name="peso">
+                   <div class="form-group">
+                       <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Peso</span></label>
+                        <div class="col-xs-10">
+                            <input id="peso" type="text" class="form-control" name="peso"  placeholder="Digite el peso del insumo"><br>
+                            <span class="" id="validar"></span>
+                        </div>
                     </div>
-                    <br>
+                   
                     <div class="form-group ">
-                        <label for="Cantidad">Nombre Insumo:</label>
-                        <input type="text" class="form-control" name="nombre">
+                        <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Nombre Insumo</span></label>
+                        <div class="col-xs-10">
+                            <input id="nombre" type="text" class="form-control" name="nombre"  placeholder="Digite el nombre del insumo"><br>
+                            <span class="" id="validar"></span>
+                        </div>
                     </div>
-                    <br>
+                    
                     <div class="form-group  ">
-                        <label for="Cantidad">Cantidad:</label>
-                        <input type="text" class="form-control" name="cantidad">
+                        <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Cantidad</span></label>
+                        <div class="col-xs-10">
+                            <input id="cantidad" type="text" class="form-control" name="cantidad"  placeholder="Digite la cantidad"><br>
+                            <span class="" id="validar"></span>
+                        </div>
                     </div>
-                    <br>
+                    
                     <div class="form-group ">
-                        <label for="Valor">Valor: </label>
-                        <input type="text" class="form-control" name="valor">
+                        <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Valor</span></label>
+                        <div class="col-xs-10">
+                            <input id="valor" type="text" class="form-control" name="valor"  placeholder="Digite el valor del insumo"><br>
+                            <span class="" id="validar"></span>
+                        </div>
                     </div>
-                    <br>
+                    
                     <div class="form-group  ">
-                        <label for="Fecha de Ingreso">Fecha de Ingreso: </label>
-                        <input type="date" class="form-control" name="fecha_ingreso" placeholder="dd/mm/aa">
+                        <label  class="col-sm-2 control-label" for="inputSuccess"><span class="titulo"><b>Fecha de Ingreso</b></span></label>
+                        <div class="col-xs-10">
+                            <input type="date" name="fecha_ingreso" class="form-control" id="fecha_ingreso"  placeholder="dd/mm/aa"><br>
+                            <span class="" id="validarf"></span>
+                        </div>
                     </div> 
                     <br>
                     <div class="form-group ">
-                        <label for="Fecha de Vencimiento">Fecha de Vencimiento:</label>
-                        <input type="date" class="form-control"name="fecha_vencimiento"  placeholder="dd/mm/aa">
+                        <<label  class="col-sm-2 control-label" for="inputSuccess"><span class="titulo"><b>Fecha de Vencimiento</b></span></label>
+                        <div class="col-xs-10">
+                            <input type="date" name="FechaNac" class="form-control" id="fecha"  placeholder="dd/mm/aa"><br>
+                            <span class="" id="validarf"></span>
+                        </div>
                     </div>
                     <br>
                     <div class="form-group">
-                        <label for="Prioridad">Prioridad: </label>
-                        <input type="text" class="form-control" name="prioridad">
-                    </div>
-                    <br>
+                        <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Prioridad</span></label>
+                        <div class="col-xs-10">
+                            <input id="prioridad" type="text" class="form-control" name="prioridad"  placeholder="Digite la prioridad"><br>
+                            <span class="" id="validar"></span>
+                        </div>
+                    </div> <br> <br>
+                   
                  
                     <div class="form-group ">
-
+                        <div class="col-xs-8">
                         <button type="submit" class="btn btn-success">REGISTRAR</button>
-                        
-                      
-                       
-                    </div>
+                        </div>
+                     </div>
 
                 </form>
-            </section>
+                </div>
+                </div>
+                </main>
+          
 
-            <%@include file="footerModulos.jspf"%> 
-             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <%@include file="footer.jspf" %> 
+            <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
              <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
              <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"></script>
-             <script src="js/ValidarRegInsumo.js"></script> 
+             <script src="js/ValidarRegInsumo.js"></script> -->
              
     </body>
 </html>
