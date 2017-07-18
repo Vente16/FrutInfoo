@@ -84,8 +84,10 @@
                                     <td class=""><%= reE.getString("Nombre")%></td>
                                     <td><%= reE.getString("Nombre_cargo")%></td>
                                     <td><a href="#Detalle"  data-toggle="modal"><button class="btn btn-primary  glyphicon glyphicon-eye-open Detalle"></button></a></td>
+                                </tr>    
                                     <% }else{
                                     %>
+                                <tr class="<%= reE.getString("id_empleado")%>">    
                                     <td class="Documento"><%= reE.getString("Documento")%></td>
                                     <td class=""><%= reE.getString("Nombre")%></td>
                                     <td><%= reE.getString("Nombre_cargo")%></td>

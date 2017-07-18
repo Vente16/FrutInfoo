@@ -6,8 +6,7 @@ $(document).ready(function(){
      $('.Detalle').click(function () {
 
         var Id = $(this).parents('tr').attr('class');
-        
-
+        console.log("hola " + Id);
         $.get('DetalleEmpleado', {"Id": Id}, function (detalle) {
 
             $('.InfoDetalle').html(detalle);
