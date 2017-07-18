@@ -57,9 +57,9 @@
                         %>
                         <tr class="<%= re.getString("Id")%>">
                             
-                            <td class="Documento"><%= re.getString("Documento")%></td>
-                            <td class="Nombre"><%= re.getString("Nombre")%></td>
-                            <td class="Apellido"><%= re.getString("Apellido")%></td>
+                            <td ><%= re.getString("Documento")%></td>
+                            <td ><%= re.getString("Nombre")%></td>
+                            <td ><%= re.getString("Apellido")%></td>
                             <td><a href="#Detalle"  data-toggle="modal"><button class="btn btn-primary  glyphicon glyphicon-eye-open Detalle"></button></a></td>
                             <td><a href="#Actualizar"  data-toggle="modal"><button class="btn btn-success glyphicon glyphicon-edit Actualizar"></button></a></td>
                             <td><button class="btn btn-danger glyphicon glyphicon-trash Eliminar"></button></td>

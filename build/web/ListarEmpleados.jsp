@@ -80,21 +80,24 @@
                                             
                                     %>
                                 <tr class="<%= reE.getString("id_empleado")%>">
-                                    <td class="Documento"><%= reE.getString("Documento")%></td>
-                                    <td class=""><%= reE.getString("Nombre")%></td>
+                                    <td><%= reE.getString("Documento")%></td>
+                                    <td><%= reE.getString("Nombre")%></td>
                                     <td><%= reE.getString("Nombre_cargo")%></td>
                                     <td><a href="#Detalle"  data-toggle="modal"><button class="btn btn-primary  glyphicon glyphicon-eye-open Detalle"></button></a></td>
+                                </tr>    
                                     <% }else{
                                     %>
-                                    <td class="Documento"><%= reE.getString("Documento")%></td>
-                                    <td class=""><%= reE.getString("Nombre")%></td>
+                                <tr class="<%= reE.getString("id_empleado")%>">    
+                                    <td><%= reE.getString("Documento")%></td>
+                                    <td><%= reE.getString("Nombre")%></td>
                                     <td><%= reE.getString("Nombre_cargo")%></td>
                                     <td><a href="#Detalle"  data-toggle="modal"><button class="btn btn-primary  glyphicon glyphicon-eye-open Detalle"></button></a></td>
                                     <td><a href="#Actualizar"  data-toggle="modal"><button class="btn btn-success glyphicon glyphicon-edit Actualizar"></button></a></td>
                                     <td><button class="btn btn-danger glyphicon glyphicon-trash Eliminar"></button></td>
+                                    </tr>
                                     <% }
                                     %>
-                                </tr>
+                                
                             </tbody>
                             <%}%>
                         </table>

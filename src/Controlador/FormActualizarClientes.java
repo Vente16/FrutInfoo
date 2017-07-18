@@ -43,7 +43,7 @@ public class FormActualizarClientes extends HttpServlet {
             Conexion c = new Conexion();
             Connection co = c.Conectar();
             
-            PreparedStatement st = co.prepareStatement("SELECT *FROM Clientes WHERE Id=?");
+            PreparedStatement st = co.prepareStatement("SELECT *FROM clientes WHERE Id=?");
             st.setString(1, Id);
             
             ResultSet rs = st.executeQuery();

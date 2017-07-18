@@ -44,12 +44,13 @@ public class DetalleEmpleado extends HttpServlet {
             
            PreparedStatement st = co.prepareStatement("SELECT * FROM empleados INNER JOIN cargos ON empleados.id_cargo = cargos.id_cargo WHERE id_empleado=?");
             st.setString(1, Id);
-            
+           
             ResultSet rs = st.executeQuery();
-            
+            System.out.println(Id);
             while(rs.next()){
           
-            out.println("<h4>Documento:  " +  rs.getString("Documento") + "   -- Tipo de documento: "+rs.getString("Tipo_documento")+"</h4>");
+            out.println("<h4>Tipo de documento:"+rs.getString("Tipo_documento")+"</h4>");
+            out.println("<h4>Documento:  " +  rs.getString("Documento") +"</h4>");
             out.println("<h4>Nombre:  " + rs.getString("Nombre") + "</h4>");
             out.println("<h4>Apellido: " + rs.getString("Apellido")+ "</h4>");
             out.println("<h4>Telefóno: " + rs.getString("Telefono") + "</h4>");
@@ -62,6 +63,7 @@ public class DetalleEmpleado extends HttpServlet {
             out.println("<h4>Cargo: " + rs.getString("Nombre_cargo") + "</h4>");
             out.println("<h4>Fecha de nacimiento: " + rs.getString("Fecha_nacimiento") + "</h4>");
             out.println("<h4>Correo: " + rs.getString("Correo") + "</h4>");
+            
             }
             
             
