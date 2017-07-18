@@ -2,37 +2,17 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
 <<<<<<< HEAD
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/RegistrarInsumo.jsp</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/src/Controlador/ListarEmp.java</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/js/validacionFormCliente.js</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/headerModulos.jspf</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/css/estilos2.css</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/js/validacionFormEmpleado.js</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/RegistrarEmpleados.jsp</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/ListarEmpleados.jsp</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/src/Controlador/FormActualizarClientes.java</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/RegisCliente.jsp</file>
-=======
-            <file>file:/C:/Users/Home/Desktop/nuevo/src/Controlador/RegistrarDomicilio.java</file>
-            <file>file:/C:/Users/Home/Desktop/nuevo/web/IndexPrincipal.html</file>
-            <file>file:/C:/Users/Home/Desktop/nuevo/web/headerModulos.jspf</file>
-            <file>file:/C:/Users/Home/Desktop/nuevo/src/Controlador/InforEmpleados.java</file>
-            <file>file:/C:/Users/Home/Desktop/nuevo/web/js/FuncionesEmpleados.js</file>
-            <file>file:/C:/Users/Home/Desktop/nuevo/web/js/FuncionesClientes.js</file>
-            <file>file:/C:/Users/Home/Desktop/nuevo/web/index2.jsp</file>
-            <file>file:/C:/Users/Home/Desktop/nuevo/web/RegDomicilio.jsp</file>
+        <group>
+            <file>file:/C:/Users/Home/Desktop/nuevo/web/js/validacionFormCliente.js</file>
             <file>file:/C:/Users/Home/Desktop/nuevo/web/RegistrarEmpleados.jsp</file>
-            <file>file:/C:/Users/Home/Desktop/nuevo/src/Controlador/ListarEmp.java</file>
-            <file>file:/C:/Users/Home/Desktop/nuevo/web/ModalClientes.jsp</file>
-            <file>file:/C:/Users/Home/Desktop/nuevo/src/Modelo/Conexion.java</file>
-            <file>file:/C:/Users/Home/Desktop/nuevo/src/Controlador/FormActualizarClientes.java</file>
-            <file>file:/C:/Users/Home/Desktop/nuevo/web/RegistrarNovedad.jsp</file>
-            <file>file:/C:/Users/Home/Desktop/nuevo/src/Controlador/Login.java</file>
-            <file>file:/C:/Users/Home/Desktop/nuevo/web/ListarEmpleados.jsp</file>
-            <file>file:/C:/Users/Home/Desktop/nuevo/src/Controlador/ActualizarCliente.java</file>
->>>>>>> origin/pruebas
+            <file>file:/C:/Users/Home/Desktop/nuevo/web/RegistrarVentas.jsp</file>
+            <file>file:/C:/Users/Home/Desktop/nuevo/web/js/validacionFormVenta.js</file>
+            <file>file:/C:/Users/Home/Desktop/nuevo/web/js/validacionFormEmpleado.js</file>
+            <file>file:/C:/Users/Home/Desktop/nuevo/web/RegDomicilio.jsp</file>
         </group>
+=======
+        <group/>
+>>>>>>> origin/pruebas
     </open-files>
 </project-private>

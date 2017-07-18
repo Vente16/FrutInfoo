@@ -15,6 +15,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/estilos2.css">
+        <script src="js/validacionFormVenta.js"></script>
     </head>
     <body>
         <style>
@@ -63,7 +64,7 @@
                                 <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Cantidad Producto</span></label>
                                 <div class="col-xs-8">
                                     <input id="cantidad" type="text" name="cantidad" class="form-control"  placeholder="Ingrese la cantidad del producto "><br>
-                                    <span class="" id="validar"></span>
+                                    <span class="" id="validarcp"></span>
                                 </div>
                             </div>
 
@@ -71,15 +72,15 @@
                                     <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Precio Unitario</span></label>
                                     <div class="col-xs-8">
                                         <input id="precio" type="text" name="precio" class="form-control"  placeholder="Ingrese el precio del producto "><br>
-                                        <span class="" id="validar"></span>
+                                        <span class="" id="validarp"></span>
                                     </div>
                                 </div>
 
                                     <div id="ivav" class="form-group">
                                         <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Iva</span></label>
                                         <div class="col-xs-8">
-                                            <input id="iva" type="text" name="iva" class="form-control"  placeholder="Ingrese el precio del producto "><br>
-                                            <span class="" id="validar"></span>
+                                            <input id="iva" type="text" name="iva" class="form-control"  placeholder="Ingrese el Iva del producto "><br>
+                                            <span class="" id="validari"></span>
                                         </div>
                                     </div>
 
@@ -87,7 +88,7 @@
                                             <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Total del Producto</span></label>
                                             <div class="col-xs-8">
                                                 <input id="total" type="text" name="total" class="form-control"  placeholder="Ingrese el total del producto "><br>
-                                                <span class="" id="validar"></span>
+                                                <span class="" id="validart"></span>
                                             </div>
                                         </div>
 
@@ -97,25 +98,24 @@
                                                 <div class="col-xs-8">
                                                     <select class="form-control" name="Tventa">
                                                         <option>Domicilio</option>
-                                                        <option>Efectivo</option>
                                                         <option>Punto de venta </option>
                                                     </select>
                                                 </div>
                                             </div>
 
-                                            <div  id="fecha" class="form-group">
+                                            <div  id="fechav" class="form-group">
                                                 <label  class="col-sm-2 control-label" for="inputSuccess"><span class="titulo"><b>Fecha de la Venta</b></span></label>
                                                 <div class="col-xs-8">
                                                     <input  id="fecha" type="date" name="FechaVen" class="form-control" placeholder="dd/mm/aa"><br>
-                                                    <span class="" id="validar"></span>
+                                                    <span class="" id="validarFech"></span>
                                                 </div>
                                             </div>
 
-                                            <div  id="hora" class="form-group">
+                                            <div  id="horav" class="form-group">
                                                 <label  class="col-sm-2 control-label" for="inputSuccess"><span class="titulo"><b>Hora de la Venta</b></span></label>
                                                 <div class="col-xs-8">
-                                                    <input  id="fecha" type="text" name="hora" class="form-control" placeholder="xx:xx am/pm"><br>
-                                                    <span class="" id="validar"></span>
+                                                    <input  id="fecha" type="time" name="hora" class="form-control" placeholder="xx:xx am/pm"><br>
+                                                    <span class="" id="validarhv"></span>
                                                 </div>
                                             </div>
 
@@ -124,7 +124,7 @@
                                                 <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Id_del pedido</span></label>
                                                 <div class="col-xs-8">
                                                     <input id="pedido" type="number" name="IdPedido" class="form-control"  placeholder="Ingrese el número del pedido"><br>
-                                                    <span class="" id="validar"></span>
+                                                    <span class="" id="validarp"></span>
                                                 </div>
                                             </div>
 
@@ -132,7 +132,7 @@
                                                 <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Id_del cliente</span></label>
                                                 <div class="col-xs-8">
                                                     <input id="cliente" type="number" class="form-control" name="IdCliente"  placeholder="Ingrese el número del cliente"><br>
-                                                    <span class="titulo" id="validar"></span>
+                                                    <span class="titulo" id="validarc"></span>
                                                 </div>
                                             </div>
 
