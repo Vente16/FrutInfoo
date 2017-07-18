@@ -171,9 +171,9 @@ $(document).ready(function () {
 
     });
     
-    var telefono = $('#telefono');
-    var telefonov = $('#telefonov');
-    var valt = $('#validart');
+    var telefono = $('#telefono');//imput
+    var telefonov = $('#telefonov');//div que encierra todo
+    var valt = $('#validart');//span
     telefono.keyup(function () {
             if (telefono.val()==="" || telefono.val().length < 7) {
                 this.value = (this.value + '').replace(/[^0-9]/g, '');

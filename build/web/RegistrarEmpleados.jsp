@@ -55,7 +55,7 @@
                 <div  id="telefonov" class="form-group">
                     <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Telefono</span></label>
                     <div class="col-xs-10">
-                        <input  type="text" class="form-control" id="telefono" name="telefono"  placeholder="Ingrese su telefono"><br>
+                        <input  type="text" class="form-control" id="telefono" name="telefono"  placeholder="Ingrese su teléfono"><br>
                         <span  id="validart"></span>
                     </div>
                 </div>
@@ -63,7 +63,7 @@
                 <div id="celularv" class="form-group">
                     <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo"><b>Celular</b></span></label>
                     <div class="col-xs-10">
-                        <input  name="celular" type="text" class="form-control" id="celular" placeholder="Ingrese los apellidos del empleado"><br>
+                        <input  name="celular" type="text" class="form-control" id="celular" placeholder="Ingrese su número de celular"><br>
                         <span class="" id="validarc"></span>
                     </div>
                 </div>
@@ -71,16 +71,16 @@
                 <div  id="direccionv" class="form-group">
                     <label  class="col-sm-2 control-label" for="inputSuccess"><span class="titulo"><b>Direccion</b></span></label>
                     <div class="col-xs-10">
-                        <input type="text" name="FechaNac" class="form-control" id="direccion"  placeholder="ingrese su direccion"><br>
+                        <input type="text" name="FechaNac" class="form-control" id="direccion"  placeholder="ingrese su dirección"><br>
                         <span class="" id="validard"></span>
                     </div>
                 </div>
 
 
                 <div id="disponibilidadv" class="form-group">
-                    <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Disponibilidad</span></label>
+                    <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Disponibilidad:</span></label>
                     <div class="col-xs-10">
-                        <input type="text" class="form-control" id="disponibilidad" name="disponibilidad" placeholder="Ingrese su cuenta de correo electrónico">
+                        <input type="text" class="form-control" id="disponibilidad" name="disponibilidad" placeholder="">
                         <span class="" id="validardis"></span>
                     </div>
                 </div>
@@ -89,7 +89,7 @@
                 <div  id="iniconv" class="form-group">
                     <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Inicio de contrato</span></label>
                     <div class="col-xs-10">
-                        <input name="inicon" type="date" class="form-control" id="inicon"  placeholder="Ingrese el Municipio donde actualmente vive"><br>
+                        <input name="inicon" type="date" class="form-control" id="inicon"  placeholder=""><br>
                         <span class="" id="validarinicon"></span>
                     </div>
                 </div>
@@ -97,7 +97,7 @@
                 <div  id="finconv" class="form-group">
                     <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Fin de contrato</span></label>
                     <div class="col-xs-10">
-                        <input  name="fincon" type="date" class="form-control" id="fincon" placeholder="Ingrese su Dirección completa"><br>
+                        <input  name="fincon" type="date" class="form-control" id="fincon" placeholder=""><br>
                         <span class="" id="validarfincon"></span>
                     </div>
                 </div>
@@ -105,7 +105,7 @@
                 <div id="horainiv" class="form-group">
                     <label class="col-sm-2 control-label" for="inputSuccess" ><span class="titulo">Hora inicio</span></label>
                     <div class="col-xs-10">
-                        <input name="horaini" type="time" class="form-control" id="horaini"  placeholder="Ingrese el barrio donde vive"><br>
+                        <input name="horaini" type="time" class="form-control" id="horaini"  placeholder=""><br>
                         <span class="" id="validarhoraini"></span>
                     </div>
                 </div>
@@ -113,7 +113,7 @@
                 <div id="horasalv" class="form-group">
                     <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo"><b>Hora salida</b></span></label>
                     <div class="col-xs-10">
-                        <input  name="horasal"  type="time" class="form-control" id="horasal"  placeholder="Ingrese su teléfono"><br>
+                        <input  name="horasal"  type="time" class="form-control" id="horasal"  placeholder=""><br>
                         <span class="" id="validarhorasal"></span>
                     </div>
                 </div>
@@ -175,7 +175,7 @@
                 <div  id="fechanacv" class="form-group">
                     <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">fecha de naciemiento</span></label>
                     <div class="col-xs-10">
-                        <input  name="fechanac" type="date" class="form-control" id="fechanac" placeholder="Ingrese su Dirección completa"><br>
+                        <input  name="fechanac" type="date" class="form-control" id="fechanac" placeholder=""><br>
                         <span class="" id="validarfechanac"></span>
                     </div>
                 </div>
@@ -183,7 +183,7 @@
                 <div id="emailv" class="form-group">
                     <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo"><b>Email</b></span></label>
                     <div class="col-xs-10">
-                        <input  name="email" type="text" class="form-control" id="email" placeholder="Ingrese los apellidos del empleado"><br>
+                        <input  name="email" type="text" class="form-control" id="email" placeholder="Ingrese su correo electrónico"><br>
                         <span class="" id="validare"></span>
                     </div>
                 </div>
