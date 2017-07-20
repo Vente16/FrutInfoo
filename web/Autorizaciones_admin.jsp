@@ -8,113 +8,93 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Autorizaciones</title>
         <link rel="stylesheet" href="css/bootstrap.min.css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <link rel="stylesheet" href="css/estilos2.css"/>
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/FuncionesSolicitudInsumos.js"></script>
     </head>
     <body>
         <%@include file="headerModulos.jspf" %>
         <main>
-        <div class="container">
-            <table class="table table-hover">
-                <thead>
-                    <tr>
-                        <th>Id de solicitud</th>
-                        <th>Sede</th>
-                        <th>Descripción de la solicitud</th>
-                        <th>Detalle</th>
-                        <th>Autorizar</th>
-                        <th>Desautorizar</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>001</td>
-                        <td>poblado</td>
-                        <td>se solicita un pedido de 70 bananos y 10 sandias</td>
-                        <td><img src="img/detalle.svg" height=30px></td>
-                        <td> <button class="btn-link btn-xs" ><img src="img/aceptari.png" alt="aceptar" style="width:20px; height:20px; align:center;"></button></td>
-                        <td> <button class="btn-link btn-xs" ><img src="img/cancelar.png" alt="aceptar" style="width:20px; height:20px; align:center;"></button></td>
-                    </tr>
-                    <tr>
-                        <td>002</td>
-                        <td>carrera 80</td>
-                        <td>se solicitan un pedido de 40 manzanaz y 80 limones</td>
-                        <td><img src="img/detalle.svg" height=30px></td>
+            <div class="container">
+                <div class="jumbotron">
+                    <div style="text-align:center">
+                        <h2>Solicitudes de Insumos</h2>
+                        <h4> Esta son las solicitudes de insumos que tiene pendiente </h4>
+                    </div>  
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Nombre Insumo</th>
+                                <th>Cantidad</th>
+                                <th>Fecha de solicitud</th>
+                                <th>Detalle</th>
+                            </tr>
+                        </thead>
+                        <%
+                            ResultSet re = (ResultSet) session.getAttribute("listarSI");
+                            ResultSet res = (ResultSet) session.getAttribute("tamaño");
 
-                        <td> <button class="btn-link btn-xs" ><img src="img/aceptari.png" alt="aceptar" style="width:20px; height:20px; align:center;"></button></td>
-                        <td> <button class="btn-link btn-xs" ><img src="img/cancelar.png" alt="aceptar" style="width:20px; height:20px; align:center;"></button></td>
+        //Devuelve el número de registros en la tabla.
+                            float nRegistros;
+                            if (res.next()) {
+                                nRegistros = res.getFloat(1);
+                            } else {
+                                nRegistros = 0;
+                            }
+                        %>
 
-                    </tr>
-                    <tr>
-                        <td>003</td>
-                        <td>poblado</td>
-                        <td>se solicitan un pedido de 40 manzanaz y 80 limones</td>
-                        <td><img src="img/detalle.svg" height=30px></td>
-                        <td> <button class="btn-link btn-xs" ><img src="img/aceptari.png" alt="aceptar" style="width:20px; height:20px; align:center;"></button></td>
-                        <td> <button class="btn-link btn-xs" ><img src="img/cancelar.png" alt="aceptar" style="width:20px; height:20px; align:center;"></button></td>
-                    </tr>
-                    <tr>
-                        <td>004</td>
-                        <td>Itaguí</td>
-                        <td>se solicita un pedido de 70 bananos y 10 sandias</td>
-                        <td><img src="img/detalle.svg" height=30px></td>
-                        <td> <button class="btn-link btn-xs" ><img src="img/aceptari.png" alt="aceptar" style="width:20px; height:20px; align:center;"></button></td>
-                        <td> <button class="btn-link btn-xs" ><img src="img/cancelar.png" alt="aceptar" style="width:20px; height:20px; align:center;"></button></td>
-                    </tr>
-                    <tr>
-                        <td>005</td>
-                        <td>Sabaneta</td>
-                        <td>se solicita un pedido de 70 bananos y 10 sandias</td>
-                        <td><img src="img/detalle.svg" height=30px></td>
-                        <td> <button class="btn-link btn-xs" ><img src="img/aceptari.png" alt="aceptar" style="width:20px; height:20px; align:center;"></button></td>
-                        <td> <button class="btn-link btn-xs" ><img src="img/cancelar.png" alt="aceptar" style="width:20px; height:20px; align:center;"></button></td>
-                    </tr>
-                    <tr>
-                        <td>006</td>
-                        <td>Envigado</td>
-                        <td>se solicita un pedido de 70 bananos y 10 sandias</td>
-                        <td><img src="img/detalle.svg" height=30px></td>
-                        <td> <button class="btn-link btn-xs" ><img src="img/aceptari.png" alt="aceptar" style="width:20px; height:20px; align:center;"></button></td>
-                        <td> <button class="btn-link btn-xs" ><img src="img/cancelar.png" alt="aceptar" style="width:20px; height:20px; align:center;"></button></td>
-                    </tr>
-                    <tr>
-                        <td>007</td>
-                        <td>Belen</td>
-                        <td>se solicita un pedido de 70 bananos y 10 sandias</td>
-                        <td><img src="img/detalle.svg" height=30px></td>
-                        <td> <button class="btn-link btn-xs" ><img src="img/aceptari.png" alt="aceptar" style="width:20px; height:20px; align:center;"></button></td>
-                        <td> <button class="btn-link btn-xs" ><img src="img/cancelar.png" alt="aceptar" style="width:20px; height:20px; align:center;"></button></td>
-                    </tr>
-                    <tr>
-                        <td>008</td>
-                        <td>Laureles</td>
-                        <td>se solicita un pedido de 70 bananos y 10 sandias</td>
-                        <td><img src="img/detalle.svg" height=30px></td>
-                        <td> <button class="btn-link btn-xs" ><img src="img/aceptari.png" alt="aceptar" style="width:20px; height:20px; align:center;"></button></td>
-                        <td> <button class="btn-link btn-xs" ><img src="img/cancelar.png" alt="aceptar" style="width:20px; height:20px; align:center;"></button></td>
+                        <%
+                            while (re.next()) {
+                        %>
+                        <tbody>
+                            <tr class="<%= re.getString("Id") %>">
+                                <td><%= re.getString("Nombre_Insumo")%></td>
+                                <td><%= re.getString("Cantidad")%></td>
+                                <td><%= re.getString("Fecha_Solicitud")%></td>
+                                <td><a href="#Detalle" data-toggle="modal"><button class="btn btn-primary glyphicon glyphicon-search Detalle"></button></a></td>
+                            </tr>
+                        </tbody>
+                        <%
+                            }
+                        %>
+                    </table>
+                    <nav aria-label="Page navigation example" class="container">
+                        <ul class="pagination justify-content-center">
+                            <%
+                                int pg = 0;
+                                if (request.getParameter("pag") == null) {
+                                    pg = 0;
+                                } else {
+                                    pg = Integer.parseInt(request.getParameter("pag"));
 
-                    </tr>
-                    <tr>
-                        <td>009</td>
-                        <td>Los sauses</</td>
-                        <td>se solicita un pedido de 70 bananos y 10 sandias</td>
-                        <td><img src="img/detalle.svg" height=30px></td>
-                        <td> <button class="btn-link btn-xs" ><img src="img/aceptari.png" alt="aceptar" style="width:20px; height:20px; align:center;"></button></td>
-                        <td> <button class="btn-link btn-xs" ><img src="img/cancelar.png" alt="aceptar" style="width:20px; height:20px; align:center;"></button></td>
-                    </tr>
-                </tbody>
-            </table>
-            <p><b><h2>Con los siguientes Botónes podras generar los  siguientes informes.</h2> </b></p>
-            <a href="InfoInsumos" target="_blank"><button type="submit" class="btn btn-success">Informe Insumos</button></a>&nbsp;&nbsp;
-            <a href="InforEmpleados" target="_blank"><button type="submit" class="btn btn-info">Informe Empleados</button></a>&nbsp;&nbsp;
-            <a href="InforVentas" target="_blank"><button type="submit" class="btn btn-warning">Informe Ventas</button></a>
-        </div>
-        
+                                }
+                            %>
+                            <li class="page-item"><a class="page-link" href="ListarSolicitudInsumos?pag=<%=Integer.parseInt(request.getParameter("pag")) - 1%>">Anterior</a></li>
+                                <%
+                                    System.out.println(nRegistros);
+                                    for (int j = 0; j < nRegistros / 5; j++) {
+                                %>
+                            <li class="page-item"><a class="page-link" href="ListarSolicitudInsumos?pag=<%=j%>"><%=j + 1%></a></li>
+                                <%
+                                    }
+                                %>
+                            <li class="page-item"><a class="page-link" href="ListarSolicitudInsumos?pag=<%=Integer.parseInt(request.getParameter("pag")) + 1%>">Siguiente</a></li>
+                        </ul>
+                    </nav>
+                    <p><b><h2>Con los siguientes Botónes podras generar los  siguientes informes.</h2> </b></p>
+                    <a href="InfoInsumos" target="_blank"><button type="submit" class="btn btn-success">Informe Insumos</button></a>&nbsp;&nbsp;
+                    <a href="InforEmpleados" target="_blank"><button type="submit" class="btn btn-info">Informe Empleados</button></a>&nbsp;&nbsp;
+                    <a href="InforVentas" target="_blank"><button type="submit" class="btn btn-warning">Informe Ventas</button></a>
+                </div>
+            </div>
+
         </main>
-      <%@include file="footerModulos.jspf"%> 
+            <%@include file="ModalSolicitudInsumos.jsp"%>
+        <%@include file="footerModulos.jspf"%> 
     </body>
 </html>
