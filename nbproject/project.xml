@@ -15,6 +15,7 @@
                     <path-in-war>WEB-INF/lib</path-in-war>
                 </library>
                 <library dirs="200">
+<<<<<<< HEAD
                     <file>${&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD}</file>
                 </library>
                 <library dirs="200">
@@ -27,6 +28,13 @@
                 </library>
                 <library dirs="200">
                     <file>${file.reference.servlet-api.jar-2}</file>
+=======
+                    <file>${file.reference.itext5-itextpdf-5.5.11.jar}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
+                <library dirs="200">
+                    <file>${file.reference.java-mail-1.4.4.jar-1}</file>
+>>>>>>> origin/pruebas
                     <path-in-war>WEB-INF/lib</path-in-war>
                 </library>
             </web-module-libraries>

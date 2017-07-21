@@ -8,8 +8,9 @@ package Controlador;
 import Modelo.Conexion;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
+import java.sql.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -17,9 +18,9 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author User
+ * @author ozkar
  */
-public class EliminarCliente extends HttpServlet {
+public class DetalleSolicitudInsumos extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -34,27 +35,29 @@ public class EliminarCliente extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
+            String Id = request.getParameter("Id");
+            Conexion c = new Conexion();
+            Connection con = c.Conectar();
+            String sql = "SELECT * FROM solicitud_insumo INNER JOIN `puntos de ventas` ON solicitud_insumo.Id_Punto_venta = `puntos de ventas`.Id_punto_de_venta WHERE Id=?";
+            PreparedStatement pst = con.prepareStatement(sql);
+            pst.setString(1, Id);
+            ResultSet rst = pst.executeQuery();
             
-  
-             String Id = request.getParameter("Id");
-             String Deshabilitar = "0";
+            while (rst.next()) {                
+                out.println("<h4>nombre de insumo: "+ rst.getString("Nombre_insumo")+"</h4>");
+                out.println("<h4>Cantidad: "+ rst.getString("Cantidad")+"</h4>");
+                out.println("<h4>Punto de venta: "+ rst.getString("Nombre_municipio")+"</h4>");
+                out.println("<h4>Autoriza: "+ rst.getString("Autorizar")+"</h4>");
+                out.println("<h4>Punto de venta: "+ rst.getString("Fecha_Solicitud")+"</h4>");
+                out.println("<h4>Punto de venta: "+ rst.getString("Fecha_Autorizacion")+"</h4>");
+            }
             
-             Conexion c = new Conexion();
-             Connection co = c.Conectar();
-            
-             PreparedStatement st = co.prepareStatement("UPDATE clientes SET Habilitado=? WHERE Id=?");
-             st.setString(1,Deshabilitar );
-             st.setString(2,Id);
-             st.execute();
-             
-             out.println("<h3>Eliminó correctamente</h3>");
+                      
             
             
             
-            
-        }catch(Exception e){
-        
-            System.out.println(e);
+        } catch (SQLException ex) {
+            Logger.getLogger(DetalleSolicitudInsumos.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 

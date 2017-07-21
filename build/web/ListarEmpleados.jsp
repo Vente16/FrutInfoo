@@ -75,10 +75,9 @@
                                 while (reE.next()) {
                             %>
                             <tbody>
-                                <%
-                                        if (rol.equals("Asistente Administrativo")) {
-                                            
-                                    %>
+                                <%          
+                                        if (rol.equals("Asistente Administrativo")) {              
+                                %>
                                 <tr class="<%= reE.getString("id_empleado")%>">
                                     <td><%= reE.getString("Documento")%></td>
                                     <td><%= reE.getString("Nombre")%></td>
@@ -99,6 +98,7 @@
                                     %>
                                 
                             </tbody>
+                         
                             <%}%>
                         </table>
                         <nav aria-label="Page navigation example">

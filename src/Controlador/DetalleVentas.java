@@ -8,8 +8,11 @@ package Controlador;
 import Modelo.Conexion;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.Connection;
+import java.sql.*;
 import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -17,9 +20,9 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author User
+ * @author ozkar
  */
-public class EliminarCliente extends HttpServlet {
+public class DetalleVentas extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -34,27 +37,30 @@ public class EliminarCliente extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
+            /* TODO output your page here. You may use following sample code. */
+            String Id = request.getParameter("Id");
             
-  
-             String Id = request.getParameter("Id");
-             String Deshabilitar = "0";
+            Conexion con = new Conexion();
+            Connection conn =con.Conectar();
+            String sql = "SELECT * FROM ventas WHERE id=?";
+            PreparedStatement pst =conn.prepareStatement(sql);
+            pst.setString(1, Id);
             
-             Conexion c = new Conexion();
-             Connection co = c.Conectar();
+            ResultSet rst = pst.executeQuery();
             
-             PreparedStatement st = co.prepareStatement("UPDATE clientes SET Habilitado=? WHERE Id=?");
-             st.setString(1,Deshabilitar );
-             st.setString(2,Id);
-             st.execute();
-             
-             out.println("<h3>Eliminó correctamente</h3>");
-            
-            
-            
-            
-        }catch(Exception e){
-        
-            System.out.println(e);
+            while (rst.next()) {                
+                out.println("<h4>Producto: "+rst.getString("Nombe_producto")+"</h4>");
+                out.println("<h4>Cantidad: "+rst.getString("Cantidad_producto")+"</h4>");
+                out.println("<h4>Precio: "+rst.getString("Precio_unit")+"</h4>");
+                out.println("<h4>Iva: "+rst.getString("Iva")+"</h4>");            
+                out.println("<h4>Total a pagar: "+rst.getString("Total_Pagar")+"</h4>");
+                out.println("<h4>Tipo de venta: "+rst.getString("Tipo_venta")+"</h4>");
+                out.println("<h4>Fecha: "+rst.getString("Fecha_venta")+"</h4>");
+                out.println("<h4>Hora: "+rst.getString("Hora_venta")+"</h4>");
+            }
+           
+        } catch (SQLException ex) {
+            Logger.getLogger(DetalleVentas.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 

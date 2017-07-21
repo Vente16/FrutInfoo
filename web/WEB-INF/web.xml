@@ -172,6 +172,18 @@
         <servlet-name>ActualizarEmpleado</servlet-name>
         <servlet-class>Controlador.ActualizarEmpleado</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>DetalleVentas</servlet-name>
+        <servlet-class>Controlador.DetalleVentas</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DetalleSolicitudInsumos</servlet-name>
+        <servlet-class>Controlador.DetalleSolicitudInsumos</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ListarSolicitudInsumos</servlet-name>
+        <servlet-class>Controlador.ListarSolicitudInsumos</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Validar</servlet-name>
         <url-pattern>/Validar</url-pattern>
@@ -339,6 +351,18 @@
     <servlet-mapping>
         <servlet-name>ActualizarEmpleado</servlet-name>
         <url-pattern>/ActualizarEmpleado</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DetalleVentas</servlet-name>
+        <url-pattern>/DetalleVentas</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DetalleSolicitudInsumos</servlet-name>
+        <url-pattern>/DetalleSolicitudInsumos</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ListarSolicitudInsumos</servlet-name>
+        <url-pattern>/ListarSolicitudInsumos</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

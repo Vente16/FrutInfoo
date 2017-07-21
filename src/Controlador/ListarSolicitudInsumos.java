@@ -8,18 +8,22 @@ package Controlador;
 import Modelo.Conexion;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.Connection;
+import java.sql.*;
 import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
- * @author User
+ * @author ozkar
  */
-public class EliminarCliente extends HttpServlet {
+public class ListarSolicitudInsumos extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -34,27 +38,27 @@ public class EliminarCliente extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
+            /* TODO output your page here. You may use following sample code. */
+           
+            Conexion c = new Conexion();
+            Connection con = c.Conectar();
+            int pagina = Integer.parseInt(request.getParameter("pag"));
+            String sql = "SELECT * FROM solicitud_insumo LIMIT 5 OFFSET " + (pagina) * 5 + ";";
+            String sqlc = "SELECT count(*) as Id FROM solicitud_insumo";
+            HttpSession sesion = request.getSession(true);
+            PreparedStatement pst =con.prepareStatement(sql);
+            Statement stm1 = con.createStatement();
+            ResultSet rst = pst.executeQuery();
+            ResultSet rstc = stm1.executeQuery(sqlc);
             
-  
-             String Id = request.getParameter("Id");
-             String Deshabilitar = "0";
+            sesion.setAttribute("listarSI", rst);
+            sesion.setAttribute("pag", pagina);
+            sesion.setAttribute("tamaño", rstc);
             
-             Conexion c = new Conexion();
-             Connection co = c.Conectar();
+            request.getRequestDispatcher("Autorizaciones_admin.jsp").forward(request, response);
             
-             PreparedStatement st = co.prepareStatement("UPDATE clientes SET Habilitado=? WHERE Id=?");
-             st.setString(1,Deshabilitar );
-             st.setString(2,Id);
-             st.execute();
-             
-             out.println("<h3>Eliminó correctamente</h3>");
-            
-            
-            
-            
-        }catch(Exception e){
-        
-            System.out.println(e);
+        } catch (SQLException ex) {
+            Logger.getLogger(ListarSolicitudInsumos.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 

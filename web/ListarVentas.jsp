@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="css/estilos2.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="js/FuncionesVentas.js"></script>
     </head>
     <body>
         <%@include file="headerModulos.jspf" %>
@@ -33,8 +34,6 @@
                                 <th>Total a Pagar</th>
                                 <th>Fecha de venta</th>
                                 <th>Detalle</th>
-                                <th>Actualizar</th>
-                                <th>Eliminar</th>
                             </tr>
                         </thead>
                         <%
@@ -55,13 +54,10 @@
                         %>
                         <tbody>
                             <tr class="<%=reV.getString("id")%>" >
-                                <td><%= reV.getString(2)%></td>
-                                <td><%= reV.getFloat(6)%></td>
-                                <td><%= reV.getString(8)%></td>
+                                <td><%= reV.getString(3)%></td>
+                                <td><%= reV.getFloat(7)%></td>
+                                <td><%= reV.getString(9)%></td>
                                 <td><a href="#Detalle"  data-toggle="modal"><button class="btn btn-primary  glyphicon glyphicon-eye-open Detalle"></button></a></td>
-                                <td><a href="#Actualizar"  data-toggle="modal"><button class="btn btn-success glyphicon glyphicon-edit Actualizar"></button></a></td>
-                                <td><button class="btn btn-danger glyphicon glyphicon-trash Eliminar"></button></td>
-
                             </tr>
                         </tbody>
                         <%}%>
@@ -94,7 +90,7 @@
             </div>
         </div>
 
-
+            <%@include file="ModalVentas.jsp" %>
         <%@include file="footerModulos.jspf" %>
     </body>
 </html>
