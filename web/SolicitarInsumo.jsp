@@ -35,7 +35,7 @@
             </div>
 
             <div class="continer-propio">
-                <form data-toggle= "validator" class="form-horizontal" role= "form"action="SolicitarInsumo" method="post" id="SolicitarIns">
+                <form data-toggle= "validator" class="form-horizontal" action="SolicitarInsumo" method="post" id="SolicitarIns">
 
                     <div  id="nombrev" class="form-group">
                         <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Nombre del Insumo</span></label>
