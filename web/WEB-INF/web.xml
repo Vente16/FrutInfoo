@@ -184,6 +184,14 @@
         <servlet-name>ListarSolicitudInsumos</servlet-name>
         <servlet-class>Controlador.ListarSolicitudInsumos</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ConsultarNovedades</servlet-name>
+        <servlet-class>Controlador.ConsultarNovedades</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DetalleNovedad</servlet-name>
+        <servlet-class>Controlador.DetalleNovedad</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Validar</servlet-name>
         <url-pattern>/Validar</url-pattern>
@@ -363,6 +371,14 @@
     <servlet-mapping>
         <servlet-name>ListarSolicitudInsumos</servlet-name>
         <url-pattern>/ListarSolicitudInsumos</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ConsultarNovedades</servlet-name>
+        <url-pattern>/ConsultarNovedades</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DetalleNovedad</servlet-name>
+        <url-pattern>/DetalleNovedad</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

@@ -54,9 +54,9 @@
                         %>
                         <tbody>
                             <tr class="<%=reV.getString("id")%>" >
-                                <td><%= reV.getString(3)%></td>
-                                <td><%= reV.getFloat(7)%></td>
-                                <td><%= reV.getString(9)%></td>
+                                <td><%= reV.getString("Nombe_producto")%></td>
+                                <td><%= reV.getString("Total_Pagar")%></td>
+                                <td><%= reV.getString("Fecha_venta")%></td>
                                 <td><a href="#Detalle"  data-toggle="modal"><button class="btn btn-primary  glyphicon glyphicon-eye-open Detalle"></button></a></td>
                             </tr>
                         </tbody>
