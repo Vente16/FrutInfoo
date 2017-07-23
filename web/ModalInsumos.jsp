@@ -35,7 +35,7 @@
         <button type="button" class="close" data-dismiss="modal">&times;</button>
         <h4 class="modal-title">Actualizar datos del insumo</h4>
       </div>
-      <div class="modal-body FormAcutalizar">
+      <div class="modal-body FormActualizar">
         
       </div>
       <div class="modal-footer">

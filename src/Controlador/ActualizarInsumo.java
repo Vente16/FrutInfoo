@@ -10,7 +10,6 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -18,9 +17,9 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author User
+ * @author ozkar
  */
-public class DetalleInsumo extends HttpServlet {
+public class ActualizarInsumo extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -31,46 +30,7 @@ public class DetalleInsumo extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
-    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
-          
-             
-            String Id = request.getParameter("Id");
-            
-            Conexion c = new Conexion();
-            Connection co = c.Conectar();
-            
-            PreparedStatement st = co.prepareStatement("SELECT *FROM insumos WHERE Id_Insumo=?");
-            st.setString(1, Id);
-            
-            ResultSet rs = st.executeQuery();
-            
-            while(rs.next()){
-          
-            out.println("<h4>codigo:  " +  rs.getString("Codigo"));
-            out.println("<h4>Tipo de insumo:"+rs.getString("Tipo")+"</h4>");
-            out.println("<h4>Nombre del insumo:  " + rs.getString("Nombre_insumo") + "</h4>");
-            out.println("<h4>Cantidad insumo: " + rs.getString("Cantidad_insumo")+ "</h4>");
-            out.println("<h4>Valor insumo: " + rs.getString("Valor_insumo") + "</h4>");
-            out.println("<h4>Fecha de ingreso: " + rs.getString("Fecha_ingreso") + "</h4>");
-            out.println("<h4>Fecha de vencimiento: " + rs.getString("Fecha_vencimiento") + "</h4>");
-            out.println("<h4>Peso: " + rs.getString("peso") + "</h4>");
-            out.println("<h4>Prioridad: " + rs.getString("Prioridad") + "</h4>");
-           
-            
-            }
-            
-            
-            
-            
-            
-        } catch(Exception e){
-            System.out.println(e);
-        
-        }
-    }
+    
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
@@ -84,7 +44,7 @@ public class DetalleInsumo extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        
     }
 
     /**
@@ -98,7 +58,45 @@ public class DetalleInsumo extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        try(PrintWriter out = response.getWriter()) {
+            
+            String Codigo = request.getParameter("Codigo");
+            String Tipo = request.getParameter("Tipo");
+            String NombreInsumo = request.getParameter("NombreInsumo");
+            String Cantidad = request.getParameter("Cantidad");
+            String Valor = request.getParameter("Valor");
+            String FechaIngreso = request.getParameter("FechaIngreso");
+            String FechaVencimiento = request.getParameter("FechaVencimiento");
+            String Peso = request.getParameter("Peso");
+            String Prioridad = request.getParameter("Prioridad");
+            String Id = request.getParameter("Id");
+            
+            Conexion c = new Conexion();
+            Connection con = c.Conectar();
+            
+            String sql = "UPDATE insumos SET Codigo=?, Tipo=?, Peso=?, Nombre_insumo=?, Cantidad_insumo=?, Valor_insumo=?, Fecha_ingreso=?, Fecha_vencimiento=?, Prioridad=? WHERE Id_Insumo=?";
+            
+            PreparedStatement pst = con.prepareStatement(sql);
+            pst.setString(1, Codigo);
+            pst.setString(2, Tipo);
+            pst.setString(3, Peso);
+            pst.setString(4, NombreInsumo);
+            pst.setString(5, Cantidad);
+            pst.setString(6, Valor);
+            pst.setString(7, FechaIngreso);
+            pst.setString(8, FechaVencimiento);
+            pst.setString(9, Prioridad);
+            pst.setString(10, Id);
+            pst.executeUpdate();
+            pst.close();
+            con.close();
+            
+            
+            out.println("<h4>Se actualizo correctamente</h4>");
+            
+            
+        } catch (Exception e) {
+        }
     }
 
     /**

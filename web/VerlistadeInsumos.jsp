@@ -29,32 +29,7 @@
 
 
 
-             <!--   <form class="form-group has-success">
-                    <div class="form-group has-success ">
-                        <label for="detalle">Codigo:</label>
-                        <input type="text" class="form-control" id="email" placeholder="Ingrese Insumo">
-                    </div>
-                    <br>
-                    <div class="navbar-left has-success">
-                        <label class="punto_venta">Punto de Venta:</label>
-                        <br>
-                        <select class="form-control">
-                            <option>Envigado</option>
-                            <option >Sabaneta</option>
-                            <option >Itagui</option>
-                            <option >poblado</option>
-                            <option >Carrera 80</option>
-                            <option >Los sauces</option>
-                            <option >Laureles</option>
-                            <option >Avenida Orientales</option>
-                            <option >Bello</option>
-                            <option >Belen</option>
-                        </select>
-                        <br>
-                        <button type="button" class="btn btn-success">Consultar</button>
-                        <br>
-                        <br>
-                    </div>-->
+             
 
                     <table class="table table-bordered">
                         <thead>
