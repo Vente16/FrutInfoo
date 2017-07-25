@@ -10,12 +10,14 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Registrar empleados</title>
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/estilos2.css">
+        <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"></script>
-        <script src="js/validacionFormEmpleado.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/estilos2.css">
+        <script src="js/ValidacionRegEmpleados.js"></script>
     </head>
 
     <body>
@@ -33,7 +35,7 @@
         </div>
 
         <div class="continer-propio">
-            <form class="form-horizontal" role= "form" action="RegEmpleado" method="post">
+            <form class="form-horizontal" id="RegEmpleado" action="RegEmpleado" method="post">
 
                 <div id="nombrev" class="form-group">
                     <label class="col-sm-2 control-label" for="inputSuccess">

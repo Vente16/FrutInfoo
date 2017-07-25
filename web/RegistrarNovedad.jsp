@@ -10,12 +10,14 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Registrar novedad</title>
-        <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+       <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/estilos2.css">
-        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-        <script  src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"></script>
-      <!-- <script src="js/ValidarRegNov.js"></script> -->
+        <script src="js/ValidacionRegNovedad.js"></script>
     </head>
     <body>
         <style>
@@ -34,7 +36,7 @@
         <h4 style="text-align: center;"><b>llene el formulario con los datos del empleado que desea registrarle la novedad.</b></h4><br><br>
 
         <div class="containerNov">
-            <form id="RegNov" action="Novedades" method="post" name="formulario" >
+            <form id="RegNovedad" action="Novedades" method="post" name="formulario" >
                 <div class="form-group">
                     <label class="form-control-label" for="index-form-4-4name"><span class="titulo">Novedad</span></label>
                     <select class="form-control" name="novedad">
@@ -46,13 +48,13 @@
                 </div>
                 
                 <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Nombres</span></label><br>
-                <input type="text" class="form-control" name="nombre" placeholder="Ingrese los nombres del empleado"><br>
+                <input type="text" class="form-control" name="nom" placeholder="Ingrese los nombres del empleado"><br>
 
                 <labe2 class="form-control-label" for="index-form2-2-name"><span class="titulo"><b>Apellidos</b></span></labe2><br>
-                <input type="text" class="form-control" name="apellido" data-form-field="Name" id="index-form2-2-name" placeholder="Ingrese los apellidos del empleado"><br>
+                <input type="text" class="form-control" name="apell" data-form-field="Name" id="index-form2-2-name" placeholder="Ingrese los apellidos del empleado"><br>
 
                 <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Documento de identificación</span></label><br>
-                <input type="text" class="form-control" name="documento" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el número de documento de identificación"><br>
+                <input type="text" class="form-control" name="doc" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el número de documento de identificación"><br>
 
                 <div class="form-group">
                     <label class="form-control-label" for="index-form-4-4name"><span class="titulo">Seleccione el tipo de documento</span></label>

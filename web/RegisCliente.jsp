@@ -9,13 +9,15 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Registrar insumo</title>  
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/estilos2.css">
-        <script src="js/validacionFormCliente.js"></script>
+        <title>Registrar Cliente</title>  
+            <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+            <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css"/>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+            <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"></script>
+            <link rel="stylesheet" href="css/bootstrap.css">
+            <link rel="stylesheet" href="css/estilos2.css">
+            <script src="js/ValidacionRegCliente.js"></script>
        
     </head>
     <body>
@@ -32,7 +34,7 @@
                 <h2 style="text-align: center;">Registro del Cliente</h2><br><br>
             </div>
                 <div class="continer-propio">
-                 <form data-toggle= "validator" class="form-horizontal" role= "form" action="RegCliente" method="post">
+                 <form class="form-horizontal" id="RegistrarCliente" action="RegCliente" method="post">
                  
                     <div class="form-group">    
                         <label class="col-sm-2 control-label" for="inputSuccess">
@@ -134,7 +136,7 @@
                     <div>
                         <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Membrecía</span></label>
                     <div class="col-xs-10">
-                        <select class="form-control" name="membrecia">
+                        <select class="form-control" name="cumple">
                             <option>si</option>
                             <option>no</option>
                         </select>
@@ -152,12 +154,5 @@
         </div>
         </main>
         <%@include file="footer.jspf" %>           
-        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"></script>
-        <script src="ValidarRegCli.js"></script> 
-        <script src="js/pruebaValidacion.js"></script> -->
-
-
     </body>
 </html>
