@@ -19,7 +19,6 @@
        
       </div>
       <div class="modal-footer">
-          <button type="button" class="btn btn-success ActualizarDB" data-dismiss="modal">Aceptar</button>
         <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
       </div>
     </div>

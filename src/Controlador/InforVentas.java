@@ -74,7 +74,7 @@ public class InforVentas extends HttpServlet {
 
 
             /*Agregar imagen*/
-            Image imagen = Image.getInstance("/home/ozkar/Escritorio/proyecto final/logo.png");
+            Image imagen = Image.getInstance("C:\\Users\\Home\\Desktop\\nuevo\\logo.png");
             imagen.setAlignment(Element.ALIGN_CENTER);
             imagen.scaleToFit(50, 50);/*Tamaño de la imagen mediante el metodo scale*/
             imagen.setAlignment(Image.ALIGN_TOP | Image.TEXTWRAP);/*Alinear imagen colocandose acomodandose respecto a la tabla*/

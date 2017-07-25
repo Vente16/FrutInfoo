@@ -108,7 +108,7 @@
                                                                                                                                                         <div  id="fechaVv" class="form-group ">
                                                                                                                                                             <label  class="col-sm-2 control-label" for="inputSuccess"><span class="titulo"><b>Fecha de Vencimiento</b></span></label>
                                                                                                                                                             <div class="col-xs-10">
-                                                                                                                                                                <input type="date" name="FechaNac" class="form-control" id="fecha_venc"  placeholder="dd/mm/aa"><br>
+                                                                                                                                                                <input type="date" name="fechavencimiento" class="form-control" id="fecha_venc"  placeholder="dd/mm/aa"><br>
                                                                                                                                                                         <span class="" id="validarfv"></span>
                                                                                                                                                                         </div>
                                                                                                                                                                         </div>

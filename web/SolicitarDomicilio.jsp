@@ -188,39 +188,39 @@
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-8">
                     <a > <img class="img-responsive img-home-portfolio" src="img/CopasHelado/CONOS.jpg"></a>
-                    <h4 align="center">Conos: 3000</h4>
+                    <h4 align="center">Conos: 3.000 $</h4>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-8">
                     <a > <img class="img-responsive img-home-portfolio" src="img/CopasHelado/COPA-LUNA.jpg"></a>
-                    <h4 align="center">Copa Luna: 10500</h4>
+                    <h4 align="center">Copa Luna: 10.500 $</h4>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-8">
                     <a><img class="img-responsive img-home-portfolio" src="img/CopasHelado/Durazno con crema.jpg"></a>
-                    <h4 align="center">Durazno con Crema: 10800</h4>
+                    <h4 align="center">Durazno con Crema: 10.800 $</h4>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-8">
                     <a><img class="img-responsive img-home-portfolio" src="img/CopasHelado/EspecialFresasYDuraznos.jpg"></a>
-                    <h4 align="center">Especial Fresas: 10800</h4>
+                    <h4 align="center">Especial Fresas: 10.800 $</h4>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-8">
                     <a><img class="img-responsive img-home-portfolio" src="img/CopasHelado/FresasCrema.jpg"></a>
-                    <h4 align="center">Fresas Crema: 9500</h4>
+                    <h4 align="center">Fresas Crema: 9.500 $</h4>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-8">
                     <a><img class="img-responsive img-home-portfolio" src="img/CopasHelado/copaEncanto.jpg"></a>
-                    <h4 align="center">Copa Encanto: 10500</h4>
+                    <h4 align="center">Copa Encanto: 10.500 $</h4>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-8">
                     <a><img class="img-responsive img-home-portfolio" src="img/CopasHelado/copaFiesta.jpg"></a>
-                    <h4 align="center">Copa Fiesta: 11500</h4>
+                    <h4 align="center">Copa Fiesta: 11.500 $</h4>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-8">
                     <a><img class="img-responsive img-home-portfolio" src="img/CopasHelado/copaEstrella.jpg"></a>
-                    <h4 align="center">Copa Estrella: 10500</h4>
+                    <h4 align="center">Copa Estrella: 10.500 $</h4>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-8">
                     <a><img class="img-responsive img-home-portfolio" src="img/CopasHelado/copaJugosa.jpg"></a>
-                    <h4 align="center">Copa Jugosa: 12000</h4>
+                    <h4 align="center">Copa Jugosa: 12.000 $</h4>
                 </div>
             </div>
             <!-- /.row -->
@@ -239,15 +239,15 @@
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <h2>ENSALADAS Y SALPICONES:</h2>
                     <ul>
-                        <li><h4>Dietetica Especial: 13000</h4></li>
-                        <li><h4>Dietetica Super Jugosa: 16500</h4></li>
-                        <li><h4>Super Jugosa: 15500</h4></li>
-                        <li><h4>Especial: 12500</h4></li>
-                        <li><h4>Junior: 10500</h4></li>
-                        <li><h4>Solo Frutas: 8500</h4></li>
-                        <li><h4>Salpicon grande: 7500</h4></li>
-                        <li><h4>Salpicon con Helado: 5000</h4></li>
-                        <li><h4>Salpicón solo Frutas: 4400 </h4></li>
+                        <li><h4>Dietetica Especial: 13.000 $</h4></li>
+                        <li><h4>Dietetica Super Jugosa: 16.500 $</h4></li>
+                        <li><h4>Super Jugosa: 15.500 $</h4></li>
+                        <li><h4>Especial: 12.500 $</h4></li>
+                        <li><h4>Junior: 10.500 $</h4></li>
+                        <li><h4>Solo Frutas: 8.500 $</h4></li>
+                        <li><h4>Salpicon grande: 7.500 $</h4></li>
+                        <li><h4>Salpicon con Helado: 5.000 $</h4></li>
+                        <li><h4>Salpicón solo Frutas: 4.400 $ </h4></li>
                     </ul>
                     
                 </div>
@@ -276,15 +276,15 @@
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <h2>JUGOS Y VARIEDADES:</h2>
                     <ul>
-                      <li><h4>Jugos: 4500</h4></li>
-                        <li><h4>Jugo en Leche Combinado: 5000</h4></li>
-                        <li><h4>Malteadas: 6500</h4></li>
-                        <li><h4>Zumo Mandarina: 5500</h4></li>
-                        <li><h4>Brevas con queso: 9500</h4></li>
-                        <li><h4>Banana Split: 10500</h4></li>
-                        <li><h4>Concierto Paisa: 12500</h4></li>
-                        <li><h4>Meladas con queso: 9500</h4></li>
-                        <li><h4>Papaya Mixta: 10000 </h4></li>
+                      <li><h4>Jugos: 4.500 $</h4></li>
+                        <li><h4>Jugo en Leche Combinado: 5.000 $</h4></li>
+                        <li><h4>Malteadas: 6.500 $</h4></li>
+                        <li><h4>Zumo Mandarina: 5.500 $</h4></li>
+                        <li><h4>Brevas con queso: 9.500 $</h4></li>
+                        <li><h4>Banana Split: 10.500 $</h4></li>
+                        <li><h4>Concierto Paisa: 12.500 $</h4></li>
+                        <li><h4>Meladas con queso: 9.500 $</h4></li>
+                        <li><h4>Papaya Mixta: 10.000 $ </h4></li>
                     </ul>
                 </div>
             </div>

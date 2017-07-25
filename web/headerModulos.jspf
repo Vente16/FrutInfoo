@@ -50,7 +50,6 @@
                         <li><a href="ListarVentas?pag=0">Listar ventas</a></li>
                         <li><a href="InforVentas" target="_blank" >Realizar informe de ventas</a></li>
                         <li><a href="FacturaVenta" target="_blank">Generar factura de ventas</a></li>
-
                     </ul>
                 </li>
 
@@ -61,10 +60,6 @@
                         <li><a href="Novedades.jsp">Novedades</a></li>
                     </ul>
                 </li>
-
-
-
-
                 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Clientes<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="RegisCliente.jsp">Registrar clientes</a></li>
@@ -72,18 +67,8 @@
                         <li><a href="SolicitarDomicilio.jsp">Solicitar domicilio</a></li>
                     </ul>
                 </li>
-
                 <li><a href="CerrarSesion">Cerrar sesión</a></li>
-
-
-                </li>
-
-
             </ul>
-            <!--  <ul class="nav navbar-nav navbar-right">
-               <li><a href="#">Cerrar sesión</a></li> >
-             </ul> -->
-
         </div>
     </nav>
     <%} else if (Rol.equals("Asistente Administrativo")) { %>
@@ -121,36 +106,18 @@
 
                 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Recursos humanos<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-
                         <li><a href="ListarEmp?pag=0">Listar empleados</a></li>
                         <li><a href="Novedades.jsp">Novedades</a></li>
                     </ul>
                 </li>
-
-
-
-
                 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Clientes<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="RegisCliente.jsp">Registrar clientes</a></li>
                         <li><a href="Listar?pag=0">Listar clientes</a></li>
-                        
-
-
                     </ul>
                 </li>
-
                 <li><a href="CerrarSesion">Cerrar sesión</a></li>
-
-
-                </li>
-
-
             </ul>
-            <!--  <ul class="nav navbar-nav navbar-right">
-               <li><a href="#">Cerrar sesión</a></li> >
-             </ul> -->
-
         </div>
     </nav>
 
@@ -179,7 +146,7 @@
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav navbar-right">
 
-                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-apple">Insumos<span class="caret"></span></a>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href=""><span class="glyphicon glyphicon-apple">Insumos<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="ListarInsumo?pag=0">Ver lista de insumos</a></li>
                         <li><a href="SolicitarInsumo.jsp">Solicitar Insumo</a></li>
@@ -188,13 +155,12 @@
                     </ul>
                 </li>
 
-                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-shopping-cart">Ventas<span class="caret"></span></a>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href=""><span class="glyphicon glyphicon-shopping-cart">Ventas<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="RegistrarVentas.jsp">Registrar ventas</a></li>
                         <li><a href="ListarVentas?pag=0">Listar ventas</a></li>
                         <li><a href="InforVentas" target="_blank">Realizar informe de ventas</a></li>
                         <li><a href="FacturaVenta" target="blank">Generar factura de ventas</a></li>
-
                     </ul>
                 </li>
                 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Clientes<span class="caret"></span></a>
@@ -204,18 +170,8 @@
                         <li><a href="SolicitarDomicilio.jsp">Solicitar domicilio</a></li>
                     </ul>
                 </li>
-
                 <li><a href="CerrarSesion">Cerrar sesión</a></li>
-
-
-                </li>
-
-
             </ul>
-            <!--  <ul class="nav navbar-nav navbar-right">
-               <li><a href="#">Cerrar sesión</a></li> >
-             </ul> -->
-
         </div>
     </nav>
 
@@ -248,20 +204,10 @@
                         <li><a href="SolicitarInsumo.jsp">Solicitar Insumo</a></li>
                         <li><a href="RegistrarInsumo.jsp">Registrar insumos</a></li>
                         <li><a href="InfoInsumos" target="_blank">Generar reporte de Insumos</a></li>  
-
                     </ul>
-
-
                 <li><a href="CerrarSesion">Cerrar sesión</a></li>
-
-
-                </li>
-
-
             </ul>
-            <!--  <ul class="nav navbar-nav navbar-right">
-               <li><a href="#">Cerrar sesión</a></li> >
-             </ul> -->
+            
 
         </div>
     </nav>
@@ -287,31 +233,13 @@
              otro elemento que se pueda ocultar al minimizar la barra -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav navbar-right">
-
-
-
-
                 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Clientes<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="RegisCliente.jsp">Registrar clientes</a></li>
-                        <li><a href="SolicitarDomicilio.jsp">Solicitar domicilio</a></li>
-                        <!-- <li><a href="#">Actualizar Cliente</a></li>-->
-
+                       <li><a href="SolicitarDomicilio.jsp">Solicitar domicilio</a></li>
                     </ul>
                 </li>
-
-                <li><a href="#">Cerrar sesión</a></li>
-
-
-
-                </li>
-
-
+                <li><a href="CerrarSesion">Cerrar sesión</a></li>
             </ul>
-            <!--  <ul class="nav navbar-nav navbar-right">
-               <li><a href="#">Cerrar sesión</a></li> >
-             </ul> -->
-
         </div>
     </nav>
 
@@ -343,25 +271,9 @@
                         <li><a href="Novedades.jsp">Novedades</a></li>
                     </ul>
                 </li>
-
-
-
-                
-
-
                 <li><a href="CerrarSesion">Cerrar sesión</a></li>
-
-
-
-                </li>
-
-
             </ul>
-            <!--  <ul class="nav navbar-nav navbar-right">
-               <li><a href="#">Cerrar sesión</a></li> >
-             </ul> -->
-
-        </div>
+          </div>
     </nav>
     <%}%>
 </header>

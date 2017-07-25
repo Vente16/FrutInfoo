@@ -78,7 +78,7 @@ public class FormActualizarEmpleados extends HttpServlet {
             
             while(rs.next()){
             out.println("<input type='hidden' id='Id' value='"+Id+"'>");
-            out.println("<h4>Documento:<br><input id='Documento' type='text' class='form-control'  value= "+rs.getString("Documento")+"></h4>"  );
+            out.println("<h4>Documento:<br><input disabled id='Documento' type='text' class='form-control'  value= "+rs.getString("Documento")+"></h4>"  );
             out.println("<h4>Tipo de documento:<br><input id='Tdoc' type='text' class='form-control' disabled value= "+rs.getString("Tipo_documento")+"></h4>");
             out.println("<h4>Nombre:<br><input type='text' id='Nombre' class='form-control'  value=  " + rs.getString("Nombre") + "></h4>");
             out.println("<h4>Apellido:<br><input type='text' id='Apellido' class='form-control'  value= " + rs.getString("Apellido")+ "></h4>");

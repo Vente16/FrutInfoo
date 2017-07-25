@@ -73,7 +73,7 @@ public class RegInsumo extends HttpServlet {
             String Can = request.getParameter("cantidad");
             String Val = request.getParameter("valor");
             String FI = request.getParameter("fecha_ingreso");
-            String FV = request.getParameter("fecha_vencimiento");
+            String FV = request.getParameter("fechavencimiento");
             String Pri = request.getParameter("prioridad");
 
             Conexion c = new Conexion();

@@ -89,7 +89,14 @@
                     <p><b><h2>Con los siguientes Botónes podras generar los  siguientes informes.</h2> </b></p>
                     <a href="InfoInsumos" target="_blank"><button type="submit" class="btn btn-success">Informe Insumos</button></a>&nbsp;&nbsp;
                     <a href="InforEmpleados" target="_blank"><button type="submit" class="btn btn-info">Informe Empleados</button></a>&nbsp;&nbsp;
-                    <a href="InforVentas" target="_blank"><button type="submit" class="btn btn-warning">Informe Ventas</button></a>
+                    <a href="InforVentas" target="_blank"><button type="submit" class="btn btn-warning">Informe Ventas</button></a><br><br>
+                    
+                    <p><b><h2>Descargar Informes a Excel.</h2> </b></p>
+                    <a href="ExcelInsumos.jsp"><button type="submit" class="btn btn-success">Excel Insumos</button></a>&nbsp;&nbsp;
+                    <a href="ExcelVentas.jsp"><button type="submit" class="btn btn-info">Excel Ventas</button></a>&nbsp;&nbsp;
+                    <a href="ExcelEmpleados.jsp"><button type="submit" class="btn btn-warning">Excel Empleados</button></a>
+                    
+                    
                 </div>
             </div>
 

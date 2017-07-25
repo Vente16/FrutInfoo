@@ -15,20 +15,38 @@
         <link rel="stylesheet" href="css/estilos2.css">
         <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
         <script  src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"></script>
-       <script src="js/ValidarRegNov.js"></script> 
+      <!-- <script src="js/ValidarRegNov.js"></script> -->
     </head>
     <body>
-        <%@include file="headerModulos.jspf"%>
+        <style>
+            .containerNov{
+                 border-radius: 5px;
+                background-color: white;
+                padding: 20px;
+                width: 50%;
+                margin: 0 auto;
+                
+            }
+        </style>
+        
+        <%@include file="headerModulos.jspf"%><br><br>
         <h2 style="text-align: center;"><b>REGISTRAR NOVEDAD</b></h2>
         <h4 style="text-align: center;"><b>llene el formulario con los datos del empleado que desea registrarle la novedad.</b></h4><br><br>
 
-
-
-
-        <div class="container">
+        <div class="containerNov">
             <form id="RegNov" action="Novedades" method="post" name="formulario" >
+                <div class="form-group">
+                    <label class="form-control-label" for="index-form-4-4name"><span class="titulo">Novedad</span></label>
+                    <select class="form-control" name="novedad">
+                        <option>Incapacidad</option>
+                        <option>Vacaciones</option>
+                        <option>Permisos</option>
+                        <option>Renuncia</option>
+                    </select>
+                </div>
+                
                 <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Nombres</span></label><br>
-                <input type="text" class="form-control" name="novedad" placeholder="Ingrese los nombres del empleado"><br>
+                <input type="text" class="form-control" name="nombre" placeholder="Ingrese los nombres del empleado"><br>
 
                 <labe2 class="form-control-label" for="index-form2-2-name"><span class="titulo"><b>Apellidos</b></span></labe2><br>
                 <input type="text" class="form-control" name="apellido" data-form-field="Name" id="index-form2-2-name" placeholder="Ingrese los apellidos del empleado"><br>
@@ -46,8 +64,9 @@
                         <option>Otros</option>
                     </select>
                 </div>
-                <label class="form-control">Descripción detallada de la novedad</label>
-                <textarea name="descripcion" id="" cols="30" rows="10" class="form-control" placeholder="Escriba la descripcion detallada de la novedad"></textarea>
+                
+                <label >Descripción detallada de la novedad</label>
+                <textarea name="descripcion" id="" cols="30" rows="10" class="form-control" placeholder="Escriba la descripcion detallada de la novedad"></textarea><br>
 
                 <div class="form-group">
                     <label class="form-control-label" for="index-form-4-4name"><span class="titulo">Seleccione la sede del empleado</span></label>
@@ -65,9 +84,8 @@
                     </select>
                 </div>
 
-                <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Cargo</span></label>
                 <div class="form-group">
-                    <label class="form-control-label" for="index-form-4-4name"><span class="titulo">Seleccione la sede del empleado</span></label>
+                    <label class="form-control-label" for="index-form-4-4name"><span class="titulo">Cargo</span></label>
                     <select class="form-control" name="cargo">
                         <option value="1">Administrador</option>
                         <option value="2">Mesero</option>
@@ -81,11 +99,11 @@
                 <button type="submit" class="btn btn-success">Registrar Novedad</button> 
 
             </form>
-        </div><br><br><br><br>
+        </div><br><br>
         <div class="modal fade" id="registrar" role="dialog">
             <div class="modal-dialog">
                 <!-- Cabecera del modal-->
-                <div class="modal-content">
+               <div class="modal-content">
                     <div class="modal-header">
                         <div class="alert alert-success">
                             <strong>¡Éxito!</strong> Novedad registrada correctamente.
@@ -98,7 +116,7 @@
                 </div>
             </div>
         </div>
-s
+
 
 
         <%@include file="footerModulos.jspf" %>

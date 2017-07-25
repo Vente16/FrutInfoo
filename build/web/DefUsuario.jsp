@@ -20,13 +20,14 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <%@include file="header.jspf" %>
+        <%@include file="headerModulos.jspf" %>
+        
         <%Conexion c = new Conexion();
             Connection con = c.Conectar();
 
             Statement stm = con.createStatement();
             ResultSet rs = stm.executeQuery("SELECT * FROM clientes;");
-            String nombre = "";
+          /*  String nombre = "";*/
             String correo = "";
             if (rs.last()) {
                 nombre = rs.getString(2);
@@ -37,7 +38,7 @@
             <div class="container">
                 <div class="jumbotron">
                     <h1>Registro de usuario</h1>
-                    <p>has acabado de registrar a un cliente por favor crea un usuario</p>
+                   <!-- <p>has acabado de registrar a un cliente por favor crea un usuario</p>-->
                     <form action="RegUsuario" class="form-group-sm">
                         <div class="form-group">
                             <label for="#nombre">Nombre</label>

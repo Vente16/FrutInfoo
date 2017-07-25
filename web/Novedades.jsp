@@ -27,7 +27,7 @@
             <input type="text" name="" id="documento" class="form-control" placeholder="Ingrese el documento de identificación del empleado">
 
             <br> <button type="button" class="btn btn-success consultar">Consultar</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="button" value="Registrar" onClick="location.href ='RegistrarNovedad.jsp'" class="btn btn-primary" />
+            <input type="button" value="Registrar Novedad" onClick="location.href ='RegistrarNovedad.jsp'" class="btn btn-primary" />
 
             <small class="mbr-section-subtitle"></small>
             <br><br>

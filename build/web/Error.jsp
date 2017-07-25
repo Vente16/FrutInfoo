@@ -18,7 +18,7 @@
     <body>
         <style>
             h1{
-                   background:red;
+                   background:none;
                 
             }
         </style>
@@ -30,7 +30,7 @@
               <h1>Error</h1>
               <p>Ha ocurrido una falla en la ejecución de las operaciones</p>
           </div>
-      </div>
+      </div><br><br><br><br>
 
         
  

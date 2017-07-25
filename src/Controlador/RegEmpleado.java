@@ -64,24 +64,25 @@ public class RegEmpleado extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         try {
-            String Nombre = request.getParameter("nombres");
-            String Apellido = request.getParameter("apellidos");
+            String Nombre = request.getParameter("nombre");
+            String Apellido = request.getParameter("apellido");
             String Telefono = request.getParameter("telefono");
             String Celular = request.getParameter("celular");
             String Direccion = request.getParameter("direccion");
             String Disponibilidad = request.getParameter("disponibilidad");
-            String InicioC = request.getParameter("inicio");
-            String FinC = request.getParameter("fin");
-            String HoraI = request.getParameter("hora_inicio");
-            String HoraS = request.getParameter("hora_salida");
+            String InicioC = request.getParameter("inicon");
+            String FinC = request.getParameter("fincon");
+            String HoraI = request.getParameter("horaini");
+            String HoraS = request.getParameter("horasal");
             String Documento = request.getParameter("documento");
             String TipoD = request.getParameter("tipo");
-            String FechaN = request.getParameter("fecha");
+            String FechaN = request.getParameter("fechanac");
             String Correo = request.getParameter("email");
-
-            String Sede = request.getParameter("sede");
+            String Sede = request.getParameter("puntoVenta");
             String Cargo = request.getParameter("cargo");
             String h = "1";
+            
+            
             Conexion c = new Conexion();
             Connection con = c.Conectar();
 
@@ -101,7 +102,6 @@ public class RegEmpleado extends HttpServlet {
             Ps.setString(12, TipoD);
             Ps.setString(13, FechaN);
             Ps.setString(14, Correo);
-
             Ps.setString(15, h);
             Ps.setString(16, Sede);
             Ps.setString(17, Cargo);
@@ -109,7 +109,7 @@ public class RegEmpleado extends HttpServlet {
 
             Ps.executeUpdate();
 
-            response.sendRedirect("DefUsuarioInt.jsp");
+            response.sendRedirect("Exito.jsp");
 
             Ps.close();
             con.close();

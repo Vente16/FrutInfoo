@@ -65,7 +65,7 @@ public class Novedades extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         try{
-            
+        String Novedad = request.getParameter("novedad");
         String Nombre = request.getParameter("nombre");
         String Apellido = request.getParameter("apellido");
         String Documento = request.getParameter("documento");
@@ -77,14 +77,16 @@ public class Novedades extends HttpServlet {
         Conexion c = new Conexion();
         Connection con = c.Conectar();
         
-        PreparedStatement Ps = con.prepareStatement("INSERT INTO Novedades (Nombre_empleado, Apellidos, Documento, Tipo_documento, Descripcion, Id_punto_venta, Id_Cargo) VALUES(?,?,?,?,?,?,?)");
-        Ps.setString(1, Nombre);
-        Ps.setString(2, Apellido);
-        Ps.setString(3, Documento);
-        Ps.setString(4, Tipo);
-        Ps.setString(5, Descripcion);
-        Ps.setString(6, Sede);
-        Ps.setString(7, Cargo);
+        PreparedStatement Ps = con.prepareStatement("INSERT INTO novedades (novedad, Nombre_empleado, Apellidos, Documento, Tipo_documento, Descripcion, Id_punto_venta, Id_Cargo) VALUES(?,?,?,?,?,?,?,?)");
+       
+        Ps.setString(1, Novedad);
+        Ps.setString(2, Nombre);
+        Ps.setString(3, Apellido);
+        Ps.setString(4, Documento);
+        Ps.setString(5, Tipo);
+        Ps.setString(6, Descripcion);
+        Ps.setString(7, Sede);
+        Ps.setString(8, Cargo);
         
         Ps.executeUpdate();
         

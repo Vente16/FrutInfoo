@@ -71,7 +71,7 @@
                 <div  id="direccionv" class="form-group">
                     <label  class="col-sm-2 control-label" for="inputSuccess"><span class="titulo"><b>Direccion</b></span></label>
                     <div class="col-xs-10">
-                        <input type="text" name="FechaNac" class="form-control" id="direccion"  placeholder="ingrese su dirección"><br>
+                        <input type="text" name="direccion" class="form-control" id="direccion"  placeholder="ingrese su dirección"><br>
                         <span class="" id="validard"></span>
                     </div>
                 </div>
@@ -143,7 +143,7 @@
                 <div class="form-group">
                     <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Punto de venta</span></label>
                     <div class="col-xs-10">
-                        <select class="form-control" name="tipo">
+                        <select class="form-control" name="puntoVenta">
                             <option value="1">Envigado</option>
                             <option value="2">Itagui</option>
                             <option value="3">Sabaneta</option>
@@ -159,9 +159,9 @@
                 </div>
 
                 <div class="form-group">
-                    <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Tipo de documento</span></label>
+                    <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Cargo</span></label>
                     <div class="col-xs-10">
-                        <select class="form-control" name="tipo">
+                        <select class="form-control" name="cargo">
                             <option value="1">Administrador</option>
                             <option value="2">Mesero</option>
                             <option value="3">Cajero</option>

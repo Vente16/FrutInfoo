@@ -38,7 +38,7 @@ public class DetalleSolicitudInsumos extends HttpServlet {
             String Id = request.getParameter("Id");
             Conexion c = new Conexion();
             Connection con = c.Conectar();
-            String sql = "SELECT * FROM solicitud_insumo INNER JOIN `puntos de ventas` ON solicitud_insumo.Id_Punto_venta = `puntos de ventas`.Id_punto_de_venta WHERE Id=?";
+            String sql = "SELECT * FROM solicitud_insumo INNER JOIN `puntos_ventas` ON solicitud_insumo.Id_Punto_venta = `puntos_ventas`.Id_punto_de_venta WHERE Id=?";
             PreparedStatement pst = con.prepareStatement(sql);
             pst.setString(1, Id);
             ResultSet rst = pst.executeQuery();
@@ -48,8 +48,8 @@ public class DetalleSolicitudInsumos extends HttpServlet {
                 out.println("<h4>Cantidad: "+ rst.getString("Cantidad")+"</h4>");
                 out.println("<h4>Punto de venta: "+ rst.getString("Nombre_municipio")+"</h4>");
                 out.println("<h4>Autoriza: "+ rst.getString("Autorizar")+"</h4>");
-                out.println("<h4>Punto de venta: "+ rst.getString("Fecha_Solicitud")+"</h4>");
-                out.println("<h4>Punto de venta: "+ rst.getString("Fecha_Autorizacion")+"</h4>");
+                out.println("<h4>Fecha de solicitud: "+ rst.getString("Fecha_Solicitud")+"</h4>");
+                out.println("<h4>Fecha de autorizacion: "+ rst.getString("Fecha_Autorizacion")+"</h4>");
             }
             
                       

@@ -168,41 +168,6 @@ $(document).ready(function () {
 
     });
     
-    var horaini = $('#horaini');
-    var horainiv = $('#horainiv');
-    var valhoraini = $('#validarhoraini');
-    horaini.keyup(function () {
-        if (horaini.val() === "" || horaini.val().length > 5) {
-            this.value = (this.value + '').replace(/[^0-9]/g, '');
-            horainiv.addClass("has-error has-feedback");
-            valhoraini.addClass("glyphicon glyphicon-remove form-control-feedback");
-        } else {
-            this.value = (this.value + '').replace(/[^0-9]/g, '');
-            horainiv.removeClass("has-error has-feedback");
-            valhoraini.removeClass("glyphicon glyphicon-remove form-control-feedback");
-
-            horainiv.addClass("has-success has-feedback");
-            valhoraini.addClass("glyphicon glyphicon-ok form-control-feedback");
-        }
-    });
-    
-    var horasal = $('#horasal');
-    var horasalv = $('#horasalv');
-    var valhorasal = $('#validarhorasal');
-    horasal.keyup(function () {
-        if (horasal.val() === "" || horasal.val().length > 5) {
-            this.value = (this.value + '').replace(/[^0-9]/g, '');
-            horasalv.addClass("has-error has-feedback");
-            valhorasal.addClass("glyphicon glyphicon-remove form-control-feedback");
-        } else {
-            this.value = (this.value + '').replace(/[^0-9]/g, '');
-            horasalv.removeClass("has-error has-feedback");
-            valhorasal.removeClass("glyphicon glyphicon-remove form-control-feedback");
-
-            horasalv.addClass("has-success has-feedback");
-            valhorasal.addClass("glyphicon glyphicon-ok form-control-feedback");
-        }
-    });
     
     var documento = $('#documento');
     var documentov = $('#documentov');
