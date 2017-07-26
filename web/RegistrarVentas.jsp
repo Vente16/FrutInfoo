@@ -20,10 +20,21 @@
         <script src="js/ValidacionRegVenta.js"></script>
     </head>
     <body>
+         <style>
+            .containerven{
+                 border-radius: 5px;
+                background-color: white;
+                padding: 20px;
+                width: 60%;
+                margin: 0 auto;
+                
+            }
+        </style>
+
 
         <%@include file="headerModulos.jspf" %>
         <main>
-            <div class="container">
+            <div class="containerven">
                 <div style="margin-top: 100px">
                     <h2 style="text-align: center;">Registro de Ventas</h2><br><br>
                 </div>
@@ -104,7 +115,7 @@
                             <label  class="col-sm-2 control-label" for="inputSuccess"><span class="titulo"><b>Fecha de la Venta</b></span></label>
                             <div class="col-xs-8">
                                 <input  id="fecha" type="date" name="FechaVen" class="form-control" placeholder="dd/mm/aa"><br>
-                                <span class="" id="validarFech"></span>
+                                <span class=""></span>
                             </div>
                         </div>
 

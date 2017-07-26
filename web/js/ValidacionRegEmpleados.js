@@ -14,6 +14,11 @@ $(document).ready(function(){
                     notEmpty: {
 
                         message: 'Este campo es requerido'
+                    },  regexp: {
+                        
+                    regexp: /^[a-zA-Z ]*$/,
+
+                    message: 'Este campo no acepta números'
                     }
                     
                 }
@@ -27,6 +32,12 @@ $(document).ready(function(){
                     notEmpty: {
 
                         message: 'Este campo es requerido'
+                    },
+                      regexp: {
+                        
+                    regexp: /^[a-zA-Z ]*$/,
+
+                    message: 'Este campo no acepta números'
                     }
                     
                 }
@@ -45,6 +56,15 @@ $(document).ready(function(){
                         
                     regexp: /^[0-9]+$/,
                     message: 'Este campo solo acepta números'
+                    },
+                     stringLength: {
+
+                        min: 7,
+                        
+                        max: 7,
+
+                        message: 'El teléfono debe contener como minimo 7 números'
+
                     }
                     
                 }
@@ -64,6 +84,14 @@ $(document).ready(function(){
                         
                     regexp: /^[0-9]+$/,
                     message: 'Este campo solo acepta números'
+                    }, stringLength: {
+
+                        min: 10,
+                        
+                        max: 10,
+
+                        message: 'El celular debe contener como minimo 10 números'
+
                     }
                     
                 }

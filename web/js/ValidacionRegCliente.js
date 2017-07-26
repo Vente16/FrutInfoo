@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    alert("hola");
+    
     $("#RegistrarCliente").bootstrapValidator({
         feedbackIcons: {
             valid:'glyphicon glyphicon-ok',
@@ -54,6 +54,12 @@ $(document).ready(function(){
                     notEmpty: {
 
                         message: 'Este campo es requerido'
+                    },
+                      regexp: {
+                        
+                    regexp: /^[a-zA-Z ]*$/,
+
+                    message: 'Este campo no acepta números'
                     }
 
                 }
@@ -66,6 +72,12 @@ $(document).ready(function(){
                     notEmpty: {
 
                         message: 'Este campo es requerido'
+                    },
+                      regexp: {
+                        
+                    regexp: /^[a-zA-Z ]*$/,
+
+                    message: 'Este campo no acepta números'
                     }
 
                 }
@@ -110,6 +122,12 @@ $(document).ready(function(){
                     notEmpty: {
 
                         message: 'Este campo es requerido'
+                    },
+                      regexp: {
+                        
+                    regexp: /^[a-zA-Z ]*$/,
+
+                    message: 'Este campo no acepta números'
                     }
 
                 }

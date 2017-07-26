@@ -1,13 +1,13 @@
 $(document).ready(function(){
     
-    $("#SolicitarIns").bootstrapValidator({
+    $("#Novedad").bootstrapValidator({
         feedbackIcons: {
             valid:'glyphicon glyphicon-ok',
             invalid:'glyphicon glyphicon-remove',
             validating:'glyphicon glyphicon-refresh'
         },
         fields: {
-            insumo: {
+             novedad: {
 
                 validators: {
 
@@ -15,11 +15,47 @@ $(document).ready(function(){
 
                         message: 'Este campo es requerido'
                     }
-
+                    
                 }
 
             },
-             cantidad: {
+             nombre: {
+
+                validators: {
+
+                    notEmpty: {
+
+                        message: 'Este campo es requerido'
+                    },
+                     regexp: {
+                        
+                    regexp: /^[a-zA-Z ]*$/,
+
+                    message: 'Este campo no acepta números'
+                    }
+                    
+                }
+
+            },
+             apellido: {
+
+                validators: {
+
+                    notEmpty: {
+
+                        message: 'Este campo es requerido'
+                    },
+                     regexp: {
+                        
+                    regexp: /^[a-zA-Z ]*$/,
+
+                    message: 'Este campo no acepta números'
+                    }
+                    
+                }
+
+            },
+            documento: {
 
                 validators: {
 
@@ -32,36 +68,21 @@ $(document).ready(function(){
                         
                     regexp: /^[0-9]+$/,
                     message: 'Este campo solo acepta números'
+                    },
+                     stringLength: {
+
+                        min: 8,
+                        
+                        max: 10,
+
+                        message: 'La cedula contiene 10 números'
+
                     }
                     
                 }
-                
-            },
-             tipo_sede: {
-
-                validators: {
-
-                    notEmpty: {
-
-                        message: 'Este campo es requerido'
-                    }
-
-                }
 
             },
-             autorizar: {
-
-                validators: {
-
-                    notEmpty: {
-
-                        message: 'Este campo es requerido'
-                    }
-                     
-                }
-                
-            },
-            fecha_solicitud: {
+             tipo: {
 
                 validators: {
 
@@ -71,10 +92,30 @@ $(document).ready(function(){
                     }
                     
                 }
-                
+
             },
-            
-             fecha_aut: {
+             descripcion: {
+
+                validators: {
+
+                    notEmpty: {
+
+                        message: 'Este campo es requerido'
+                    },
+                     stringLength: {
+
+                        min: 20,
+                        
+                        max: 100,
+
+                        message: 'La descripción debe tener mas de 20 caracteres'
+
+                    }
+                    
+                }
+
+            },
+             sede: {
 
                 validators: {
 
@@ -84,9 +125,25 @@ $(document).ready(function(){
                     }
                     
                 }
-                
+
+            },
+             cargo: {
+
+                validators: {
+
+                    notEmpty: {
+
+                        message: 'Este campo es requerido'
+                    }
+                    
+                }
+
             }
+            
 
+           
+            
+            
             
             
             
