@@ -10,17 +10,14 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Registro Domicilio</title>
-         <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
-        <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.js"></script>  
-        <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>  
-        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/css/bootstrapValidator.min.css"/>
-        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/js/bootstrapValidator.min.js"> </script>
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/estilos2.css">
-        <script src="js/Prueba.js"></script>
+            <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+            <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css"/>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+            <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"></script>
+            <link rel="stylesheet" href="css/bootstrap.css">
+            <link rel="stylesheet" href="css/estilos2.css">
+            <script src="js/ValidacionSolicitudDomicilio.js"></script>
     </head>
     <body>
          <style>
@@ -28,11 +25,7 @@
                 width: 50%;
                 
             }
-            h1{
-                text-align: center;
-                padding-top: 20px;
-                
-            }
+           
             </style>
     	  <%@include file="headerModulos.jspf" %>
           
@@ -42,7 +35,7 @@
                       <h2 style="text-align: center;">SOLICITAR DOMICILIO</h2><br><br>
                   </div>
               
-            <form class="form-horizontal" id="RegNov" action="RegistrarDomicilio" method="post">
+            <form class="form-horizontal" id="Domicilio" action="RegistrarDomicilio" method="post">
                 
                 <div class="form-group">
                     <label class="col-sm-2 control-label"><h4>Producto:</h4></label>

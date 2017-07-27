@@ -10,12 +10,14 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
             <title>Registrar insumo</title>  
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+            <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+            <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css"/>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+            <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"></script>
             <link rel="stylesheet" href="css/bootstrap.css">
             <link rel="stylesheet" href="css/estilos2.css">
-            <script src="js/validacionFormRegIns.js"></script>
+            <script src="js/ValidacionRegInsumo.js"></script>
     </head>
 
     <body>
@@ -33,7 +35,7 @@
                             </div>      
 
                             <div class="continer-propio">
-                                <form data-toggle= "validator" class="form-horizontal" role= "form" action="RegInsumo" method="post" id="FormRegisIns" >
+                                <form class="form-horizontal" id="RegInsumo" action="RegInsumo" method="post" id="FormRegisIns" >
 
                                     <div id="codigov" class="form-group">
                                         <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Codigo</span></label>
@@ -55,7 +57,7 @@
                                                                 <option value="3">Minorista</option>
                                                             </select>
                                                         </div>          
-                                                    </div>
+                                                    </div><br>
 
                                                     <div id="tipov" class="form-group">
                                                         <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Tipo</span></label>

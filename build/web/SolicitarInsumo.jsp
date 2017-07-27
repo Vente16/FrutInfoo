@@ -10,12 +10,14 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Solicitar Insumo</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/estilos2.css">
-        <script src="js/validacionFormSolIns.js"></script>
+            <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+            <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css"/>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+            <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"></script>
+            <link rel="stylesheet" href="css/bootstrap.css">
+            <link rel="stylesheet" href="css/estilos2.css">
+        <script src="js/ValidacionSolicitidIns.js"></script>
     </head>
                        
     <body>
@@ -35,12 +37,12 @@
             </div>
 
             <div class="continer-propio">
-                <form data-toggle= "validator" class="form-horizontal" action="SolicitarInsumo" method="post" id="SolicitarIns">
+                <form  class="form-horizontal" id="SolicitarIns" action="SolicitarInsumo" method="post" >
 
                     <div  id="nombrev" class="form-group">
                         <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Nombre del Insumo</span></label>
                         <div class="col-xs-10">
-                            <input id="nombre_insumo" type="text" class="form-control" name="nombre_insumo"  placeholder="Digite el nombre del insumo"><br>
+                            <input id="nombre_insumo" type="text" name="insumo" class="form-control" placeholder="Digite el nombre del insumo"><br>
                             <span class="" id="validarn"></span>
                         </div>
                     </div>

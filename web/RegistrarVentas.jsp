@@ -10,22 +10,36 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Registrar Ventas</title>
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/estilos2.css">
+         <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-        <script src="js/validacionFormVenta.js"></script>
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/estilos2.css">
+        <script src="js/ValidacionRegVenta.js"></script>
     </head>
     <body>
+         <style>
+            .containerven{
+                 border-radius: 5px;
+                background-color: white;
+                padding: 20px;
+                width: 60%;
+                margin: 0 auto;
+                
+            }
+        </style>
+
 
         <%@include file="headerModulos.jspf" %>
         <main>
-            <div class="container">
+            <div class="containerven">
                 <div style="margin-top: 100px">
                     <h2 style="text-align: center;">Registro de Ventas</h2><br><br>
                 </div>
                 <div class="continer">
-                    <form  class="form-horizontal" role= "form" action="RegVentas" method="post">
+                    <form  class="form-horizontal" id="RegVenta" action="RegVentas" method="post">
 
                         <div class="form-group">    
                             <label class="col-sm-2 control-label" for="inputSuccess">
@@ -52,7 +66,7 @@
                                     <option>Banana Jungle</option>  
                                 </select>
                             </div>
-                        </div>
+                        </div><br>
 
                         <div id="cantidadv" class="form-group">
                             <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Cantidad Producto</span></label>
@@ -69,7 +83,7 @@
                                 <span class="" id="validarp"></span>
                             </div>
                         </div>
-
+                        
                         <div id="ivav" class="form-group">
                             <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Iva</span></label>
                             <div class="col-xs-8">
@@ -95,13 +109,13 @@
                                     <option>Punto de venta </option>
                                 </select>
                             </div>
-                        </div>
+                        </div><br>
 
                         <div  id="fechav" class="form-group">
                             <label  class="col-sm-2 control-label" for="inputSuccess"><span class="titulo"><b>Fecha de la Venta</b></span></label>
                             <div class="col-xs-8">
                                 <input  id="fecha" type="date" name="FechaVen" class="form-control" placeholder="dd/mm/aa"><br>
-                                <span class="" id="validarFech"></span>
+                                <span class=""></span>
                             </div>
                         </div>
 

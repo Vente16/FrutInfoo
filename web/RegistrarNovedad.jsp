@@ -10,12 +10,14 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Registrar novedad</title>
-        <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css"/>
-        <link rel="stylesheet" href="css/estilos2.css">
-        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-        <script  src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"></script>
-      <!-- <script src="js/ValidarRegNov.js"></script> -->
+            <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+            <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css"/>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+            <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"></script>
+            <link rel="stylesheet" href="css/bootstrap.css">
+            <link rel="stylesheet" href="css/estilos2.css">
+            <script src="js/ValidacionRegistrarNovedad.js"></script>
     </head>
     <body>
         <style>
@@ -34,42 +36,68 @@
         <h4 style="text-align: center;"><b>llene el formulario con los datos del empleado que desea registrarle la novedad.</b></h4><br><br>
 
         <div class="containerNov">
-            <form id="RegNov" action="Novedades" method="post" name="formulario" >
-                <div class="form-group">
-                    <label class="form-control-label" for="index-form-4-4name"><span class="titulo">Novedad</span></label>
-                    <select class="form-control" name="novedad">
-                        <option>Incapacidad</option>
-                        <option>Vacaciones</option>
-                        <option>Permisos</option>
-                        <option>Renuncia</option>
-                    </select>
-                </div>
+            <form id="Novedad" action="Novedades" method="post" name="formulario" >
+                 <div class="form-group">
+                    <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Novedad</span></label>
+                    <div class="col-xs-10">
+                        <select class="form-control" name="novedad">
+                            <option>Incapacidad</option>
+                            <option>Vacaciones</option>
+                            <option>Permisos</option>
+                            <option>Renincia</option>
+                            <option>Otros</option>
+                        </select>
+                    </div><br>
+                 </div><br>
+                 
+                <div id="nombrev" class="form-group">
+                    <label class="col-sm-2 control-label" for="inputSuccess">
+                    <span class="titulo">Nombre</span></label>
+                    <div class="col-xs-10">
+                        <input id="nombre" type="text" class="form-control" name="nombre"  placeholder="Ingrese los nombres del empleado"><br>
+                        <span class="" id="validarn"></span>
+                    </div>
+                </div><br>
                 
-                <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Nombres</span></label><br>
-                <input type="text" class="form-control" name="nombre" placeholder="Ingrese los nombres del empleado"><br>
-
-                <labe2 class="form-control-label" for="index-form2-2-name"><span class="titulo"><b>Apellidos</b></span></labe2><br>
-                <input type="text" class="form-control" name="apellido" data-form-field="Name" id="index-form2-2-name" placeholder="Ingrese los apellidos del empleado"><br>
-
-                <label class="form-control-label" for="index-form1-1-name"><span class="titulo">Documento de identificación</span></label><br>
-                <input type="text" class="form-control" name="documento" data-form-field="Name" id="index-form1-1-name" placeholder="Ingrese el número de documento de identificación"><br>
-
-                <div class="form-group">
-                    <label class="form-control-label" for="index-form-4-4name"><span class="titulo">Seleccione el tipo de documento</span></label>
-                    <select class="form-control" name="tipos">
-                        <option>Cédula de Ciudadanía(CC)</option>
-                        <option>Tarjeta de Identidad (TI)</option>
-                        <option>Registro Civil (RC)</option>
-                        <option>Cédula de Extranjería (CE)</option>
-                        <option>Otros</option>
-                    </select>
-                </div>
+                <div id="nombrev" class="form-group">
+                    <label class="col-sm-2 control-label" for="inputSuccess">
+                    <span class="titulo">Apellido</span></label>
+                    <div class="col-xs-10">
+                        <input id="nombre" type="text" class="form-control" name="apellido"  placeholder="Ingrese los apellidos del empleado"><br>
+                        <span class="" id="validarn"></span>
+                    </div>
+                </div><br>
                 
-                <label >Descripción detallada de la novedad</label>
-                <textarea name="descripcion" id="" cols="30" rows="10" class="form-control" placeholder="Escriba la descripcion detallada de la novedad"></textarea><br>
-
+                 <div id="nombrev" class="form-group">
+                    <label class="col-sm-2 control-label" for="inputSuccess">
+                    <span class="titulo">número Documento</span></label>
+                    <div class="col-xs-10">
+                        <input id="nombre" type="text" class="form-control" name="documento"  placeholder="Ingrese el número de documento de identificación"><br>
+                        <span class="" id="validarn"></span>
+                    </div><br>
+                </div><br>
+                
                 <div class="form-group">
-                    <label class="form-control-label" for="index-form-4-4name"><span class="titulo">Seleccione la sede del empleado</span></label>
+                    <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Documento</span></label>
+                    <div class="col-xs-10">
+                        <select class="form-control" name="tipos">
+                            <option>Cédula de ciudadania</option>
+                            <option>Tarjeta de Identidad</option>
+                            <option>Registro Civil</option>
+                            <option>Cedula de Extranjeria</option>
+                            <option>Otros</option>
+                        </select><br>
+                    </div><br>
+                 </div><br>
+                 
+                
+                <div class="form-group">
+                    <label class="col-sm- control-label">Descripción novedad</label>
+                         <textarea name="descripcion"  cols="" rows="4" class="form-control" placeholder="Escriba la descripcion detallada de la novedad"></textarea>
+                    </div><br>
+                    
+                <div class="form-group">
+                    <label class="form-control-label" for="index-form-4-4name"><span class="titulo">Sede del empleado</span></label>
                     <select class="form-control" name="sede">
                         <option value="1">Envigado </option>
                         <option value="2">Itagüí</option>
@@ -98,23 +126,7 @@
                 <br> 
                 <button type="submit" class="btn btn-success">Registrar Novedad</button> 
 
-            </form>
-        </div><br><br>
-        <div class="modal fade" id="registrar" role="dialog">
-            <div class="modal-dialog">
-                <!-- Cabecera del modal-->
-               <div class="modal-content">
-                    <div class="modal-header">
-                        <div class="alert alert-success">
-                            <strong>¡Éxito!</strong> Novedad registrada correctamente.
-                        </div>
-                    </div>
-                    <!-- Footer del modal, dos botones, cerrrar y Acceder-->
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
-                    </div>
-                </div>
-            </div>
+          
         </div>
 
 
