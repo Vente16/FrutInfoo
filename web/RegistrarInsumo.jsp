@@ -21,15 +21,10 @@
     </head>
 
     <body>
-        <style>
-              div.container {
-                width: 50%;
-                
-            }
-        </style>
-        <%@include file="headerModulos.jspf"%>
+        
+        <%@include file="headerModulos.jspf"%><br>
         <main>
-            <div class="container">
+            <div class="containerForm">
                 <div style="margin-top: 100px">
                     <h2 style="text-align: center;">Registrar Insumos</h2><br><br>
                             </div>      
@@ -52,6 +47,7 @@
                                                             <span class="titulo">Proveedor</span></label>
                                                         <div class="col-xs-10">
                                                             <select class="form-control" name="proveedor">
+                                                                <option></option>
                                                                 <option value="1">Helados S.A</option>
                                                                 <option value="2">Desechables S.A</option>
                                                                 <option value="3">Minorista</option>
@@ -133,7 +129,7 @@
                                                                                                                                                                                                     </form>
                                                                                                                                                                                                     </div>
                                                                                                                                                                                                     </div>
-                                                                                                                                                                                                    </main>
+                                                                                                                                                                                                    </main><br>
 
 
                                                                                                                                                                                                     <%@include file="footer.jspf" %> 

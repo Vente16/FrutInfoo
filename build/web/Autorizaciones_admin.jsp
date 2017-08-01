@@ -33,6 +33,8 @@
                                 <th>Cantidad</th>
                                 <th>Fecha de solicitud</th>
                                 <th>Detalle</th>
+                                <th>Autorizar</th>
+                                <th>Desautorizar</th>
                             </tr>
                         </thead>
                         <%
@@ -57,6 +59,8 @@
                                 <td><%= re.getString("Cantidad")%></td>
                                 <td><%= re.getString("Fecha_Solicitud")%></td>
                                 <td><a href="#Detalle" data-toggle="modal"><button class="btn btn-primary glyphicon glyphicon-search Detalle"></button></a></td>
+                                <td><a href="#" class="btn btn-success"><span class="glyphicon glyphicon-ok-sign"></span></a></td>
+                                <td><a href="#" class="btn btn-warning"><span class="glyphicon glyphicon-remove-sign"></span></a></td>
                             </tr>
                         </tbody>
                         <%
@@ -86,7 +90,7 @@
                             <li class="page-item"><a class="page-link" href="ListarSolicitudInsumos?pag=<%=Integer.parseInt(request.getParameter("pag")) + 1%>">Siguiente</a></li>
                         </ul>
                     </nav>
-                    <p><b><h2>Con los siguientes Botónes podras generar los  siguientes informes.</h2> </b></p>
+                   <!-- <p><b><h2>Con los siguientes Botónes podras generar los  siguientes informes.</h2> </b></p>
                     <a href="InfoInsumos" target="_blank"><button type="submit" class="btn btn-success">Informe Insumos</button></a>&nbsp;&nbsp;
                     <a href="InforEmpleados" target="_blank"><button type="submit" class="btn btn-info">Informe Empleados</button></a>&nbsp;&nbsp;
                     <a href="InforVentas" target="_blank"><button type="submit" class="btn btn-warning">Informe Ventas</button></a><br><br>
@@ -94,7 +98,7 @@
                     <p><b><h2>Descargar Informes a Excel.</h2> </b></p>
                     <a href="ExcelInsumos.jsp"><button type="submit" class="btn btn-success">Excel Insumos</button></a>&nbsp;&nbsp;
                     <a href="ExcelVentas.jsp"><button type="submit" class="btn btn-info">Excel Ventas</button></a>&nbsp;&nbsp;
-                    <a href="ExcelEmpleados.jsp"><button type="submit" class="btn btn-warning">Excel Empleados</button></a>
+                    <a href="ExcelEmpleados.jsp"><button type="submit" class="btn btn-warning">Excel Empleados</button></a>-->
                     
                     
                 </div>

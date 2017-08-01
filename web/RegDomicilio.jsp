@@ -20,16 +20,9 @@
             <script src="js/ValidacionSolicitudDomicilio.js"></script>
     </head>
     <body>
-         <style>
-            div.container {
-                width: 50%;
-                
-            }
-           
-            </style>
-    	  <%@include file="headerModulos.jspf" %>
+    	  <%@include file="headerModulos.jspf" %><br>
           
-          <div class="container">
+          <div class="containerForm">
               
                   <div style="margin-top: 100px">
                       <h2 style="text-align: center;">SOLICITAR DOMICILIO</h2><br><br>
@@ -88,7 +81,7 @@
               
                 <button type="submit" class="btn btn-success">SOLICITAR</button>
             </form>
-        </div>
+        </div><br>
           
            <%@include file="footer.jspf" %>
     </body>

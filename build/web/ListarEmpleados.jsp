@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
         <link rel="stylesheet" href="css/estilos2.css">
+        <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css> 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="js/FuncionesEmpleados.js"></script>
@@ -20,8 +21,8 @@
         <title>Lista de empleados</title>
 
     </head>
-
-
+    
+  
     <%@include file="headerModulos.jspf" %> 
 
     <div class="container">
@@ -46,14 +47,17 @@
                                     <th>Nombre</th>
                                     <th>Cargo</th>
                                     <th>Detalle</th>
+    
                                     <% }else{
                                     %>
+                                    
                                     <th>Documento</th>
                                     <th>Nombre</th>
                                     <th>Cargo</th>
                                     <th>Detalle</th>
                                     <th>Actualizar</th>
                                     <th>Eliminar</th>
+                                    
                                     <% }
                                     %>
                                 </tr>
@@ -83,6 +87,8 @@
                                     <td><%= reE.getString("Nombre")%></td>
                                     <td><%= reE.getString("Nombre_cargo")%></td>
                                     <td><a href="#Detalle"  data-toggle="modal"><button class="btn btn-primary  glyphicon glyphicon-eye-open Detalle"></button></a></td>
+                                    <td><a href="InforEmpleados" target="_blank"><button  class="btn btn-default" style=font-size:16px;color:red;background:black><i class="fa fa-file-pdf-o"></i></button></a></td>
+                                    <td><a  href="ExcelEmpleados.jsp"> <button  class="btn btn-success" style=font-size:16px;color:black><i class="fa fa-file-excel-o"></i></button></a></td>
                                 </tr>    
                                     <% }else{
                                     %>
@@ -93,7 +99,7 @@
                                     <td><a href="#Detalle"  data-toggle="modal"><button class="btn btn-primary  glyphicon glyphicon-eye-open Detalle"></button></a></td>
                                     <td><a href="#Actualizar"  data-toggle="modal"><button class="btn btn-success glyphicon glyphicon-edit Actualizar"></button></a></td>
                                     <td><button class="btn btn-danger glyphicon glyphicon-trash Eliminar"></button></td>
-                                    </tr>
+                                </tr>
                                     <% }
                                     %>
                                 
@@ -122,8 +128,18 @@
                                         }
                                     %>
                                 <li class="page-item"><a class="page-link" href="ListarEmp?pag=<%=Integer.parseInt(request.getParameter("pag")) + 1%>">Siguiente</a></li>
-                            </ul>
+                            </ul> 
+                            
+                             <div style="text-align:right"> 
+                                 <p><b>Generar Informes</b></p>
+                                <a href="InforEmpleados" target="_blank"><button class="btn btn-default" style=font-size:24px;color:red;background:black>Pdf <i class="fa fa-file-pdf-o"></i></button></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a  href="ExcelEmpleados.jsp"><button class="btn btn-success" style=font-size:24px;color:black>Exc <i class="fa fa-file-excel-o"></i></button></a> 
+                            </div> 
+                            
                         </nav>
+                            
+                             
+                            
                             </div>
                     </div>
                     

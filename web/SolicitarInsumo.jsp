@@ -21,17 +21,11 @@
     </head>
                        
     <body>
-    <style>
-        div.container {
-          width: 50%;
-                
-            }
-    </style>
-
-    <%@include file="headerModulos.jspf"%>
+  
+    <%@include file="headerModulos.jspf"%><br>
 
     <main>
-        <div class="container">
+        <div class="containerForm">
             <div style="margin-top: 100px">
                 <h2 style="text-align: center;">Solicitar Insumos</h2><br><br>
             </div>
@@ -108,7 +102,7 @@
                 </form> 
             </div>
         </div>
-    </main>      
+    </main>  <br>    
     <%@include file="footer.jspf" %>   
 
 </body>
