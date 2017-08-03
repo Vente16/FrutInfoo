@@ -103,21 +103,12 @@
                         </div><br>
 
                         <div  id="fechav" class="form-group">
-                            <label  class="col-sm-2 control-label" for="inputSuccess"><span class="titulo"><b>Fecha de la Venta</b></span></label>
+                            <label  class="col-sm-2 control-label" for="inputSuccess"><span class="titulo"><b>Fecha y hora de la Venta</b></span></label>
                             <div class="col-xs-8">
-                                <input  id="fecha" type="date" name="FechaVen" class="form-control" placeholder="dd/mm/aa"><br>
+                                <input  id="fecha" type="datetime-local" name="FechaVen" class="form-control" placeholder="dd/mm/aa"><br>
                                 <span class=""></span>
                             </div>
                         </div>
-
-                        <div  id="horav" class="form-group">
-                            <label  class="col-sm-2 control-label" for="inputSuccess"><span class="titulo"><b>Hora de la Venta</b></span></label>
-                            <div class="col-xs-8">
-                                <input  id="fecha" type="time" name="hora" class="form-control" placeholder="xx:xx am/pm"><br>
-                                <span class="" id="validarhv"></span>
-                            </div>
-                        </div>
-
 
                         <div id="pedidov" class="form-group">
                             <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Número del pedido</span></label>

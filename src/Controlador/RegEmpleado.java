@@ -69,11 +69,8 @@ public class RegEmpleado extends HttpServlet {
             String Telefono = request.getParameter("telefono");
             String Celular = request.getParameter("celular");
             String Direccion = request.getParameter("direccion");
-            String Disponibilidad = request.getParameter("disponibilidad");
             String InicioC = request.getParameter("inicon");
             String FinC = request.getParameter("fincon");
-            String HoraI = request.getParameter("horaini");
-            String HoraS = request.getParameter("horasal");
             String Documento = request.getParameter("documento");
             String TipoD = request.getParameter("tipo");
             String FechaN = request.getParameter("fechanac");
@@ -86,25 +83,22 @@ public class RegEmpleado extends HttpServlet {
             Conexion c = new Conexion();
             Connection con = c.Conectar();
 
-            PreparedStatement Ps = con.prepareStatement("INSERT INTO empleados (Nombre, Apellido, Telefono, celular, Direccion, Disponibilidad, inicio_contrato, Fin_contrato, Hora_inicio, Hora_salida, Documento, Tipo_documento, Fecha_nacimiento, correo, Habilitado, Id_punto_de_venta, id_cargo ) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+            PreparedStatement Ps = con.prepareStatement("INSERT INTO empleados (Nombre, Apellido, Telefono, celular, Direccion, inicio_contrato, Fin_contrato, Documento, Tipo_documento, Fecha_nacimiento, correo, Habilitado, Id_punto_de_venta, id_cargo ) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
 
             Ps.setString(1, Nombre);
             Ps.setString(2, Apellido);
             Ps.setString(3, Telefono);
             Ps.setString(4, Celular);
             Ps.setString(5, Direccion);
-            Ps.setString(6, Disponibilidad);
-            Ps.setString(7, InicioC);
-            Ps.setString(8, FinC);
-            Ps.setString(9, HoraI);
-            Ps.setString(10, HoraS);
-            Ps.setString(11, Documento);
-            Ps.setString(12, TipoD);
-            Ps.setString(13, FechaN);
-            Ps.setString(14, Correo);
-            Ps.setString(15, h);
-            Ps.setString(16, Sede);
-            Ps.setString(17, Cargo);
+            Ps.setString(6, InicioC);
+            Ps.setString(7, FinC);
+            Ps.setString(8, Documento);
+            Ps.setString(9, TipoD);
+            Ps.setString(10, FechaN);
+            Ps.setString(11, Correo);
+            Ps.setString(12, h);
+            Ps.setString(13, Sede);
+            Ps.setString(14, Cargo);
 
 
             Ps.executeUpdate();

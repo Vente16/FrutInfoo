@@ -54,6 +54,7 @@
                             <span class="titulo">Punto de Venta</span></label>
                         <div class="col-xs-10">
                             <select class="form-control" name="tipo_sede">
+                                <option></option>
                                 <option value="1">Envigado</option>
                                 <option value="2">Itagui</option>
                                 <option value="3">Sabaneta</option>
@@ -68,27 +69,11 @@
                         </div>
                     </div>    
 
-                    <div  id="autorizarv" class="form-group">
-                        <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Autorizar</span></label>
-                        <div class="col-xs-10">
-                            <input id="autorizar" type="text" class="form-control" name="autorizar"  placeholder="Si/No"><br>
-                            <span class="" id="validara"></span>
-                        </div>
-                    </div>
-
                     <div id="fechav" class="form-group">
                         <label  class="col-sm-2 control-label" for="inputSuccess"><span class="titulo"><b>Fecha Solicitud</b></span></label>
                         <div class="col-xs-10">
                             <input type="date" name="fecha_solicitud" class="form-control" id="fecha_solicitud"  placeholder="dd/mm/aa"><br>
                             <span class="" id="validarf"></span>
-                        </div>
-                    </div>
-
-                    <div id="fechAv" class="form-group">
-                        <label  class="col-sm-2 control-label" for="inputSuccess"><span class="titulo"><b>Fecha Autorizacion</b></span></label>
-                        <div class="col-xs-10">
-                            <input type="date" name="fecha_aut" class="form-control" id="fecha_aut"  placeholder="dd/mm/aa"><br>
-                            <span class="" id="validarFA"></span>
                         </div>
                     </div>
 

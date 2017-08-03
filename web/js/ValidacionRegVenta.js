@@ -139,18 +139,6 @@ $(document).ready(function(){
                 }
 
             },
-            hora: {
-
-                validators: {
-
-                    notEmpty: {
-
-                        message: 'Este campo es requerido'
-                    }
-
-                }
-
-            },
             IdPedido: {
 
                 validators: {

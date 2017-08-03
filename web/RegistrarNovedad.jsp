@@ -29,6 +29,7 @@
                     <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Novedad</span></label>
                     <div class="col-xs-10">
                         <select class="form-control" name="novedad">
+                            <option></option>
                             <option>Incapacidad</option>
                             <option>Vacaciones</option>
                             <option>Permisos</option>

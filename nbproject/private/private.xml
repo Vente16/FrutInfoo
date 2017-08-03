@@ -3,41 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-<<<<<<< HEAD
             <file>file:/C:/Users/Home/Desktop/nuevo/web/IndexPrincipal.html</file>
-            <file>file:/C:/Users/Home/Desktop/nuevo/web/ListarVentas.jsp</file>
-            <file>file:/C:/Users/Home/Desktop/nuevo/web/Novedades.jsp</file>
-            <file>file:/C:/Users/Home/Desktop/nuevo/web/VerlistadeInsumos.jsp</file>
+            <file>file:/C:/Users/Home/Desktop/nuevo/web/RegistrarVentas.jsp</file>
+            <file>file:/C:/Users/Home/Desktop/nuevo/web/headerModulos.jspf</file>
             <file>file:/C:/Users/Home/Desktop/nuevo/web/RegistrarNovedad.jsp</file>
-            <file>file:/C:/Users/Home/Desktop/nuevo/web/ListarEmpleados.jsp</file>
-=======
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/src/Controlador/DetalleInsumo.java</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/src/Modelo/Conexion.java</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/src/Controlador/ActualizarCliente.java</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/src/Controlador/DetalleSolicitudInsumos.java</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/VerlistadeInsumos.jsp</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/js/FuncionesClientes.js</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/src/Controlador/ActualizarInsumo.java</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/RegistrarNovedad.jsp</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/src/Controlador/ListarInsumo.java</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/js/FuncionesEmpleados.js</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/ModalInsumos.jsp</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/src/Controlador/FormActualizarClientes.java</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/js/FuncionesSolicitudInsumos.js</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/js/FuncionesVentas.js</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/js/FuncionesInsumos.js</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/src/Controlador/Novedades.java</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/nbproject/build-impl.xml</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/Novedades.jsp</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/js/validacionFormEmpleado.js</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/src/Controlador/ConsultarNovedades.java</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/WEB-INF/web.xml</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/ModalSolicitudInsumos.jsp</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/src/Controlador/FormActualizarInsumo.java</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/js/consultarNovedad.js</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/Autorizaciones_admin.jsp</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/ListarEmpleados.jsp</file>
->>>>>>> origin/pruebas
+            <file>file:/C:/Users/Home/Desktop/nuevo/web/js/ValidacionRegistrarNovedad.js</file>
         </group>
     </open-files>
 </project-private>

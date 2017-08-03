@@ -55,7 +55,7 @@
                 </div>
 
                 <div  id="telefonov" class="form-group">
-                    <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Telefono</span></label>
+                    <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Teléfono</span></label>
                     <div class="col-xs-10">
                         <input  type="text" class="form-control" id="telefono" name="telefono"  placeholder="Ingrese su teléfono"><br>
                         <span  id="validart"></span>
@@ -71,22 +71,12 @@
                 </div>
 
                 <div  id="direccionv" class="form-group">
-                    <label  class="col-sm-2 control-label" for="inputSuccess"><span class="titulo"><b>Direccion</b></span></label>
+                    <label  class="col-sm-2 control-label" for="inputSuccess"><span class="titulo"><b>Dirección</b></span></label>
                     <div class="col-xs-10">
                         <input type="text" name="direccion" class="form-control" id="direccion"  placeholder="ingrese su dirección"><br>
                         <span class="" id="validard"></span>
                     </div>
                 </div>
-
-
-                <div id="disponibilidadv" class="form-group">
-                    <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Disponibilidad:</span></label>
-                    <div class="col-xs-10">
-                        <input type="text" class="form-control" id="disponibilidad" name="disponibilidad" placeholder="">
-                        <span class="" id="validardis"></span>
-                    </div>
-                </div><br>
-
 
                 <div  id="iniconv" class="form-group">
                     <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Inicio de contrato</span></label>
@@ -103,23 +93,7 @@
                         <span class="" id="validarfincon"></span>
                     </div>
                 </div>
-
-                <div id="horainiv" class="form-group">
-                    <label class="col-sm-2 control-label" for="inputSuccess" ><span class="titulo">Hora inicio</span></label>
-                    <div class="col-xs-10">
-                        <input name="horaini" type="time" class="form-control" id="horaini"  placeholder=""><br>
-                        <span class="" id="validarhoraini"></span>
-                    </div>
-                </div>
-
-                <div id="horasalv" class="form-group">
-                    <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo"><b>Hora salida</b></span></label>
-                    <div class="col-xs-10">
-                        <input  name="horasal"  type="time" class="form-control" id="horasal"  placeholder=""><br>
-                        <span class="" id="validarhorasal"></span>
-                    </div>
-                </div>
-                    
+      
                      <div class="form-group">
                     <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Tipo de documento</span></label>
                     <div class="col-xs-10">
@@ -177,7 +151,7 @@
                 </div><br>
 
                 <div  id="fechanacv" class="form-group">
-                    <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">fecha de naciemiento</span></label>
+                    <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">fecha de nacimiento</span></label>
                     <div class="col-xs-10">
                         <input  name="fechanac" type="date" class="form-control" id="fechanac" placeholder=""><br>
                         <span class="" id="validarfechanac"></span>
