@@ -38,7 +38,7 @@
             <div class="container">
                 <div class="jumbotron">
                     <h1>Registro de usuario</h1>
-                   <!-- <p>has acabado de registrar a un cliente por favor crea un usuario</p>-->
+                    <p>has acabado de registrar a un cliente por favor crea un usuario</p>
                     <form action="RegUsuario" class="form-group-sm">
                         <div class="form-group">
                             <label for="#nombre">Nombre</label>

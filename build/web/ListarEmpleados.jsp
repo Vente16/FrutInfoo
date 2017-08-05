@@ -87,8 +87,6 @@
                                     <td><%= reE.getString("Nombre")%></td>
                                     <td><%= reE.getString("Nombre_cargo")%></td>
                                     <td><a href="#Detalle"  data-toggle="modal"><button class="btn btn-primary  glyphicon glyphicon-eye-open Detalle"></button></a></td>
-                                    <td><a href="InforEmpleados" target="_blank"><button  class="btn btn-default" style=font-size:16px;color:red;background:black><i class="fa fa-file-pdf-o"></i></button></a></td>
-                                    <td><a  href="ExcelEmpleados.jsp"> <button  class="btn btn-success" style=font-size:16px;color:black><i class="fa fa-file-excel-o"></i></button></a></td>
                                 </tr>    
                                     <% }else{
                                     %>

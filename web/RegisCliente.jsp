@@ -85,7 +85,7 @@
                             <input type="text" class="form-control" id="email" name="Email" placeholder="Ingrese su cuenta de correo electrónico">
                             <span class="" id="validare"></span>
                         </div>
-                    </div>
+                    </div><br>
                         
 
                     <div  id="municipiov" class="form-group">

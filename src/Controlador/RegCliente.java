@@ -96,7 +96,7 @@ public class RegCliente extends HttpServlet {
         
         Ps.executeUpdate();
         
-        response.sendRedirect("Exito.jsp");
+        response.sendRedirect("DefUsuario.jsp");
         
         Ps.close();
         con.close();
