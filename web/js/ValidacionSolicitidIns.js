@@ -49,18 +49,6 @@ $(document).ready(function(){
                 }
 
             },
-             autorizar: {
-
-                validators: {
-
-                    notEmpty: {
-
-                        message: 'Este campo es requerido'
-                    }
-                     
-                }
-                
-            },
             fecha_solicitud: {
 
                 validators: {
@@ -72,24 +60,8 @@ $(document).ready(function(){
                     
                 }
                 
-            },
-            
-             fecha_aut: {
-
-                validators: {
-
-                    notEmpty: {
-
-                        message: 'Este campo es requerido'
-                    }
-                    
-                }
-                
             }
-
-            
-            
-            
+           
         }
         
         

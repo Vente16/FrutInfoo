@@ -48,19 +48,18 @@
                     <ul class="dropdown-menu">
                         <li><a href="RegistrarVentas.jsp">Registrar ventas</a></li>
                         <li><a href="ListarVentas?pag=0">Listar ventas</a></li>
-                        <li><a href="InforVentas" target="_blank" >Realizar informe de ventas</a></li>
                         <li><a href="FacturaVenta" target="_blank">Generar factura de ventas</a></li>
                     </ul>
                 </li>
 
-                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Recursos humanos<span class="caret"></span></a>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class=" glyphicon glyphicon-paperclip " >Recursos humanos<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="RegistrarEmpleados.jsp">Registrar empleados</a></li>
                         <li><a href="ListarEmp?pag=0">Listar empleados</a></li>
                         <li><a href="Novedades.jsp">Novedades</a></li>
                     </ul>
                 </li>
-                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Clientes<span class="caret"></span></a>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-tower">Clientes<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="RegisCliente.jsp">Registrar clientes</a></li>
                         <li><a href="Listar?pag=0">Listar clientes</a></li>
@@ -92,25 +91,25 @@
              otro elemento que se pueda ocultar al minimizar la barra -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-briefcase"></span>Administrativo<span class="caret"></span></a>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-briefcase">Administrativo<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="InforVentas" target="_blank">Informe de ventas</a></li>
                         <li><a href="DefUsuario.jsp">Registrar usuario</a></li>
                         <li><a href="InfoInsumos" target="_blank">Informe de Insumos</a></li>
-                        <li><a href="InforEmpleados" target="_blank">Informe de empleados</a></li>
+                       <!-- <li><a href="InforEmpleados" target="_blank">Informe de empleados</a></li>-->
                     </ul>
                 </li>
 
 
 
 
-                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Recursos humanos<span class="caret"></span></a>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class=" glyphicon glyphicon-paperclip " >Recursos humanos<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="ListarEmp?pag=0">Listar empleados</a></li>
                         <li><a href="Novedades.jsp">Novedades</a></li>
                     </ul>
                 </li>
-                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Clientes<span class="caret"></span></a>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-tower">Clientes<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="RegisCliente.jsp">Registrar clientes</a></li>
                         <li><a href="Listar?pag=0">Listar clientes</a></li>
@@ -151,7 +150,7 @@
                         <li><a href="ListarInsumo?pag=0">Ver lista de insumos</a></li>
                         <li><a href="SolicitarInsumo.jsp">Solicitar Insumo</a></li>
                         <li><a href="RegistrarInsumo.jsp">Registrar insumos</a></li>
-                        <li><a href="InfoInsumos" target="_blank">Generar reporte de insumos</a></li>
+                       <!-- <li><a href="InfoInsumos" target="_blank">Generar reporte de insumos</a></li>-->
                     </ul>
                 </li>
 
@@ -159,11 +158,11 @@
                     <ul class="dropdown-menu">
                         <li><a href="RegistrarVentas.jsp">Registrar ventas</a></li>
                         <li><a href="ListarVentas?pag=0">Listar ventas</a></li>
-                        <li><a href="InforVentas" target="_blank">Realizar informe de ventas</a></li>
+                        <!--<li><a href="InforVentas" target="_blank">Realizar informe de ventas</a></li>-->
                         <li><a href="FacturaVenta" target="blank">Generar factura de ventas</a></li>
                     </ul>
                 </li>
-                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Clientes<span class="caret"></span></a>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-tower">Clientes<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="RegisCliente.jsp">Registrar clientes</a></li>
                         <li><a href="Listar?pag=0">Listar clientes</a></li>
@@ -203,7 +202,7 @@
                         <li><a href="ListarInsumo?pag=0">Ver lista de insumos</a></li>
                         <li><a href="SolicitarInsumo.jsp">Solicitar Insumo</a></li>
                         <li><a href="RegistrarInsumo.jsp">Registrar insumos</a></li>
-                        <li><a href="InfoInsumos" target="_blank">Generar reporte de Insumos</a></li>  
+                       <!-- <li><a href="InfoInsumos" target="_blank">Generar reporte de Insumos</a></li> --> 
                     </ul>
                 <li><a href="CerrarSesion">Cerrar sesión</a></li>
             </ul>
@@ -233,7 +232,7 @@
              otro elemento que se pueda ocultar al minimizar la barra -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Clientes<span class="caret"></span></a>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-tower">Clientes<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                        <li><a href="SolicitarDomicilio.jsp">Solicitar domicilio</a></li>
                     </ul>

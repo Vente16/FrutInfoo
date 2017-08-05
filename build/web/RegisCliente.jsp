@@ -21,15 +21,10 @@
        
     </head>
     <body>
-        <style>
-              div.container {
-                width: 50%;
-                
-            }
-        </style>
-        <%@include file="headerModulos.jspf" %>
+
+        <%@include file="headerModulos.jspf" %><br>
         <main>
-            <div class="container">
+            <div class="containerForm">
             <div style="margin-top: 100px">
                 <h2 style="text-align: center;">Registro del Cliente</h2><br><br>
             </div>
@@ -41,6 +36,7 @@
                             <span class="titulo">Tipo documento</span></label>
                             <div class="col-xs-10">
                                 <select class="form-control" name="tipo_documento">
+                                    <option></option>
                                     <option>Cédula de Ciudadanía</option>
                                     <option>Tarjeta de Identidad</option>
                                     <option>Registro Civil </option>
@@ -132,16 +128,18 @@
                         </div>
                     </div>
                 
-                
-                    <div>
-                        <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Membrecía</span></label>
-                    <div class="col-xs-10">
-                        <select class="form-control" name="cumple">
-                            <option>si</option>
-                            <option>no</option>
-                        </select>
-                    </div>  
+                 <div class="form-group">    
+                        <label class="col-sm-2 control-label" for="inputSuccess">
+                            <span class="titulo">Membrecia</span></label>
+                            <div class="col-xs-10">
+                                <select class="form-control" name="cumple">
+                                    <option></option>
+                                    <option>Si</option>
+                                    <option>No</option>
+                                </select>
+                            </div>
                     </div><br><br><br>
+
                     
                     <div class="form-group">
                         <div class="col-xs-8">
@@ -152,7 +150,7 @@
             </form>
                     </div>
         </div>
-        </main>
+        </main><br>
         <%@include file="footer.jspf" %>           
     </body>
 </html>

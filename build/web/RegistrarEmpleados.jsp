@@ -21,16 +21,16 @@
     </head>
 
     <body>
-        <style>
-                     div.container {
-                       width: 50%;
-
-                   }
-        </style>
-    <%@include file="headerModulos.jspf"%>
+       <!-- <style>
+            main{
+                background-image: url(img/logo.png);
+  
+        </style>-->
+        
+    <%@include file="headerModulos.jspf"%><br>
     <main>
-        <div class="container">
-        <div style="margin-top: 100px">
+        <div class="containerForm">
+        <div style="margin-top: 50px">
             <h2 style="text-align: center;">Registro de empleados</h2><br><br>
         </div>
 
@@ -55,7 +55,7 @@
                 </div>
 
                 <div  id="telefonov" class="form-group">
-                    <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Telefono</span></label>
+                    <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Teléfono</span></label>
                     <div class="col-xs-10">
                         <input  type="text" class="form-control" id="telefono" name="telefono"  placeholder="Ingrese su teléfono"><br>
                         <span  id="validart"></span>
@@ -71,22 +71,12 @@
                 </div>
 
                 <div  id="direccionv" class="form-group">
-                    <label  class="col-sm-2 control-label" for="inputSuccess"><span class="titulo"><b>Direccion</b></span></label>
+                    <label  class="col-sm-2 control-label" for="inputSuccess"><span class="titulo"><b>Dirección</b></span></label>
                     <div class="col-xs-10">
                         <input type="text" name="direccion" class="form-control" id="direccion"  placeholder="ingrese su dirección"><br>
                         <span class="" id="validard"></span>
                     </div>
                 </div>
-
-
-                <div id="disponibilidadv" class="form-group">
-                    <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Disponibilidad:</span></label>
-                    <div class="col-xs-10">
-                        <input type="text" class="form-control" id="disponibilidad" name="disponibilidad" placeholder="">
-                        <span class="" id="validardis"></span>
-                    </div>
-                </div>
-
 
                 <div  id="iniconv" class="form-group">
                     <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Inicio de contrato</span></label>
@@ -103,36 +93,12 @@
                         <span class="" id="validarfincon"></span>
                     </div>
                 </div>
-
-                <div id="horainiv" class="form-group">
-                    <label class="col-sm-2 control-label" for="inputSuccess" ><span class="titulo">Hora inicio</span></label>
-                    <div class="col-xs-10">
-                        <input name="horaini" type="time" class="form-control" id="horaini"  placeholder=""><br>
-                        <span class="" id="validarhoraini"></span>
-                    </div>
-                </div>
-
-                <div id="horasalv" class="form-group">
-                    <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo"><b>Hora salida</b></span></label>
-                    <div class="col-xs-10">
-                        <input  name="horasal"  type="time" class="form-control" id="horasal"  placeholder=""><br>
-                        <span class="" id="validarhorasal"></span>
-                    </div>
-                </div>
-
-                <div id="documentov" class="form-group">
-                    <label  class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Documento de identidad</span></label>
-                    <div class="col-xs-10">
-                        <input name="documento"  type="text" class="form-control" id="documento"  placeholder="Ingrese su número"><br>
-                        <span class="" id="validardoc"></span>
-                    </div>
-                </div>
-
-
-                <div class="form-group">
+      
+                     <div class="form-group">
                     <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Tipo de documento</span></label>
                     <div class="col-xs-10">
                         <select class="form-control" name="tipo">
+                            <option></option>
                             <option>Cédula de Ciudadanía(CC)</option>
                             <option>Tarjeta de Identidad (TI)</option>
                             <option>Registro Civil (RC)</option>
@@ -142,10 +108,19 @@
                     </div>
                 </div>
 
+                <div id="documentov" class="form-group">
+                    <label  class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Número documento</span></label>
+                    <div class="col-xs-10">
+                        <input name="documento"  type="text" class="form-control" id="documento"  placeholder="Ingrese su número"><br>
+                        <span class="" id="validardoc"></span>
+                    </div>
+                </div>
+
                 <div class="form-group">
                     <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Punto de venta</span></label>
                     <div class="col-xs-10">
                         <select class="form-control" name="puntoVenta">
+                            <option></option>
                             <option value="1">Envigado</option>
                             <option value="2">Itagui</option>
                             <option value="3">Sabaneta</option>
@@ -164,6 +139,7 @@
                     <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Cargo</span></label>
                     <div class="col-xs-10">
                         <select class="form-control" name="cargo">
+                            <option></option>
                             <option value="1">Administrador</option>
                             <option value="2">Mesero</option>
                             <option value="3">Cajero</option>
@@ -172,10 +148,10 @@
                             <option value="6">Director RRHH</option>
                         </select>
                     </div>
-                </div>
+                </div><br>
 
                 <div  id="fechanacv" class="form-group">
-                    <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">fecha de naciemiento</span></label>
+                    <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">fecha de nacimiento</span></label>
                     <div class="col-xs-10">
                         <input  name="fechanac" type="date" class="form-control" id="fechanac" placeholder=""><br>
                         <span class="" id="validarfechanac"></span>
@@ -189,7 +165,7 @@
                         <span class="" id="validare"></span>
                     </div>
                 </div>
-                <br><br><br>
+                <br>
 
                 <div class="form-group">
                     <div class="col-xs-8">
@@ -199,7 +175,7 @@
             </form>
         </div>
     </div>
-    </main>
+    </main><br>
     <%@include file="footer.jspf" %>
     </body>
 </html>

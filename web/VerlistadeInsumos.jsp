@@ -12,8 +12,9 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Listar insumos</title>
         <link rel="stylesheet" href="css/bootstrap.css">
-         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
         <link rel="stylesheet" href="css/estilos2.css">
+        <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css> 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="js/FuncionesInsumos.js"></script>
@@ -90,9 +91,13 @@
                                 %>
                             <li class="page-item"><a class="page-link" href="ListarInsumo?pag=<%=Integer.parseInt(request.getParameter("pag")) + 1%>">Siguiente</a></li>
                         </ul>
+                        <div style="text-align:right"> 
+                            <p><b>Generar Informes</b></p>
+                            <a href="InfoInsumos" target="_blank"><button class="btn btn-default" style=font-size:24px;color:red;background:black>Pdf <i class="fa fa-file-pdf-o"></i></button></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a  href="ExcelInsumos.jsp"><button class="btn btn-success" style=font-size:24px;color:black>Exc <i class="fa fa-file-excel-o"></i></button></a> 
+                        </div>
                     </nav>
-                   <!-- <button type="submit" class="btn btn-success">Guardar</button>
-                    <button type="button" class="btn btn-primary">VOLVER</button>-->
+                  
 
                 </form>
             </div>

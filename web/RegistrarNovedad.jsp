@@ -1,7 +1,7 @@
 <%-- 
     Document   : RegistrarNovedad
     Created on : 02-mar-2017, 18:27:48
-    Author     : User
+    Author     : Jhon Jairo
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -19,28 +19,17 @@
             <link rel="stylesheet" href="css/estilos2.css">
             <script src="js/ValidacionRegistrarNovedad.js"></script>
     </head>
-    <body>
-        <style>
-            .containerNov{
-                 border-radius: 5px;
-                background-color: white;
-                padding: 20px;
-                width: 50%;
-                margin: 0 auto;
-                
-            }
-        </style>
-        
-        <%@include file="headerModulos.jspf"%><br><br>
-        <h2 style="text-align: center;"><b>REGISTRAR NOVEDAD</b></h2>
-        <h4 style="text-align: center;"><b>llene el formulario con los datos del empleado que desea registrarle la novedad.</b></h4><br><br>
-
-        <div class="containerNov">
+    <body> 
+        <%@include file="headerModulos.jspf"%><br>
+        <main>
+        <div class="containerForm">
+            <h2 style="text-align: center;"><b>REGISTRAR NOVEDAD</b></h2><br><br><br>
             <form id="Novedad" action="Novedades" method="post" name="formulario" >
                  <div class="form-group">
                     <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Novedad</span></label>
                     <div class="col-xs-10">
                         <select class="form-control" name="novedad">
+                            <option></option>
                             <option>Incapacidad</option>
                             <option>Vacaciones</option>
                             <option>Permisos</option>
@@ -99,6 +88,7 @@
                 <div class="form-group">
                     <label class="form-control-label" for="index-form-4-4name"><span class="titulo">Sede del empleado</span></label>
                     <select class="form-control" name="sede">
+                        <option></option>
                         <option value="1">Envigado </option>
                         <option value="2">Itagüí</option>
                         <option value="3">Sabaneta</option>
@@ -115,6 +105,7 @@
                 <div class="form-group">
                     <label class="form-control-label" for="index-form-4-4name"><span class="titulo">Cargo</span></label>
                     <select class="form-control" name="cargo">
+                        <option></option>
                         <option value="1">Administrador</option>
                         <option value="2">Mesero</option>
                         <option value="3">Cajero</option>
@@ -129,7 +120,7 @@
           
         </div>
 
-
+        </main><br>
 
         <%@include file="footerModulos.jspf" %>
              

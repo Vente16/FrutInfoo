@@ -24,10 +24,10 @@
            
             <br><br>
             <label class="form-control-label" for="index-form1-1-name" class="label"><span class="titulo">Documento de identifición</span></label>
-            <input type="text" name="" id="documento" class="form-control" placeholder="Ingrese el documento de identificación del empleado">
+            <input type="text" name="" id="documento" class="form-control" placeholder="Ingrese el documento de identificación del empleado"><br>
 
-            <br> <button type="button" class="btn btn-success consultar">Consultar</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="button" value="Registrar Novedad" onClick="location.href ='RegistrarNovedad.jsp'" class="btn btn-primary" />
+            <button type="button" class="btn btn-success consultar">Consultar</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            
 
             <small class="mbr-section-subtitle"></small>
             <br><br>
@@ -63,7 +63,8 @@
                 </tbody>
                 
                  
-            </table>
+            </table><br>
+            <input type="button" value="Registrar Novedad" onClick="location.href ='RegistrarNovedad.jsp'" class="btn btn-primary" />
             
         </div>
         

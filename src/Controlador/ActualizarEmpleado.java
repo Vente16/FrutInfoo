@@ -76,11 +76,8 @@ public class ActualizarEmpleado extends HttpServlet {
            String Apellido =request.getParameter("Apellido");
            String Telefono =request.getParameter("Telefono");
            String Celular =request.getParameter("Celular");
-           String Disponibilidad =request.getParameter("Disponibilidad");
            String Inicon =request.getParameter("Inicon");
            String Fincon =request.getParameter("Fincon");
-           String Horaini =request.getParameter("Horaini");
-           String Horafin =request.getParameter("Horafin");
            String FechaN =request.getParameter("FechaN");
            String Correo =request.getParameter("Correo");
            
@@ -88,9 +85,9 @@ public class ActualizarEmpleado extends HttpServlet {
             Connection conn = con.Conectar();
             
            
-            String sql= "UPDATE empleados SET Nombre=?, Apellido=?, Telefono=?, celular=?, Disponibilidad=?, Inicio_contrato=?, "
-                    + "Fin_contrato=?, Hora_inicio=?, Hora_salida=?,"
-                    + "Documento=?, Tipo_documento=?, Fecha_nacimiento=?, Correo=? WHERE id_empleado=? ";
+            String sql= "UPDATE empleados SET Nombre=?, Apellido=?, Telefono=?, celular=?, Inicio_contrato=?, "
+                    + "Fin_contrato=?, Documento=?, Tipo_documento=?, Fecha_nacimiento=?, Correo=? WHERE id_empleado=? ";
+                    
             
             PreparedStatement pst =conn.prepareStatement(sql);
             
@@ -98,16 +95,13 @@ public class ActualizarEmpleado extends HttpServlet {
             pst.setString(2, Apellido);
             pst.setString(3, Telefono);
             pst.setString(4, Celular);
-            pst.setString(5, Disponibilidad);
-            pst.setString(6, Inicon);
-            pst.setString(7, Fincon);
-            pst.setString(8, Horaini);
-            pst.setString(9, Horafin);
-            pst.setString(10, Documento);
-            pst.setString(11, TipoDoc);
-            pst.setString(12, FechaN);
-            pst.setString(13, Correo);
-            pst.setString(14, id);
+            pst.setString(5, Inicon);
+            pst.setString(6, Fincon);
+            pst.setString(7, Documento);
+            pst.setString(8, TipoDoc);
+            pst.setString(9, FechaN);
+            pst.setString(10, Correo);
+            pst.setString(11, id);
             
             pst.executeUpdate();
             

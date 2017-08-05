@@ -109,21 +109,7 @@ $(document).ready(function(){
                     
                 }
 
-            },
-            
-            disponibilidad: {
-
-                validators: {
-
-                    notEmpty: {
-
-                        message: 'Este campo es requerido'
-                    }
-                    
-                }
-
-            },
-            
+            },    
             inicon: {
 
                 validators: {
@@ -138,32 +124,6 @@ $(document).ready(function(){
             },
             
             fincon: {
-
-                validators: {
-
-                    notEmpty: {
-
-                        message: 'Este campo es requerido'
-                    }
-                    
-                }
-
-            },
-            
-            horaini: {
-
-                validators: {
-
-                    notEmpty: {
-
-                        message: 'Este campo es requerido'
-                    }
-                    
-                }
-
-            },
-            
-            horasal: {
 
                 validators: {
 

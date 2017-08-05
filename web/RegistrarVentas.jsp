@@ -20,21 +20,10 @@
         <script src="js/ValidacionRegVenta.js"></script>
     </head>
     <body>
-         <style>
-            .containerven{
-                 border-radius: 5px;
-                background-color: white;
-                padding: 20px;
-                width: 60%;
-                margin: 0 auto;
-                
-            }
-        </style>
-
-
-        <%@include file="headerModulos.jspf" %>
+        
+        <%@include file="headerModulos.jspf" %><br>
         <main>
-            <div class="containerven">
+            <div class="containerForm">
                 <div style="margin-top: 100px">
                     <h2 style="text-align: center;">Registro de Ventas</h2><br><br>
                 </div>
@@ -46,6 +35,7 @@
                                 <span class="titulo">Nombre producto</span></label>
                             <div class="col-xs-8">
                                 <select class="form-control" name="producto">
+                                    <option></option>
                                     <option>Banana Split</option>
                                     <option>Brevas</option>
                                     <option>Mr Brownie</option>
@@ -105,6 +95,7 @@
                                 <span class="titulo">tipo de venta</span></label>
                             <div class="col-xs-8">
                                 <select class="form-control" name="Tventa">
+                                    <option></option>
                                     <option>Domicilio</option>
                                     <option>Punto de venta </option>
                                 </select>
@@ -112,21 +103,12 @@
                         </div><br>
 
                         <div  id="fechav" class="form-group">
-                            <label  class="col-sm-2 control-label" for="inputSuccess"><span class="titulo"><b>Fecha de la Venta</b></span></label>
+                            <label  class="col-sm-2 control-label" for="inputSuccess"><span class="titulo"><b>Fecha y hora de la Venta</b></span></label>
                             <div class="col-xs-8">
-                                <input  id="fecha" type="date" name="FechaVen" class="form-control" placeholder="dd/mm/aa"><br>
+                                <input  id="fecha" type="datetime-local" name="FechaVen" class="form-control" placeholder="dd/mm/aa"><br>
                                 <span class=""></span>
                             </div>
                         </div>
-
-                        <div  id="horav" class="form-group">
-                            <label  class="col-sm-2 control-label" for="inputSuccess"><span class="titulo"><b>Hora de la Venta</b></span></label>
-                            <div class="col-xs-8">
-                                <input  id="fecha" type="time" name="hora" class="form-control" placeholder="xx:xx am/pm"><br>
-                                <span class="" id="validarhv"></span>
-                            </div>
-                        </div>
-
 
                         <div id="pedidov" class="form-group">
                             <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Número del pedido</span></label>
@@ -153,7 +135,7 @@
                     </form>
                 </div>
             </div>
-        </main>
+        </main><br>
         <%@include file="footer.jspf" %>  
     </body>
 </html>

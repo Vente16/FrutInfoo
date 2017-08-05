@@ -69,14 +69,13 @@ public class RegVentas extends HttpServlet {
             String Total = request.getParameter("total");
             String TipoVen = request.getParameter("Tventa");
             String FecVencimiento = request.getParameter("FechaVen");
-            String Hora = request.getParameter("hora");
             String Pedido = request.getParameter("IdPedido");
             String Cliente = request.getParameter("IdCliente");
 
             Conexion c = new Conexion();
             Connection con = c.Conectar();
 
-            PreparedStatement Ps = con.prepareStatement("INSERT INTO `ventas`(Nombe_producto, Cantidad_producto, Precio_unit, Iva, Total_Pagar, Tipo_venta, Fecha_venta, Hora_venta, Pedido_Id, Id_cliente, Habilitado)VALUES(?,?,?,?,?,?,?,?,?,?,1)");
+            PreparedStatement Ps = con.prepareStatement("INSERT INTO `ventas`(Nombe_producto, Cantidad_producto, Precio_unit, Iva, Total_Pagar, Tipo_venta, Fecha_venta, Pedido_Id, Id_cliente, Habilitado)VALUES(?,?,?,?,?,?,?,?,?,1)");
             Ps.setString(1, Producto);
             Ps.setString(2, Cantidad);
             Ps.setString(3, Precio);
@@ -84,9 +83,8 @@ public class RegVentas extends HttpServlet {
             Ps.setString(5, Total);
             Ps.setString(6, TipoVen);
             Ps.setString(7, FecVencimiento);
-            Ps.setString(8, Hora);
-            Ps.setString(9, Pedido);
-            Ps.setString(10, Cliente);
+            Ps.setString(8, Pedido);
+            Ps.setString(9, Cliente);
 
             Ps.executeUpdate();
             response.sendRedirect("Exito.jsp");
