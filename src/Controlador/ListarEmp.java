@@ -43,7 +43,7 @@ public class ListarEmp extends HttpServlet {
             HttpSession session = request.getSession(true);
             int pagina=Integer.parseInt(request.getParameter("pag"));
              String sqlC="SELECT * FROM empleados   INNER JOIN cargos ON empleados.id_cargo = cargos.id_cargo WHERE empleados.Habilitado = 1  LIMIT 5 OFFSET "+(pagina)*5+";";
-             String sql="SELECT count(*) as Id_empleado FROM empleados";
+             String sql="SELECT count(*) as Id_empleado FROM empleados WHERE Habilitado=1";
              
              Statement stm =c.createStatement();
              Statement stm1=c.createStatement();
