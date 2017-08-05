@@ -43,7 +43,7 @@ public class ListarVentas extends HttpServlet {
             HttpSession session = request.getSession(true);
             int pagina = Integer.parseInt(request.getParameter("pag"));
             String sqlV = "SELECT * FROM ventas LIMIT 5 OFFSET " + (pagina) * 5 + ";";
-            String sql = "SELECT count(*) as Id FROM ventas";
+            String sql = "SELECT count(*) as Id FROM ventas WHERE Habilitado=1";
             Statement stm = c.createStatement();
             Statement stm1 = c.createStatement();
             rsV = stm.executeQuery(sqlV);

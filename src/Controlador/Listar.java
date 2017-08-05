@@ -44,7 +44,7 @@ public class Listar extends HttpServlet {
             HttpSession session = request.getSession(true);
             int pagina=Integer.parseInt(request.getParameter("pag"));
              String sqlC="SELECT * FROM clientes WHERE Habilitado=1 LIMIT 5 OFFSET "+(pagina)*5+";";
-             String sql="SELECT count(*) as Id FROM clientes";
+             String sql="SELECT count(*) as Id FROM clientes WHERE Habilitado=1";
              
              Statement stm =c.createStatement();
              Statement stm1=c.createStatement();
