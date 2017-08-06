@@ -9,18 +9,19 @@ import Modelo.Conexion;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.Statement;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
  * @author Home
  */
-public class DetalleDomicilio extends HttpServlet {
+public class ListarDomicilio extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -34,35 +35,29 @@ public class DetalleDomicilio extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
+         ResultSet rsD;
+        ResultSet rst;
         try (PrintWriter out = response.getWriter()) {
-          
-             String Id = request.getParameter("Id");
-            
-            Conexion c = new Conexion();
-            Connection co = c.Conectar();
-            
-             
-            PreparedStatement st = co.prepareStatement("SELECT *FROM domicilio WHERE Id=?");
-            st.setString(1, Id);
-            
-            ResultSet rs = st.executeQuery();
-            
-            while(rs.next()){
-          
-            out.println("<h3><strong>Producto:</strong> " +  rs.getString("Producto") + "</h3>");
-            out.println("<h3><strong>Cantidad:</strong>  " +  rs.getString("Cantidad") + "</h3>");
-            out.println("<h3><strong>Nombre:</strong> " + rs.getString("Nombres") + "</h3>");
-            out.println("<h3><strong>Apellido:</strong> " + rs.getString("Apellidos")+ "</h3>");
-            out.println("<h3><strong>Telefóno:</strong> " + rs.getString("Teléfono") + "</h3>");
-            out.println("<h3><strong>Celular:</strong> " + rs.getString("Celular") + "</h3>");
-            out.println("<h3><strong>Dirección:</strong> " + rs.getString("Dirección") + "</h3>");
-           
-            
-            }
-        }catch(Exception e){
-           
-            System.out.println(e);
-        
+            Conexion con = new Conexion();
+            Connection c = con.Conectar();
+            HttpSession session = request.getSession(true);
+            int pagina = Integer.parseInt(request.getParameter("pag"));
+            String sqlI = "SELECT * FROM domicilio LIMIT 5 OFFSET " + (pagina) * 5 + ";";
+            String sql = "SELECT count(*) as Id_domicilio FROM domicilio";
+            Statement stm = c.createStatement();
+            Statement stm1 = c.createStatement();
+            rsD = stm.executeQuery(sqlI);
+            rst = stm1.executeQuery(sql);
+            session.setAttribute("listarD", rsD);
+            session.setAttribute("pag", pagina);
+            session.setAttribute("tamaño", rst);
+
+            request.getRequestDispatcher("ListarDomicilio.jsp").forward(request, response);
+
+            rsD.close();
+            c.close();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 

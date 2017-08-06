@@ -97,7 +97,7 @@
                         <li><a href="InforVentas" target="_blank">Informe de ventas</a></li>
                         <li><a href="DefUsuario.jsp">Registrar usuario</a></li>
                         <li><a href="InfoInsumos" target="_blank">Informe de Insumos</a></li>
-                       <!-- <li><a href="InforEmpleados" target="_blank">Informe de empleados</a></li>-->
+                        <li><a href="ListarDomicilio?pag=0">Listar Domicilio</a></li>
                     </ul>
                 </li>
 
@@ -151,7 +151,7 @@
                         <li><a href="ListarInsumo?pag=0">Ver lista de insumos</a></li>
                         <li><a href="SolicitarInsumo.jsp">Solicitar Insumo</a></li>
                         <li><a href="RegistrarInsumo.jsp">Registrar insumos</a></li>
-                       <!-- <li><a href="InfoInsumos" target="_blank">Generar reporte de insumos</a></li>-->
+                       <li><a href="ListarDomicilio?pag=0">Listar Domicilio</a></li>
                     </ul>
                 </li>
 

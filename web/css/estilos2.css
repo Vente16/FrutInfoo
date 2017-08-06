@@ -26,6 +26,9 @@ body {
     
 }
 
+.color{
+    background-color: #49b949;
+}
 
 
 .login{
@@ -260,3 +263,5 @@ navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:
  /* increases the carousel height so it looks good on phones */
   }
           /* Fin Extilos Solicitud de domocilio*/
+          
+          

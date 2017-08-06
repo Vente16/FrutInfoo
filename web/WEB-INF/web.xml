@@ -204,6 +204,10 @@
         <servlet-name>DetalleDomicilio</servlet-name>
         <servlet-class>Controlador.DetalleDomicilio</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ListarDomicilio</servlet-name>
+        <servlet-class>Controlador.ListarDomicilio</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Validar</servlet-name>
         <url-pattern>/Validar</url-pattern>
@@ -403,6 +407,10 @@
     <servlet-mapping>
         <servlet-name>DetalleDomicilio</servlet-name>
         <url-pattern>/DetalleDomicilio</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ListarDomicilio</servlet-name>
+        <url-pattern>/ListarDomicilio</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

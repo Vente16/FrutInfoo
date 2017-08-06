@@ -74,17 +74,60 @@ public class FormActualizarInsumo extends HttpServlet {
             
             while(rs.next()){
             out.println("<h4 class='hide' >:<br><input id='Id' type='text' class='form-control ' value=" +  rs.getString("Id_Insumo")+"></h4>"); 
-            out.println("<h4>codigo:<br><input id='Codigo' type='text' class='form-control ' value=" +  rs.getString("Codigo")+"></h4>");
-            out.println("<h4>Tipo de insumo:<br><input id='Tipo' type='text' class='form-control ' value="+rs.getString("Tipo")+"></h4>");
-            out.println("<h4>Nombre del insumo: <br><input id='NombreInsumo' type='text' class='form-control ' value= " + rs.getString("Nombre_insumo") + "></h4>");
-            out.println("<h4>Cantidad insumo:<br><input id='Cantidad' type='text' class='form-control ' value= " + rs.getString("Cantidad_insumo")+ "></h4>");
-            out.println("<h4>Valor insumo:<br><input id='Valor' type='text' class='form-control ' value= " + rs.getString("Valor_insumo") + "></h4>");
-            out.println("<h4>Fecha de ingreso: <br><input id='FechaIngreso' type='text' class='form-control ' value=" + rs.getString("Fecha_ingreso") + "></h4>");
-            out.println("<h4>Fecha de vencimiento:<br><input id='FechaVencimiento' type='text' class='form-control ' value= " + rs.getString("Fecha_vencimiento") + "></h4>");
-            out.println("<h4>Peso:<br><input id='Peso' type='text' class='form-control ' value= " + rs.getString("peso") + "></h4>");
-            out.println("<h4>Prioridad:<br><input id='Prioridad' type='text' class='form-control ' value= " + rs.getString("Prioridad") + "></h4>");
-           
+            out.println("<div class=''>");
+            out.println("<form class='form-horizontal'>");
+            out.println("<div class='form-group'>");
+            out.println("<label class='control-label col-sm-3' for='codigo'>Codigo:</label>");
+            out.println("<div class='col-sm-8'>");
+            out.println("<input type='text' class='form-control' id='email' placeholder='ingrese el codigo' name='email' value=" + rs.getString("Tipo") + ">");
+            out.println("</div>");
+            out.println("</div>");
+            out.println("<div class='form-group'>");
+            out.println("<label class='control-label col-sm-2' for='tipo_insumo'>Tipo de insumo:</label>");
+            out.println("<div class='col-sm-8'>");
+            out.println("<input type='text' class='form-control' id='tipo_insumo' placeholder='Enter text' name='tipo_insumo' value='+rs.getString('Tipo')+'>");
+            out.println("</div>");
+            out.println("</div>");
+            out.println("<div class='form-group'>");
+            out.println("<label class='control-label col-sm-2' for='nombre'>Nombre:</label>");
+            out.println("<div class='col-sm-8'> ");
+            out.println("<input type='text' class='form-control' id='nombre' placeholder='Enter text' name='nombre' value='+rs.getString('Tipo')+'>");
+            out.println("</div>");
+            out.println("</div>");
+            out.println("<div class='form-group'> ");
+            out.println("<label class='control-label col-sm-2' for='cantidad'>Cantidad:</label>");
+            out.println("<div class='col-sm-8'>");
+            out.println("<input type='text' class='form-control' id='cantidad' placeholder='Enter text' name='cantidad' value='+rs.getString('Tipo')+'>");
+            out.println("</div>");
+            out.println("</div>");
+            out.println("<div class='form-group'>");
+            out.println("<label class='control-label col-sm-2' for='valor'>Valor:</label>");
+            out.println("<div class='col-sm-8'>");
+            out.println("<input type='text' class='form-control' id='valor' placeholder='Enter text' name='valor' value='+rs.getString('Tipo')+'>");
+            out.println("</div>");
+            out.println("</div>");
+            out.println("<div class='form-group'>");
+            out.println("<label class='control-label col-sm-2' for='fecha_ingreso'>Fecha de ingreso:</label>");
+            out.println("<div class='col-sm-8'>");
+            out.println("<input type='text' class='form-control' id='fecha_ingreso' placeholder='Enter text' name='fecha_ingreso' value='+rs.getString('Tipo')+'>");
+            out.println("</div>");
+            out.println("</div>");
+            out.println("<div class='form-group'>");
+            out.println("<label class='control-label col-sm-2' for='fecha_vencimiento'>Fecha de vencimiento:</label>");
+            out.println("<div class='col-sm-8'>");
+            out.println("<input type='text' class='form-control' id='fecha_vencimiento' placeholder='Enter text' name='fecha_vencimiento' value='+rs.getString('Tipo')+'>");
+            out.println("</div>");
+            out.println("</div>");
+            out.println("<div class='form-group'>");
+            out.println("<label class='control-label col-sm-2' for='peso'>peso:</label>");
+            out.println("<div class='col-sm-8'>");
+            out.println("<input type='text' class='form-control' id='peso' placeholder='Enter text' name='peso' value='+rs.getString('Tipo')+'>");
+            out.println("</div>");
+            out.println("</div>");
+            out.println("</form>");
+            out.println("</div>");
             
+           
             }
            
         } catch(Exception e){
