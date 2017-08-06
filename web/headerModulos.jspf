@@ -48,6 +48,7 @@
                     <ul class="dropdown-menu">
                         <li><a href="RegistrarVentas.jsp">Registrar ventas</a></li>
                         <li><a href="ListarVentas?pag=0">Listar ventas</a></li>
+                        <li><a href="ListarDomicilio?pag=0">Listar Domicilio</a></li>
                         <li><a href="FacturaVenta" target="_blank">Generar factura de ventas</a></li>
                     </ul>
                 </li>
