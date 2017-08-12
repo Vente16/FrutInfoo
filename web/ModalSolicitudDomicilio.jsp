@@ -18,7 +18,7 @@
       <div class="modal-body InfoDetalle">
        
       </div>
-      <div class="modal-footer">
+      <div class="modal-footer color">
         <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
       </div>
     </div>

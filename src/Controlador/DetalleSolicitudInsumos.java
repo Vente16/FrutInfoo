@@ -44,12 +44,11 @@ public class DetalleSolicitudInsumos extends HttpServlet {
             ResultSet rst = pst.executeQuery();
             
             while (rst.next()) {                
-                out.println("<h4>nombre de insumo: "+ rst.getString("Nombre_insumo")+"</h4>");
-                out.println("<h4>Cantidad: "+ rst.getString("Cantidad")+"</h4>");
-                out.println("<h4>Punto de venta: "+ rst.getString("Nombre_municipio")+"</h4>");
-                out.println("<h4>Autoriza: "+ rst.getString("Autorizar")+"</h4>");
-                out.println("<h4>Fecha de solicitud: "+ rst.getString("Fecha_Solicitud")+"</h4>");
-                out.println("<h4>Fecha de autorizacion: "+ rst.getString("Fecha_Autorizacion")+"</h4>");
+                out.println("<h3><strong>nombre de insumo:</strong> "+ rst.getString("Nombre_insumo")+"</h3>");
+                out.println("<h3><strong>Cantidad:</strong> "+ rst.getString("Cantidad")+"</h3>");
+                out.println("<h3><strong>Punto de venta:</strong> "+ rst.getString("Nombre_municipio")+"</h3>");
+                out.println("<h3><strong>Fecha de solicitud:</strong> "+ rst.getString("Fecha_Solicitud")+"</h3>");
+                
             }
             
                       

@@ -43,11 +43,8 @@ $(document).ready(function(){
         var Apellido = $('#Apellido').val();
         var Telefono = $('#Telefono').val();
         var Celular = $('#Celular').val();
-        var Disponibilidad = $('#Disponibilidad').val();
         var Inicon = $('#Inicon').val();
         var Fincon = $('#Fincon').val();
-        var Horaini = $('#Horaini').val();
-        var Horafin = $('#Horafin').val();
         var FechaN = $('#fechaN').val();
         var Correo = $('#Correo').val();
         var Documento = $('#Documento').val();
@@ -59,11 +56,8 @@ $(document).ready(function(){
                     "TipoDoc": TipoDoc,
                     "Apellido": Apellido,
                     "Telefono": Telefono,
-                    "Disponibilidad": Disponibilidad,
                     "Inicon": Inicon,
                     "Fincon": Fincon,
-                    "Horaini": Horaini,
-                    "Horafin": Horafin,
                     "Celular": Celular,
                     "FechaN": FechaN,
                     "Correo": Correo,

@@ -12,14 +12,14 @@
 
     <!-- Modal content-->
     <div class="modal-content">
-      <div class="modal-header">
+      <div class="modal-header color">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Información detallada del cliente</h4>
+        <h3 class="modal-title"><strong>Información detallada del cliente</strong></h3>
       </div>
       <div class="modal-body InfoDetalle">
        
       </div>
-      <div class="modal-footer">
+      <div class="modal-footer color">
         <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
       </div>
     </div>
@@ -32,14 +32,14 @@
 
     <!-- Modal content-->
     <div class="modal-content">
-      <div class="modal-header">
+      <div class="modal-header color">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Actualizar datos del cliente</h4>
+        <h3 class="modal-title"><strong>Actualizar datos del cliente</strong></h3>
       </div>
       <div class="modal-body FormAcutalizar">
         
       </div>
-      <div class="modal-footer">
+      <div class="modal-footer color">
         <button type="button" class="btn btn-success ActualizarDB" data-dismiss="modal">Actualizar</button> 
         <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
       </div>

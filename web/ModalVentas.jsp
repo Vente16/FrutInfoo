@@ -11,14 +11,14 @@
 
     <!-- Modal content-->
     <div class="modal-content">
-      <div class="modal-header">
+      <div class="modal-header color">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Información detallada del insumo</h4>
+        <h3 class="modal-title"><strong>Información detallada del insumo</strong></h3>
       </div>
       <div class="modal-body InfoDetalle">
        
       </div>
-      <div class="modal-footer">
+      <div class="modal-footer color">
         <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
       </div>
     </div>

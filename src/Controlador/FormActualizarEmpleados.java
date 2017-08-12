@@ -77,21 +77,85 @@ public class FormActualizarEmpleados extends HttpServlet {
             ResultSet rs = st.executeQuery();
             
             while(rs.next()){
-            out.println("<input type='hidden' id='Id' value='"+Id+"'>");
-            out.println("<h4>Documento:<br><input disabled id='Documento' type='text' class='form-control'  value= "+rs.getString("Documento")+"></h4>"  );
-            out.println("<h4>Tipo de documento:<br><input id='Tdoc' type='text' class='form-control' disabled value= "+rs.getString("Tipo_documento")+"></h4>");
-            out.println("<h4>Nombre:<br><input type='text' id='Nombre' class='form-control'  value=  " + rs.getString("Nombre") + "></h4>");
-            out.println("<h4>Apellido:<br><input type='text' id='Apellido' class='form-control'  value= " + rs.getString("Apellido")+ "></h4>");
-            out.println("<h4>Telefono:<br><input type='text' id='Telefono' class='form-control'  value= " + rs.getString("Telefono") + "></h4>");
-            out.println("<h4>Celular:<br><input type='text' id='Celular' class='form-control'  value= " + rs.getString("Celular") + "></h4>");
-            out.println("<h4>Disponibilidad:<br><input type='text' id='Disponibilidad' class='form-control'  value= " + rs.getString("Disponibilidad") + "></h4>");
-            out.println("<h4>Inicio de contraton:<br><input type='text' id='Inicon' class='form-control' disabled value= " + rs.getString("Inicio_contrato") + "></h4>");
-            out.println("<h4>Fin de contrato:<br><input type='text' id='Fincon' class='form-control'  value= " + rs.getString("Fin_contrato") + "></h4>");
-            out.println("<h4>Hora inicio:<br><input type='text' id='Horaini' class='form-control' disabled value= " + rs.getString("Hora_inicio") + "></h4>");
-            out.println("<h4>Hora salida:<br><input type='text' id='Horafin' class='form-control' disabled value= " + rs.getString("Hora_salida") + "></h4>");  
-            out.println("<h4>Cargo:<br><input type='text' id='Cargo' class='form-control "+rs.getString("id_cargo")+"' disabled value= " + rs.getString("Nombre_cargo") + "></h4>");
-            out.println("<h4>Fecha de nacimiento:<br><input type='text' id='fechaN' class='form-control' disabled value= " + rs.getString("Fecha_nacimiento") + "></h4>");
-            out.println("<h4>Correo:<br><input type='text' id='Correo' class='form-control'  value= " + rs.getString("Correo") + "></h4>");
+            out.println("<h4><input type='hidden' id='Id' value="+Id+"></h4>");
+            out.println("<div class=''>"  );
+            out.println("<form class='form-horizontal'>");
+            out.println("<div class='form-group'>");
+            out.println("<label class='control-label col-sm-3' for='codigo'>Documento:</label>");
+            out.println("<div class='col-sm-8'><br>");
+            out.println("<input type='text' class='form-control' disabled  id='Documento' name='documento' value=" +rs.getString("Documento")+">");
+            out.println("</div>");
+            out.println("</div>");
+            out.println("<div class='form-group'>");
+            out.println("<label class='control-label col-sm-3' for='tipo_insumo'>Tipo:</label>");
+            out.println("<div class='col-sm-8'>");
+            out.println("<input type='text' class='form-control' disabled id='Tdoc' name='tipo' value="+rs.getString("Tipo_documento")+">");
+            out.println("</div>");
+            out.println("</div>");
+            out.println("<div class='form-group'>");
+            out.println("<label class='control-label col-sm-3' for='nombre'>Nombre:</label>");
+            out.println("<div class='col-sm-8'>");
+            out.println("<input type='text' class='form-control' id='Nombre' name='nombre' value=" +rs.getString("Nombre")+">");
+            out.println("</div>");
+            out.println("</div>");
+            out.println("<div class='form-group'> ");
+            out.println("<label class='control-label col-sm-3' for='cantidad'>Apellido:</label>");
+            out.println("<div class='col-sm-8'>");
+            out.println("<input type='text' class='form-control' id='Apellido' name='apellido' value=" +rs.getString("Apellido")+">");
+            out.println("</div>");
+            out.println("</div>");
+            out.println("<div class='form-group'>");
+            out.println("<label class='control-label col-sm-3' for='valor'>Telefono:</label>");
+            out.println("<div class='col-sm-8'>");
+            out.println("<input type='text' class='form-control' id='Telefono' name='telefono' value="+rs.getString("Telefono")+">");
+            out.println("</div>");
+            out.println("</div>");
+            out.println("<div class='form-group'> ");
+            out.println("<label class='control-label col-sm-3' for='fecha_ingreso'>Celular:</label>");
+            out.println("<div class='col-sm-8'>");
+            out.println("<input type='text' class='form-control' id='Celular' name='celular' value="+rs.getString("Celular")+">");
+            out.println("</div>");
+            out.println("</div>");
+            out.println("<div class='form-group'>");
+            out.println("<label class='control-label col-sm-3' for='fecha_vencimiento'>Inicio Contrato:</label>");
+            out.println("<div class='col-sm-8'> ");
+            out.println("<input type='text' class='form-control' id='Inicon' name='inicioC' value="+rs.getString("Inicio_contrato")+">");
+            out.println("</div>");
+            out.println("</div>");
+            out.println("<div class='form-group'>");
+            out.println("<label class='control-label col-sm-3' for='fecha_vencimiento'>Fin Contrato:</label>");
+            out.println("<div class='col-sm-8'>");
+            out.println("<input type='text' class='form-control' id='Fincon' name='FinC' value="+rs.getString("Fin_contrato")+">");
+            out.println("</div>");
+            out.println("</div>");
+            out.println("<div class='form-group'>");
+            out.println("<label class='control-label col-sm-3' for='peso'>Cargo:</label>");
+            out.println("<div class='col-sm-8'>");
+            out.println("<input type='text' class='form-control' disabled id='Cargo' name='cargo' value="+rs.getString("Nombre_cargo")+">");
+            out.println("</div>");
+            out.println("</div>");
+            out.println("<div class='form-group'>");
+            out.println("<label class='control-label col-sm-3' for='prioridad'>Fecha Nacimiento:</label>");
+            out.println("<div class='col-sm-8'>");
+            out.println("<input type='text' class='form-control' id='fechaN' name='FechaN' value="+rs.getString("Fecha_nacimiento")+">");
+            out.println("</div>");
+            out.println("</div>");
+            out.println("<div class='form-group'>");
+            out.println("<label class='control-label col-sm-3' for='peso'>Correo:</label>");
+            out.println("<div class='col-sm-8'>");
+            out.println("<input type='text' class='form-control' id='Correo' name='correo' value="+rs.getString("Correo")+">");
+            out.println("</div>");
+            out.println("</div>");
+            out.println("</form>");
+            out.println("</div>");
+            
+            
+            
+            
+            
+            
+            
+            
             }
             
             

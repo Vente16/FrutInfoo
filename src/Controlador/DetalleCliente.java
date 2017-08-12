@@ -49,17 +49,17 @@ public class DetalleCliente extends HttpServlet {
             
             while(rs.next()){
           
-            out.println("<h4>Documento:  " +  rs.getString("Documento") + "   -- Tipo de documento: "+rs.getString("Tipo_documento")+"</h4>");
-            out.println("<h4>Nombre:  " + rs.getString("Nombre") + "</h4>");
-            out.println("<h4>Apellido: " + rs.getString("Apellido")+ "</h4>");
-            out.println("<h4>Telefóno: " + rs.getString("Telefono") + "</h4>");
-            out.println("<h4>Municipio: " + rs.getString("Municipio") + "</h4>");
-            out.println("<h4>Barrio: " + rs.getString("Barrio") + "</h4>");
-            out.println("<h4>Dirección: " + rs.getString("Direccion") + "</h4>");
-            out.println("<h4Celular: " + rs.getString("Celular") + "</h4>");
-            out.println("<h4>Fecha de nacimiento: " + rs.getString("Fecha_nacimiento") + "</h4>");
-            out.println("<h4>Correo: " + rs.getString("Email") + "</h4>");  
-            out.println("<h4>Membrecia: " + rs.getString("Membrecia") + "</h4>");
+            out.println("<h4><strong>Documento:</strong>  " +  rs.getString("Documento") + "   -- Tipo de documento: "+rs.getString("Tipo_documento")+"</h4>");
+            out.println("<h4><strong>Nombre:</strong>  " + rs.getString("Nombre") + "</h4>");
+            out.println("<h4><strong>Apellido:</strong> " + rs.getString("Apellido")+ "</h4>");
+            out.println("<h4><strong>Telefóno:</strong> " + rs.getString("Telefono") + "</h4>");
+            out.println("<h4><strong>Municipio:</strong> " + rs.getString("Municipio") + "</h4>");
+            out.println("<h4><strong>Barrio:</strong> " + rs.getString("Barrio") + "</h4>");
+            out.println("<h4><strong>Dirección:</strong> " + rs.getString("Direccion") + "</h4>");
+            out.println("<h4><strong>Celular:</strong> " + rs.getString("Celular") + "</h4>");
+            out.println("<h4><strong>Fecha de nacimiento:</strong> " + rs.getString("Fecha_nacimiento") + "</h4>");
+            out.println("<h4><strong>Correo:</strong> " + rs.getString("Email") + "</h4>");  
+            out.println("<h4><strong>Membrecia:</strong> " + rs.getString("Membrecia") + "</h4>");
             
             }
             
