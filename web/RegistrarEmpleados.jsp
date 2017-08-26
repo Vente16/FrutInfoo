@@ -31,7 +31,7 @@
     <main>
         <div class="containerForm">
         <div style="margin-top: 50px">
-            <h2 style="text-align: center;">Registro de empleados</h2><br><br>
+            <h2 style="text-align: center;"><b>Registro de empleados</b></h2><br><br>
         </div>
 
         <div class="continer-propio">

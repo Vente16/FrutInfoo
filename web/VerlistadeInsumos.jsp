@@ -21,7 +21,6 @@
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"></script>
         <script src="js/FuncionesInsumos.js"></script>
-        <script src="js/ValidacionFormActIns.js"></script>
         <script  src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
     </head>
     <%@include file="headerModulos.jspf"%>
@@ -32,7 +31,7 @@
                 <h2 style="text-align: center;">LISTA DE INSUMOS</h2>
                 <p style="text-align: center;">En el siguiente informe podras ver la lita de nuestros insumos.</p>
                 
-                    <table class="table table-bordered">
+                    <table class="table table-hover">
                         <thead>
                             <tr>
                                 <th>Codigo</th>
@@ -54,11 +53,11 @@
                                 nRegistros = 0;
                             }
                         %>
-
+                        <tbody id="tabla">
                         <%
                             while (reI.next()) {
                         %>
-                        <tbody>
+                       
                             <tr class="<%= reI.getString("Id_Insumo")%>">
                                 <td><%= reI.getString(2)%></td>
                                 <td><%= reI.getString(6)%></td>

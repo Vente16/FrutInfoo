@@ -25,7 +25,7 @@
           <div class="containerForm">
               
                   <div style="margin-top: 100px">
-                      <h2 style="text-align: center;">SOLICITAR DOMICILIO</h2><br><br>
+                      <h2 style="text-align: center;"><b>Solicitar Domicilio</b></h2><br><br>
                   </div>
               
             <form class="form-horizontal" id="Domicilio" action="RegistrarDomicilio" method="post">

@@ -9,17 +9,19 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Lista de empleados</title>
+        <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css"/>
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
         <link rel="stylesheet" href="css/estilos2.css">
         <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css> 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"></script>
         <script src="js/FuncionesEmpleados.js"></script>
         <script  src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
-        
-        <title>Lista de empleados</title>
-
     </head>
     
   
@@ -75,10 +77,12 @@
                                 }
                             %>
 
-                            <%
+                            
+                            <tbody id="TablaEmpleados">
+                                <%
                                 while (reE.next()) {
                             %>
-                            <tbody>
+                                
                                 <%          
                                         if (rol.equals("Asistente Administrativo")) {              
                                 %>
@@ -100,11 +104,11 @@
                                 </tr>
                                     <% }
                                     %>
-                                
-                            </tbody>
-                         
-                            <%}%>
+                                    
+                                 <%}%>
+                            </tbody> 
                         </table>
+                            
                         <nav aria-label="Page navigation example">
                             <ul class="pagination justify-content-center">
                                 <%

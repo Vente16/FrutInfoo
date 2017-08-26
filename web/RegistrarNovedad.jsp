@@ -23,7 +23,7 @@
         <%@include file="headerModulos.jspf"%><br>
         <main>
         <div class="containerForm">
-            <h2 style="text-align: center;"><b>REGISTRAR NOVEDAD</b></h2><br><br><br>
+            <h2 style="text-align: center;"><b>Registrar Novedad</b></h2><br><br><br>
             <form id="Novedad" action="Novedades" method="post" name="formulario" >
                  <div class="form-group">
                     <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Novedad</span></label>

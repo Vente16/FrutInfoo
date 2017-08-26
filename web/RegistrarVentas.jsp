@@ -25,7 +25,7 @@
         <main>
             <div class="containerForm">
                 <div style="margin-top: 100px">
-                    <h2 style="text-align: center;">Registro de Ventas</h2><br><br>
+                    <h2 style="text-align: center;"><b>Registro de Ventas</b></h2><br><br>
                 </div>
                 <div class="continer">
                     <form  class="form-horizontal" id="RegVenta" action="RegVentas" method="post">

@@ -55,11 +55,8 @@ public class DetalleEmpleado extends HttpServlet {
             out.println("<h3><strong>Apellido:</strong> " + rs.getString("Apellido")+ "</h3>");
             out.println("<h3><strong>Telefóno:</strong> " + rs.getString("Telefono") + "</h3>");
             out.println("<h3><strong>Celular:</strong> " + rs.getString("Celular") + "</h3>");
-            out.println("<h3><strong>Disponibilidad:</strong> " + rs.getString("Disponibilidad") + "</h3>");
-            out.println("<h3><strong>Inicio de contraton:</strong> " + rs.getString("Inicio_contrato") + "</h3>");
-            out.println("<h3F<strong>in de contrato:</strong> " + rs.getString("Fin_contrato") + "</h3>");
-            out.println("<h3><strong>Hora inicio:</strong> " + rs.getString("Hora_inicio") + "</h3>");
-            out.println("<h3><strong>Hora salida:</strong> " + rs.getString("Hora_salida") + "</h3>");  
+            out.println("<h3><strong>Inicio de contrato:</strong> " + rs.getString("Inicio_contrato") + "</h3>");
+            out.println("<h3><strong>Fin de contrato:</strong> " + rs.getString("Fin_contrato") + "</h3>"); 
             out.println("<h3><strong>Cargo:</strong> " + rs.getString("Nombre_cargo") + "</h3>");
             out.println("<h3><strong>Fecha de nacimiento:</strong> " + rs.getString("Fecha_nacimiento") + "</h3>");
             out.println("<h3><strong>Correo:</strong> " + rs.getString("Correo") + "</h3>");

@@ -79,7 +79,7 @@ public class FormActualizarEmpleados extends HttpServlet {
             while(rs.next()){
             out.println("<h4><input type='hidden' id='Id' value="+Id+"></h4>");
             out.println("<div class=''>"  );
-            out.println("<form class='form-horizontal'>");
+            out.println("<form class='form-horizontal' id='ValActFormEmpl'>");
             out.println("<div class='form-group'>");
             out.println("<label class='control-label col-sm-3' for='codigo'>Documento:</label>");
             out.println("<div class='col-sm-8'><br>");
@@ -131,17 +131,17 @@ public class FormActualizarEmpleados extends HttpServlet {
             out.println("<div class='form-group'>");
             out.println("<label class='control-label col-sm-3' for='peso'>Cargo:</label>");
             out.println("<div class='col-sm-8'>");
-            out.println("<input type='text' class='form-control' disabled id='Cargo' name='cargo' value="+rs.getString("Nombre_cargo")+">");
+            out.println("<input type='text' class='form-control'disabled id='Cargo' name='cargo' value="+rs.getString("Nombre_cargo")+">");
             out.println("</div>");
             out.println("</div>");
             out.println("<div class='form-group'>");
-            out.println("<label class='control-label col-sm-3' for='prioridad'>Fecha Nacimiento:</label>");
+            out.println("<label class='control-label col-sm-3' for='fechaN'>Fecha Nacimiento:</label>");
             out.println("<div class='col-sm-8'>");
             out.println("<input type='text' class='form-control' id='fechaN' name='FechaN' value="+rs.getString("Fecha_nacimiento")+">");
             out.println("</div>");
             out.println("</div>");
             out.println("<div class='form-group'>");
-            out.println("<label class='control-label col-sm-3' for='peso'>Correo:</label>");
+            out.println("<label class='control-label col-sm-3' for='correo'>Correo:</label>");
             out.println("<div class='col-sm-8'>");
             out.println("<input type='text' class='form-control' id='Correo' name='correo' value="+rs.getString("Correo")+">");
             out.println("</div>");

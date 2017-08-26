@@ -26,7 +26,7 @@
         <main>
             <div class="containerForm">
             <div style="margin-top: 100px">
-                <h2 style="text-align: center;">Registro del Cliente</h2><br><br>
+                <h2 style="text-align: center;"><b>Registro del Cliente</b></h2><br><br>
             </div>
                 <div class="continer-propio">
                  <form class="form-horizontal" id="RegistrarCliente" action="RegCliente" method="post">
@@ -126,21 +126,8 @@
                         <input name="celular"  type="text" class="form-control" id="celular"  placeholder="Ingrese su número"><br>
                         <span class="" id="validarc"></span>
                         </div>
-                    </div>
+                    </div><br>
                 
-                 <div class="form-group">    
-                        <label class="col-sm-2 control-label" for="inputSuccess">
-                            <span class="titulo">Membrecia</span></label>
-                            <div class="col-xs-10">
-                                <select class="form-control" name="cumple">
-                                    <option></option>
-                                    <option>Si</option>
-                                    <option>No</option>
-                                </select>
-                            </div>
-                    </div><br><br><br>
-
-                    
                     <div class="form-group">
                         <div class="col-xs-8">
                             <button type="submit" class="btn btn-success">REGISTRAR</button>
