@@ -49,14 +49,13 @@ public class DetalleVentas extends HttpServlet {
             ResultSet rst = pst.executeQuery();
             
             while (rst.next()) {                
-                out.println("<h4>Producto: "+rst.getString("Nombe_producto")+"</h4>");
-                out.println("<h4>Cantidad: "+rst.getString("Cantidad_producto")+"</h4>");
-                out.println("<h4>Precio: "+rst.getString("Precio_unit")+"</h4>");
-                out.println("<h4>Iva: "+rst.getString("Iva")+"</h4>");            
-                out.println("<h4>Total a pagar: "+rst.getString("Total_Pagar")+"</h4>");
-                out.println("<h4>Tipo de venta: "+rst.getString("Tipo_venta")+"</h4>");
-                out.println("<h4>Fecha: "+rst.getString("Fecha_venta")+"</h4>");
-                out.println("<h4>Hora: "+rst.getString("Hora_venta")+"</h4>");
+                out.println("<h3><strong>Producto:</strong> "+rst.getString("Nombe_producto")+"</h3>");
+                out.println("<h3><strong>Cantidad:</strong> "+rst.getString("Cantidad_producto")+"</h3>");
+                out.println("<h3><strong>Precio:</strong> "+rst.getString("Precio_unit")+"</h3>");
+                out.println("<h3><strong>Iva:</strong> "+rst.getString("Iva")+"</h3>");            
+                out.println("<h3><strong>Total a pagar:</strong> "+rst.getString("Total_Pagar")+"</h3>");
+                out.println("<h3><strong>Tipo de venta:</strong> "+rst.getString("Tipo_venta")+"</h3>");
+                out.println("<h3><strong>Fecha:</strong> "+rst.getString("Fecha_venta")+"</h3>");
             }
            
         } catch (SQLException ex) {

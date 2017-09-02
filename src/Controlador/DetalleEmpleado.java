@@ -49,20 +49,17 @@ public class DetalleEmpleado extends HttpServlet {
             System.out.println(Id);
             while(rs.next()){
           
-            out.println("<h4>Tipo de documento:"+rs.getString("Tipo_documento")+"</h4>");
-            out.println("<h4>Documento:  " +  rs.getString("Documento") +"</h4>");
-            out.println("<h4>Nombre:  " + rs.getString("Nombre") + "</h4>");
-            out.println("<h4>Apellido: " + rs.getString("Apellido")+ "</h4>");
-            out.println("<h4>Telefóno: " + rs.getString("Telefono") + "</h4>");
-            out.println("<h4>Celular: " + rs.getString("Celular") + "</h4>");
-            out.println("<h4>Disponibilidad: " + rs.getString("Disponibilidad") + "</h4>");
-            out.println("<h4>Inicio de contraton: " + rs.getString("Inicio_contrato") + "</h4>");
-            out.println("<h4Fin de contrato: " + rs.getString("Fin_contrato") + "</h4>");
-            out.println("<h4>Hora inicio: " + rs.getString("Hora_inicio") + "</h4>");
-            out.println("<h4>Hora salida: " + rs.getString("Hora_salida") + "</h4>");  
-            out.println("<h4>Cargo: " + rs.getString("Nombre_cargo") + "</h4>");
-            out.println("<h4>Fecha de nacimiento: " + rs.getString("Fecha_nacimiento") + "</h4>");
-            out.println("<h4>Correo: " + rs.getString("Correo") + "</h4>");
+            out.println("<h3><strong>Tipo de documento:</strong>"+rs.getString("Tipo_documento")+"</h3>");
+            out.println("<h3><strong>Documento:</strong>  " +  rs.getString("Documento") +"</h3>");
+            out.println("<h3><strong>Nombre:</strong>  " + rs.getString("Nombre") + "</h3>");
+            out.println("<h3><strong>Apellido:</strong> " + rs.getString("Apellido")+ "</h3>");
+            out.println("<h3><strong>Telefóno:</strong> " + rs.getString("Telefono") + "</h3>");
+            out.println("<h3><strong>Celular:</strong> " + rs.getString("Celular") + "</h3>");
+            out.println("<h3><strong>Inicio de contrato:</strong> " + rs.getString("Inicio_contrato") + "</h3>");
+            out.println("<h3><strong>Fin de contrato:</strong> " + rs.getString("Fin_contrato") + "</h3>"); 
+            out.println("<h3><strong>Cargo:</strong> " + rs.getString("Nombre_cargo") + "</h3>");
+            out.println("<h3><strong>Fecha de nacimiento:</strong> " + rs.getString("Fecha_nacimiento") + "</h3>");
+            out.println("<h3><strong>Correo:</strong> " + rs.getString("Correo") + "</h3>");
             
             }
             

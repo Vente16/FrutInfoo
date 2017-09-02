@@ -10,7 +10,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Registrar Ventas</title>
-         <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
@@ -25,7 +25,7 @@
         <main>
             <div class="containerForm">
                 <div style="margin-top: 100px">
-                    <h2 style="text-align: center;">Registro de Ventas</h2><br><br>
+                    <h2 style="text-align: center;"><b>Registro de Ventas</b></h2><br><br>
                 </div>
                 <div class="continer">
                     <form  class="form-horizontal" id="RegVenta" action="RegVentas" method="post">

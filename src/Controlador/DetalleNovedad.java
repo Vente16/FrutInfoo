@@ -55,12 +55,12 @@ public class DetalleNovedad extends HttpServlet {
            
             while(rs.next()){
                 
-            out.print("<h4>Documento: "+rs.getString("Documento")+"</h4><br>");
-            out.print("<h4>Nombre del empleado: "+rs.getString("Nombre_empleado")+""+rs.getString("Apellidos")+"</h4><br>");
-            out.print("<h4>Tipo de novedad: "+rs.getString("novedad")+"</h4><br>");
-            out.print("<h4>Descripción: "+rs.getString("Descripcion")+"</h4><br>");
-            out.print("<h4>Punto de venta: "+rs.getString("Nombre_municipio")+"</h4><br>");
-            out.print("<h4>Cargo: "+rs.getString("Nombre_cargo")+"</h4><br>");
+            out.print("<h4><strong>Documento:</strong> "+rs.getString("Documento")+"</h4><br>");
+            out.print("<h4><strong>Nombre del empleado:</strong> "+rs.getString("Nombre_empleado")+""+rs.getString("Apellidos")+"</h4><br>");
+            out.print("<h4><strong>Tipo de novedad:</strong> "+rs.getString("novedad")+"</h4><br>");
+            out.print("<h4><strong>Descripción:</strong> "+rs.getString("Descripcion")+"</h4><br>");
+            out.print("<h4><strong>Punto de venta:</strong> "+rs.getString("Nombre_municipio")+"</h4><br>");
+            out.print("<h4><strong>Cargo:</strong> "+rs.getString("Nombre_cargo")+"</h4><br>");
          
             }
             break;

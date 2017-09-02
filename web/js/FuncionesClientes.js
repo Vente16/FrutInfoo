@@ -27,6 +27,7 @@ $(document).ready(function () {
         $.post('FormActualizarClientes', {"Id": Id}, function (formulario) {
 
             $('.FormAcutalizar').html(formulario);
+            ValidacionActCliente();
 
 
          });
@@ -47,7 +48,6 @@ $(document).ready(function () {
         var Celular = $('#Celular').val();
         var Fecha = $('#FechaN').val();
         var Correo = $('#Correo').val();
-        var Membrecia = $('#Membrecia').val();
 
 
         $.post('ActualizarCliente',
@@ -61,8 +61,7 @@ $(document).ready(function () {
                     "Celular": Celular,
                     "TipoD": TipoD,
                     "FechaN": Fecha,
-                    "Correo": Correo,
-                    "Membrecia": Membrecia
+                    "Correo": Correo
                 }, function (Actualizar) {
 
             toastr.success(Actualizar);
@@ -94,10 +93,219 @@ $(document).ready(function () {
          }
 
     });
+    
+    
+    function ValidacionActCliente(){
+        $("#ValFormActEmpl").bootstrapValidator({
+            feedbackIcons: {
+                valid:'glyphicon glyphicon-ok',
+                invalid:'glyphicon glyphicon-remove',
+                validating:'glyphicon glyphicon-refresh'  
+            },
+            fields: {
+                tipoDoc: {
 
+                validators: {
 
+                    notEmpty: {
 
+                        message: 'Este campo es requerido'
+                    }
 
+                }
+
+            },
+             nombre: {
+
+                validators: {
+
+                    notEmpty: {
+
+                        message: 'Este campo es requerido'
+                    },
+                      regexp: {
+                        
+                    regexp: /^[a-zA-Z ]*$/,
+
+                    message: 'Este campo no acepta números'
+                    }
+
+                }
+
+            },
+            apellido: {
+
+                validators: {
+
+                    notEmpty: {
+
+                        message: 'Este campo es requerido'
+                    },
+                      regexp: {
+                        
+                    regexp: /^[a-zA-Z ]*$/,
+
+                    message: 'Este campo no acepta números'
+                    }
+
+                }
+
+            },
+            telefono: {
+
+                validators: {
+
+                    notEmpty: {
+
+                        message: 'Este campo es requerido'
+                    },
+                    
+                     regexp: {
+                        
+                    regexp: /^[0-9]+$/,
+                    message: 'Este campo solo acepta números'
+                    },
+
+                    stringLength: {
+
+                        min: 7,
+                        
+                        max: 7,
+
+                        message: 'El teléfono debe contener minimo 7 números'
+
+                    }
+
+                }
+
+            },
+             municipio: {
+
+                validators: {
+
+                    notEmpty: {
+
+                        message: 'Este campo es requerido'
+                    },
+                      regexp: {
+                        
+                    regexp: /^[a-zA-Z ]*$/,
+
+                    message: 'Este campo no acepta números'
+                    }
+
+                }
+
+            },
+             barrio: {
+
+                validators: {
+
+                    notEmpty: {
+
+                        message: 'Este campo es requerido'
+                    }
+
+                }
+
+            },
+             direccion: {
+
+                validators: {
+
+                    notEmpty: {
+
+                        message: 'Este campo es requerido'
+                    }
+
+                }
+
+            },
+            celular: {
+
+                validators: {
+
+                    notEmpty: {
+
+                        message: 'Este campo es requerido'
+                    },
+                    
+                     regexp: {
+                        
+                    regexp: /^[0-9]+$/,
+                    message: 'Este campo solo acepta números'
+                    },
+
+                    stringLength: {
+
+                        min: 10,
+                        
+                        max: 10,
+
+                        message: 'El celular debe contener como minimo 10 números'
+
+                    }
+
+                }
+
+            },
+            fechaN: {
+
+                validators: {
+
+                    notEmpty: {
+
+                        message: 'Este campo es requerido'
+                    },
+                    regexp: {
+                        
+                    regexp: /^([012][1-9]|3[01])(\/)(0[1-9]|1[012])\2(\d{4})$/,
+
+                    message: 'formato de fecha invalido'
+                    }
+
+                }
+
+            },
+             correo: {
+
+                validators: {
+
+                    notEmpty: {
+
+                        message: 'Este campo es requerido'
+                    },
+                    
+                     emailAddress: {
+ 
+			 message: 'El correo electronico no es valido'
+ 
+				 }
+
+                }
+
+            },
+             membrecia: {
+
+                validators: {
+
+                    notEmpty: {
+
+                        message: 'Este campo es requerido'
+                    }
+
+                }
+
+            }
+
+            
+                 
+                
+            }
+            
+        });
+          
+    }
 
 });
 

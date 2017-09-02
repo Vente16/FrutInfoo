@@ -28,7 +28,7 @@
                < <h2 style="text-align: center;"></h2><br><br>
                 <h2 style="text-align: center;">LISTA DE VENTAS</h2><br><br>
                   <p style="text-align: center;">En el siguiente infórme podras ver nuestras ventas por su respectiva sede</p><br>
-                    <table class="table table-bordered table-hover">
+                    <table class="table table-hover">
                         <thead>
                             <tr>
                                 <th>Nombre del Producto</th>

@@ -32,14 +32,14 @@
             String correo = "";
             if (rs.last()) {
                 nombre = rs.getString(2);
-                correo = rs.getString(17);
+                correo = rs.getString(14);
             }
         %>
         <section>
             <div class="container">
                 <div class="jumbotron">
                     <h1>Registro de usuario</h1>
-                    <p>has acabado de registrar a un cliente por favor crea un usuario</p>
+                    <p>has acabado de registrar a un Empleado por favor crea un usuario</p>
                     <form action="RegUsuarioInt" class="form-group-sm">
                         <div class="form-group">
                             <label for="#nomre">Nombre</label>

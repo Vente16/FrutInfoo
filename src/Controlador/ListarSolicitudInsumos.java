@@ -44,7 +44,7 @@ public class ListarSolicitudInsumos extends HttpServlet {
             Connection con = c.Conectar();
             int pagina = Integer.parseInt(request.getParameter("pag"));
             String sql = "SELECT * FROM solicitud_insumo  LIMIT 5 OFFSET " + (pagina) * 5 + ";";
-            String sqlc = "SELECT count(*) as Id FROM solicitud_insumo WHERE Habilitado=1";
+            String sqlc = "SELECT count(*) as Id FROM solicitud_insumo";
             HttpSession sesion = request.getSession(true);
             PreparedStatement pst =con.prepareStatement(sql);
             Statement stm1 = con.createStatement();

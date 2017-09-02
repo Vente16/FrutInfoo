@@ -49,15 +49,15 @@ public class DetalleInsumo extends HttpServlet {
             
             while(rs.next()){
           
-            out.println("<h4>codigo:  " +  rs.getString("Codigo"));
-            out.println("<h4>Tipo de insumo:"+rs.getString("Tipo")+"</h4>");
-            out.println("<h4>Nombre del insumo:  " + rs.getString("Nombre_insumo") + "</h4>");
-            out.println("<h4>Cantidad insumo: " + rs.getString("Cantidad_insumo")+ "</h4>");
-            out.println("<h4>Valor insumo: " + rs.getString("Valor_insumo") + "</h4>");
-            out.println("<h4>Fecha de ingreso: " + rs.getString("Fecha_ingreso") + "</h4>");
-            out.println("<h4>Fecha de vencimiento: " + rs.getString("Fecha_vencimiento") + "</h4>");
-            out.println("<h4>Peso: " + rs.getString("peso") + "</h4>");
-            out.println("<h4>Prioridad: " + rs.getString("Prioridad") + "</h4>");
+            out.println("<h3><strong>codigo:</strong> " +  rs.getString("Codigo")+ "</h3>");
+            out.println("<h3><strong>Tipo de insumo:</strong>"+rs.getString("Tipo")+"</h3>");
+            out.println("<h3><strong>Nombre del insumo:</strong>" + rs.getString("Nombre_insumo") + "</h3>");
+            out.println("<h3><strong>Cantidad insumo:</strong> " + rs.getString("Cantidad_insumo")+ "</h3>");
+            out.println("<h3><strong>Valor insumo:</strong> " + rs.getString("Valor_insumo") + "</h3>");
+            out.println("<h3><strong>Fecha de ingreso:</strong> " + rs.getString("Fecha_ingreso") + "</h3>");
+            out.println("<h3><strong>Fecha de vencimiento:</strong> " + rs.getString("Fecha_vencimiento") + "</h3>");
+            out.println("<h3><strong>Peso:</strong> " + rs.getString("peso") + "</h3>");
+            out.println("<h3><strong>Prioridad:</strong> " + rs.getString("Prioridad") + "</h3>");
            
             
             }

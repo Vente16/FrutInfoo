@@ -1,47 +1,41 @@
 <%-- 
-    Document   : ListarCliente
-    Created on : 23/04/2017, 01:16:43 AM
-    Author     : oscar
+    Document   : ListarDomicilio
+    Created on : 5/08/2017, 06:55:02 PM
+    Author     : John Jairo
 --%>
-<%@page import="java.sql.ResultSet"%>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
+<!DOCTYPE html >
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Lista de clientes</title>
-        <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css"/>
+        <title>Listar Domicilio</title>
         <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
         <link rel="stylesheet" href="css/estilos2.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"></script>
-        <script src="js/FuncionesClientes.js"></script>
-        <script  src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+       <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="js/FuncionesDomicilio.js"></script>
     </head>
     <body>
-        <%@include file="headerModulos.jspf" %>
+         <%@include file="headerModulos.jspf" %>
 
         <div class="container">
             <div class="jumbotron">
-                  <h2 style="text-align: center;">LISTA DE CLIENTES</h2><br><br>
-                  <p style="text-align: center;">En el siguiente infórme podras ver nuestros clientes</p><br>
+                  <h2 style="text-align: center;">LISTA DE DOMICILIOS</h2><br><br>
+                  <p style="text-align: center;">En el siguiente infórme podras ver los domicilios</p><br>
                 <table class="table table-hover" id="paginacion">
                     <thead>
                         <tr>
-                            <th>Documento</th>
-                            <th>Nombre</th>
-                            <th>Apellido</th>
+                            <th>Producto</th>
+                            <th>Cantidad</th>
+                            <th>Nombres</th>
                             <th>Detalle</th>
-                            <th>Actualizar</th>
-                            <th>Eliminar</th>
                         </tr>
                     </thead>
-                    <tbody id="TablaCliente">
+                    <tbody>
                         <%
-                            ResultSet re = (ResultSet) session.getAttribute("listarC");
+                            ResultSet re = (ResultSet) session.getAttribute("listarD");
                             ResultSet res = (ResultSet) session.getAttribute("tamaño");
 
 
@@ -60,13 +54,11 @@
                         %>
                         <tr class="<%= re.getString("Id")%>">
                             
-                            <td ><%= re.getString("Documento")%></td>
-                            <td ><%= re.getString("Nombre")%></td>
-                            <td ><%= re.getString("Apellido")%></td>
+                            <td ><%= re.getString("Producto")%></td>
+                            <td ><%= re.getString("Cantidad")%></td>
+                            <td ><%= re.getString("Nombres")%></td>
                             <td><a href="#Detalle"  data-toggle="modal"><button class="btn btn-primary  glyphicon glyphicon-eye-open Detalle"></button></a></td>
-                            <td><a href="#Actualizar"  data-toggle="modal"><button class="btn btn-success glyphicon glyphicon-edit Actualizar"></button></a></td>
-                            <td><button class="btn btn-danger glyphicon glyphicon-trash Eliminar"></button></td>
-                           
+                          
                         </tr>
                         <%
                             }
@@ -100,7 +92,7 @@
         </div>
                     
                  
-        <%@include file="ModalClientes.jsp" %>
+        <%@include file="ModalSolicitudDomicilio.jsp" %>
         <%@include file="footerModulos.jspf" %>
     </body>
 </html>

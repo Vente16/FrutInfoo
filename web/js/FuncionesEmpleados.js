@@ -1,9 +1,14 @@
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 
 $(document).ready(function(){
     
     
     
-     $('.Detalle').click(function () {
+    $('.Detalle').click(function () {
 
         var Id = $(this).parents('tr').attr('class');
         console.log("hola " + Id);
@@ -11,27 +16,21 @@ $(document).ready(function(){
 
             $('.InfoDetalle').html(detalle);
 
-
-         });
-
-
-
-
+        });
     });
 
 
-    $('.Actualizar').click(function () {
 
+    $('.Actualizar').click(function () {
 
         var Id = $(this).parents('tr').attr('class');
         
         $.post('FormActualizarEmpleados', {"Id": Id}, function (formulario) {
 
             $('.FormActualizar').html(formulario);
-
+            ValidacionActEmpleado();
 
          });
-
 
     });
 
@@ -43,11 +42,8 @@ $(document).ready(function(){
         var Apellido = $('#Apellido').val();
         var Telefono = $('#Telefono').val();
         var Celular = $('#Celular').val();
-        var Disponibilidad = $('#Disponibilidad').val();
         var Inicon = $('#Inicon').val();
         var Fincon = $('#Fincon').val();
-        var Horaini = $('#Horaini').val();
-        var Horafin = $('#Horafin').val();
         var FechaN = $('#fechaN').val();
         var Correo = $('#Correo').val();
         var Documento = $('#Documento').val();
@@ -59,11 +55,8 @@ $(document).ready(function(){
                     "TipoDoc": TipoDoc,
                     "Apellido": Apellido,
                     "Telefono": Telefono,
-                    "Disponibilidad": Disponibilidad,
                     "Inicon": Inicon,
                     "Fincon": Fincon,
-                    "Horaini": Horaini,
-                    "Horafin": Horafin,
                     "Celular": Celular,
                     "FechaN": FechaN,
                     "Correo": Correo,
@@ -95,15 +88,203 @@ $(document).ready(function(){
 
              });
 
-
          }
 
     });
     
     
-    
-    
+    /*Validacion Modal Actualizar Empleados*/
+    function ValidacionActEmpleado(){   
+        $("#ValActFormEmpl").bootstrapValidator({
+            feedbackIcons: {
+              valid:'glyphicon glyphicon-ok',
+              invalid:'glyphicon glyphicon-remove',
+              validating:'glyphicon glyphicon-refresh'
+            },
+            fields: {
+                nombre: {
+
+                validators: {
+
+                    notEmpty: {
+
+                        message: 'Este campo es requerido'
+                    },
+                     regexp: {
+                        
+                    regexp: /^[a-zA-Z ]*$/,
+
+                    message: 'Este campo no acepta números'
+                    }
+
+                }
+
+            },
+            apellido: {
+
+                validators: {
+
+                    notEmpty: {
+
+                        message: 'Este campo es requerido'
+                    },
+                     regexp: {
+                        
+                    regexp: /^[a-zA-Z ]*$/,
+
+                    message: 'Este campo no acepta números'
+                    }
+
+                }
+
+            },
+             telefono: {
+
+                validators: {
+
+                    notEmpty: {
+
+                        message: 'Este campo es requerido'
+                    },
+                    
+                     regexp: {
+                        
+                    regexp: /^[0-9]+$/,
+                    message: 'Este campo solo acepta números'
+                    },
+                     stringLength: {
+
+                        min: 7,
+                        
+                        max: 7,
+
+                        message: 'El teléfono debe contener como minimo 7 números'
+
+                    }
+                    
+                }
+
+            },
+             celular: {
+
+                validators: {
+
+                    notEmpty: {
+
+                        message: 'Este campo es requerido'
+                    },
+                    
+                     regexp: {
+                        
+                    regexp: /^[0-9]+$/,
+                    message: 'Este campo solo acepta números'
+                    }, stringLength: {
+
+                        min: 10,
+                        
+                        max: 10,
+
+                        message: 'El celular debe contener como minimo 10 números'
+
+                    }
+                    
+                }
+
+            },
+            
+             inicioC: {
+
+                validators: {
+
+                    notEmpty: {
+
+                        message: 'Este campo es requerido'
+                    },
+                    regexp: {
+                        
+                    regexp: /^([012][1-9]|3[01])(\/)(0[1-9]|1[012])\2(\d{4})$/,
+
+                    message: 'formato de fecha invalido'
+                    }
+
+                }
+
+            },
+             FinC: {
+
+                validators: {
+
+                    notEmpty: {
+
+                        message: 'Este campo es requerido'
+                    },
+                    regexp: {
+                        
+                    regexp: /^([012][1-9]|3[01])(\/)(0[1-9]|1[012])\2(\d{4})$/,
+
+                    message: 'formato de fecha invalido'
+                    }
+
+                }
+
+            },
+            
+              cargo: {
+
+                validators: {
+
+                    notEmpty: {
+
+                        message: 'Este campo es requerido'
+                    }
+                    
+                }
+
+            },
+             FechaN: {
+
+                validators: {
+
+                    notEmpty: {
+
+                        message: 'Este campo es requerido'
+                    },
+                    regexp: {
+                        
+                    regexp: /^([012][1-9]|3[01])(\/)(0[1-9]|1[012])\2(\d{4})$/,
+
+                    message: 'formato de fecha invalido'
+                    }
+
+                }
+
+            },
+            correo: {
+
+                validators: {
+
+                    notEmpty: {
+
+                        message: 'Este campo es requerido'
+                    },
+                    
+                     emailAddress: {
+ 
+					 message: 'El correo electronico no es valido'
+ 
+				 }
+                    
+                }
+
+            }
+                
+                
+            }    
+        });     
+    }
+      
 });
+
 
 
 

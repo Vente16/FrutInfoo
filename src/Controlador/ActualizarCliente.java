@@ -76,13 +76,12 @@ public class ActualizarCliente extends HttpServlet {
             String TipoD = request.getParameter("TipoD");
             String FechaN = request.getParameter("FechaN");
             String Correo = request.getParameter("Correo");
-            String Membrecia = request.getParameter("Membrecia");
             
             
             Conexion c = new Conexion();
             Connection co = c.Conectar();
             
-            PreparedStatement st = co.prepareStatement("UPDATE clientes SET Nombre=?, Apellido=?, Telefono=?, Municipio=?, Barrio=?, Direccion=?, Celular=?, Tipo_Documento=?, Fecha_nacimiento=?, Email=?, Membrecia=? WHERE Id=?;");
+            PreparedStatement st = co.prepareStatement("UPDATE clientes SET Nombre=?, Apellido=?, Telefono=?, Municipio=?, Barrio=?, Direccion=?, Celular=?, Tipo_Documento=?, Fecha_nacimiento=?, Email=? WHERE Id=?;");
             st.setString(1, Nombre);
             st.setString(2, Apellido);
             st.setString(3, Telefono);
@@ -93,8 +92,7 @@ public class ActualizarCliente extends HttpServlet {
             st.setString(8, TipoD);
             st.setString(9, FechaN);
             st.setString(10, Correo);
-            st.setString(11, Membrecia);
-            st.setString(12, Id);
+            st.setString(11, Id);
             st.executeUpdate();
            
             out.println("<h3>Actualizó los datos correctamente!</h3>");

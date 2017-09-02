@@ -214,19 +214,8 @@ $(document).ready(function(){
 
                 }
 
-            },
-            cumple: {
-
-                validators: {
-
-                    notEmpty: {
-
-                        message: 'Este campo es requerido'
-                    }
-
-                }
-
             }
+          
       
             
         }
