@@ -3,15 +3,18 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-
             <file>file:/home/ozkar/Escritorio/proyecto%20final/web/IndexPrincipal.html</file>
             <file>file:/home/ozkar/Escritorio/proyecto%20final/src/Controlador/ListarEmp.java</file>
             <file>file:/home/ozkar/Escritorio/proyecto%20final/src/Controlador/Login.java</file>
+            <file>file:/home/ozkar/Escritorio/proyecto%20final/src/Modelo/Conexion.java</file>
             <file>file:/home/ozkar/Escritorio/proyecto%20final/src/Controlador/ListarInsumo.java</file>
+            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/headerModulos.jspf</file>
+            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/css/estilos2.css</file>
             <file>file:/home/ozkar/Escritorio/proyecto%20final/src/Controlador/ListarSolicitudInsumos.java</file>
+            <file>file:/home/ozkar/Escritorio/proyecto%20final/src/Modelo/Controlador.java</file>
             <file>file:/home/ozkar/Escritorio/proyecto%20final/src/Controlador/ListarVentas.java</file>
             <file>file:/home/ozkar/Escritorio/proyecto%20final/src/Controlador/Listar.java</file>
-
+            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/ReistrarUsuarioAdmin.jsp</file>
         </group>
     </open-files>
 </project-private>

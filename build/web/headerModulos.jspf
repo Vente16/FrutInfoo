@@ -274,6 +274,38 @@
             </ul>
           </div>
     </nav>
+    <%}else if(Rol.equals("SuperUser")){%>
+    <nav class="navbar navbar-default" role="navigation">
+        <!-- El logotipo y el icono que despliega el menú se agrupan
+             para mostrarlos mejor en los dispositivos móviles -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Desplegar navegación</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <img src="img/logo.png" width="50px" style="vertical-align: middle; float: left;" alt="">
+            <a class="navbar-brand" href="index2.jsp">LA JUGOSA</a>
+        </div>
+
+        <!-- Agrupar los enlaces de navegación, los formularios y cualquier
+             otro elemento que se pueda ocultar al minimizar la barra -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav navbar-right">
+
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Recursos humanos<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="ReistrarUsuarioAdmin.jsp">Usuario</a></li>
+                        <li><a href="ListarEmp?pag=0">Configuracion</a></li>
+                        <li><a href="Novedades.jsp">Tablas</a></li>
+                    </ul>
+                </li>
+                <li><a href="CerrarSesion">Cerrar sesión</a></li>
+            </ul>
+          </div>
+    </nav>
     <%}%>
 </header>
 
