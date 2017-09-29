@@ -12,14 +12,16 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Autorizaciones</title>
         <link rel="stylesheet" href="css/bootstrap.min.css"/>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <link rel="stylesheet" href="css/estilos2.css"/>
+        <link rel="stylesheet" href="css/toastr.css"/>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/toastr.js"></script>
         <script src="js/FuncionesSolicitudInsumos.js"></script>
     </head>
     <body>
         <%@include file="headerModulos.jspf" %>
-        <main>
+        
             <div class="container">
                 <div class="jumbotron">
                     <div style="text-align:center">
@@ -59,8 +61,8 @@
                                 <td><%= re.getString("Cantidad")%></td>
                                 <td><%= re.getString("Fecha_Solicitud")%></td>
                                 <td><a href="#Detalle" data-toggle="modal"><button class="btn btn-primary glyphicon glyphicon-search Detalle"></button></a></td>
-                                <td><a href="#" class="btn btn-success"><span class="glyphicon glyphicon-ok-sign"></span></a></td>
-                                <td><a href="#" class="btn btn-warning"><span class="glyphicon glyphicon-remove-sign"></span></a></td>
+                                <td><a href="#" class="btn btn-success autorizar"><span class="glyphicon glyphicon-ok-sign"></span></a></td>
+                                <td><a href="#" class="btn btn-warning desautorizar"><span class="glyphicon glyphicon-remove-sign"></span></a></td>
                             </tr>
                         </tbody>
                         <%
@@ -89,22 +91,11 @@
                                 %>
                             <li class="page-item"><a class="page-link" href="ListarSolicitudInsumos?pag=<%=Integer.parseInt(request.getParameter("pag")) + 1%>">Siguiente</a></li>
                         </ul>
-                    </nav>
-                   <!-- <p><b><h2>Con los siguientes Botónes podras generar los  siguientes informes.</h2> </b></p>
-                    <a href="InfoInsumos" target="_blank"><button type="submit" class="btn btn-success">Informe Insumos</button></a>&nbsp;&nbsp;
-                    <a href="InforEmpleados" target="_blank"><button type="submit" class="btn btn-info">Informe Empleados</button></a>&nbsp;&nbsp;
-                    <a href="InforVentas" target="_blank"><button type="submit" class="btn btn-warning">Informe Ventas</button></a><br><br>
-                    
-                    <p><b><h2>Descargar Informes a Excel.</h2> </b></p>
-                    <a href="ExcelInsumos.jsp"><button type="submit" class="btn btn-success">Excel Insumos</button></a>&nbsp;&nbsp;
-                    <a href="ExcelVentas.jsp"><button type="submit" class="btn btn-info">Excel Ventas</button></a>&nbsp;&nbsp;
-                    <a href="ExcelEmpleados.jsp"><button type="submit" class="btn btn-warning">Excel Empleados</button></a>-->
-                    
-                    
+                    </nav>   
                 </div>
             </div>
 
-        </main>
+        
             <%@include file="ModalSolicitudInsumos.jsp"%>
         <%@include file="footerModulos.jspf"%> 
     </body>

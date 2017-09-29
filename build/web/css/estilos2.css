@@ -143,11 +143,20 @@ navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:
 /*Extilos en formularios de registros varios modulos*/
 .containerForm{
     border-radius: 5px;
-    background-color:#c8e5bc;
+    background-color:#f5f5f5;
     padding: 20px;
-    width: 60%;
-    margin: 0 auto;  
+    width: 50%;
+    margin: 50px auto;  
 }
+main{
+    margin: 0px ;
+    background: url(../img/fondo.jpg);
+    
+   }
+
+
+                          
+                     /*Fin Extilos Formularios*/
 
 
 /*Extilos pagina Solicitud de domicilio*/        
@@ -266,5 +275,7 @@ navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:
  /* increases the carousel height so it looks good on phones */
   }
           /* Fin Extilos Solicitud de domocilio*/
+   
+          
           
           

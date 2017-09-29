@@ -25,8 +25,9 @@
     <%@include file="headerModulos.jspf"%><br>
 
     <main>
+                               
         <div class="containerForm">
-            <div style="margin-top: 100px">
+            <div style="margin-top: 20px">
                 <h2 style="text-align: center;"><b>Solicitar Insumos</b></h2><br><br>
             </div>
 
@@ -69,24 +70,19 @@
                         </div>
                     </div>    
 
-                    <div id="fechav" class="form-group">
-                        <label  class="col-sm-2 control-label" for="inputSuccess"><span class="titulo"><b>Fecha Solicitud</b></span></label>
-                        <div class="col-xs-10">
-                            <input type="date" name="fecha_solicitud" class="form-control" id="fecha_solicitud"  placeholder="dd/mm/aa"><br>
-                            <span class="" id="validarf"></span>
-                        </div>
-                    </div>
+                   
 
                     <div class="form-group">
                         <div class="col-xs-8">
                             <button type="submit" class="btn btn-success">Solicitar</button>
                         </div>
-                    </div>
+                    </div><br>
+            </div>
 
 
                 </form> 
-            </div>
-        </div>
+            </div>                        
+        
     </main>  <br>    
     <%@include file="footer.jspf" %>   
 
