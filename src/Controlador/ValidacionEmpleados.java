@@ -7,12 +7,10 @@ package Controlador;
 
 import Modelo.Conexion;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.sql.ResultSet;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -20,9 +18,9 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @authr John Jairo
+ * @author Home
  */
-public class SolicitarInsumo extends HttpServlet {
+public class ValidacionEmpleados extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -35,7 +33,55 @@ public class SolicitarInsumo extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-     
+        response.setContentType("text/html;charset=UTF-8");
+        try (PrintWriter out = response.getWriter()) {
+           
+            String correo = request.getParameter("correo");
+            String metodo = request.getParameter("metodo");
+            String documento  = request.getParameter("documento");
+            Conexion c = new Conexion();
+            Connection con = c.Conectar();
+            
+            switch(metodo){
+                
+                case "consultarDocumento":
+                PreparedStatement Ps = con.prepareStatement("SELECT *FROM empleados WHERE Documento="+documento);
+                ResultSet rs = Ps.executeQuery();
+                int res = 0;
+                while(rs.next()){
+                   res++;
+                
+                }
+                out.print(res);
+                
+               break;
+                case "consultarCorreo":
+                PreparedStatement sp = con.prepareStatement("SELECT *FROM empleados WHERE Correo='"+correo+"'");
+                ResultSet sr = sp.executeQuery();
+                int val = 0;
+                while(sr.next()){
+                   val++;
+                
+                }
+                out.print(val);
+               break;
+            }
+            PreparedStatement Ps = con.prepareStatement("INSERT INTO domicilio (producto, cantidad, nombres, apellidos, teléfono, celular, dirección) VALUES (?,?,?,?,?,?,?);");
+            Ps.setString(1, correo);
+            Ps.setString(2, documento);
+            
+
+            Ps.executeUpdate();
+            
+            //
+            
+            
+            
+            
+        }catch(Exception e){
+            
+            System.out.println(e);
+        }
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -48,11 +94,9 @@ public class SolicitarInsumo extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     @Override
-    @SuppressWarnings("empty-statement")
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
-        
+        processRequest(request, response);
     }
 
     /**
@@ -67,37 +111,6 @@ public class SolicitarInsumo extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
-        
-        try{
-        String Ins = request.getParameter("insumo");
-        String can = request.getParameter("cantidad");
-        String sed = request.getParameter("tipo_sede");
-        DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy ");
-        Date date = new Date();
-        String FchSoli = dateFormat.format(date);  
-        Conexion c = new Conexion();
-        Connection con = c.Conectar();
-        
-            PreparedStatement Ps = con.prepareStatement("INSERT INTO solicitud_insumo(nombre_insumo, cantidad, id_punto_venta, fecha_solicitud)VALUES(?,?,?,?)");
-            Ps.setString(1, Ins);
-            Ps.setString(2, can);
-            Ps.setString(3, sed);
-            Ps.setString(4, FchSoli);
-            
-            
-            Ps.executeUpdate();
-            response.sendRedirect("Exito.jsp");
-            
-    
-        }catch(IOException | SQLException e){
-            response.sendRedirect("Error.jsp");
-            System.out.println(""+e);
-        
-        
-        };
-        
-        
-        
     }
 
     /**

@@ -19,82 +19,85 @@
 
         <%@include file="headerModulos.jspf" %> <br><br>
 
+        <div class="jumbotron">
+            <div class="container">
+
+
+                <br><br>
+                <label class="form-control-label" for="index-form1-1-name" class="label"><span class="titulo">Documento de identifición</span></label>
+                <input type="text" name="" id="documento" class="form-control" placeholder="Ingrese el documento de identificación del empleado"><br>
+
+                <button type="button" class="btn btn-success consultar">Consultar</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+                <small class="mbr-section-subtitle"></small>
+                <br><br>
+
+            </div>
+
+       
+
+
         <div class="container">
-                
-           
-            <br><br>
-            <label class="form-control-label" for="index-form1-1-name" class="label"><span class="titulo">Documento de identifición</span></label>
-            <input type="text" name="" id="documento" class="form-control" placeholder="Ingrese el documento de identificación del empleado"><br>
 
-            <button type="button" class="btn btn-success consultar">Consultar</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            
+            <div style="text-align:center">
+                <h2>NOVEDADES</h2>
+                <h4>Estas son todas las actividades relacionadas con  los empleados ya sean incapacidades, vacaciones, etc..</h4>
+            </div>
+            <br> 
+            <div id="respuesta">
 
-            <small class="mbr-section-subtitle"></small>
-            <br><br>
+            </div>
+            <div class="table table-responsive">
 
+                <table class="table table-hover">
+                    <thead>
+                    <th>Documento</th>
+                    <th>Nombre de empleado</th>
+                    <th>Tipo de novedad</th>  
+                    <th>Detalle</th>
+                    </thead>
+
+                    <tbody id="info">
+
+
+                    </tbody>
+
+
+                </table><br>
+                <input type="button" value="Registrar Novedad" onClick="location.href = 'RegistrarNovedad.jsp'" class="btn btn-primary" />
+
+            </div>
+
+            <div id="myModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header color">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h3 class="modal-title"><strong>Información detallada</strong></h3>
+                        </div>
+                        <div class="modal-body">
+
+                        </div>
+                        <div class="modal-footer color">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="espacio">
+
+            </div>
         </div>
+   </div>
 
-    </div>
-
-    
-    <div class="container">
-
-        <div style="text-align:center">
-            <h2>NOVEDADES</h2>
-            <h4>Estas son todas las actividades relacionadas con  los empleados ya sean incapacidades, vacaciones, etc..</h4>
-        </div>
-        <br> 
-        <div id="respuesta">
-            
-        </div>
-        <div class="table table-responsive">
-              
-            <table class="table table-hover">
-                <thead>
-                   <th>Documento</th>
-                   <th>Nombre de empleado</th>
-                   <th>Tipo de novedad</th>  
-                   <th>Detalle</th>
-                </thead>
-                
-                <tbody id="info">
-                    
-                    
-                </tbody>
-                
-                 
-            </table><br>
-            <input type="button" value="Registrar Novedad" onClick="location.href ='RegistrarNovedad.jsp'" class="btn btn-primary" />
-            
-        </div>
-        
-        <div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header color">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h3 class="modal-title"><strong>Información detallada</strong></h3>
-      </div>
-      <div class="modal-body">
-        
-      </div>
-      <div class="modal-footer color">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
-      </div>
-    </div>
-
-  </div>
-</div>
-     
-        <div id="espacio">
-            
-        </div>
-             
     </div><br><br><br>
-  <%@include file="footerModulos.jspf" %>
+    <%@include file="footerModulos.jspf" %>
 
- 
+
 </body>
 </html>

@@ -3,6 +3,7 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/home/ozkar/Escritorio/proyecto%20final/src/Modelo/Conexion.java</file>
             <file>file:/home/ozkar/Escritorio/proyecto%20final/src/Controlador/Login.java</file>
             <file>file:/home/ozkar/Escritorio/proyecto%20final/web/ModalClientes.jsp</file>
@@ -29,6 +30,24 @@
             <file>file:/home/ozkar/Escritorio/proyecto%20final/web/ListarEmpleados.jsp</file>
             <file>file:/home/ozkar/Escritorio/proyecto%20final/web/ModalescTabla.jsp</file>
             <file>file:/home/ozkar/Escritorio/proyecto%20final/src/Controlador/DetalleCliente.java</file>
+=======
+            <file>file:/C:/Users/Home/Desktop/nuevo/web/IndexPrincipal.html</file>
+            <file>file:/C:/Users/Home/Desktop/nuevo/src/Controlador/RegistrarDomicilio.java</file>
+            <file>file:/C:/Users/Home/Desktop/nuevo/web/js/ValidacionBackendEmpleados.js</file>
+            <file>file:/C:/Users/Home/Desktop/nuevo/web/SolicitarDomicilio.jsp</file>
+            <file>file:/C:/Users/Home/Desktop/nuevo/src/Controlador/ListarSolicitudInsumos.java</file>
+            <file>file:/C:/Users/Home/Desktop/nuevo/web/SolicitarInsumo.jsp</file>
+            <file>file:/C:/Users/Home/Desktop/nuevo/src/Controlador/SolicitarInsumo.java</file>
+            <file>file:/C:/Users/Home/Desktop/nuevo/src/Controlador/ValidacionEmpleados.java</file>
+            <file>file:/C:/Users/Home/Desktop/nuevo/web/js/FuncionesSolicitudInsumos.js</file>
+            <file>file:/C:/Users/Home/Desktop/nuevo/web/RegistrarEmpleados.jsp</file>
+            <file>file:/C:/Users/Home/Desktop/nuevo/web/js/registroUser.js</file>
+            <file>file:/C:/Users/Home/Desktop/nuevo/src/Modelo/Correo.java</file>
+            <file>file:/C:/Users/Home/Desktop/nuevo/src/Controlador/permisoSolicitudInsummos.java</file>
+            <file>file:/C:/Users/Home/Desktop/nuevo/src/Controlador/RegistroDeUsuario.java</file>
+            <file>file:/C:/Users/Home/Desktop/nuevo/web/Autorizaciones_admin.jsp</file>
+            <file>file:/C:/Users/Home/Desktop/nuevo/src/Controlador/Login.java</file>
+>>>>>>> origin/pruebas
         </group>
     </open-files>
 </project-private>

@@ -75,7 +75,7 @@ $(document).ready(function(){
                         
                         max: 10,
 
-                        message: 'La cedula contiene 10 números'
+                        message: 'La cedula debe contener de 8 a 10 números'
 
                     }
                     

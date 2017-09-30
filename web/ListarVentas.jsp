@@ -20,7 +20,6 @@
     </head>
     <body>
         <%@include file="headerModulos.jspf" %>
-        <br>
 
         <div class="container">
             <div class="jumbotron">

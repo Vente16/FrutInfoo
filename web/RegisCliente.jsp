@@ -28,7 +28,7 @@
             <div style="margin-top: 100px">
                 <h2 style="text-align: center;"><b>Registro del Cliente</b></h2><br><br>
             </div>
-                <div class="continer-propio">
+                <div class="continer-propio prueba">
                  <form class="form-horizontal" id="RegistrarCliente" action="RegCliente" method="post">
                  
                     <div class="form-group">    

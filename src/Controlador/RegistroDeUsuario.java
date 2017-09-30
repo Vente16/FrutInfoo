@@ -1,18 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Controlador;
 
 import Modelo.Conexion;
 import java.io.IOException;
+import java.io.PrintWriter;
+import static java.lang.System.out;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -20,9 +14,9 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @authr John Jairo
+ * @author John Jairo
  */
-public class SolicitarInsumo extends HttpServlet {
+public class RegistroDeUsuario extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -35,7 +29,8 @@ public class SolicitarInsumo extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-     
+            response.setContentType("text/html;charset=UTF-8");
+
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -48,11 +43,9 @@ public class SolicitarInsumo extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     @Override
-    @SuppressWarnings("empty-statement")
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
-        
+       
     }
 
     /**
@@ -66,38 +59,37 @@ public class SolicitarInsumo extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
-        
-        try{
-        String Ins = request.getParameter("insumo");
-        String can = request.getParameter("cantidad");
-        String sed = request.getParameter("tipo_sede");
-        DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy ");
-        Date date = new Date();
-        String FchSoli = dateFormat.format(date);  
-        Conexion c = new Conexion();
-        Connection con = c.Conectar();
-        
-            PreparedStatement Ps = con.prepareStatement("INSERT INTO solicitud_insumo(nombre_insumo, cantidad, id_punto_venta, fecha_solicitud)VALUES(?,?,?,?)");
-            Ps.setString(1, Ins);
-            Ps.setString(2, can);
-            Ps.setString(3, sed);
-            Ps.setString(4, FchSoli);
+        try {
+            String Usu = request.getParameter("User");
+            String Con = request.getParameter("Contrasena");
+            String Nom = request.getParameter("Nombre");
+            String Corr = request.getParameter("Correo");
+            String Rol = request.getParameter("Rol");
             
             
+             
+            Conexion c = new Conexion();
+            Connection con = c.Conectar();
+
+            PreparedStatement Ps = con.prepareStatement("INSERT INTO login (Usuario, Contraseña, Nombre_usuario, Correo, Rol, Habilitado) VALUES(?,?,?,?,'Cliente',1)");
+            Ps.setString(1, Usu);
+            Ps.setString(2, Con);
+            Ps.setString(3, Nom);
+            Ps.setString(4, Corr);
+            //Ps.setString(5, Rol);
+
             Ps.executeUpdate();
-            response.sendRedirect("Exito.jsp");
             
-    
-        }catch(IOException | SQLException e){
+            response.sendRedirect("IndexPrincipal.html");
+
+            Ps.close();
+            con.close(); 
+
+        } catch (Exception e) {
+
             response.sendRedirect("Error.jsp");
-            System.out.println(""+e);
-        
-        
-        };
-        
-        
-        
+            System.out.println(e);
+        }
     }
 
     /**

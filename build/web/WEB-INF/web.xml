@@ -223,6 +223,27 @@
     <servlet>
         <servlet-name>FormActualizarLogin</servlet-name>
         <servlet-class>Controlador.FormActualizarLogin</servlet-class>
+    </servlet>    
+    <servlet>
+        <servlet-name>RegistroDeUsuario</servlet-name>
+        <servlet-class>Controlador.RegistroDeUsuario</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Faces Servlet</servlet-name>
+        <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet>
+        <servlet-name>prueba</servlet-name>
+        <servlet-class>Controlador.prueba</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ValidacionEmpleados</servlet-name>
+        <servlet-class>Controlador.ValidacionEmpleados</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>permisoSolicitudInsummos</servlet-name>
+        <servlet-class>Controlador.permisoSolicitudInsummos</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>Validar</servlet-name>
@@ -444,12 +465,29 @@
         <servlet-name>FormActualizarLogin</servlet-name>
         <url-pattern>/FormActualizarLogin</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegistroDeUsuario</servlet-name>
+        <url-pattern>/RegistroDeUsuario</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>prueba</servlet-name>
+        <url-pattern>/prueba</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ValidacionEmpleados</servlet-name>
+        <url-pattern>/ValidacionEmpleados</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>permisoSolicitudInsummos</servlet-name>
+        <url-pattern>/permisoSolicitudInsummos</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30
         </session-timeout>
     </session-config>
     <welcome-file-list>
+        <welcome-file>faces/index.xhtml</welcome-file>
         <welcome-file>IndexPrincipal.html</welcome-file>
     </welcome-file-list>
 </web-app>

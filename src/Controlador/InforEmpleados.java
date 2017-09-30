@@ -97,10 +97,10 @@ public class InforEmpleados extends HttpServlet {
             tabla.addCell("Apellido");
             tabla.addCell("Documento");
             tabla.addCell("Telefono");
+            tabla.addCell("Celular");
+            tabla.addCell("Fecha Nacimiento");
             tabla.addCell("Inicio Contrato");
             tabla.addCell("Fin Contrato");
-            tabla.addCell("Hora Inicio");
-            tabla.addCell("Hora Salida");
             tabla.setWidthPercentage(100);
             
             
@@ -116,12 +116,12 @@ public class InforEmpleados extends HttpServlet {
                
                 tabla.addCell(rs.getString(2));
                 tabla.addCell(rs.getString(3));
-                tabla.addCell(rs.getString(14));
-                tabla.addCell(rs.getString(4));
-                tabla.addCell(rs.getString(8));
-                tabla.addCell(rs.getString(9));
-                tabla.addCell(rs.getString(10));
                 tabla.addCell(rs.getString(11));
+                tabla.addCell(rs.getString(4));
+                tabla.addCell(rs.getString(5));
+                tabla.addCell(rs.getString(13));
+                tabla.addCell(rs.getString(7));
+                tabla.addCell(rs.getString(8));
                 
 
             }

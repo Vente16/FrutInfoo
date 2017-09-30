@@ -18,6 +18,7 @@
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/estilos2.css">
         <script src="js/ValidacionRegEmpleados.js"></script>
+        <script src="js/ValidacionBackendEmpleados.js"></script>
     </head>
 
     <body>
@@ -113,6 +114,7 @@
                     <div class="col-xs-10">
                         <input name="documento"  type="text" class="form-control" id="documento"  placeholder="Ingrese su número"><br>
                         <span class="" id="validardoc"></span>
+                        <span class="help-block" id="docExit"></span>
                     </div>
                 </div>
 

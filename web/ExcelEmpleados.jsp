@@ -37,11 +37,10 @@
                 <th>Telefono</th>
                 <th>Celular</th>
                 <th>Dirección</th>
-                <th>Disponibilidad</th>
                 <th>Inicio Contrato</th>
                 <th>Fin Contrato</th>
-                <th>Hora Inicio</th>
-                <th>Hora Salida</th>
+                <th>Correo</th>
+                <th>Fecha Nacimiento</th>
             </tr>
 
             <%     
@@ -68,9 +67,8 @@
             <td><%=rs.getString(6)%></td>
             <td><%= rs.getString(7)%></td>
             <td><%= rs.getString(8)%></td>
-            <td><%= rs.getString(9)%></td>
-            <td><%= rs.getString(10)%></td>
-            <td><%= rs.getString(11)%></td>
+            <td><%= rs.getString(14)%></td>
+            <td><%= rs.getString(13)%></td>
             </tr>
             
             <%  }

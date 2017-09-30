@@ -7,12 +7,15 @@ package Controlador;
 
 import Modelo.Conexion;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -20,9 +23,9 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @authr John Jairo
+ * @author Home
  */
-public class SolicitarInsumo extends HttpServlet {
+public class permisoSolicitudInsummos extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -35,7 +38,32 @@ public class SolicitarInsumo extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-     
+        response.setContentType("text/html;charset=UTF-8");
+        try (PrintWriter out = response.getWriter()) {
+           
+            String metodo = request.getParameter("metodo");
+            String id = request.getParameter("Id");
+            
+            Conexion c = new Conexion();
+            Connection con = c.Conectar();
+            
+            PreparedStatement Ps;
+            //Ps.setString(1, Ins);
+            
+            if(metodo.equals("autorizarInsumo")){
+               Ps = con.prepareStatement("UPDATE solicitud_insumo SET solicitud='Autorizado' WHERE Id="+id);
+               Ps.executeUpdate();
+            }
+            if(metodo.equals("desautorizarInsumo")){
+               Ps = con.prepareStatement("UPDATE solicitud_insumo SET solicitud='Desautorizado' WHERE Id="+id);
+               Ps.executeUpdate();
+            }
+            
+            
+           
+        } catch (Exception e) {
+            Logger.getLogger(permisoSolicitudInsummos.class.getName()).log(Level.SEVERE, null, e);
+        }
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -48,11 +76,9 @@ public class SolicitarInsumo extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     @Override
-    @SuppressWarnings("empty-statement")
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
-        
+        processRequest(request, response);
     }
 
     /**
@@ -67,37 +93,6 @@ public class SolicitarInsumo extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
-        
-        try{
-        String Ins = request.getParameter("insumo");
-        String can = request.getParameter("cantidad");
-        String sed = request.getParameter("tipo_sede");
-        DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy ");
-        Date date = new Date();
-        String FchSoli = dateFormat.format(date);  
-        Conexion c = new Conexion();
-        Connection con = c.Conectar();
-        
-            PreparedStatement Ps = con.prepareStatement("INSERT INTO solicitud_insumo(nombre_insumo, cantidad, id_punto_venta, fecha_solicitud)VALUES(?,?,?,?)");
-            Ps.setString(1, Ins);
-            Ps.setString(2, can);
-            Ps.setString(3, sed);
-            Ps.setString(4, FchSoli);
-            
-            
-            Ps.executeUpdate();
-            response.sendRedirect("Exito.jsp");
-            
-    
-        }catch(IOException | SQLException e){
-            response.sendRedirect("Error.jsp");
-            System.out.println(""+e);
-        
-        
-        };
-        
-        
-        
     }
 
     /**

@@ -63,6 +63,9 @@ public class Login extends HttpServlet {
              
              response.sendRedirect("index2.jsp");
             }
+            else {
+             response.sendRedirect("IndexPrincipal.html");
+            }
         }catch(Exception e){
           response.sendRedirect("Error.jsp");
             System.out.println(""+e);

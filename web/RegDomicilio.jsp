@@ -21,6 +21,7 @@
     </head>
     <body>
     	  <%@include file="headerModulos.jspf" %><br>
+    <main>
           
           <div class="containerForm">
               
@@ -82,7 +83,7 @@
                 <button type="submit" class="btn btn-success">SOLICITAR</button>
             </form>
         </div><br>
-          
+          </main>
            <%@include file="footer.jspf" %>
     </body>
 </html>
