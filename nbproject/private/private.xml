@@ -3,15 +3,36 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+
             <file>file:/C:/Users/Home/Desktop/nuevo/web/EstadoInsumos.jsp</file>
             <file>file:/C:/Users/Home/Desktop/nuevo/src/Controlador/ListarInsumo.java</file>
-            <file>file:/C:/Users/Home/Desktop/nuevo/web/IndexPrincipal.html</file>
-            <file>file:/C:/Users/Home/Desktop/nuevo/web/js/ValidacionBackendEmpleados.js</file>
-            <file>file:/C:/Users/Home/Desktop/nuevo/web/js/FuncionesEstadoInsumos.js</file>
-            <file>file:/C:/Users/Home/Desktop/nuevo/src/Controlador/ListarSolicitudInsumos.java</file>
-            <file>file:/C:/Users/Home/Desktop/nuevo/src/Controlador/ValidacionEmpleados.java</file>
-            <file>file:/C:/Users/Home/Desktop/nuevo/src/Controlador/ListarEstadoInsumo.java</file>
-            <file>file:/C:/Users/Home/Desktop/nuevo/src/Controlador/DetalleSolicitudInsumos.java</file>
+            <file>file:/home/ozkar/Escritorio/proyecto%20final/src/Modelo/Conexion.java</file>
+            <file>file:/home/ozkar/Escritorio/proyecto%20final/src/Controlador/Login.java</file>
+            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/ModalClientes.jsp</file>
+            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/VerlistadeInsumos.jsp</file>
+            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/js/FuncionesClientes.js</file>
+            <file>file:/home/ozkar/Escritorio/proyecto%20final/src/Controlador/ListarInsumo.java</file>
+            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/headerModulos.jspf</file>
+            <file>file:/home/ozkar/Escritorio/proyecto%20final/src/Controlador/UsuarioLogin.java</file>
+            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/ListarLogin.jsp</file>
+            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/css/estilos2.css</file>
+            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/ListarVentas.jsp</file>
+            <file>file:/home/ozkar/Escritorio/proyecto%20final/src/Controlador/FormActualizarClientes.java</file>
+            <file>file:/home/ozkar/Escritorio/proyecto%20final/src/Controlador/FormActualizarLogin.java</file>
+            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/js/FuncionesTablas.js</file>
+            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/ModalpassLogin.jsp</file>
+            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/ListarCliente.jsp</file>
+            <file>file:/home/ozkar/Escritorio/proyecto%20final/src/Controlador/DetalleTabla.java</file>
+            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/ListarTablas.jsp</file>
+            <file>file:/home/ozkar/Escritorio/proyecto%20final/src/Controlador/ListarVentas.java</file>
+            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/ModalSolicitudInsumos.jsp</file>
+            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/js/FuncionesPassLogin.js</file>
+            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/IndexPrincipal.html</file>
+            <file>file:/home/ozkar/Escritorio/proyecto%20final/src/Controlador/ListarTablas.java</file>
+            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/ListarEmpleados.jsp</file>
+            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/ModalescTabla.jsp</file>
+            <file>file:/home/ozkar/Escritorio/proyecto%20final/src/Controlador/DetalleCliente.java</file>
+
         </group>
     </open-files>
 </project-private>

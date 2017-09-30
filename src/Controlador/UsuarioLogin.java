@@ -9,11 +9,9 @@ import Modelo.Conexion;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -22,9 +20,9 @@ import javax.servlet.http.HttpSession;
 
 /**
  *
- * @author oscar
+ * @author ozkar
  */
-public class ListarInsumo extends HttpServlet {
+public class UsuarioLogin extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -36,29 +34,33 @@ public class ListarInsumo extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException, SQLException {
+            throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        ResultSet rsI;
+        ResultSet rsL;
         ResultSet rst;
-        try (PrintWriter out = response.getWriter()) {
+        try {
             Conexion con = new Conexion();
-            Connection c = con.Conectar();
-            HttpSession session = request.getSession(true);
+            Connection c =con.Conectar();
+            HttpSession sesion =request.getSession(true);
             int pagina = Integer.parseInt(request.getParameter("pag"));
-            String sqlI = "SELECT * FROM insumos ORDER BY Id_insumo DESC LIMIT 5 OFFSET " + (pagina) * 5 + ";";
-            String sql = "SELECT count(*) as Id_Insumo FROM insumos WHERE Habilitado=1";
+            String sqlLogin ="SELECT * FROM login WHERE Habilitado = 1 ORDER BY Id_login DESC LIMIT 5 OFFSET " + (pagina) * 5 +";";
+            String sql = "SELECT count(*) as Id_login FROM login WHERE Habilitado=1";
             Statement stm = c.createStatement();
             Statement stm1 = c.createStatement();
-            rsI = stm.executeQuery(sqlI);
+            rsL = stm.executeQuery(sqlLogin);
             rst = stm1.executeQuery(sql);
-            session.setAttribute("listarI", rsI);
-            session.setAttribute("pag", pagina);
-            session.setAttribute("tamaño", rst);
+            
+            
+           
+            sesion.setAttribute("login", rsL);
+            sesion.setAttribute("pag", pagina);
+            sesion.setAttribute("tamaño", rst);
 
-            request.getRequestDispatcher("VerlistadeInsumos.jsp").forward(request, response);
+            request.getRequestDispatcher("ListarLogin.jsp").forward(request, response);
 
-            rsI.close();
+            rsL.close();
             c.close();
+            
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -76,11 +78,7 @@ public class ListarInsumo extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        try {
-            processRequest(request, response);
-        } catch (SQLException ex) {
-            Logger.getLogger(ListarInsumo.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        processRequest(request, response);
     }
 
     /**
@@ -94,11 +92,7 @@ public class ListarInsumo extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        try {
-            processRequest(request, response);
-        } catch (SQLException ex) {
-            Logger.getLogger(ListarInsumo.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        processRequest(request, response);
     }
 
     /**
