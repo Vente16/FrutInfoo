@@ -208,6 +208,22 @@
         <servlet-name>ListarDomicilio</servlet-name>
         <servlet-class>Controlador.ListarDomicilio</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>UsuarioLogin</servlet-name>
+        <servlet-class>Controlador.UsuarioLogin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ListarTablas</servlet-name>
+        <servlet-class>Controlador.ListarTablas</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DetalleTabla</servlet-name>
+        <servlet-class>Controlador.DetalleTabla</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>FormActualizarLogin</servlet-name>
+        <servlet-class>Controlador.FormActualizarLogin</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Validar</servlet-name>
         <url-pattern>/Validar</url-pattern>
@@ -411,6 +427,22 @@
     <servlet-mapping>
         <servlet-name>ListarDomicilio</servlet-name>
         <url-pattern>/ListarDomicilio</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UsuarioLogin</servlet-name>
+        <url-pattern>/UsuarioLogin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ListarTablas</servlet-name>
+        <url-pattern>/ListarTablas</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DetalleTabla</servlet-name>
+        <url-pattern>/DetalleTabla</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FormActualizarLogin</servlet-name>
+        <url-pattern>/FormActualizarLogin</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

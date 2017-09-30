@@ -10,10 +10,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -22,9 +19,9 @@ import javax.servlet.http.HttpSession;
 
 /**
  *
- * @author oscar
+ * @author ozkar
  */
-public class ListarInsumo extends HttpServlet {
+public class ListarTablas extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -35,34 +32,7 @@ public class ListarInsumo extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
-    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException, SQLException {
-        response.setContentType("text/html;charset=UTF-8");
-        ResultSet rsI;
-        ResultSet rst;
-        try (PrintWriter out = response.getWriter()) {
-            Conexion con = new Conexion();
-            Connection c = con.Conectar();
-            HttpSession session = request.getSession(true);
-            int pagina = Integer.parseInt(request.getParameter("pag"));
-            String sqlI = "SELECT * FROM insumos ORDER BY Id_insumo DESC LIMIT 5 OFFSET " + (pagina) * 5 + ";";
-            String sql = "SELECT count(*) as Id_Insumo FROM insumos WHERE Habilitado=1";
-            Statement stm = c.createStatement();
-            Statement stm1 = c.createStatement();
-            rsI = stm.executeQuery(sqlI);
-            rst = stm1.executeQuery(sql);
-            session.setAttribute("listarI", rsI);
-            session.setAttribute("pag", pagina);
-            session.setAttribute("tamaño", rst);
-
-            request.getRequestDispatcher("VerlistadeInsumos.jsp").forward(request, response);
-
-            rsI.close();
-            c.close();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
+    
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
@@ -76,10 +46,33 @@ public class ListarInsumo extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        ResultSet rsL;
+        ResultSet rst;
+        
         try {
-            processRequest(request, response);
-        } catch (SQLException ex) {
-            Logger.getLogger(ListarInsumo.class.getName()).log(Level.SEVERE, null, ex);
+            Conexion con = new Conexion();
+            Connection c =con.Conectar();
+            HttpSession sesion =request.getSession(true);
+            String sqlTablas ="SHOW TABLES;";
+ 
+            Statement stm = c.createStatement();
+            
+            stm.executeUpdate(sqlTablas);
+            rst = stm.getResultSet();
+            
+            sesion.setAttribute("tablas", rst);
+             request.getRequestDispatcher("ListarTablas.jsp").forward(request, response);
+           
+            while (rst.next()) {   
+                int ct= 1;
+                System.out.println(rst.getString(ct));
+                ct = ct+1;
+            }
+           
+            
+            
+            
+        } catch (Exception e) {
         }
     }
 
@@ -92,21 +85,14 @@ public class ListarInsumo extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        try {
-            processRequest(request, response);
-        } catch (SQLException ex) {
-            Logger.getLogger(ListarInsumo.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }
+   
 
     /**
      * Returns a short description of the servlet.
      *
      * @return a String containing servlet description
      */
-    @Override
+    
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>

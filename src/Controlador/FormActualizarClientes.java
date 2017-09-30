@@ -35,15 +35,12 @@ public class FormActualizarClientes extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-         
-        
-           
             String Id = request.getParameter("Id");
             
             Conexion c = new Conexion();
             Connection co = c.Conectar();
             
-            PreparedStatement st = co.prepareStatement("SELECT *FROM clientes WHERE Id=?");
+            PreparedStatement st = co.prepareStatement("SELECT * FROM clientes WHERE Id=?");
             st.setString(1, Id);
             
             ResultSet rs = st.executeQuery();
@@ -51,7 +48,7 @@ public class FormActualizarClientes extends HttpServlet {
             while(rs.next()){
             out.println("<input type='hidden' id='Id' value='"+Id+"'>");
             out.println("<h4><span id='Document'>Documento:"+ rs.getString("Documento") +"</span></h4>");
-            out.println("<div class=''>");
+            out.println("<div class='Container'>");
             out.println("<form class='form-horizontal' id='ValFormActEmpl'>");
             out.println("<div class='form-group'>");
             out.println("<label class='col-sm-3 control-label' for='inputSuccess'>");

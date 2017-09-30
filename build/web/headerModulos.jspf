@@ -294,11 +294,11 @@
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav navbar-right">
 
-                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Recursos humanos<span class="caret"></span></a>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Admin<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="ReistrarUsuarioAdmin.jsp">Usuario</a></li>
-                        <li><a href="ListarEmp?pag=0">Configuracion</a></li>
-                        <li><a href="Novedades.jsp">Tablas</a></li>
+                        <li><a href="UsuarioLogin?pag=0">Usuarios</a></li>
+                        <li><a href="ListarEmp">Configuracion</a></li>
+                        <li><a href="ListarTablas">Tablas</a></li>
                     </ul>
                 </li>
                 <li><a href="CerrarSesion">Cerrar sesión</a></li>
