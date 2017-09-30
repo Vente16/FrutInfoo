@@ -41,6 +41,7 @@
                         <li><a href="ListarInsumo?pag=0">Ver lista de insumos</a></li>
                         <li><a href="SolicitarInsumo.jsp">Solicitar Insumo</a></li>
                         <li><a href="RegistrarInsumo.jsp">Registrar insumos</a></li>
+                        <li><a href="ListarEstadoInsumo?pag=0">Estado de Insumos</a></li> 
                     </ul>
                 </li>
 
@@ -202,6 +203,7 @@
                         <li><a href="ListarInsumo?pag=0">Ver lista de insumos</a></li>
                         <li><a href="SolicitarInsumo.jsp">Solicitar Insumo</a></li>
                         <li><a href="RegistrarInsumo.jsp">Registrar insumos</a></li> 
+                        <li><a href="ListarEstadoInsumo?pag=0">Estado de Insumos</a></li> 
                     </ul>
                 <li><a href="CerrarSesion">Cerrar sesión</a></li>
             </ul>
