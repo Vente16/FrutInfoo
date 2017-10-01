@@ -223,7 +223,7 @@
     <servlet>
         <servlet-name>FormActualizarLogin</servlet-name>
         <servlet-class>Controlador.FormActualizarLogin</servlet-class>
-    </servlet>    
+    </servlet>
     <servlet>
         <servlet-name>RegistroDeUsuario</servlet-name>
         <servlet-class>Controlador.RegistroDeUsuario</servlet-class>
@@ -252,6 +252,10 @@
     <servlet>
         <servlet-name>DetalleEstadoInsumos</servlet-name>
         <servlet-class>Controlador.DetalleEstadoInsumos</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>InfoTablas</servlet-name>
+        <servlet-class>Controlador.InfoTablas</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>Validar</servlet-name>
@@ -496,6 +500,10 @@
     <servlet-mapping>
         <servlet-name>DetalleEstadoInsumos</servlet-name>
         <url-pattern>/DetalleEstadoInsumos</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>InfoTablas</servlet-name>
+        <url-pattern>/InfoTablas</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

@@ -19,9 +19,9 @@ import javax.servlet.http.HttpSession;
 
 /**
  *
- * @author ozkar
+ * @author Home
  */
-public class DetalleTabla extends HttpServlet {
+public class InfoTablas extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -46,32 +46,35 @@ public class DetalleTabla extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        ResultSet rst;
-        try(PrintWriter out = response.getWriter()) {
-            String tabla = request.getParameter("nt");
-            
+        try (PrintWriter out = response.getWriter()) {
+            String tabla = request.getParameter("ct");
             Conexion con = new Conexion();
             Connection c =con.Conectar();
-            
-            HttpSession sesion =request.getSession(true);
-            
+            HttpSession session = request.getSession(true); 
             String sqlTablas ="DESCRIBE "+ tabla +";";
-            System.out.println(tabla);
+     
             Statement stm = c.createStatement();
-            
             stm.executeUpdate(sqlTablas);
-            rst = stm.getResultSet();
+            ResultSet rs1 =stm.getResultSet();
             
-           while(rst.next()){
-               int ct=1;
-            out.println("<h4><strong>campo:</strong>  " +  rst.getString(ct) + "</h4>;");
-             ct = ct+1;
-            }
-           System.out.println(tabla);
+            session.setAttribute("consulta", rs1);
+            
+            response.sendRedirect("InfoTablas.jsp");
+            
+//            while (rs1.next()) {                
+//                int ctd = 1;
+//                System.out.println(rs1.getString(ctd));
+//                
+//                out.println("<th>" + rs1.getString(ctd)+"</th>");
+//                ctd = ctd+1;
+//            }
             
             
             
-        } catch (Exception e) {
+          
+            
+        }catch(Exception e){
+            e.printStackTrace();
         }
     }
 
@@ -83,6 +86,7 @@ public class DetalleTabla extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
+    
    
 
     /**

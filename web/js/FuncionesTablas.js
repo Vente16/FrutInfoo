@@ -7,7 +7,7 @@ $(document).ready(function () {
    $('.Detalle').click(function () {
 
         var nt = $(this).parents('tr').attr('class');
-        console.log(nt)
+        console.log(nt);
 
         $.get('DetalleTabla', {"nt": nt}, function (detalle) {
 
@@ -15,10 +15,8 @@ $(document).ready(function () {
 
 
          });
-
-
-
-
-    }); 
+    });
+    
+    
+   
 });
-

@@ -28,39 +28,31 @@
         <div class="container jumbotron">
             <h1>Tablas</h1>
             <table class="table table-hover">
-                <thead >
-                    <tr>
-                    <th>Nombre</th>
-                    <th>Detalle</th>
-                    <th>*</th>
-                    </tr>
+                
+                <thead>
+                   <tr>
+                       <%
+                            ResultSet res = (ResultSet) session.getAttribute("consulta");
+                            while (res.next()) {                                    
+                                int ctd = 1;
+                        %>
+                    <th><%= res.getString(ctd)%></th>
+                    <%
+                       ctd =ctd+1;
+                            }
+                            
+                        %>
+                   </tr> 
                 </thead>
-                <%
-                            ResultSet rel = (ResultSet) session.getAttribute("tablas");
-                            
-                        %>
-                        <tbody id="tabla">
-                        <%
-                            while (rel.next()) {
-                                int ct=1;
-                        %>
-                            
-                            <tr class="<%= rel.getString(ct)%>">
-                                <td><%= rel.getString(ct)%></td>
-                                <td><a href="#Detalle"  data-toggle="modal"><button class="btn btn-primary  glyphicon glyphicon-eye-open Detalle"></button></a></td>
-                                <td> <a href="InfoTablas?ct=<%= rel.getString(ct)%>" class="InfoTabla btn btn-success glyphicon glyphicon-edit"></a></td>
-                            </tr>
-                          <%     
-                              ct = ct +1;
-                                  }
-                            %>
-                        </tbody>
+                    
+
                     </table>
                     
             
         </div>
     </main>
-    <%@include file="ModalescTabla.jsp" %>
+    
     <%@include file="footerModulos.jspf" %>   
 </body>
 </html>
+

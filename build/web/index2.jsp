@@ -26,12 +26,7 @@
      
         <div id="bootstrap-touch-slider" class="carousel bs-slider fade  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="5000" >
 
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#bootstrap-touch-slider" data-slide-to="0" class="active"></li>
-                <li data-target="#bootstrap-touch-slider" data-slide-to="1"></li>
-                <li data-target="#bootstrap-touch-slider" data-slide-to="2"></li>
-            </ol>
+           
 
             <!-- Wrapper For Slides -->
             <div class="carousel-inner" role="listbox">
