@@ -3,26 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Home/Desktop/nuevo/web/EstadoInsumos.jsp</file>
             <file>file:/C:/Users/Home/Desktop/nuevo/web/IndexPrincipal.html</file>
             <file>file:/C:/Users/Home/Desktop/nuevo/web/js/ValidacionBackendEmpleados.js</file>
-            <file>file:/C:/Users/Home/Desktop/nuevo/web/headerModulos.jspf</file>
-            <file>file:/C:/Users/Home/Desktop/nuevo/web/js/FuncionesEstadoInsumos.js</file>
-            <file>file:/C:/Users/Home/Desktop/nuevo/web/js/FuncionesTablas.js</file>
-            <file>file:/C:/Users/Home/Desktop/nuevo/src/Controlador/ListarSolicitudInsumos.java</file>
-            <file>file:/C:/Users/Home/Desktop/nuevo/web/ListarTablas.jsp</file>
+            <file>file:/C:/Users/Home/Desktop/nuevo/web/Error.jsp</file>
+            <file>file:/C:/Users/Home/Desktop/nuevo/web/Exito.jsp</file>
             <file>file:/C:/Users/Home/Desktop/nuevo/src/Controlador/ValidacionEmpleados.java</file>
-            <file>file:/C:/Users/Home/Desktop/nuevo/src/Controlador/ListarEstadoInsumo.java</file>
-            <file>file:/C:/Users/Home/Desktop/nuevo/src/Controlador/DetalleSolicitudInsumos.java</file>
-            <file>file:/C:/Users/Home/Desktop/nuevo/src/Controlador/ListarInsumo.java</file>
-            <file>file:/C:/Users/Home/Desktop/nuevo/src/Controlador/DetalleTabla.java</file>
-            <file>file:/C:/Users/Home/Desktop/nuevo/web/WEB-INF/web.xml</file>
-            <file>file:/C:/Users/Home/Desktop/nuevo/src/Modelo/Controlador.java</file>
-            <file>file:/C:/Users/Home/Desktop/nuevo/src/Controlador/FacturaVenta.java</file>
-            <file>file:/C:/Users/Home/Desktop/nuevo/web/InfoTablas.jsp</file>
-            <file>file:/C:/Users/Home/Desktop/nuevo/src/Modelo/Conexion.java</file>
-            <file>file:/C:/Users/Home/Desktop/nuevo/src/Controlador/ListarTablas.java</file>
-            <file>file:/C:/Users/Home/Desktop/nuevo/src/Controlador/InfoTablas.java</file>
         </group>
     </open-files>
 </project-private>

@@ -22,11 +22,7 @@
     </head>
 
     <body>
-       <!-- <style>
-            main{
-                background-image: url(img/logo.png);
-  
-        </style>-->
+
         
     <%@include file="headerModulos.jspf"%><br>
     <main>

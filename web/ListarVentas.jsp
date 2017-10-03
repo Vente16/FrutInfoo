@@ -25,8 +25,8 @@
             <div class="jumbotron">
                 <section class="main container-fluid>                
                < <h2 style="text-align: center;"></h2><br><br>
-                <h2 style="text-align: center;">LISTA DE VENTAS</h2><br><br>
-                  <p style="text-align: center;">En el siguiente infórme podras ver nuestras ventas por su respectiva sede</p><br>
+                    <h2 style="text-align: center;">LISTA DE VENTAS</h2><br><br>
+                    <p style="text-align: center;">En el siguiente infórme podras ver nuestras ventas por su respectiva sede</p><br>
                     <table class="table table-hover">
                         <thead>
                             <tr>
@@ -84,7 +84,7 @@
                                 %>
                             <li class="page-item"><a class="page-link" href="ListarVentas?pag=<%=Integer.parseInt(request.getParameter("pag")) + 1%>">Siguiente</a></li>
                         </ul>
-                        
+
                         <div style="text-align:right"> 
                             <p><b>Generar Informes</b></p>
                             <a href="InforVentas" target="_blank"><button class="btn btn-default" style=font-size:24px;color:red;background:black>Pdf <i class="fa fa-file-pdf-o"></i></button></a>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -96,7 +96,7 @@
             </div>
         </div>
 
-            <%@include file="ModalVentas.jsp" %>
+        <%@include file="ModalVentas.jsp" %>
         <%@include file="footerModulos.jspf" %>
     </body>
 </html>

@@ -20,7 +20,7 @@
         <script src="js/ValidacionRegVenta.js"></script>
     </head>
     <body>
-        
+
         <%@include file="headerModulos.jspf" %><br>
         <main>
             <div class="containerForm">
@@ -73,7 +73,7 @@
                                 <span class="" id="validarp"></span>
                             </div>
                         </div>
-                        
+
                         <div id="ivav" class="form-group">
                             <label class="col-sm-2 control-label" for="inputSuccess"><span class="titulo">Iva</span></label>
                             <div class="col-xs-8">

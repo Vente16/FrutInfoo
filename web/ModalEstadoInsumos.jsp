@@ -6,6 +6,8 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Modal Detalle-->
 <div id="Detalle" class="modal fade" role="dialog">
   <div class="modal-dialog">
 

@@ -133,12 +133,20 @@ navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:
     margin: 1px;
      
 }
+/*Pagina de Exito*/
 
+.suc {
+    text-align: center;
+    margin: 150px; 
+    background: #ffbdbd;
+}
 
+/*Pagina de error*/
 
 .Cont {
     text-align: center;
-    margin: 150px;   
+    margin: 150px; 
+    background: #ffbdbd;
 }
 /*Extilos en formularios de registros varios modulos*/
 .containerForm{

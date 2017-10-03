@@ -1,8 +1,4 @@
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 $(document).ready(function () {
     $('.Actualizar').click(function () {
 
@@ -14,6 +10,24 @@ $(document).ready(function () {
             
          });    
      });
+     
+     $('.ActualizarDB').click(function () {
+
+        var Id = $('#Id').val();
+        var pass = $('#Contra').val();
+        var rol = $('#Rol').val();
+        $.post('ActualizarLogin',
+                {"Id": Id,
+                    "pass": pass,
+                    "rol": rol
+                }, function (Actualizar) {
+
+            toastr.success(Actualizar);
+
+        });
+
+    });
+     
      });
 
 

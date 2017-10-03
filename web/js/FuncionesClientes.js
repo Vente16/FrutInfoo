@@ -1,7 +1,6 @@
 
 $(document).ready(function () {
 
-
     $('.Detalle').click(function () {
 
         var Id = $(this).parents('tr').attr('class');
@@ -10,13 +9,9 @@ $(document).ready(function () {
 
             $('.InfoDetalle').html(detalle);
 
-
-         });
-
-
-
-
+        });
     });
+    
 
 
     $('.Actualizar').click(function () {
@@ -71,7 +66,7 @@ $(document).ready(function () {
     });
 
 
-
+/*Validacion formulario actualizar Clientes*/
     $('.Eliminar').click(function () {
 
         var Id = $(this).parents('tr').attr('class');

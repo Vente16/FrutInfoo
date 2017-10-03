@@ -10,7 +10,6 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -18,9 +17,9 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author ozkar
+ * @author Home
  */
-public class FormActualizarLogin extends HttpServlet {
+public class ActualizarLogin extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -31,7 +30,7 @@ public class FormActualizarLogin extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
-    
+
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
@@ -42,7 +41,7 @@ public class FormActualizarLogin extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
-    
+   
 
     /**
      * Handles the HTTP <code>POST</code> method.
@@ -55,41 +54,28 @@ public class FormActualizarLogin extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        try(PrintWriter out = response.getWriter()) {
-             String Id = request.getParameter("Id");
+        try(PrintWriter out = response.getWriter()){
             
-            Conexion c = new Conexion();
-            Connection co = c.Conectar();
-            
-            PreparedStatement st = co.prepareStatement("SELECT * FROM login WHERE Id_login=?");
-            st.setString(1, Id);
-            
-            ResultSet rs = st.executeQuery();
-            
-            while(rs.next()){
+           String id =request.getParameter("Id");
+           String Pass =request.getParameter("pass");
+           String Rol =request.getParameter("rol");
            
-            out.println("<div'");
-            out.println("<input type='hidden' id='Id' value='"+Id+"'>");
-            out.println("<h4><span id='Nombre'>Nombre:"+ rs.getString("Nombre_usuario") +"</span></h4>");
-            out.println("<form class='form-horizontal' id='ValFormActEmpl'>");
-            out.println("<div class='form-group'>");
-            out.println("<label class='control-label col-sm-4' for='Contra'>Contraseña:</label>");
-            out.println("<div class='col-sm-8'>");
-            out.println("<input type='text' class='form-control' id='Contra' name='Contra' value="+rs.getString("Contraseña")+">");
-            out.println("</div>");
-            out.println("</div>");
-            out.println("<div class='form-group'>");
-            out.println("<label class='control-label col-sm-4' for='Rol'>Rol:</label>");
-            out.println("<div class='col-sm-8'>");
-            out.println("<input type='text' class='form-control' id='Rol' name='Rol' value="+rs.getString("Rol")+">");
-            out.println("</div>");
-            out.println("</div>");
-            out.println("</form>");
-            out.println("</div>");
-            
-            }
+           String sql= "UPDATE login SET Contraseña=?, Rol=? WHERE Id_login=?;";
            
-        } catch (Exception e) {
+            Conexion con= new Conexion();
+            Connection conn = con.Conectar();
+            
+            PreparedStatement pst =conn.prepareStatement(sql);
+            
+            pst.setString(1, Pass);
+            pst.setString(2, Rol);
+            pst.setString(3, id);
+            
+             pst.executeUpdate();
+            
+            out.println("<h4>Se actualizo correctamente</h4>");
+           
+        }catch(Exception e){
             e.printStackTrace();
         }
     }

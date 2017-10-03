@@ -26,8 +26,8 @@
 
         <div class="container">
             <div class="jumbotron">
-                  <h2 style="text-align: center;">LISTA DE CLIENTES</h2><br><br>
-                  <p style="text-align: center;">En el siguiente infórme podras ver nuestros clientes</p><br>
+                <h2 style="text-align: center;">LISTA DE CLIENTES</h2><br><br>
+                <p style="text-align: center;">En el siguiente infórme podras ver nuestros clientes</p><br>
                 <table class="table table-hover" id="paginacion">
                     <thead>
                         <tr>
@@ -44,8 +44,6 @@
                             ResultSet re = (ResultSet) session.getAttribute("listarC");
                             ResultSet res = (ResultSet) session.getAttribute("tamaño");
 
-
-
 //Devuelve el número de registros en la tabla.
                             float nRegistros;
                             if (res.next()) {
@@ -53,20 +51,20 @@
                             } else {
                                 nRegistros = 0;
                             }
-                            %>
-                            
-<%
+                        %>
+
+                        <%
                             while (re.next()) {
                         %>
                         <tr class="<%= re.getString("Id")%>">
-                            
+
                             <td ><%= re.getString("Documento")%></td>
                             <td ><%= re.getString("Nombre")%></td>
                             <td ><%= re.getString("Apellido")%></td>
                             <td><a href="#Detalle"  data-toggle="modal"><button class="btn btn-primary  glyphicon glyphicon-eye-open Detalle"></button></a></td>
                             <td><a href="#Actualizar"  data-toggle="modal"><button class="btn btn-success glyphicon glyphicon-edit Actualizar"></button></a></td>
                             <td><button class="btn btn-danger glyphicon glyphicon-trash Eliminar"></button></td>
-                           
+
                         </tr>
                         <%
                             }
@@ -98,8 +96,8 @@
                 </nav>
             </div>
         </div>
-                    
-                 
+
+
         <%@include file="ModalClientes.jsp" %>
         <%@include file="footerModulos.jspf" %>
     </body>

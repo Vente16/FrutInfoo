@@ -6,7 +6,7 @@ $(document).ready(function(){
        $(".consultar").click(function(){
            
           $("#info").html(""); 
-         // console.log($("#documento").val());
+          
           
           $.get("DetalleNovedad", {
               "metodo":"documento", "documento":$("#documento").val()}, function(document){
@@ -49,8 +49,5 @@ $(document).ready(function(){
     
 });
 
-  function detalle(){
-      alert("sasa");
-  }
 
 

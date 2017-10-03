@@ -23,68 +23,67 @@
         <title>Excel Empleados</title>
     </head>
     <body>
-         <style>
-            table, th, td {
-                border: 1px solid black;
-                border-collapse: collapse;
-            }
-        </style>
-        
-        <table>
-            <tr>
-                <th>Nombre</th>
-                <th>Apellido</th> 
-                <th>Telefono</th>
-                <th>Celular</th>
-                <th>Dirección</th>
-                <th>Inicio Contrato</th>
-                <th>Fin Contrato</th>
-                <th>Correo</th>
-                <th>Fecha Nacimiento</th>
-            </tr>
+    <style>
+       table, th, td {
+           border: 1px solid black;
+           border-collapse: collapse;
+       }
+    </style>
 
-            <%     
-                Conexion c = new Conexion();
-                Connection con = c.Conectar();
+    <table>
+        <tr>
+        <th>Nombre</th>
+        <th>Apellido</th> 
+        <th>Telefono</th>
+        <th>Celular</th>
+        <th>Dirección</th>
+        <th>Inicio Contrato</th>
+        <th>Fin Contrato</th>
+        <th>Correo</th>
+        <th>Fecha Nacimiento</th>
+    </tr>
 
-                try {
-                    PreparedStatement st;
-                    ResultSet rs;
+    <%                Conexion c = new Conexion();
+        Connection con = c.Conectar();
 
-                    st = con.prepareStatement("SELECT * FROM `empleados`   ");
-                    rs = st.executeQuery();
+        try {
+            PreparedStatement st;
+            ResultSet rs;
 
-                    while (rs.next()) {
+            st = con.prepareStatement("SELECT * FROM `empleados`   ");
+            rs = st.executeQuery();
+
+            while (rs.next()) {
 
 
-            %>
+    %>
 
-            <tr>
-            <td><%=rs.getString(2)%></td>
-            <td><%= rs.getString(3)%></td>
-            <td><%= rs.getString(4)%></td>
-            <td><%= rs.getString(5)%></td>
-            <td><%=rs.getString(6)%></td>
-            <td><%= rs.getString(7)%></td>
-            <td><%= rs.getString(8)%></td>
-            <td><%= rs.getString(14)%></td>
-            <td><%= rs.getString(13)%></td>
-            </tr>
-            
-            <%  }
+    <tr>
+    <td><%=rs.getString(2)%></td>
+    <td><%= rs.getString(3)%></td>
+    <td><%= rs.getString(4)%></td>
+    <td><%= rs.getString(5)%></td>
+    <td><%=rs.getString(6)%></td>
+    <td><%= rs.getString(7)%></td>
+    <td><%= rs.getString(8)%></td>
+    <td><%= rs.getString(14)%></td>
+    <td><%= rs.getString(13)%></td>
+</tr>
 
-                c.Conectar();
+<%  }
 
-            } catch (Exception e) {
-                System.out.println(e);
+    c.Conectar();
 
-            %>
+} catch (Exception e) {
+    System.out.println(e);
 
-            <%                    }
+%>
 
-            %>
+<%                    }
 
-        </table>
+%>
 
-    </body>
+</table>
+
+</body>
 </html>

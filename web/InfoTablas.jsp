@@ -28,30 +28,48 @@
         <div class="container jumbotron">
             <h1>Tablas</h1>
             <table class="table table-hover">
-                
+                <%
+                    ResultSet res = (ResultSet) session.getAttribute("consulta");
+                    ResultSet red = (ResultSet) session.getAttribute("datos");
+                    
+                     int ct = 1;
+                     int ctd = 1;
+                %>
                 <thead>
-                   <tr>
-                       <%
-                            ResultSet res = (ResultSet) session.getAttribute("consulta");
-                            while (res.next()) {                                    
-                                int ctd = 1;
+                    <tr>
+                        <%
+                            while (res.next()) {
                         %>
-                    <th><%= res.getString(ctd)%></th>
-                    <%
-                       ctd =ctd+1;
+                    <th><%= res.getString(ct)%></th>
+                        <%
+                                ct = ct + 1;
                             }
-                            
                         %>
-                   </tr> 
+                        
+                    </tr> 
                 </thead>
+                
+                    <tbody> 
+                        <%
+                            while (red.next()) {
+                           %>
+                        <tr> 
+                            <td><%= red.getString(ctd)%></td>
+                        </tr>
+                        <%
+                                ctd = ctd + 1;
+                            }
+                        %>
+                    </tbody>
                     
 
-                    </table>
-                    
-            
+
+            </table>
+
+
         </div>
     </main>
-    
+
     <%@include file="footerModulos.jspf" %>   
 </body>
 </html>

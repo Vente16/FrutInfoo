@@ -14,84 +14,90 @@
         <link rel="stylesheet" href="css/bootstrap.min.css"/>
         <link rel="stylesheet" href="css/estilos2.css"/>
         <link rel="stylesheet" href="css/toastr.css"/>
+         <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css> 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/toastr.js"></script>
         <script src="js/FuncionesEstadoInsumos.js"></script>
     </head>
     <body>
-         <%@include file="headerModulos.jspf" %>
-        
-            <div class="container">
-                <div class="jumbotron">
-                    <div style="text-align:center">
-                        <h2>Estado Solicitud de Insumos</h2><br><br><br>
-                    </div>  
-                    <table class="table table-hover">
-                        <thead>
-                            <tr>
-                                <th>Nombre Insumo</th>
-                                <th>Fecha de Solicitud</th>
-                                <th>Estado de la Solicitud</th>
-                                <th>Detalle</th>
-                            </tr>
-                        </thead>
-                        <%
-                            ResultSet re = (ResultSet) session.getAttribute("listarSI");
-                            ResultSet res = (ResultSet) session.getAttribute("tamaño");
+        <%@include file="headerModulos.jspf" %>
 
-        //Devuelve el número de registros en la tabla.
-                            float nRegistros;
-                            if (res.next()) {
-                                nRegistros = res.getFloat(1);
+        <div class="container">
+            <div class="jumbotron">
+                <div style="text-align:center">
+                    <h2>Estado Solicitud de Insumos</h2><br><br><br>
+                </div>  
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                        <th>Nombre Insumo</th>
+                        <th>Fecha de Solicitud</th>
+                        <th>Estado de la Solicitud</th>
+                        <th>Detalle</th>
+                        </tr>
+                    </thead>
+                    <%
+                        ResultSet re = (ResultSet) session.getAttribute("listarSI");
+                        ResultSet res = (ResultSet) session.getAttribute("tamaño");
+
+                        //Devuelve el número de registros en la tabla.
+                        float nRegistros;
+                        if (res.next()) {
+                            nRegistros = res.getFloat(1);
+                        } else {
+                            nRegistros = 0;
+                        }
+                    %>
+
+                    <%
+                        while (re.next()) {
+                    %>
+                    <tbody>
+                        <tr class="<%= re.getString("Id")%>">
+                        <td><%= re.getString("Nombre_Insumo")%></td>
+                        <td><%= re.getString("Fecha_Solicitud")%></td>
+                        <td><%= re.getString("solicitud")%></td>
+                        <td><a href="#Detalle" data-toggle="modal"><button class="btn btn-primary glyphicon glyphicon-search Detalle"></button></a></td>
+                        </tr>
+                    </tbody>
+                    <%
+                        }
+                    %>
+                </table>
+                <nav aria-label="Page navigation example" class="container">
+                    <ul class="pagination justify-content-center">
+                        <%
+                            int pg = 0;
+                            if (request.getParameter("pag") == null) {
+                                pg = 0;
                             } else {
-                                nRegistros = 0;
-                            }
-                        %>
+                                pg = Integer.parseInt(request.getParameter("pag"));
 
-                        <%
-                            while (re.next()) {
-                        %>
-                        <tbody>
-                            <tr class="<%= re.getString("Id") %>">
-                                <td><%= re.getString("Nombre_Insumo")%></td>
-                                <td><%= re.getString("Fecha_Solicitud")%></td>
-                                <td><%= re.getString("solicitud")%></td>
-                                <td><a href="#Detalle" data-toggle="modal"><button class="btn btn-primary glyphicon glyphicon-search Detalle"></button></a></td>
-                            </tr>
-                        </tbody>
-                        <%
                             }
                         %>
-                    </table>
-                    <nav aria-label="Page navigation example" class="container">
-                        <ul class="pagination justify-content-center">
+                        <li class="page-item"><a class="page-link" href="ListarEstadoInsumo?pag=<%=Integer.parseInt(request.getParameter("pag")) - 1%>">Anterior</a></li>
                             <%
-                                int pg = 0;
-                                if (request.getParameter("pag") == null) {
-                                    pg = 0;
-                                } else {
-                                    pg = Integer.parseInt(request.getParameter("pag"));
-
+                                System.out.println(nRegistros);
+                                for (int j = 0; j < nRegistros / 5; j++) {
+                            %>
+                        <li class="page-item"><a class="page-link" href="ListarEstadoInsumo?pag=<%=j%>"><%=j + 1%></a></li>
+                            <%
                                 }
                             %>
-                            <li class="page-item"><a class="page-link" href="ListarEstadoInsumo?pag=<%=Integer.parseInt(request.getParameter("pag")) - 1%>">Anterior</a></li>
-                                <%
-                                    System.out.println(nRegistros);
-                                    for (int j = 0; j < nRegistros / 5; j++) {
-                                %>
-                            <li class="page-item"><a class="page-link" href="ListarEstadoInsumo?pag=<%=j%>"><%=j + 1%></a></li>
-                                <%
-                                    }
-                                %>
-                            <li class="page-item"><a class="page-link" href="ListarEstadoInsumo?pag=<%=Integer.parseInt(request.getParameter("pag")) + 1%>">Siguiente</a></li>
-                        </ul>
-                    </nav>   
-                </div>
+                        <li class="page-item"><a class="page-link" href="ListarEstadoInsumo?pag=<%=Integer.parseInt(request.getParameter("pag")) + 1%>">Siguiente</a></li>
+                    </ul>
+                    <div style="text-align:right"> 
+                        <p><b>Generar Informe</b></p>
+                       <!-- <a href="InfoEstadoInsumos" target="_blank"><button class="btn btn-default" style=font-size:24px;color:red;background:black>Pdf <i class="fa fa-file-pdf-o"></i></button></a>&nbsp;&nbsp;&nbsp;&nbsp;-->
+                        <a  href="ExcelEstadoInsumos.jsp"><button class="btn btn-success" style=font-size:24px;color:black>Exc <i class="fa fa-file-excel-o"></i></button></a> 
+                    </div>
+                </nav>   
             </div>
+        </div>
 
-        
-            <%@include file="ModalEstadoInsumos.jsp"%>
+
+        <%@include file="ModalEstadoInsumos.jsp"%>
         <%@include file="footerModulos.jspf"%> 
     </body>
 </html>
