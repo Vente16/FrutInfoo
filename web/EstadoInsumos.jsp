@@ -1,42 +1,39 @@
 <%-- 
-    Document   : Autorizaciones_admin
-    Created on : 22/03/2017, 09:32:49 PM
-    Author     : oscar
+    Document   : EstadoInsumos
+    Created on : 30/09/2017, 08:07:49 AM
+    Author     : John Jairo
 --%>
 
+<%@page import="java.sql.ResultSet"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
 <html>
     <head>
-        <meta charset="UTF-8">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Autorizaciones</title>
+        <title>Estado Solicitud de Insumos</title>
         <link rel="stylesheet" href="css/bootstrap.min.css"/>
         <link rel="stylesheet" href="css/estilos2.css"/>
         <link rel="stylesheet" href="css/toastr.css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/toastr.js"></script>
-        <script src="js/FuncionesSolicitudInsumos.js"></script>
+        <script src="js/FuncionesEstadoInsumos.js"></script>
     </head>
     <body>
-        <%@include file="headerModulos.jspf" %>
+         <%@include file="headerModulos.jspf" %>
         
             <div class="container">
                 <div class="jumbotron">
                     <div style="text-align:center">
-                        <h2>Solicitudes de Insumos</h2>
-                        <h4> Esta son las solicitudes de insumos que tiene pendiente </h4>
+                        <h2>Estado Solicitud de Insumos</h2><br><br><br>
                     </div>  
                     <table class="table table-hover">
                         <thead>
                             <tr>
                                 <th>Nombre Insumo</th>
-                                <th>Cantidad</th>
-                                <th>Fecha de solicitud</th>
+                                <th>Fecha de Solicitud</th>
+                                <th>Estado de la Solicitud</th>
                                 <th>Detalle</th>
-                                <th>Autorizar</th>
-                                <th>Desautorizar</th>
                             </tr>
                         </thead>
                         <%
@@ -58,11 +55,9 @@
                         <tbody>
                             <tr class="<%= re.getString("Id") %>">
                                 <td><%= re.getString("Nombre_Insumo")%></td>
-                                <td><%= re.getString("Cantidad")%></td>
                                 <td><%= re.getString("Fecha_Solicitud")%></td>
+                                <td><%= re.getString("solicitud")%></td>
                                 <td><a href="#Detalle" data-toggle="modal"><button class="btn btn-primary glyphicon glyphicon-search Detalle"></button></a></td>
-                                <td><a href="#" class="btn btn-success autorizar"><span class="glyphicon glyphicon-ok-sign"></span></a></td>
-                                <td><a href="#" class="btn btn-warning desautorizar"><span class="glyphicon glyphicon-remove-sign"></span></a></td>
                             </tr>
                         </tbody>
                         <%
@@ -80,23 +75,23 @@
 
                                 }
                             %>
-                            <li class="page-item"><a class="page-link" href="ListarSolicitudInsumos?pag=<%=Integer.parseInt(request.getParameter("pag")) - 1%>">Anterior</a></li>
+                            <li class="page-item"><a class="page-link" href="ListarEstadoInsumo?pag=<%=Integer.parseInt(request.getParameter("pag")) - 1%>">Anterior</a></li>
                                 <%
                                     System.out.println(nRegistros);
                                     for (int j = 0; j < nRegistros / 5; j++) {
                                 %>
-                            <li class="page-item"><a class="page-link" href="ListarSolicitudInsumos?pag=<%=j%>"><%=j + 1%></a></li>
+                            <li class="page-item"><a class="page-link" href="ListarEstadoInsumo?pag=<%=j%>"><%=j + 1%></a></li>
                                 <%
                                     }
                                 %>
-                            <li class="page-item"><a class="page-link" href="ListarSolicitudInsumos?pag=<%=Integer.parseInt(request.getParameter("pag")) + 1%>">Siguiente</a></li>
+                            <li class="page-item"><a class="page-link" href="ListarEstadoInsumo?pag=<%=Integer.parseInt(request.getParameter("pag")) + 1%>">Siguiente</a></li>
                         </ul>
                     </nav>   
                 </div>
             </div>
 
         
-            <%@include file="ModalSolicitudInsumos.jsp"%>
+            <%@include file="ModalEstadoInsumos.jsp"%>
         <%@include file="footerModulos.jspf"%> 
     </body>
 </html>

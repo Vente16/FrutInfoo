@@ -9,8 +9,12 @@ import Modelo.Conexion;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -19,9 +23,9 @@ import javax.servlet.http.HttpSession;
 
 /**
  *
- * @author ozkar
+ * @author Home
  */
-public class DetalleTabla extends HttpServlet {
+public class ListarEstadoInsumo extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -32,7 +36,31 @@ public class DetalleTabla extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
-    
+    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        response.setContentType("text/html;charset=UTF-8");
+        try (PrintWriter out = response.getWriter()) {
+              
+            Conexion c = new Conexion();
+            Connection con = c.Conectar();
+            int pagina = Integer.parseInt(request.getParameter("pag"));
+            String sql = "SELECT * FROM solicitud_insumo LIMIT 5 OFFSET " + (pagina) * 5 + ";";
+            String sqlc = "SELECT count(*) as Id FROM solicitud_insumo";
+            HttpSession sesion = request.getSession(true);
+            PreparedStatement pst =con.prepareStatement(sql);
+            Statement stm1 = con.createStatement();
+            ResultSet rst = pst.executeQuery();
+            ResultSet rstc = stm1.executeQuery(sqlc);
+            
+            sesion.setAttribute("listarSI", rst);
+            sesion.setAttribute("pag", pagina);
+            sesion.setAttribute("tamaño", rstc);
+            
+            request.getRequestDispatcher("EstadoInsumos.jsp").forward(request, response);
+        }catch (SQLException ex) {
+            Logger.getLogger(ListarSolicitudInsumos.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
@@ -46,33 +74,7 @@ public class DetalleTabla extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        ResultSet rst;
-        try(PrintWriter out = response.getWriter()) {
-            String tabla = request.getParameter("nt");
-            
-            Conexion con = new Conexion();
-            Connection c =con.Conectar();
-            
-            HttpSession sesion =request.getSession(true);
-            
-            String sqlTablas ="DESCRIBE "+ tabla +";";
-            System.out.println(tabla);
-            Statement stm = c.createStatement();
-            
-            stm.executeUpdate(sqlTablas);
-            rst = stm.getResultSet();
-            
-           while(rst.next()){
-               int ct=1;
-            out.println("<h4><strong>campo:</strong>  " +  rst.getString(ct) + "</h4>;");
-             ct = ct+1;
-            }
-           System.out.println(tabla);
-            
-            
-            
-        } catch (Exception e) {
-        }
+        processRequest(request, response);
     }
 
     /**
@@ -83,7 +85,11 @@ public class DetalleTabla extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
-   
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        processRequest(request, response);
+    }
 
     /**
      * Returns a short description of the servlet.

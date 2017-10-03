@@ -14,6 +14,21 @@ $(document).ready(function(){
                     notEmpty: {
 
                         message: 'Este campo es requerido'
+                    },
+                     regexp: {
+                        
+                    regexp: /^[a-zA-Z ]*$/,
+
+                    message: 'Este campo no acepta números'
+                    },
+                     stringLength: {
+
+                        min: 3,
+                        
+                        max: 10,
+
+                        message: 'El Insumo debe contener minimo 3 caracteres'
+
                     }
 
                 }

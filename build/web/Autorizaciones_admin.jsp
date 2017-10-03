@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="css/bootstrap.min.css"/>
         <link rel="stylesheet" href="css/estilos2.css"/>
         <link rel="stylesheet" href="css/toastr.css"/>
-         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/toastr.js"></script>
         <script src="js/FuncionesSolicitudInsumos.js"></script>

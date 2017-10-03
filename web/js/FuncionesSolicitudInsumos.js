@@ -1,8 +1,5 @@
 $(document).ready(function () {
    
-     
-   
-   
     $('.Detalle').click(function () {
         var Id = $(this).parents('tr').attr('class');
         $.get('DetalleSolicitudInsumos', {"Id":Id}, function (DSolicitudInsumo) {
@@ -10,6 +7,8 @@ $(document).ready(function () {
         });
     });
     
+    
+    /* Función botón autorización de Insumos*/
     $('.autorizar').click(function () {
         var Id = $(this).parents('tr').attr('class');
         var data = {"metodo": "autorizarInsumo", "Id": Id};
@@ -21,9 +20,11 @@ $(document).ready(function () {
             $('.'+Id).remove();
             
         }); 
-        //alert(Id);
+        
     });
     
+    
+     /* Función botón Desautorizar Insumos*/
      $('.desautorizar').click(function () {
         var Id = $(this).parents('tr').attr('class');
         var data = {"metodo": "desautorizarInsumo", "Id": Id};
