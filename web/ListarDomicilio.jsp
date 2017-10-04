@@ -12,18 +12,18 @@
         <title>Listar Domicilio</title>
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/estilos2.css">
-       <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css> 
+        <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css> 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="js/FuncionesDomicilio.js"></script>
     </head>
     <body>
-         <%@include file="headerModulos.jspf" %>
+        <%@include file="headerModulos.jspf" %>
 
         <div class="container">
             <div class="jumbotron">
-                  <h2 style="text-align: center;">LISTA DE DOMICILIOS</h2><br><br>
-                  <p style="text-align: center;">En el siguiente infórme podras ver los domicilios</p><br>
+                <h2 style="text-align: center;">LISTA DE DOMICILIOS</h2><br><br>
+                <p style="text-align: center;">En el siguiente infórme podras ver los domicilios</p><br>
                 <table class="table table-hover" id="paginacion">
                     <thead>
                         <tr>
@@ -38,8 +38,6 @@
                             ResultSet re = (ResultSet) session.getAttribute("listarD");
                             ResultSet res = (ResultSet) session.getAttribute("tamaño");
 
-
-
 //Devuelve el número de registros en la tabla.
                             float nRegistros;
                             if (res.next()) {
@@ -47,18 +45,18 @@
                             } else {
                                 nRegistros = 0;
                             }
-                            %>
-                            
-<%
+                        %>
+
+                        <%
                             while (re.next()) {
                         %>
                         <tr class="<%= re.getString("Id")%>">
-                            
+
                             <td ><%= re.getString("Producto")%></td>
                             <td ><%= re.getString("Cantidad")%></td>
                             <td ><%= re.getString("Nombres")%></td>
                             <td><a href="#Detalle"  data-toggle="modal"><button class="btn btn-primary  glyphicon glyphicon-eye-open Detalle"></button></a></td>
-                          
+
                         </tr>
                         <%
                             }
@@ -90,8 +88,8 @@
                 </nav>
             </div>
         </div>
-                    
-                 
+
+
         <%@include file="ModalSolicitudDomicilio.jsp" %>
         <%@include file="footerModulos.jspf" %>
     </body>

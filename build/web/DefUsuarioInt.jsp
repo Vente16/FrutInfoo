@@ -21,8 +21,8 @@
     </head>
     <body>
         <%@include file="headerModulos.jspf"%>
-        
-        <%  
+
+        <%
             Conexion c = new Conexion();
             Connection con = c.Conectar();
 
@@ -66,7 +66,7 @@
                                 <option>Recursos humanos</option>
                             </select>
                         </div>
-                       
+
                         <button type="submit" class="btn btn-primary">enviar</button>
                     </form>
                 </div>

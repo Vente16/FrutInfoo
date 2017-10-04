@@ -52,12 +52,17 @@ public class InfoTablas extends HttpServlet {
             Connection c =con.Conectar();
             HttpSession session = request.getSession(true); 
             String sqlTablas ="DESCRIBE "+ tabla +";";
-     
-            Statement stm = c.createStatement();
-            stm.executeUpdate(sqlTablas);
-            ResultSet rs1 =stm.getResultSet();
+            String sqlDatos ="SELECT * FROM "+ tabla +";";
+            
+            
+            Statement stm1 = c.createStatement();
+            Statement stm2=c.createStatement();
+            stm1.executeUpdate(sqlTablas);
+            ResultSet rs1 =stm1.getResultSet();
+            ResultSet rs2 = stm2.executeQuery(sqlDatos);
             
             session.setAttribute("consulta", rs1);
+            session.setAttribute("datos", rs2);
             
             response.sendRedirect("InfoTablas.jsp");
             

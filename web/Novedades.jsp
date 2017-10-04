@@ -35,65 +35,65 @@
 
             </div>
 
-       
 
 
-        <div class="container">
 
-            <div style="text-align:center">
-                <h2>NOVEDADES</h2>
-                <h4>Estas son todas las actividades relacionadas con  los empleados ya sean incapacidades, vacaciones, etc..</h4>
-            </div>
-            <br> 
-            <div id="respuesta">
+            <div class="container">
 
-            </div>
-            <div class="table table-responsive">
+                <div style="text-align:center">
+                    <h2>NOVEDADES</h2>
+                    <h4>Estas son todas las actividades relacionadas con  los empleados ya sean incapacidades, vacaciones, etc..</h4>
+                </div>
+                <br> 
+                <div id="respuesta">
 
-                <table class="table table-hover">
-                    <thead>
-                    <th>Documento</th>
-                    <th>Nombre de empleado</th>
-                    <th>Tipo de novedad</th>  
-                    <th>Detalle</th>
-                    </thead>
+                </div>
+                <div class="table table-responsive">
 
-                    <tbody id="info">
+                    <table class="table table-hover">
+                        <thead>
+                        <th>Documento</th>
+                        <th>Nombre de empleado</th>
+                        <th>Tipo de novedad</th>  
+                        <th>Detalle</th>
+                        </thead>
 
-
-                    </tbody>
+                        <tbody id="info">
 
 
-                </table><br>
-                <input type="button" value="Registrar Novedad" onClick="location.href = 'RegistrarNovedad.jsp'" class="btn btn-primary" />
+                        </tbody>
 
-            </div>
 
-            <div id="myModal" class="modal fade" role="dialog">
-                <div class="modal-dialog">
+                    </table><br>
+                    <input type="button" value="Registrar Novedad" onClick="location.href = 'RegistrarNovedad.jsp'" class="btn btn-primary" />
 
-                    <!-- Modal content-->
-                    <div class="modal-content">
-                        <div class="modal-header color">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h3 class="modal-title"><strong>Información detallada</strong></h3>
+                </div>
+
+                <div id="myModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header color">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h3 class="modal-title"><strong>Información detallada</strong></h3>
+                            </div>
+                            <div class="modal-body">
+
+                            </div>
+                            <div class="modal-footer color">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                            </div>
                         </div>
-                        <div class="modal-body">
 
-                        </div>
-                        <div class="modal-footer color">
-                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
-                        </div>
                     </div>
+                </div>
+
+                <div id="espacio">
 
                 </div>
             </div>
-
-            <div id="espacio">
-
-            </div>
         </div>
-   </div>
 
     </div><br><br><br>
     <%@include file="footerModulos.jspf" %>

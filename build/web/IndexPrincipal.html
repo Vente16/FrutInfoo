@@ -9,13 +9,13 @@
         <link rel="stylesheet" href="css/estilos2.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
         <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.bootstrapvalidator/0.5.3/css/bootstrapValidator.min.css">
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css"/>
         <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.ccomom/css?family=Oxygen' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/jquery.bootstrapvalidator/0.5.3/js/bootstrapValidator.min.js"></script>
-        
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"></script>
+        <script src="js/ValidacionRegUsuario"></script>
 
         <script>
 
@@ -41,8 +41,8 @@
 
         </script>
     </head>
+
     
-    <button onclick=>hola</button>
     <body data-spy="scroll" data-target=".navbar" data-offset="50">
         <div class="fondo">
             <div class="fondot">
@@ -71,143 +71,143 @@
                                     <li><a href="#productos">Productos</a></li>
                                     <li><a href="#quienesSomos">Quiénes somos</a></li>
                                     <li><a href="#contactenos">Contáctenos</a></li>
-                                     <li><div class="Loginmodal">
-                                    <a data-toggle="modal" href="#Registro"><img src="img/registro.jpg" class="img-circle" width="50" ></a>
                                     <li><div class="Loginmodal">
+                                            <a data-toggle="modal" href="#Registro"><img src="img/registro.jpg" class="img-circle" width="50" ></a>
+                                            <li><div class="Loginmodal">
 
 
 
-                                         
-                                            <!--Modal Registro de Usuario-->
-                                            <div id="Registro" class="modal fade" role="dialog">
-                                                <div class="modal-dialog">
 
-                                                    <!-- Modal content-->
-                                                    <div class="modal-content">
-                                                        <div class="modal-header HeFo">
-                                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                            <h4 class="modal-title"></h4>
-                                                        </div>
-                                                        <div class="modal-body FondoModal">
-                                                            <div>
-                                                                <div class="row main">
-                                                                    <div class="main-login main-center">
-                                                                        <h2><b>Registro de Usuario</b></h2><br><br>
-                                                                        <form  method="post" class="formReg" action="RegistroDeUsuario">
+                                                    <!--Modal Registro de Usuario-->
+                                                    <div id="Registro" class="modal fade" role="dialog">
+                                                        <div class="modal-dialog">
 
-                                                                            <div class="form-group">
-                                                                                <div>
-                                                                                    <div class="input-group">
-                                                                                        <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-                                                                                        <input type="text"  class="regUser form-control" name="Nombre" id="name"  placeholder="Escribe tu Nombre"/>
+                                                            <!-- Modal content-->
+                                                            <div class="modal-content">
+                                                                <div class="modal-header HeFo">
+                                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                                    <h4 class="modal-title"></h4>
+                                                                </div>
+                                                                <div class="modal-body FondoModal">
+                                                                    <div>
+                                                                        <div class="row main">
+                                                                            <div class="main-login main-center">
+                                                                                <h2><b>Registro de Usuario</b></h2><br><br>
+                                                                                <form id="RegistroUsu" method="post" class="formReg" action="RegistroDeUsuario">
+
+                                                                                    <div class="form-group">
+                                                                                        <div>
+                                                                                            <div class="input-group">
+                                                                                                <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                                                                                                <input type="text"  class="regUser form-control" name="Nombre" id="name"  placeholder="Escribe tu Nombre"/>
+                                                                                            </div>
+                                                                                        </div>
                                                                                     </div>
-                                                                                </div>
-                                                                            </div>
 
-                                                                            <div class="form-group">
-                                                                                <div class="cols-sm-10">
-                                                                                    <div class="input-group">
-                                                                                        <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-                                                                                        <input type="text" class="form-control" name="Correo" id="email"  placeholder="Escribe tu Email"/>
+                                                                                    <div class="form-group">
+                                                                                        <div class="cols-sm-10">
+                                                                                            <div class="input-group">
+                                                                                                <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                                                                                                <input type="text" class="form-control" name="Correo" id="email"  placeholder="Escribe tu Email"/>
+                                                                                            </div>
+                                                                                        </div>
                                                                                     </div>
-                                                                                </div>
-                                                                            </div>
 
-                                                                            <div class="form-group">
-                                                                                <div class="cols-sm-10">
-                                                                                    <div class="input-group">
-                                                                                        <span style="display: none" class="input-group-addon"><i class="fa fa-universal-access" aria-hidden="true"></i></span>
-                                                                                        <input type="hidden"  class="form-control" name="Rol" id="confirm"  placeholder="Rol Cliente"/>
+                                                                                    <div class="form-group">
+                                                                                        <div class="cols-sm-10">
+                                                                                            <div class="input-group">
+                                                                                                <span style="display: none" class="input-group-addon"><i class="fa fa-universal-access" aria-hidden="true"></i></span>
+                                                                                                <input type="hidden"  class="form-control" name="Rol" id="confirm"  placeholder="Rol Cliente"/>
+                                                                                            </div>
+                                                                                        </div>
                                                                                     </div>
-                                                                                </div>
-                                                                            </div>
 
-                                                                            <div class="form-group">
-                                                                                <div class="cols-sm-10">
-                                                                                    <div class="input-group">
-                                                                                        <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
-                                                                                        <input type="text" class="form-control regUser" name="User" id="username"  placeholder="Escribe tu Usuario"/>
+                                                                                    <div class="form-group">
+                                                                                        <div class="cols-sm-10">
+                                                                                            <div class="input-group">
+                                                                                                <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                                                                                                <input type="text" class="form-control regUser" name="User" id="username"  placeholder="Escribe tu Usuario"/>
+                                                                                            </div>
+                                                                                        </div>
                                                                                     </div>
-                                                                                </div>
-                                                                            </div>
 
-                                                                            <div class="form-group">
-                                                                                <div class="cols-sm-10">
-                                                                                    <div class="input-group">
-                                                                                        <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-                                                                                        <input type="password" class="form-control" name="Contrasena" id="password"  placeholder="Escribe tu contraseña"/>
+                                                                                    <div class="form-group">
+                                                                                        <div class="cols-sm-10">
+                                                                                            <div class="input-group">
+                                                                                                <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                                                                                                <input type="password" class="form-control" name="Contrasena" id="password"  placeholder="Escribe tu contraseña"/>
+                                                                                            </div>
+                                                                                        </div>
                                                                                     </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="form-group ">
-                                                                                <button type="submit" id="button" class="btn btn-info btn-lg btn-block Registro">Registrate</button>
-                                                                            </div>
+                                                                                    <div class="form-group ">
+                                                                                        <button type="submit" id="button" class="btn btn-info btn-lg btn-block Registro">Registrate</button>
+                                                                                    </div>
 
-                                                                        </form><br>
+                                                                                </form><br>
+                                                                            </div>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
+                                                                <div class="modal-footer HeFo">
+                                                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                                                </div>
                                                             </div>
+
                                                         </div>
-                                                        <div class="modal-footer HeFo">
-                                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                                    </div>
+
+
+                                                    <!-- Botón de Iniciar sesión -->
+                                                    <a data-toggle="modal" href="#login"><img src="img/user-verde.png" class="img-circle" width="50" alt="Iniciar sesión"></a>
+                                                    <!-- Modal Inicio de Seción -->
+                                                    <div class="modal fade" id="login" role="dialog">
+                                                        <div class="modal-dialog">
+
+                                                            <!-- Cabecera del modal, tiene el logo de la jugosa-->
+                                                            <center>
+                                                                <form action="Login" id="formlogin">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header color">
+                                                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                                            <img src="img/logo.png">
+                                                                        </div>
+
+                                                                        <!-- Cuerpo  del modal, tiene dos input's, y dos h3 (Usuario y contraseña)-->
+
+
+                                                                        <div class="modal-body">
+                                                                            <h3>Usuario</h3>
+                                                                            <input type="text" placeholder="Ingrese su usuario" class="form-control" name="Usuario">
+                                                                            <h3>Contraseña</h3>
+                                                                            <input type="password" placeholder="Ingrese su contraseña" name="Contra" required class="form-control">
+                                                                            <br>
+                                                                            <!-- <a href="#" data-toggle="collapse" data-target="#demo" class="pull-left" required>Restaurar contraseña</a>-->
+                                                                            <br>
+                                                                            <br>
+                                                                            <div id="demo" class="collapse">
+
+                                                                                <p class="alert alert-success">Ingresa aquí tu correo electrónico &nbsp;<input class="form-control" type="text" id="Correo"><br/><button type="button" class="btn btn-info" id="Enviar">Enviar</button></p>
+                                                                                <div id="Respuesta"></div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <!-- Footer del modal, dos botones, cerrrar y Acceder-->
+                                                                        <div class="modal-footer color">
+                                                                            <center>
+                                                                                <input type="submit" class="btn btn-success" value="acceder">
+                                                                                <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+
+                                                                            </center>
+                                                                        </div>
+                                                                    </div>
+                                                                </form>
+                                                            </center>
                                                         </div>
                                                     </div>
 
                                                 </div>
-                                            </div>
-                                            
 
-                                            <!-- Botón de Iniciar sesión -->
-                                            <a data-toggle="modal" href="#login"><img src="img/user-verde.png" class="img-circle" width="50" alt="Iniciar sesión"></a>
-                                            <!-- Modal Inicio de Seción -->
-                                            <div class="modal fade" id="login" role="dialog">
-                                                <div class="modal-dialog">
-
-                                                    <!-- Cabecera del modal, tiene el logo de la jugosa-->
-                                                    <center>
-                                                        <form action="Login" id="formlogin">
-                                                            <div class="modal-content">
-                                                                <div class="modal-header color">
-                                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                                    <img src="img/logo.png">
-                                                                </div>
-
-                                                                <!-- Cuerpo  del modal, tiene dos input's, y dos h3 (Usuario y contraseña)-->
-
-
-                                                                <div class="modal-body">
-                                                                    <h3>Usuario</h3>
-                                                                    <input type="text" placeholder="Ingrese su usuario" class="form-control" name="Usuario">
-                                                                    <h3>Contraseña</h3>
-                                                                    <input type="password" placeholder="Ingrese su contraseña" name="Contra" required class="form-control">
-                                                                    <br>
-                                                                   <!-- <a href="#" data-toggle="collapse" data-target="#demo" class="pull-left" required>Restaurar contraseña</a>-->
-                                                                    <br>
-                                                                    <br>
-                                                                    <div id="demo" class="collapse">
-
-                                                                        <p class="alert alert-success">Ingresa aquí tu correo electrónico &nbsp;<input class="form-control" type="text" id="Correo"><br/><button type="button" class="btn btn-info" id="Enviar">Enviar</button></p>
-                                                                        <div id="Respuesta"></div>
-                                                                    </div>
-                                                                </div>
-
-                                                                <!-- Footer del modal, dos botones, cerrrar y Acceder-->
-                                                                <div class="modal-footer color">
-                                                                    <center>
-                                                                        <input type="submit" class="btn btn-success" value="acceder">
-                                                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
-
-                                                                    </center>
-                                                                </div>
-                                                            </div>
-                                                        </form>
-                                                    </center>
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                    </li>
+                                            </li>
 
                                 </ul>
 
@@ -288,27 +288,11 @@
                                         <h3>Helados</h3>
                                         <p>Delicioso banana Split cubierto de crema jugosa.</p>
                                     </div>
-                                    <div id="myModa" class="modal fade" role="dialog">
-                                        <div class="modal-dialog">
-
-                                            <!-- Modal content-->
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                    <h4 class="modal-title">Modal Header</h4>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <p></p>
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
+
+
+
                             <div class="col-xs-12 col-sm-6 col-md-3">
                                 <div class="thumbnail">
                                     <a href="#myModa" data-toggle="modal" data-toggle="modal" >
@@ -318,28 +302,11 @@
                                         <h3>Frutas</h3>
                                         <p>Deliciosas frutas naturales ven y disfruta .</p>
                                     </div>
-                                    <!-- Modal -->
-                                    <div id="myModal" class="modal fade" role="dialog">
-                                        <div class="modal-dialog">
-
-                                            <!-- Modal content-->
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                    <h4 class="modal-title">Modal Header</h4>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <p>Hola Mundo</p>
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
+
+
+
                             <div class="col-xs-12 col-sm-6 col-md-3">
                                 <div class="thumbnail">
                                     <a href="#myModa" data-toggle="modal" target="_blank">
@@ -348,107 +315,72 @@
                                     <div class="caption">
                                         <h3>Ensaladas</h3>
                                         <p>Las mejores ensaladas de frutas  con una gran variedad.</p>
-                                        <div id="myModal" class="modal fade" role="dialog">
-                                            <div class="modal-dialog">
-
-                                                <!-- Modal content-->
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                        <h4 class="modal-title">Modal Header</h4>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <p>Some text in the modal.</p>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
+
                             <div class="col-xs-12 col-sm-6 col-md-3">
                                 <div class="thumbnail">
-                                    <a href="#myModa" data-toggle="modal" target="_blank">
+                                    <a href="#" data-toggle="modal" target="_blank">
                                         <img src="img/jugo.jpg" alt="Cinque Terre" style="width:100%">
                                     </a>
                                     <div class="caption">
                                         <h3>Jugos</h3>
                                         <p>Gran variedad de jugos con diversos sabores.</p>
                                     </div>
-                                    <div id="myModal" class="modal fade" role="dialog">
-                                        <div class="modal-dialog">
+                                </div>
+                            </div>
 
-                                            <!-- Modal content-->
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                    <h4 class="modal-title">Modal Header</h4>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <p>Some text in the modal.</p>
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </section>
+
+                            <section >
+                                <div class="container" id="quienesSomos">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div class="panel panel-default">
+                                                <div class="panel-body seccion">
+                                                    <h1 class="text-center" id="quienes">Quiénes somos</h1><br>
+                                                    <h4><p>Somos una empresa dedicada a la producción y comercialización de productos a base de frutas naturales, que busca satisfacer las necesidades, gustos y preferencias de nuestros clientes, brindándole al consumidor alimentos de excelente calidad y buen servicio.
+                                                        </p></h4>
+                                                    <h4><p>Día a Día buscaremos ser una empresa reconocida, por el servicio, la calidad y exquisitez de nuestros productos. Contando con el mayor nivel de cobertura local a todos nuestros clientes y apoyados en un equipo humano capaz de desarrollar sus habilidades en el desempeño de su trabajo.
+                                                        </p></h4>
                                                 </div>
                                             </div>
-
+                                        </div>
+                                    </div>
+                                </div>
+                        </div> 
+                        <div class="container">
+                            <div class="row" id="contactenos">
+                                <div class="col-xs-12">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body seccion">
+                                            <h1 class="text-center">Contáctenos</h1><br><br>
+                                            <ul>
+                                                <li class="Lista"><p><h4><b>Envigado</b></h4></p>
+                                                    <p><h4>carrera 42#36 sur-60</h4></p>
+                                                    <p><h4>Tel: 2 70 79 88</h4></p></li>
+                                                <li class="Lista"><p><h4><b>Itagui</b></h4></p>
+                                                    <p><h4>carrera 51#51 68</h4></p>
+                                                    <p><h4>Tel: 3 73 95 72</h4></p></li>
+                                                <li class="Lista"> <p><h4><b>Sabaneta</b></h4></p>
+                                                    <p><h4>carrera 43 C#68  A sur-12 </h4></p>
+                                                    <p><h4>Tel: 2 88 11 60</h4></p></li><br>
+                                                <li class="Lista"> <p><h4><b>Poblado</b></h4></p>
+                                                    <p><h4>calle 10 #41-51</h4></p>
+                                                    <p><h4>Tel: 3 52 59 61</h4></p></li>
+                                                <li class="Lista"> <p><h4><b>Bello</b></h4></p>
+                                                    <p><h4>C.C Puerta del Norte </h4></p>
+                                                    <p><h4>Tel: 4 82 60 71</h4></p></li>
+                                                <li class="Lista"> <p><h4><b>Laureles</b></h4></p>
+                                                    <p><h4>carrera 70#4-39 </h4></p>
+                                                    <p><h4>Tel: 4 12 62 06</h4></p></li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                </section>
-
-                <section >
-                    <div class="container" id="quienesSomos">
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <div class="panel panel-default">
-                                    <div class="panel-body seccion">
-                                        <h1 class="text-center" id="quienes">Quiénes somos</h1><br>
-                                        <h4><p>Somos una empresa dedicada a la producción y comercialización de productos a base de frutas naturales, que busca satisfacer las necesidades, gustos y preferencias de nuestros clientes, brindándole al consumidor alimentos de excelente calidad y buen servicio.
-                                            </p></h4>
-                                        <h4><p>Día a Día buscaremos ser una empresa reconocida, por el servicio, la calidad y exquisitez de nuestros productos. Contando con el mayor nivel de cobertura local a todos nuestros clientes y apoyados en un equipo humano capaz de desarrollar sus habilidades en el desempeño de su trabajo.
-                                            </p></h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row" id="contactenos">
-                            <div class="col-xs-12">
-                                <div class="panel panel-default">
-                                    <div class="panel-body seccion">
-                                        <h1 class="text-center">Contáctenos</h1><br><br>
-                                        <ul>
-                                            <li class="Lista"><p><h4><b>Envigado</b></h4></p>
-                                                <p><h4>carrera 42#36 sur-60</h4></p>
-                                                <p><h4>Tel: 2 70 79 88</h4></p></li>
-                                            <li class="Lista"><p><h4><b>Itagui</b></h4></p>
-                                                <p><h4>carrera 51#51 68</h4></p>
-                                                <p><h4>Tel: 3 73 95 72</h4></p></li>
-                                            <li class="Lista"> <p><h4><b>Sabaneta</b></h4></p>
-                                                <p><h4>carrera 43 C#68  A sur-12 </h4></p>
-                                                <p><h4>Tel: 2 88 11 60</h4></p></li><br>
-                                            <li class="Lista"> <p><h4><b>Poblado</b></h4></p>
-                                                <p><h4>calle 10 #41-51</h4></p>
-                                                <p><h4>Tel: 3 52 59 61</h4></p></li>
-                                            <li class="Lista"> <p><h4><b>Bello</b></h4></p>
-                                                <p><h4>C.C Puerta del Norte </h4></p>
-                                                <p><h4>Tel: 4 82 60 71</h4></p></li>
-                                            <li class="Lista"> <p><h4><b>Laureles</b></h4></p>
-                                                <p><h4>carrera 70#4-39 </h4></p>
-                                                <p><h4>Tel: 4 12 62 06</h4></p></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </section>
 
                 <footer>
@@ -465,10 +397,10 @@
 
             </div>    
         </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-    <script src="js/registroUser.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+        <script src="js/registroUser.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/validator.js"></script>
     </body>
 </html>

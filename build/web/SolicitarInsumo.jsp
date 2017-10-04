@@ -10,22 +10,22 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Solicitar Insumo</title>
-            <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-            <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css"/>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-            <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-            <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"></script>
-            <link rel="stylesheet" href="css/bootstrap.css">
-            <link rel="stylesheet" href="css/estilos2.css">
+        <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/estilos2.css">
         <script src="js/ValidacionSolicitidIns.js"></script>
     </head>
-                       
+
     <body>
-  
-    <%@include file="headerModulos.jspf"%><br>
+
+        <%@include file="headerModulos.jspf"%><br>
 
     <main>
-                               
+
         <div class="containerForm">
             <div style="margin-top: 20px">
                 <h2 style="text-align: center;"><b>Solicitar Insumos</b></h2><br><br>
@@ -70,19 +70,19 @@
                         </div>
                     </div>    
 
-                   
+
 
                     <div class="form-group">
                         <div class="col-xs-8">
                             <button type="submit" class="btn btn-success">Solicitar</button>
                         </div>
                     </div><br>
-            </div>
+                    </div>
 
 
                 </form> 
             </div>                        
-        
+
     </main>  <br>    
     <%@include file="footer.jspf" %>   
 
@@ -90,4 +90,4 @@
 
 </html>
 
-                        
+

@@ -21,13 +21,13 @@
     </head>
     <body>
         <%@include file="headerModulos.jspf" %>
-        
+
         <%Conexion c = new Conexion();
             Connection con = c.Conectar();
 
             Statement stm = con.createStatement();
             ResultSet rs = stm.executeQuery("SELECT * FROM clientes;");
-          /*  String nombre = "";*/
+            /*  String nombre = "";*/
             String correo = "";
             if (rs.last()) {
                 nombre = rs.getString(2);
@@ -56,7 +56,7 @@
                             <label for="#contra">contraseña</label>
                             <input type="text" class="form-control" id="contra" name="contra" >
                         </div>
-                       
+
                         <button type="submit" class="btn btn-primary">enviar</button>
                     </form>
                 </div>

@@ -257,6 +257,14 @@
         <servlet-name>InfoTablas</servlet-name>
         <servlet-class>Controlador.InfoTablas</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>InfoEstadoInsumos</servlet-name>
+        <servlet-class>Controlador.InfoEstadoInsumos</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ActualizarLogin</servlet-name>
+        <servlet-class>Controlador.ActualizarLogin</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Validar</servlet-name>
         <url-pattern>/Validar</url-pattern>
@@ -504,6 +512,14 @@
     <servlet-mapping>
         <servlet-name>InfoTablas</servlet-name>
         <url-pattern>/InfoTablas</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>InfoEstadoInsumos</servlet-name>
+        <url-pattern>/InfoEstadoInsumos</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ActualizarLogin</servlet-name>
+        <url-pattern>/ActualizarLogin</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

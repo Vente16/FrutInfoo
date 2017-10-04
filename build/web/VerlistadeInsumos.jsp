@@ -27,10 +27,10 @@
     <body>
         <section class="main container-fluid">
             <div class="jumbotron">
-            <div class="container-fluid">
-                <h2 style="text-align: center;">LISTA DE INSUMOS</h2>
-                <p style="text-align: center;">En el siguiente informe podras ver la lita de nuestros insumos.</p>
-                
+                <div class="container-fluid">
+                    <h2 style="text-align: center;">LISTA DE INSUMOS</h2>
+                    <p style="text-align: center;">En el siguiente informe podras ver la lita de nuestros insumos.</p>
+
                     <table class="table table-hover">
                         <thead>
                             <tr>
@@ -54,10 +54,10 @@
                             }
                         %>
                         <tbody id="tabla">
-                        <%
-                            while (reI.next()) {
-                        %>
-                       
+                            <%
+                                while (reI.next()) {
+                            %>
+
                             <tr class="<%= reI.getString("Id_Insumo")%>">
                                 <td><%= reI.getString(2)%></td>
                                 <td><%= reI.getString(6)%></td>
@@ -96,13 +96,13 @@
                             <a  href="ExcelInsumos.jsp"><button class="btn btn-success" style=font-size:24px;color:black>Exc <i class="fa fa-file-excel-o"></i></button></a> 
                         </div>
                     </nav>
-                  
 
-                </form>
+
+                    </form>
+                </div>
             </div>
-                        </div>
         </section>
-           <%@include file="ModalInsumos.jsp" %>
+        <%@include file="ModalInsumos.jsp" %>
         <%@include file="footerModulos.jspf"%>     
 
     </body>

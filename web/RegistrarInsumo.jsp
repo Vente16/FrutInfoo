@@ -16,10 +16,10 @@
                 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
                 <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"></script>
                 <link rel="stylesheet" href="css/bootstrap.css">
-                <link rel="stylesheet" href="css/estilos2.css">
-                <script src="js/ValidacionRegInsumo.js"></script>
-                </head>
-   
+                    <link rel="stylesheet" href="css/estilos2.css">
+                        <script src="js/ValidacionRegInsumo.js"></script>
+                        </head>
+
                         <body>
                             <%@include file="headerModulos.jspf"%><br>
                                 <main>

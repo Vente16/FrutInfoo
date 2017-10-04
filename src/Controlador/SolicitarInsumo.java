@@ -78,7 +78,7 @@ public class SolicitarInsumo extends HttpServlet {
         Conexion c = new Conexion();
         Connection con = c.Conectar();
         
-            PreparedStatement Ps = con.prepareStatement("INSERT INTO solicitud_insumo(nombre_insumo, cantidad, id_punto_venta, fecha_solicitud)VALUES(?,?,?,?)");
+            PreparedStatement Ps = con.prepareStatement("INSERT INTO solicitud_insumo(nombre_insumo, cantidad, id_punto_venta, fecha_solicitud, solicitud, estado)VALUES(?,?,?,?,'Pendiente',1)");
             Ps.setString(1, Ins);
             Ps.setString(2, can);
             Ps.setString(3, sed);
