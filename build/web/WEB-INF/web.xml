@@ -265,6 +265,18 @@
         <servlet-name>ActualizarLogin</servlet-name>
         <servlet-class>Controlador.ActualizarLogin</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ValidacionClientes</servlet-name>
+        <servlet-class>Controlador.ValidacionClientes</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ValEmp</servlet-name>
+        <servlet-class>Controlador.ValEmp</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ValBackendEmp</servlet-name>
+        <servlet-class>Controlador.ValBackendEmp</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Validar</servlet-name>
         <url-pattern>/Validar</url-pattern>
@@ -520,6 +532,18 @@
     <servlet-mapping>
         <servlet-name>ActualizarLogin</servlet-name>
         <url-pattern>/ActualizarLogin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ValidacionClientes</servlet-name>
+        <url-pattern>/ValidacionClientes</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ValEmp</servlet-name>
+        <url-pattern>/ValEmp</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ValBackendEmp</servlet-name>
+        <url-pattern>/ValBackendEmp</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

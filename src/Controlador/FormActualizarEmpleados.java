@@ -140,10 +140,11 @@ public class FormActualizarEmpleados extends HttpServlet {
             out.println("<input type='text' class='form-control' id='fechaN' name='FechaN' value="+rs.getString("Fecha_nacimiento")+">");
             out.println("</div>");
             out.println("</div>");
-            out.println("<div class='form-group'>");
+            out.println("<div id='emailv' class='form-group'>");
             out.println("<label class='control-label col-sm-3' for='correo'>Correo:</label>");
             out.println("<div class='col-sm-8'>");
             out.println("<input type='text' class='form-control' id='Correo' name='correo' value="+rs.getString("Correo")+">");
+            out.println("<span class='help-block' id='Empleado'></span>");
             out.println("</div>");
             out.println("</div>");
             out.println("</form>");

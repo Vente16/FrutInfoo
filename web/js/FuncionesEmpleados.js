@@ -29,7 +29,7 @@ $(document).ready(function(){
 
             $('.FormActualizar').html(formulario);
             ValidacionActEmpleado();
-
+            ValidacionBackend();
          });
 
     });
@@ -92,6 +92,7 @@ $(document).ready(function(){
 
     });
     
+   
     
     /*Validacion Modal Actualizar Empleados*/
     function ValidacionActEmpleado(){   
@@ -281,6 +282,29 @@ $(document).ready(function(){
                 
             }    
         });     
+    }
+    
+     /*Validacion Backend Empleados*/
+    function ValidacionBackend(){
+        
+         $('button').click(function(){
+     
+    var correo = $('#Correo').val();
+    var validarCorreo = {"correo": correo, "metodo": "consultarCorreo"};
+           
+          // Validación correo.
+          $.get("ValBackendEmp", validarCorreo, function(info) {
+           
+           var resp = info;
+           console.log(resp);
+          if(data == 1){
+              $('#emailv').attr("class", "form-group has-feedback has-error");
+              $('#emailv').find('i').attr("class", "form-control-feedback glyphicon glyphicon-remove");
+              $('#Empleado').html("Este correo ya Existe.");
+              }  
+          });
+         
+      });
     }
       
 });

@@ -38,12 +38,12 @@
         <section>
             <div class="container">
                 <div class="jumbotron">
-                    <h1>Registro de usuario</h1>
-                    <p>has acabado de registrar a un Empleado por favor crea un usuario</p>
+                    <h1>Registro de usuario Interno</h1><br><br>
+                   <!-- <p>has acabado de registrar a un Empleado por favor crea un usuario</p>-->
                     <form action="RegUsuarioInt" class="form-group-sm">
                         <div class="form-group">
                             <label for="#nomre">Nombre</label>
-                            <input type="text" class="form-control" id="nombre" value="<%= nombree%>" name="nombre" >
+                            <input type="text" class="form-control" id="nombre" value="<%= nombre%>" name="nombre" >
                         </div>
                         <div class="form-group">
                             <label for="#correo">coreo</label>
@@ -58,8 +58,9 @@
                             <input type="text" class="form-control" id="contra" name="contra" >
                         </div>
                         <div class="form-group">
+                            <label for="#cargo">Cargo</label>
                             <select class="form-control" name="rol">
-                                <option>Administrativo</option>
+                                <option></option>
                                 <option>Asistente Administrativo</option>
                                 <option>Ventas</option>
                                 <option>Insumos</option>

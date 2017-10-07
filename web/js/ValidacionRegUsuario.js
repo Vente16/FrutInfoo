@@ -1,5 +1,7 @@
 $(document).ready(function(){
     
+ $('#Registro').click(function(){
+     
     $("#RegistroUsu").bootstrapValidator({
         feedbackicons: {
          valid:'glyphicon glyphicon-ok',
@@ -81,7 +83,7 @@ $(document).ready(function(){
 
                 }
 
-            },
+            }
             
             
             
@@ -89,6 +91,6 @@ $(document).ready(function(){
         }
         
     });
-    
+   }); 
 });
 

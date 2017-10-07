@@ -15,8 +15,7 @@
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"></script>
-        <script src="js/ValidacionRegUsuario"></script>
-
+        <script src="js/ValidacionRegUsuario.js"></script>
         <script>
 
             $(document).ready(function () {
@@ -98,8 +97,8 @@
                                                                                     <div class="form-group">
                                                                                         <div>
                                                                                             <div class="input-group">
-                                                                                                <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-                                                                                                <input type="text"  class="regUser form-control" name="Nombre" id="name"  placeholder="Escribe tu Nombre"/>
+                                                                                                <span class="input-group-addon"><i class="fa fa-user fa" ></i></span>
+                                                                                                <input type="text" required class="regUser form-control" name="Nombre" id="name"  placeholder="Escribe tu Nombre"/>
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
@@ -108,7 +107,7 @@
                                                                                         <div class="cols-sm-10">
                                                                                             <div class="input-group">
                                                                                                 <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-                                                                                                <input type="text" class="form-control" name="Correo" id="email"  placeholder="Escribe tu Email"/>
+                                                                                                <input type="text" required class="form-control" name="Correo" id="email"  placeholder="Escribe tu Email"/>
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
@@ -126,7 +125,7 @@
                                                                                         <div class="cols-sm-10">
                                                                                             <div class="input-group">
                                                                                                 <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
-                                                                                                <input type="text" class="form-control regUser" name="User" id="username"  placeholder="Escribe tu Usuario"/>
+                                                                                                <input type="text" required class="form-control regUser" name="User" id="username"  placeholder="Escribe tu Usuario"/>
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
@@ -135,7 +134,7 @@
                                                                                         <div class="cols-sm-10">
                                                                                             <div class="input-group">
                                                                                                 <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-                                                                                                <input type="password" class="form-control" name="Contrasena" id="password"  placeholder="Escribe tu contraseña"/>
+                                                                                                <input type="password" required class="form-control" name="Contrasena" id="password"  placeholder="Escribe tu contraseña"/>
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>

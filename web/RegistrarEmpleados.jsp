@@ -22,7 +22,11 @@
     </head>
 
     <body>
-
+        <style>
+            h2{
+                
+}
+        </style>
         
     <%@include file="headerModulos.jspf"%><br>
     <main>
@@ -161,6 +165,7 @@
                     <div class="col-xs-10">
                         <input  name="email" type="text" class="form-control" id="email" placeholder="Ingrese su correo electrónico"><br>
                         <span class="" id="validare"></span>
+                        <span class="help-block" id="Empleado"></span>
                     </div>
                 </div>
                 <br>

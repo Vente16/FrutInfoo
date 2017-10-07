@@ -96,7 +96,7 @@
                 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-briefcase">Administrativo<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="InforVentas" target="_blank">Informe de ventas</a></li>
-                        <li><a href="DefUsuario.jsp">Registrar usuario</a></li>
+                        <li><a href="DefUsuarioInt.jsp">Registrar usuario</a></li>
                         <li><a href="InfoInsumos" target="_blank">Informe de Insumos</a></li>
                         <li><a href="ListarDomicilio?pag=0">Listar Domicilio</a></li>
                     </ul>
@@ -264,7 +264,7 @@
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav navbar-right">
 
-                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Recursos humanos<span class="caret"></span></a>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class=" glyphicon glyphicon-paperclip " ></span>Recursos humanos<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="RegistrarEmpleados.jsp">Registrar empleados</a></li>
                         <li><a href="ListarEmp?pag=0">Listar empleados</a></li>
@@ -298,7 +298,7 @@
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav navbar-right">
 
-                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Admin Sistem<span class="caret"></span></a>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span>Admin Sistem<span class="caret"</span></a>
                     <ul class="dropdown-menu">
                         <li><a href="UsuarioLogin?pag=0">Usuarios</a></li>
                         <li><a href="ListarTablas">Tablas</a></li>
@@ -310,7 +310,7 @@
                     </ul>
                 </li>
 
-                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-apple">Insumos<span class="caret"></span></a>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-apple"></span>Insumos<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="ListarInsumo?pag=0">Ver lista de insumos</a></li>
                         <li><a href="SolicitarInsumo.jsp">Solicitar Insumo</a></li>
@@ -319,7 +319,7 @@
                     </ul>
                 </li>
 
-                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-shopping-cart">Ventas<span class="caret"></span></a>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-shopping-cart"></span>Ventas<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="RegistrarVentas.jsp">Registrar ventas</a></li>
                         <li><a href="ListarVentas?pag=0">Listar ventas</a></li>
@@ -328,14 +328,14 @@
                     </ul>
                 </li>
 
-                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class=" glyphicon glyphicon-paperclip " >Recursos humanos<span class="caret"></span></a>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class=" glyphicon glyphicon-paperclip " ></span>Recursos humanos<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="RegistrarEmpleados.jsp">Registrar empleados</a></li>
                         <li><a href="ListarEmp?pag=0">Listar empleados</a></li>
                         <li><a href="Novedades.jsp">Novedades</a></li>
                     </ul>
                 </li>
-                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-tower">Clientes<span class="caret"></span></a>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-tower"></span>Clientes<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="RegisCliente.jsp">Registrar clientes</a></li>
                         <li><a href="Listar?pag=0">Listar clientes</a></li>

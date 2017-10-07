@@ -20,7 +20,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Home
  */
-public class ValidacionEmpleados extends HttpServlet {
+public class ValBackendEmp extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -35,26 +35,14 @@ public class ValidacionEmpleados extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-
+            
             String correo = request.getParameter("correo");
             String metodo = request.getParameter("metodo");
-            String documento = request.getParameter("documento");
             Conexion c = new Conexion();
             Connection con = c.Conectar();
 
             switch (metodo) {
 
-                case "consultarDocumento":
-                    PreparedStatement Ps = con.prepareStatement("SELECT *FROM empleados WHERE Documento=" + documento);
-                    ResultSet rs = Ps.executeQuery();
-                    int res = 0;
-                    while (rs.next()) {
-                        res++;
-
-                    }
-                    out.print(res);
-
-                    break;
                 case "consultarCorreo":
                     PreparedStatement sp = con.prepareStatement("SELECT *FROM empleados WHERE Correo=" + correo);
                     ResultSet sr = sp.executeQuery();
@@ -68,11 +56,8 @@ public class ValidacionEmpleados extends HttpServlet {
             }
             PreparedStatement Ps = con.prepareStatement("INSERT INTO domicilio (producto, cantidad, nombres, apellidos, teléfono, celular, dirección) VALUES (?,?,?,?,?,?,?);");
             Ps.setString(1, correo);
-            Ps.setString(2, documento);
 
             Ps.executeUpdate();
-
-            //
         } catch (Exception e) {
 
             System.out.println(e);

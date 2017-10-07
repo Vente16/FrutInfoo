@@ -115,8 +115,8 @@
                         </select>
                     </div>
                     <br> 
-                    <button type="submit" class="btn btn-success">Registrar Novedad</button> 
-
+                    <button type="submit" class="btn btn-success">Registrar Novedad</button>&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="btn btn-outline btn-primary" onclick="history.go(-1); return false;"><span class="glyphicon glyphicon-circle-arrow-left"></span>Volver</button>
 
             </div>
 

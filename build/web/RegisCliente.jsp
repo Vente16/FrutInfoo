@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/estilos2.css">
         <script src="js/ValidacionRegCliente.js"></script>
-
+        <script src="js/ValidacionBackendClientes.js"></script>
     </head>
     <body>
 
@@ -51,6 +51,7 @@
                             <div class="col-xs-10">
                                 <input id="documento" type="text" class="form-control" name="documento"  placeholder="Ingrese su número de documento"><br>
                                 <span class="" id="validar"></span>
+                                <span class="help-block" id="Doc"></span>
                             </div>
                         </div>
 
@@ -84,6 +85,7 @@
                             <div class="col-xs-10">
                                 <input type="text" class="form-control" id="email" name="Email" placeholder="Ingrese su cuenta de correo electrónico">
                                 <span class="" id="validare"></span>
+                                <span class="help-block" id="Ema"></span>
                             </div>
                         </div><br>
 
