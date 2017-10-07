@@ -26,7 +26,7 @@ $(document).ready(function(){
 
                         min: 3,
                         
-                        max: 3,
+                        max: 4,
 
                         message: 'El codigo debe tener como minimo 3 '
 
@@ -87,6 +87,12 @@ $(document).ready(function(){
 
                         message: 'Este campo de be tener minimo 3 palabras'
 
+                    },
+                     regexp: {
+                        
+                    regexp: /^[a-zA-Z ]*$/,
+
+                    message: 'Este campo no acepta números'
                     }
 
                 }
@@ -161,6 +167,12 @@ $(document).ready(function(){
                     notEmpty: {
 
                         message: 'Este campo es requerido'
+                    },
+                     regexp: {
+                        
+                    regexp: /^[a-zA-Z ]*$/,
+
+                    message: 'Este campo no acepta números'
                     }
 
                 }

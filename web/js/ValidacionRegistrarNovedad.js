@@ -41,9 +41,9 @@ $(document).ready(function(){
                     },
                      stringLength: {
 
-                        min: 7,
+                        min: 3,
                         
-                        max: 7,
+                        max: 20,
 
                         message: 'El nombre debe contener minimo 3 palabras'
 

@@ -77,7 +77,7 @@ public class Novedades extends HttpServlet {
         Conexion c = new Conexion();
         Connection con = c.Conectar();
         
-        PreparedStatement Ps = con.prepareStatement("INSERT INTO novedades (novedad, Nombre_empleado, Apellidos, Documento, Tipo_documento, Descripcion, Id_punto_venta, Id_Cargo) VALUES(?,?,?,?,?,?,?,?)");
+        PreparedStatement Ps = con.prepareStatement("INSERT INTO novedades (novedad, Nombre_empleado, Apellidos, Documento, Tipo_documento, Descripcion, Id_punto_venta, Id_Cargo, Habilitado) VALUES(?,?,?,?,?,?,?,?,1)");
        
         Ps.setString(1, Novedad);
         Ps.setString(2, Nombre);

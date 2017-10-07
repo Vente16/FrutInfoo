@@ -63,9 +63,9 @@ $(document).ready(function(){
                     },
                      stringLength: {
 
-                        min: 7,
+                        min: 3,
                         
-                        max: 7,
+                        max: 20,
 
                         message: 'El nombre debe contener minimo 3 palabras'
 
@@ -94,7 +94,7 @@ $(document).ready(function(){
                         
                         max: 20,
 
-                        message: 'Este campo de be tener minimo 4 palabras'
+                        message: 'Este campo debe tener minimo 4 palabras'
 
                     }
 
@@ -172,6 +172,12 @@ $(document).ready(function(){
                     notEmpty: {
 
                         message: 'Este campo es requerido'
+                    },
+                     regexp: {
+                        
+                    regexp: /^[a-zA-Z ]*$/,
+
+                    message: 'Este campo no acepta números'
                     }
 
                 }

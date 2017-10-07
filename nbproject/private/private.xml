@@ -3,50 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/src/Modelo/Conexion.java</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/src/Controlador/Login.java</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/ModalClientes.jsp</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/src/Controlador/ActualizarCliente.java</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/VerlistadeInsumos.jsp</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/js/FuncionesClientes.js</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/src/Controlador/ListarInsumo.java</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/headerModulos.jspf</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/src/Controlador/UsuarioLogin.java</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/ListarLogin.jsp</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/css/estilos2.css</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/ListarVentas.jsp</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/src/Controlador/InfoTablas.java</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/DefUsuario.jsp</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/src/Controlador/FormActualizarClientes.java</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/ExcelEstadoInsumos.jsp</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/src/Controlador/SolicitarInsumo.java</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/src/Controlador/FormActualizarLogin.java</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/src/Controlador/InfoEstadoInsumos.java</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/index2.jsp</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/js/ValidacionRegUsuario.js</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/src/Modelo/Controlador.java</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/ModalpassLogin.jsp</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/js/FuncionesTablas.js</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/src/Controlador/ActualizarLogin.java</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/ListarCliente.jsp</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/src/Controlador/DetalleTabla.java</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/ListarTablas.jsp</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/src/Controlador/ListarSolicitudInsumos.java</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/src/Controlador/ListarVentas.java</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/js/ValidacionBackendEmpleados.js</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/ModalSolicitudInsumos.jsp</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/js/FuncionesPassLogin.js</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/IndexPrincipal.html</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/src/Controlador/ListarTablas.java</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/InfoTablas.jsp</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/Consultar.jsp</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/js/consultarNovedad.js</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/js/validator.js</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/Autorizaciones_admin.jsp</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/ListarEmpleados.jsp</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/web/ModalescTabla.jsp</file>
-            <file>file:/home/ozkar/Escritorio/proyecto%20final/src/Controlador/DetalleCliente.java</file>
-
+            <file>file:/C:/Users/Home/Desktop/nuevo/web/IndexPrincipal.html</file>
+            <file>file:/C:/Users/Home/Desktop/nuevo/web/InfoTablas.jsp</file>
+            <file>file:/C:/Users/Home/Desktop/nuevo/web/VerlistadeInsumos.jsp</file>
         </group>
     </open-files>
 </project-private>

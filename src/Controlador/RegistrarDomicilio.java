@@ -72,7 +72,7 @@ public class RegistrarDomicilio extends HttpServlet {
             Conexion c = new Conexion();
             Connection con = c.Conectar();
 
-            PreparedStatement Ps = con.prepareStatement("INSERT INTO domicilio (producto, cantidad, nombres, apellidos, teléfono, celular, dirección) VALUES (?,?,?,?,?,?,?);");
+            PreparedStatement Ps = con.prepareStatement("INSERT INTO domicilio (producto, cantidad, nombres, apellidos, teléfono, celular, dirección, Habilitado) VALUES (?,?,?,?,?,?,?,1);");
             Ps.setString(1, Producto);
             Ps.setString(2, Cantidad);
             Ps.setString(3, Nombres);

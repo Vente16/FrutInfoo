@@ -31,8 +31,8 @@
                 <thead >
                     <tr>
                     <th>Nombre</th>
-                    <th>Detalle</th>
-                    <th>*</th>
+                    <th>Estructura Tablas</th>
+                    <th>Tablas</th>
                     </tr>
                 </thead>
                 <%
@@ -46,8 +46,8 @@
 
                     <tr class="<%= rel.getString(ct)%>">
                     <td><%= rel.getString(ct)%></td>
-                    <td><a href="#Detalle"  data-toggle="modal"><button class="btn btn-primary  glyphicon glyphicon-eye-open Detalle"></button></a></td>
-                    <td> <a href="InfoTablas?ct=<%= rel.getString(ct)%>" class="InfoTabla btn btn-success glyphicon glyphicon-edit"></a></td>
+                    <td><a href="#Detalle"  data-toggle="modal"><button class="btn btn-warning  glyphicon glyphicon-list-alt Detalle"></button></a></td>
+                    <td> <a href="InfoTablas?ct=<%= rel.getString(ct)%>" class="InfoTabla btn btn-info glyphicon glyphicon-eye-close"></a></td>
                     </tr>
                     <%
                             ct = ct + 1;

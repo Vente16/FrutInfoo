@@ -277,6 +277,10 @@
         <servlet-name>ValBackendEmp</servlet-name>
         <servlet-class>Controlador.ValBackendEmp</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ListarTodasTablas</servlet-name>
+        <servlet-class>Controlador.ListarTodasTablas</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Validar</servlet-name>
         <url-pattern>/Validar</url-pattern>
@@ -544,6 +548,10 @@
     <servlet-mapping>
         <servlet-name>ValBackendEmp</servlet-name>
         <url-pattern>/ValBackendEmp</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ListarTodasTablas</servlet-name>
+        <url-pattern>/ListarTodasTablas</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
