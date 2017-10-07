@@ -14,6 +14,12 @@ $(document).ready(function(){
                     notEmpty: {
 
                         message: 'Este campo es requerido'
+                    },
+                      regexp: {
+                        
+                    regexp: /^[a-zA-Z ]*$/,
+
+                    message: 'Este campo no acepta números'
                     }
                     
                 }
@@ -32,6 +38,15 @@ $(document).ready(function(){
                     regexp: /^[a-zA-Z ]*$/,
 
                     message: 'Este campo no acepta números'
+                    },
+                     stringLength: {
+
+                        min: 7,
+                        
+                        max: 7,
+
+                        message: 'El nombre debe contener minimo 3 palabras'
+
                     }
                     
                 }
@@ -50,6 +65,15 @@ $(document).ready(function(){
                     regexp: /^[a-zA-Z ]*$/,
 
                     message: 'Este campo no acepta números'
+                    },
+                     stringLength: {
+
+                        min: 4,
+                        
+                        max: 20,
+
+                        message: 'Este campo de be tener minimo 4 palabras'
+
                     }
                     
                 }
@@ -101,6 +125,12 @@ $(document).ready(function(){
                     notEmpty: {
 
                         message: 'Este campo es requerido'
+                    },
+                     regexp: {
+                        
+                    regexp: /^[a-zA-Z ]*$/,
+
+                    message: 'Este campo no acepta números'
                     },
                      stringLength: {
 

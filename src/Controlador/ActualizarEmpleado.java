@@ -8,6 +8,7 @@ package Controlador;
 import Modelo.Conexion;
 import java.io.IOException;
 import java.io.PrintWriter;
+import static java.lang.System.out;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -110,6 +111,7 @@ public class ActualizarEmpleado extends HttpServlet {
             
         } catch (SQLException ex) {
             Logger.getLogger(ActualizarEmpleado.class.getName()).log(Level.SEVERE, null, ex);
+            
         }
     }
 

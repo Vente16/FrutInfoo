@@ -78,6 +78,15 @@ $(document).ready(function(){
                     notEmpty: {
 
                         message: 'Este campo es requerido'
+                    },
+                    stringLength: {
+
+                        min: 3,
+                        
+                        max: 20,
+
+                        message: 'Este campo de be tener minimo 3 palabras'
+
                     }
 
                 }

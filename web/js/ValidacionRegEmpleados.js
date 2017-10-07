@@ -19,6 +19,15 @@ $(document).ready(function(){
                     regexp: /^[a-zA-Z ]*$/,
 
                     message: 'Este campo no acepta números'
+                    },
+                     stringLength: {
+
+                        min: 3,
+                        
+                        max: 20,
+
+                        message: 'El nombre debe contener minimo 3 palabras'
+
                     }
                     
                 }
@@ -38,6 +47,15 @@ $(document).ready(function(){
                     regexp: /^[a-zA-Z ]*$/,
 
                     message: 'Este campo no acepta números'
+                    },
+                     stringLength: {
+
+                        min: 4,
+                        
+                        max: 20,
+
+                        message: 'Este campo de be tener minimo 4 palabras'
+
                     }
                     
                 }

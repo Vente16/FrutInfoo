@@ -6,10 +6,10 @@
 
 <%@page import="java.sql.ResultSet"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!DOCTYPE >
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="Content-Type" content="text/html" charset=UTF-8">
         <title>Estado Solicitud de Insumos</title>
         <link rel="stylesheet" href="css/bootstrap.min.css"/>
         <link rel="stylesheet" href="css/estilos2.css"/>
@@ -89,7 +89,7 @@
                     </ul>
                     <div style="text-align:right"> 
                         <p><b>Generar Informe</b></p>
-                       <!-- <a href="InfoEstadoInsumos" target="_blank"><button class="btn btn-default" style=font-size:24px;color:red;background:black>Pdf <i class="fa fa-file-pdf-o"></i></button></a>&nbsp;&nbsp;&nbsp;&nbsp;-->
+                        <!--<a href="InfoEstadoInsumos" target="_blank"><button class="btn btn-default" style=font-size:24px;color:red;background:black>Pdf <i class="fa fa-file-pdf-o"></i></button></a>&nbsp;&nbsp;&nbsp;&nbsp;-->
                         <a  href="ExcelEstadoInsumos.jsp"><button class="btn btn-success" style=font-size:24px;color:black>Exc <i class="fa fa-file-excel-o"></i></button></a> 
                     </div>
                 </nav>   

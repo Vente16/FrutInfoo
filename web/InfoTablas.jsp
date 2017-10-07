@@ -25,43 +25,47 @@
     <body>
         <%@include file="headerModulos.jspf" %>
     <main>
-        <div class="container jumbotron">
+        <div class="container jumbotron table-responsive">
             <h1>Tablas</h1>
-            <table class="table table-hover">
+            <table class="table table-hover table-condensed">
                 <%
                     ResultSet res = (ResultSet) session.getAttribute("consulta");
                     ResultSet red = (ResultSet) session.getAttribute("datos");
-                    
-                     int ct = 1;
-                     int ctd = 1;
                 %>
                 <thead>
                     <tr>
-                        <%
+                        <%                      
                             while (res.next()) {
+                                int ct = 1;
                         %>
                     <th><%= res.getString(ct)%></th>
                         <%
                                 ct = ct + 1;
                             }
                         %>
-                        
                     </tr> 
                 </thead>
-                
-                    <tbody> 
+                <tbody> 
+                    <%
+                        while (red.next()) {
+                            int ctd = 1;
+                    %>
+                    <tr > 
                         <%
-                            while (red.next()) {
-                           %>
-                        <tr> 
-                            <td><%= red.getString(ctd)%></td>
-                        </tr>
-                        <%
-                                ctd = ctd + 1;
-                            }
+                            for (int i = 1; i <= red.findColumn("Habilitado"); i++) {
                         %>
-                    </tbody>
-                    
+                    <td class="habilitado"><%= red.getString(i)%></td>
+                    <%
+                        }
+                    %>
+                    </tr>
+                    <%
+                            ctd = ctd + 1;
+                        }
+                    %>
+                </tbody>
+
+
 
 
             </table>

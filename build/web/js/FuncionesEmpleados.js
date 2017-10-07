@@ -301,6 +301,7 @@ $(document).ready(function(){
               $('#emailv').attr("class", "form-group has-feedback has-error");
               $('#emailv').find('i').attr("class", "form-control-feedback glyphicon glyphicon-remove");
               $('#Empleado').html("Este correo ya Existe.");
+              
               }  
           });
          

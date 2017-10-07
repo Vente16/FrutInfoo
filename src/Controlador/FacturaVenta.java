@@ -116,7 +116,7 @@ public class FacturaVenta extends HttpServlet {
             Conexion c = new Conexion();
             Connection con = c.Conectar();
 
-            st = con.prepareStatement("SELECT * FROM `facturas de venta` ");
+            st = con.prepareStatement("SELECT * FROM `facturas_de_venta` ");
             rs = st.executeQuery();
 
             while (rs.next()) {

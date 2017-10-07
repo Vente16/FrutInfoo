@@ -3,7 +3,7 @@ $(document).ready(function () {
     $('.Actualizar').click(function () {
 
         var Id = $(this).parents('tr').attr('class');
-        console.log(Id);
+       
         $.post('FormActualizarLogin', {"Id": Id}, function (formulario) {
 
             $('.FormAcutalizar').html(formulario);
@@ -16,6 +16,7 @@ $(document).ready(function () {
         var Id = $('#Id').val();
         var pass = $('#Contra').val();
         var rol = $('#Rol').val();
+        
         $.post('ActualizarLogin',
                 {"Id": Id,
                     "pass": pass,

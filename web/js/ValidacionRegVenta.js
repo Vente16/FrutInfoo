@@ -14,6 +14,21 @@ $(document).ready(function(){
                     notEmpty: {
 
                         message: 'Este campo es requerido'
+                    },
+                      regexp: {
+                        
+                    regexp: /^[a-zA-Z ]*$/,
+
+                    message: 'Este campo no acepta números'
+                    },
+                    stringLength: {
+
+                        min: 4,
+                        
+                        max: 20,
+
+                        message: 'Este campo de be tener minimo 4 palabras'
+
                     }
 
                 }
@@ -26,7 +41,13 @@ $(document).ready(function(){
                     notEmpty: {
 
                         message: 'Este campo es requerido'
-                    }
+                    },
+                     regexp: {
+                        
+                    regexp: /^[0-9]+$/,
+                    message: 'Este campo solo acepta números'
+                    },
+
 
                 }
 
