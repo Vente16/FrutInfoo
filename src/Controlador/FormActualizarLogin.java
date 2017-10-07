@@ -69,9 +69,9 @@ public class FormActualizarLogin extends HttpServlet {
             while(rs.next()){
            
             out.println("<div'");
-            out.println("<input type='hidden' id='Id' value='"+Id+"'>");
             out.println("<h4><span id='Nombre'>Nombre:"+ rs.getString("Nombre_usuario") +"</span></h4>");
             out.println("<form class='form-horizontal' id='ValFormActEmpl'>");
+            out.println("<input type='hidden' name='Id' id='Id' value="+rs.getString("Id_login")+">");
             out.println("<div class='form-group'>");
             out.println("<label class='control-label col-sm-4' for='Contra'>Contraseña:</label>");
             out.println("<div class='col-sm-8'>");
@@ -86,9 +86,9 @@ public class FormActualizarLogin extends HttpServlet {
             out.println("</div>");
             out.println("</form>");
             out.println("</div>");
-            
+          
             }
-           
+            
         } catch (Exception e) {
             e.printStackTrace();
         }

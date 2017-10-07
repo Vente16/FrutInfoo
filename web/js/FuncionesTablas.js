@@ -12,7 +12,12 @@ $(document).ready(function () {
 
          });
     });
+    var lu=$('.habilitado:last-child').html();
+    
+        $('.habilitado:last-child').html("<input type='checkbox' class='chek'>");
     
     
+    
+   
    
 });

@@ -70,13 +70,15 @@ public class ActualizarLogin extends HttpServlet {
             pst.setString(1, Pass);
             pst.setString(2, Rol);
             pst.setString(3, id);
-            
-             pst.executeUpdate();
-            
+            pst.executeUpdate();
+            pst.close();
+            conn.close();
+          
             out.println("<h4>Se actualizo correctamente</h4>");
            
         }catch(Exception e){
             e.printStackTrace();
+            
         }
     }
 
